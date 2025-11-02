@@ -1,4 +1,7 @@
 ##tickglobalevents
+
+##changelog needed
+
 #spawn and kill hearts
 execute unless score .globalkill cryptid.globalevent >= maxkilltime cryptid.globalevent run scoreboard players add .globalkill cryptid.globalevent 1
 execute unless score .globalspawn cryptid.globalevent >= maxspawntime cryptid.globalevent run scoreboard players add .globalspawn cryptid.globalevent 1
