@@ -21,8 +21,4 @@ execute positioned ~ ~0.6 ~ facing entity @e[tag=cryptid, tag=!cryptid.vorheart,
 execute positioned ~ ~0.6 ~ facing entity @e[tag=cryptid, tag=cryptid.vorheart, sort=nearest, limit=10, distance=0..150] feet positioned ^ ^ ^1.3 run particle sculk_charge_pop ~ ~0.8 ~ 0 0 0 0 1
 
 #sky
-execute positioned ~ ~0.6 ~ facing entity @e[tag=cryptid, tag=!cryptid.vorheart, sort=nearest, limit=10, distance=0..150, y=100, dy=1000] feet positioned ^ ^ ^1.3 run particle crit ~ ~0.8 ~ 0 0 0 0 1
-
-#nearest
-execute as @n[tag=cryptid,limit=1] at @s positioned ~ ~2 ~ run particle minecraft:electric_spark ~ ~0.7 ~ 0 0 0 0 1
-
+#execute positioned ~ ~0.6 ~ facing entity @e[tag=cryptid, tag=!cryptid.vorheart, sort=nearest, limit=10, distance=0..150, y=100, dy=1000] feet positioned ^ ^ ^1.3 run particle crit ~ ~0.8 ~ 0 0 0 0 1
