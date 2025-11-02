@@ -22,6 +22,7 @@ execute if items entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick[cu
 
 ##tick radar
 execute if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[custom_data~{cryptid.radar:1}] run function cryptid:action/radar/tickradar
+execute as @s at @s[scores={cryptid.click=1}] if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.radar:1}] run function cryptid:action/radar/scanradar
 
 ## tick totem
 execute if items entity @s weapon.mainhand minecraft:villager_spawn_egg[minecraft:custom_model_data=1319] run execute if entity @e[tag=!cryptid.lessertotem,tag=cryptid, distance=0..5] at @s run function cryptid:action/repell

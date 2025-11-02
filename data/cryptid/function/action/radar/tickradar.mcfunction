@@ -1,4 +1,4 @@
-##Thanks to .nol1k for the commands for the radar! I tweaked them a little bit but its great, thanks for the contribution.
+##Thanks .nol1k for the commands for the radar! I tweaked them a little bit but its great, thanks for the contribution. hopefully ts works -.nol1k
 
 execute if score .heartbeat cryptid.globalevent matches 18 run function cryptid:action/radar/pingradar
 
