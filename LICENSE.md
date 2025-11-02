@@ -3,7 +3,7 @@ Copyright (c) 2025 STEAMPWRED / STEAM CITY
 PERMITTED USES
 ===================
 
-- You are free to use CRYPTID for whatever personal purpose you desire.
+- You are free to use CRYPTID for whatever PERSONAL purpose you desire.
 
 - You are free to modify the pack to your suiting.
 
