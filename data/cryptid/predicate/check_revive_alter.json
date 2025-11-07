@@ -1,0 +1,37 @@
+{ 
+
+  "condition": "minecraft:all_of", 
+
+  "terms":  
+
+[ 
+
+    { "condition": "minecraft:location_check", "offsetX": 0, "offsetY": 0, "offsetZ": 0, "predicate": { "block": { "blocks": "minecraft:skeleton_skull" } } }, 
+    
+    { "condition": "minecraft:location_check", "offsetX": 0,  "offsetY": -1, "offsetZ": 0, "predicate": { "block": { "blocks": "minecraft:lodestone" } } }, 
+
+    { "condition": "minecraft:location_check", "offsetX": 0,  "offsetY": -2, "offsetZ": 0, "predicate": { "block": { "blocks": "minecraft:sculk_catalyst" } } }, 
+
+ 
+
+    { "condition": "minecraft:location_check", "offsetX": -1, "offsetY": -1, "offsetZ": 1,  "predicate": { "block": { "blocks": "minecraft:redstone_torch" } } }, 
+
+    { "condition": "minecraft:location_check", "offsetX": -1,  "offsetY": -1, "offsetZ": -1,  "predicate": { "block": { "blocks": "minecraft:redstone_torch" } } }, 
+
+    { "condition": "minecraft:location_check", "offsetX": 1,  "offsetY": -1, "offsetZ": 1,  "predicate": { "block": { "blocks": "minecraft:redstone_torch" } } }, 
+
+    { "condition": "minecraft:location_check", "offsetX": 1, "offsetY": -1, "offsetZ": -1,  "predicate": { "block": { "blocks": "minecraft:redstone_torch" } } }, 
+
+ 
+
+    { "condition": "minecraft:location_check", "offsetX": -1, "offsetY": -2, "offsetZ": 1,  "predicate": { "block": { "blocks": "minecraft:cobblestone_wall" } } }, 
+
+    { "condition": "minecraft:location_check", "offsetX": -1,  "offsetY": -2, "offsetZ": -1,  "predicate": { "block": { "blocks": "minecraft:cobblestone_wall" } } }, 
+
+    { "condition": "minecraft:location_check", "offsetX": 1,  "offsetY": -2, "offsetZ": 1,  "predicate": { "block": { "blocks": "minecraft:cobblestone_wall" } } }, 
+
+    { "condition": "minecraft:location_check", "offsetX": 1, "offsetY": -2, "offsetZ": -1,  "predicate": { "block": { "blocks": "minecraft:cobblestone_wall" } } } 
+
+  ] 
+
+} 
