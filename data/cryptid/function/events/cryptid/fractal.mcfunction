@@ -13,7 +13,7 @@ execute as @e[type=vindicator, tag=cryptid.fractal] at @s run attribute @s gener
 execute as @e[type=vindicator, tag=cryptid.fractal, tag=!cryptid.markerapplied] at @s run function cryptid:action/general/spawntickmarker {"name":"tickfractal"}
 
 
-execute as @e[type=vindicator, tag=cryptid.fractal, tag=!cryptid.fractalinit] at @s run tp @s ~ ~80 ~ 
+execute as @e[type=vindicator, tag=cryptid.fractal, tag=!cryptid.fractalinit] at @s run tp @s ~ ~80 ~
 execute as @e[type=vindicator, tag=cryptid.fractal, tag=!cryptid.fractalinit] at @s run tag @s add cryptid.fractalinit
 
 scoreboard players set @a[distance=0..50] cryptid.player.eventscore 8
