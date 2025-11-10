@@ -42,7 +42,7 @@ execute if score @s cryptid.event.random matches 91..92 run function cryptid:eve
 
 
 
-##events that only happen past days
+##events that only happen at higher fury levels
 
 execute if score .global cryptid.world.fury matches 140.. if score @s cryptid.event.random matches 30..39 run function cryptid:events/cryptid/fractal
 

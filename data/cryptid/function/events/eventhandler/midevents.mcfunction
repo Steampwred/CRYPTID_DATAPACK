@@ -51,7 +51,7 @@ execute if score @s cryptid.event.random matches 100..102 run function cryptid:e
 execute if score @s cryptid.event.random matches 103..105 run function cryptid:events/general/spawnheadpeeper
 
 
-##events that only happen past days
+##events that only happen at higher fury levels
 
 execute if score .global cryptid.world.fury matches 20.. if score @s cryptid.event.random matches 28..34 run function cryptid:events/cryptid/builder1
 

@@ -12,7 +12,7 @@ execute if score @s cryptid.event.random matches 60..65 run function cryptid:eve
 
 
 
-##late game mining events
+##late game mining events happen at higher fury levels
 execute if score .global cryptid.world.fury matches 12.. if score @s cryptid.event.random matches 6 run function cryptid:events/underground/tunnel
 
 execute if score .global cryptid.world.fury matches 75.. if score @s cryptid.event.random matches 1..15 run function cryptid:events/underground/darkeyes
