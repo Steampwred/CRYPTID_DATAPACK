@@ -53,14 +53,14 @@ execute if score @s cryptid.event.random matches 103..105 run function cryptid:e
 
 ##events that only happen past days
 
-execute if score .global cryptid.day matches 4.. if score @s cryptid.event.random matches 28..34 run function cryptid:events/cryptid/builder1
+execute if score .global cryptid.world.fury matches 20.. if score @s cryptid.event.random matches 28..34 run function cryptid:events/cryptid/builder1
 
-execute if score .global cryptid.day matches 4.. if score @s cryptid.event.random matches 35..38 run function cryptid:events/cryptid/fractal
+execute if score .global cryptid.world.fury matches 20.. if score @s cryptid.event.random matches 35..38 run function cryptid:events/cryptid/fractal
 
-execute if score .global cryptid.day matches 4.. if score @s cryptid.event.random matches 25..35 run function cryptid:events/cryptid/sethostile
+execute if score .global cryptid.world.fury matches 20.. if score @s cryptid.event.random matches 25..35 run function cryptid:events/cryptid/sethostile
 
-execute if score .global cryptid.day matches 4.. if score @s cryptid.event.random matches 35..45 run function cryptid:events/cryptid/flicker5
+execute if score .global cryptid.world.fury matches 20.. if score @s cryptid.event.random matches 35..45 run function cryptid:events/cryptid/flicker5
 
-execute if score .global cryptid.day matches 8.. if score @s cryptid.event.random matches 35..39 run function cryptid:events/cryptid/chomper
+execute if score .global cryptid.world.fury matches 75.. if score @s cryptid.event.random matches 35..39 run function cryptid:events/cryptid/chomper
 
 
