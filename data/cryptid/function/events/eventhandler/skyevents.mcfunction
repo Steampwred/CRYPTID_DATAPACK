@@ -14,10 +14,10 @@ execute at @s[y=85,dy=400] if score @s cryptid.event.random matches 36..37 run f
 
 
 
-## pats day x.. sky
-execute if score .global cryptid.day matches 8.. run execute at @s[y=95,dy=400, scores={cryptid.player.harmony=..0}] if score @s cryptid.event.random matches 6..22 run function cryptid:events/sky/eyewatcher
+## events that happen at higher fury levels
+execute if score .global cryptid.world.fury matches 75.. run execute at @s[y=95,dy=400, scores={cryptid.player.harmony=..0}] if score @s cryptid.event.random matches 6..22 run function cryptid:events/sky/eyewatcher
 
-execute if score .global cryptid.day matches 12.. run execute at @s[y=95,dy=400, scores={cryptid.player.harmony=..-10000}] if score @s cryptid.event.random matches 24..32 run function cryptid:events/sky/roamingentity
+execute if score .global cryptid.world.fury matches 110.. run execute at @s[y=95,dy=400, scores={cryptid.player.harmony=..-10000}] if score @s cryptid.event.random matches 24..32 run function cryptid:events/sky/roamingentity
 
 
 ##low harmony sky

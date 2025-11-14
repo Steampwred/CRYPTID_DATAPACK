@@ -16,8 +16,6 @@ fill ~15 ~15 ~15 ~-15 ~-15 ~-15 red_terracotta replace sculk
 fill ~15 ~15 ~15 ~-15 ~-15 ~-15 obsidian replace mangrove_roots
 fill ~15 ~15 ~15 ~-15 ~-15 ~-15 air replace vine
 fill ~15 ~15 ~15 ~-15 ~-15 ~-15 air replace moss_carpet
-fill ~15 ~15 ~15 ~-15 ~-15 ~-15 air replace minecraft:sculk_catalyst
 fill ~15 ~15 ~15 ~-15 ~-15 ~-15 air replace minecraft:sculk_sensor
-fill ~15 ~15 ~15 ~-15 ~-15 ~-15 air replace minecraft:sculk_catalyst
 
 playsound minecraft:ambient.soul_sand_valley.mood ambient @a[distance=0..30]

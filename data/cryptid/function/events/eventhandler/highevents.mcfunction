@@ -42,22 +42,22 @@ execute if score @s cryptid.event.random matches 91..92 run function cryptid:eve
 
 
 
-##events that only happen past days
+##events that only happen at higher fury levels
 
-execute if score .global cryptid.day matches 14.. if score @s cryptid.event.random matches 30..39 run function cryptid:events/cryptid/fractal
+execute if score .global cryptid.world.fury matches 140.. if score @s cryptid.event.random matches 30..39 run function cryptid:events/cryptid/fractal
 
-execute if score .global cryptid.day matches 8.. if score @s cryptid.event.random matches 25..39 run function cryptid:events/cryptid/sethostile
+execute if score .global cryptid.world.fury matches 75.. if score @s cryptid.event.random matches 25..39 run function cryptid:events/cryptid/sethostile
 
-execute if score .global cryptid.day matches 6.. if score @s cryptid.event.random matches 35..45 run function cryptid:events/cryptid/flicker5
+execute if score .global cryptid.world.fury matches 45.. if score @s cryptid.event.random matches 35..45 run function cryptid:events/cryptid/flicker5
 
-execute if score .global cryptid.day matches 5.. if score @s cryptid.event.random matches 14..33 run function cryptid:events/cryptid/dopple1
+execute if score .global cryptid.world.fury matches 25.. if score @s cryptid.event.random matches 14..33 run function cryptid:events/cryptid/dopple1
 
-execute if score .global cryptid.day matches 12.. if score @s cryptid.event.random matches 34 run execute as @s at @s run function cryptid:events/cryptid/worldsky
+execute if score .global cryptid.world.fury matches 110.. if score @s cryptid.event.random matches 34 run execute as @s at @s run function cryptid:events/cryptid/worldsky
 
-execute if score .global cryptid.day matches 2.. if score @s cryptid.event.random matches 14..21 run execute as @e[type=!player, sort=furthest, limit=2, distance=1..30] at @s run function cryptid:events/underground/spawndecimator
+execute if score .global cryptid.world.fury matches 10.. if score @s cryptid.event.random matches 14..21 run execute as @e[type=!player, sort=furthest, limit=2, distance=1..30] at @s run function cryptid:events/underground/spawndecimator
 
-execute if score .global cryptid.day matches 12.. if score @s cryptid.event.random matches 14 run execute as @e[type=!player, sort=furthest, limit=1, distance=15..20] at @s run function cryptid:events/general/spawnglitch
+execute if score .global cryptid.world.fury matches 110.. if score @s cryptid.event.random matches 14 run execute as @e[type=!player, sort=furthest, limit=1, distance=15..20] at @s run function cryptid:events/general/spawnglitch
 
-execute if score .global cryptid.day matches 8.. if score @s cryptid.event.random matches 35..46 run function cryptid:events/cryptid/chomper
+execute if score .global cryptid.world.fury matches 75.. if score @s cryptid.event.random matches 35..46 run function cryptid:events/cryptid/chomper
 
 

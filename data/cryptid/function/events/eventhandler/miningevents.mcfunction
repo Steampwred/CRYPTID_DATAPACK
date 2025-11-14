@@ -12,17 +12,17 @@ execute if score @s cryptid.event.random matches 60..65 run function cryptid:eve
 
 
 
-##late game mining events
-execute if score .global cryptid.day matches 3.. if score @s cryptid.event.random matches 6 run function cryptid:events/underground/tunnel
+##late game mining events happen at higher fury levels
+execute if score .global cryptid.world.fury matches 12.. if score @s cryptid.event.random matches 6 run function cryptid:events/underground/tunnel
 
-execute if score .global cryptid.day matches 8.. if score @s cryptid.event.random matches 1..15 run function cryptid:events/underground/darkeyes
+execute if score .global cryptid.world.fury matches 75.. if score @s cryptid.event.random matches 1..15 run function cryptid:events/underground/darkeyes
 
-execute if score .global cryptid.day matches 9.. if score @s cryptid.event.random matches 101..109 run function cryptid:events/underground/spawncrawler
+execute if score .global cryptid.world.fury matches 85.. if score @s cryptid.event.random matches 101..109 run function cryptid:events/underground/spawncrawler
 
 
 ##low harmony mining events
-execute if score .global cryptid.day matches 5.. run execute if entity @s[scores={cryptid.player.harmony=..-5000}] if score @s cryptid.event.random matches 3..6 run function cryptid:events/underground/spawnspider
+execute if score .global cryptid.world.fury matches 30.. run execute if entity @s[scores={cryptid.player.harmony=..-5000}] if score @s cryptid.event.random matches 3..6 run function cryptid:events/underground/spawnspider
 
-execute if score .global cryptid.day matches 5.. run execute if entity @s[scores={cryptid.player.harmony=..-5000}] if score @s cryptid.event.random matches 1..3 run function cryptid:events/underground/spawnhand
+execute if score .global cryptid.world.fury matches 30.. run execute if entity @s[scores={cryptid.player.harmony=..-5000}] if score @s cryptid.event.random matches 1..3 run function cryptid:events/underground/spawnhand
 
-execute if score .global cryptid.day matches 5.. run execute if entity @s[scores={cryptid.player.harmony=..-10000}] if score @s cryptid.event.random matches 20..53 run function cryptid:events/story/storywall
+execute if score .global cryptid.world.fury matches 30.. run execute if entity @s[scores={cryptid.player.harmony=..-10000}] if score @s cryptid.event.random matches 20..53 run function cryptid:events/story/storywall

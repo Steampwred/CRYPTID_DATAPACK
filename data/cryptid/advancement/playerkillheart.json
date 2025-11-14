@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "killed_vorheart": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:vindicator",
+          "nbt": "{Tags:[\"cryptid.vorheart\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "cryptid:action/heart/heartdeath"
+  }
+}

@@ -15,11 +15,12 @@ execute if score .global cryptid.challenge matches 2 run scoreboard players set 
 
 ########################################################now apply influences to lower it
 
-##############cryptid day influence...
-scoreboard players operation .buffer cryptid.randomeventcap = .global cryptid.day
-##lock past 200
-execute if score .global cryptid.day matches 200.. run scoreboard players set .buffer cryptid.randomeventcap 200
-scoreboard players set .mult cryptid.randomeventcap 20
+
+##############World Fury influence...
+scoreboard players operation .buffer cryptid.randomeventcap = .global cryptid.world.fury
+##lock past 500
+execute if score .global cryptid.world.fury matches 500.. run scoreboard players set .buffer cryptid.randomeventcap 500
+scoreboard players set .mult cryptid.randomeventcap 9
 scoreboard players operation .buffer cryptid.randomeventcap *= .mult cryptid.randomeventcap
 scoreboard players operation @s cryptid.randomeventcap -= .buffer cryptid.randomeventcap
 
@@ -50,7 +51,7 @@ scoreboard players operation .mult cryptid.randomeventcap = .global cryptid.tota
 scoreboard players operation @s cryptid.randomeventcap *= .mult cryptid.randomeventcap
 
 
-############################hard limit to 3000
+######################################################### hard limit to 1000
 execute if score @s cryptid.randomeventcap matches ..1000 run scoreboard players set @s cryptid.randomeventcap 1000
 
 
@@ -61,7 +62,7 @@ execute if score @s cryptid.randomeventcap matches ..1000 run scoreboard players
 ##set to storage
 execute store result storage cryptid:randomevent highnumber.x int 1 run scoreboard players get @s cryptid.randomeventcap
 
-#######generate random with macro
+#######generate random with macro 
 
 function cryptid:tick/player/random/randommacro with storage cryptid:randomevent highnumber
 
