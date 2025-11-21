@@ -1,6 +1,6 @@
 clear @s sugar[minecraft:custom_data~{cryptid.usedhoney:1b}]
 
-scoreboard players add cryptid.global cryptid.day 10
+scoreboard players add cryptid.global cryptid.world.fury 10
 
 execute if score @s cryptid.player.maxharmony matches 0..22000 run scoreboard players add @s cryptid.player.maxharmony 500
 

@@ -24,9 +24,9 @@ execute if score .random cryptid.player.random matches 1..400 if score .global c
 
 
 ##tank
-execute if score .global cryptid.day matches 7.. if score @s cryptid.event.random matches 10..11 run function cryptid:events/cryptid/spawntank
+execute if score .global cryptid.world.fury matches 60.. if score @s cryptid.event.random matches 10..11 run function cryptid:events/cryptid/spawntank
 
-execute if score .global cryptid.day matches 7.. if score @s cryptid.event.random matches 6..17 run function cryptid:events/night/spotlight
+execute if score .global cryptid.world.fury matches 60.. if score @s cryptid.event.random matches 6..17 run function cryptid:events/night/spotlight
 
 
 execute if score .global cryptid.day matches 20.. if score @s cryptid.event.random matches 10..12 run function cryptid:events/cryptid/spawntank
@@ -36,10 +36,10 @@ execute if score .global cryptid.day matches 20.. if score @s cryptid.player.hea
 
 
 ##doppleganger
-execute if score .global cryptid.day matches 5.. if score @s cryptid.event.random matches 14..15 run function cryptid:events/cryptid/dopple1
+execute if score .global cryptid.world.fury matches 30.. if score @s cryptid.event.random matches 14..15 run function cryptid:events/cryptid/dopple1
 
-execute if score .global cryptid.day matches 9.. if score @s cryptid.event.random matches 14..17 run function cryptid:events/cryptid/dopple1
+execute if score .global cryptid.world.fury matches 85.. if score @s cryptid.event.random matches 14..17 run function cryptid:events/cryptid/dopple1
 
-execute if score .global cryptid.day matches 13.. if score @s cryptid.event.random matches 15..25 run function cryptid:events/cryptid/dopple1
+execute if score .global cryptid.world.fury matches 130.. if score @s cryptid.event.random matches 15..25 run function cryptid:events/cryptid/dopple1
 
 

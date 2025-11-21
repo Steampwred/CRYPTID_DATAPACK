@@ -13,3 +13,7 @@ fill ~10 ~10 ~10 ~-10 ~-10 ~-10 wall_torch[facing=north] replace redstone_wall_t
 fill ~10 ~10 ~10 ~-10 ~-10 ~-10 wall_torch[facing=south] replace redstone_wall_torch[facing=south]
 fill ~10 ~10 ~10 ~-10 ~-10 ~-10 wall_torch[facing=east] replace redstone_wall_torch[facing=east]
 fill ~10 ~10 ~10 ~-10 ~-10 ~-10 wall_torch[facing=west] replace redstone_wall_torch[facing=west]
+fill ~10 ~10 ~10 ~-10 ~-10 ~-10 sand replace red_concrete_powder
+fill ~10 ~10 ~10 ~-10 ~-10 ~-10 netherrack replace red_concrete
+fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air replace sculk_vein
+

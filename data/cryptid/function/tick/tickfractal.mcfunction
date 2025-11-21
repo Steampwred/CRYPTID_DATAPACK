@@ -41,7 +41,7 @@ execute unless block ~ ~20 ~ air run function cryptid:events/quietkill
 
 ##spiral
 execute if entity @s[tag=cryptid.activatedfractal] run execute positioned ~ ~10 ~ run setblock ^1 ^6 ^7 minecraft:red_terracotta
-execute if entity @s[tag=cryptid.activatedfractal] run execute positioned ~ ~10 ~ run setblock ^4 ^3 ^1 minecraft:crimson_nylium 
+execute if entity @s[tag=cryptid.activatedfractal] run execute positioned ~ ~10 ~ run setblock ^4 ^3 ^1 minecraft:crimson_nylium
 execute if entity @s[tag=cryptid.activatedfractal] run execute positioned ~ ~10 ~ run setblock ^2 ^-2 ^-1 minecraft:red_terracotta
 
 
