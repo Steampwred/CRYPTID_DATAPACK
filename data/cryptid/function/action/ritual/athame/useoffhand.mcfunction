@@ -1,10 +1,5 @@
-## Initialize raycast
-summon marker ~ ~ ~ {Tags:["cryptid.athameraycast"],PersistenceRequired:1}
-
-scoreboard players set @e[type=marker,tag=cryptid.athameraycast,limit=1,sort=nearest] cryptid.range 50
-
-execute as @e[type=marker,tag=cryptid.athameraycast,limit=1,sort=nearest] rotated as @p run function cryptid:action/ritual/athame/ohandraycast
-
+execute as @e[distance=..10,type=zombie,tag=cryptid.orifice] at @s run function cryptid:action/ritual/ritualstart
+# schedual the function for thematic delay
 
 # Player effects
 
