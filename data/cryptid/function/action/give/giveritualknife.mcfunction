@@ -1,0 +1,1 @@
+give @s warped_fungus_on_a_stick[custom_name='["",{"text":"Cerimonial Athame","italic":false,"color":"red"}]',lore=['["",{"text":"The Sacrifice.","italic":false,"color":"gray"}]','[""]','[""]','["",{"text":"<Right Click> ","italic":false,"color":"dark_red"}]'],custom_model_data=1006,custom_data={cryptid.item:1, cryptid.athame:1}]
