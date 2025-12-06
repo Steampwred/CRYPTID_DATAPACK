@@ -101,6 +101,7 @@ scoreboard players set @a cryptid.shotgunammo2 0
 scoreboard players set @a cryptid.shotgunammo3 0
 scoreboard players set @a cryptid.shotguntimer 0
 
+scoreboard objectives add cryptid.ritual.stability dummy
 
 team add cryptid.glitch
 team modify cryptid.glitch nametagVisibility always
