@@ -1,4 +1,4 @@
-damage @s 7 minecraft:out_of_world by @s
+damage @s[gamemode=!creative] 7 minecraft:out_of_world by @s
 
 particle minecraft:poof ~ ~ ~ 2 2 2 0.01 600 force
 
@@ -16,4 +16,6 @@ fill ~10 ~10 ~10 ~-10 ~-10 ~-10 wall_torch[facing=west] replace redstone_wall_to
 fill ~10 ~10 ~10 ~-10 ~-10 ~-10 sand replace red_concrete_powder
 fill ~10 ~10 ~10 ~-10 ~-10 ~-10 netherrack replace red_concrete
 fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air replace sculk_vein
+
+execute as @e[tag=cryptid.worm, distance=..8] at @s run function cryptid:action/general/explodedeath
 

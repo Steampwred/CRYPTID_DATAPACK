@@ -12,9 +12,12 @@ execute unless block ~ ~-1 ~ air run setblock ~ ~-1 ~ minecraft:netherrack
 
 particle block{block_state:{Name:nether_wart_block}} ~ ~0.2 ~ 0 0 0 0 1
 
-fill ~3 ~3 ~3 ~-3 ~-3 ~-3 nether_wart_block replace #logs
+#fill ~3 ~3 ~3 ~-3 ~-3 ~-3 nether_wart_block replace #logs
 
-fill ~3 ~3 ~3 ~-3 ~-3 ~-3 red_terracotta replace #base_stone_overworld
+#fill ~3 ~3 ~3 ~-3 ~-3 ~-3 red_terracotta replace #base_stone_overworld
+
+place feature cryptid:convertfleshsmall
+execute positioned ~ ~5 ~ run place feature cryptid:convertfleshsmall
 
 execute as @e[type=item,distance=0..4] run setblock ~ ~-1 ~ nether_wart_block
 execute as @e[type=item,distance=0..4] run function cryptid:events/quietkill
