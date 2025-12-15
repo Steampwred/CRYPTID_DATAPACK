@@ -19,7 +19,7 @@ particle block{block_state:{Name:nether_wart_block}} ~ ~0.2 ~ 0 0 0 0 1
 place feature cryptid:convertfleshsmall
 execute positioned ~ ~5 ~ run place feature cryptid:convertfleshsmall
 
-execute as @e[type=item,distance=0..4] run setblock ~ ~-1 ~ nether_wart_block
-execute as @e[type=item,distance=0..4] run function cryptid:events/quietkill
+execute as @e[type=item,distance=0..4] at @s run setblock ~ ~-1 ~ nether_wart_block
+execute as @e[type=item,distance=0..4] at @s run function cryptid:events/quietkill
 
 damage @s 0 minecraft:player_attack by @p

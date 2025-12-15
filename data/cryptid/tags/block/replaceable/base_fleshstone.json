@@ -2,6 +2,7 @@
   "values": [
     "#minecraft:base_stone_overworld",
     "calcite",
-    "dripstone_block"
+    "dripstone_block",
+    "cobblestone"
   ]
 }
