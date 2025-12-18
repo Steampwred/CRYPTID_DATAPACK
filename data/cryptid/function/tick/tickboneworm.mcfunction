@@ -19,7 +19,10 @@ particle block{block_state:{Name:nether_wart_block}} ~ ~0.2 ~ 0 0 0 0 2
 place feature cryptid:convertfleshsmall
 execute positioned ~ ~5 ~ run place feature cryptid:convertfleshsmall
 
-execute as @e[type=item,distance=0..4] at @s run setblock ~ ~-1 ~ nether_wart_block
-execute as @e[type=item,distance=0..4] at @s run function cryptid:events/quietkill
+#Infest single
+execute as @e[type=!player, type=!#cryptid:projectiles, type=!item, type=!villager, type=!armor_stand, tag=!cryptid, type=!marker, distance=..5] run function cryptid:action/general/infestsingle
+
+##Absorb items on the ground
+execute as @e[type=item,distance=0..4] run function cryptid:events/quietkill
 
 damage @s 0 minecraft:player_attack by @p

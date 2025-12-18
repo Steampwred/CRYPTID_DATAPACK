@@ -5,6 +5,4 @@ tag @s add cryptid.timer
 
 playsound minecraft:cryptid.torch.flicker ambient @a
 
-effect give @a[distance=0..4] blindness 2 2 true
-
-function cryptid:events/cryptid/flicker3
+effect give @a[distance=0..4] darkness 4 2 true

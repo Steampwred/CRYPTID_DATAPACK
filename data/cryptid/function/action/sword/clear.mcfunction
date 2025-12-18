@@ -12,5 +12,5 @@ fill ~10 ~10 ~10 ~-10 ~-10 ~-10 wall_torch[facing=west] replace redstone_wall_to
 execute positioned ~ ~-4 ~ run place feature cryptid:clearflesh.json
 execute positioned ~ ~5 ~ run place feature cryptid:clearflesh.json
 
-execute as @e[tag=cryptid.worm, distance=..8] at @s run function cryptid:action/general/explodedeath
+execute as @e[tag=cryptid.worm, distance=..7.5] at @s run function cryptid:action/general/explodedeath
 
