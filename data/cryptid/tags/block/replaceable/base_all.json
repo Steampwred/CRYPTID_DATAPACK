@@ -5,7 +5,9 @@
     "#cryptid:replaceable/base_bloodstone",
     "#cryptid:replaceable/base_bloodgrass",
     "#cryptid:replaceable/base_fleshstone",
-    "#cryptid:replaceable/base_tendon_mass"
+    "#cryptid:replaceable/base_tendon_mass",
+    "#small_flowers",
+    "short_grass"
 
     ]
 }

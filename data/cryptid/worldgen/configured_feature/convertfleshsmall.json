@@ -33,7 +33,7 @@
             "type": "minecraft:weighted_state_provider",
             "entries": [
               {
-                "weight": 5,
+                "weight": 10,
                 "data": {
                   "Name": "crimson_nylium"
                 }
@@ -41,7 +41,7 @@
               {
                 "weight": 1,
                 "data": {
-                  "Name": "air"
+                  "Name": "netherrack"
                 }
               }
             ]
@@ -93,33 +93,54 @@
             "state": {
               "Name": "red_concrete"
             }
+          }          
+        },
+        {
+          "if_true": {
+            "type": "minecraft:any_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_block_tag",
+                "tag": "minecraft:small_flowers"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "short_grass"
+              }
+            ]
+          },
+          "then": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 0,
+                "data": {
+                  "Name": "crimson_fungus"
+                }
+              },
+              {
+                "weight": 2,
+                "data": {
+                  "Name": "crimson_roots"
+                }
+              }
+            ]
           }
         }
       ]
     },
     "radius": {
       "type": "minecraft:uniform",
-      "min_inclusive": 0,
-      "max_inclusive": 3
+      "max_inclusive": 3,
+      "min_inclusive": 0
     },
     "half_height": 4,
 
 
 
     "target": {
-      "type": "minecraft:any_of",
-      "predicates": [
-        {
-          "type": "minecraft:matching_blocks",
-          "blocks": [
-            "minecraft:seagrass"
-          ]
-        },
-        {
           "type": "minecraft:matching_block_tag",
           "tag": "cryptid:replaceable/base_all"
-        }
-      ]
     }
   }
 }

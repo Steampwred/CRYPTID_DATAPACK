@@ -1,6 +1,7 @@
 {
   "values": [
     "#minecraft:leaves",
-    "#small_flowers"
+    "red_mushroom_block",
+    "brown_mushroom_block"
   ]
 }

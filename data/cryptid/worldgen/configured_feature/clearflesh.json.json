@@ -103,6 +103,18 @@
               "Name": "minecraft:torch"
             }
           }
+        },
+        {
+          "if_true": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:crimson_roots"
+          },
+          "then": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:air"
+            }
+          }
         }
       ]
     },
@@ -123,7 +135,8 @@
         "minecraft:red_concrete",
         "minecraft:redstone_torch",
         "minecraft:weeping_vines",
-        "minecraft:sculk_vein"
+        "minecraft:sculk_vein",
+        "crimson_roots"
       ]
     }
   }
