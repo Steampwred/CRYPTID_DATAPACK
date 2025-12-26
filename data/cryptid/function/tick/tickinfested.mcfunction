@@ -15,7 +15,7 @@ execute if entity @s[tag=killinfested] at @s run particle block{block_state:{Nam
 execute if entity @s[tag=killinfested] at @s run scoreboard players add @s cryptid.infestedtimer 1
 
 
-##initcommands
+##init Death
 execute if score @s cryptid.player.random matches 1 run playsound minecraft:entity.warden.roar master @a ~ ~ ~ 1 0.1
 
 execute if score @s cryptid.player.random matches 1 run tag @s add killinfested
@@ -23,6 +23,11 @@ execute if score @s cryptid.player.random matches 1 run effect give @s wither in
 
 execute if score @s cryptid.player.random matches 1 run effect give @s minecraft:levitation infinite 1 true
 execute if score @s cryptid.player.random matches 1 run particle dust_pillar{block_state:{Name:redstone_block}} ~ ~1 ~ .2 .2 .2 .0001 400 normal
+
+##Init corruption
+execute if score @s[tag=!killinfested] cryptid.player.random matches 2 run playsound minecraft:cryptid.snap.ambient master @a ~ ~ ~ 1 0.1
+execute if score @s[tag=!killinfested] cryptid.player.random matches 2 run particle dust_pillar{block_state:{Name:nether_wart_block}} ~ ~1 ~ 0 .2 0 .0001 90 normal
+execute if score @s[tag=!killinfested] cryptid.player.random matches 2 run function cryptid:action/hostile/inithostile
 
 ##deathcommands
 execute if score @s cryptid.infestedtimer matches 60.. run playsound minecraft:entity.warden.death master @a ~ ~ ~ 1 0.1

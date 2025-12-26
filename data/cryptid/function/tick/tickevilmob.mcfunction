@@ -4,7 +4,7 @@ execute if score @s cryptid.player.random matches 1..3 run function cryptid:even
 
 execute if score @s cryptid.player.random matches 10 run function cryptid:action/hostile/unhostile
 
-execute if score @s cryptid.player.random matches 10 run kill @e[tag=cryptid.evilcore, type=minecraft:zombified_piglin, sort=nearest, limit=1]
+execute if score @s cryptid.player.random matches 10 run tp @e[tag=cryptid.evilcore, type=minecraft:zombified_piglin, sort=nearest, limit=1] ~ ~-100 ~
 
 execute unless entity @e[tag=cryptid.evilcore, type=zombified_piglin, sort=nearest, limit=1, distance=0..2] run function cryptid:action/hostile/unhostile
 

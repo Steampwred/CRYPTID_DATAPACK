@@ -3,11 +3,10 @@ execute if score @s cryptid.player.random matches 1 run tellraw @s {"text":"Noth
 
 
 
-tag @e[type=!player, sort=nearest, type=!#cryptid:projectiles, type=!item, type=!villager, type=!armor_stand, distance=1..20,limit=3] add cryptid.infested
-tag @e[type=!player, sort=nearest, type=!#cryptid:projectiles, type=!item, type=!villager, type=!armor_stand, distance=1..20,limit=3] add cryptid
+tag @e[type=!player, sort=nearest, type=!#cryptid:projectiles, type=!item, type=!villager, type=!armor_stand, distance=1..20,limit=3,tag=!cryptid] add cryptid.infested
+tag @e[type=!player, sort=nearest, type=!#cryptid:projectiles, type=!item, type=!villager, type=!armor_stand, distance=1..20,limit=3,tag=!cryptid] add cryptid
 
 execute as @e[type=!player,tag=cryptid.infested, tag=!cryptid.markerapplied] at @s run function cryptid:action/general/spawntickmarker {"name":"tickinfested"}
-
 
 
 function cryptid:events/cryptid/flicker3

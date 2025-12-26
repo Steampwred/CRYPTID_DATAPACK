@@ -1,5 +1,16 @@
-execute store result score @s cryptid.player.random run random value 1..5
-setblock ~ ~-1 ~ minecraft:grass_block
+execute store result score @s cryptid.player.random run random value 1..7
+
+#execute positioned ~4 ~ ~4 run place feature cryptid:convertflesh
+#execute positioned ~4 ~ ~4 run place feature cryptid:convertflesh
+#execute positioned ~-4 ~ ~4 run place feature cryptid:convertflesh
+#execute positioned ~-4 ~ ~-4 run place feature cryptid:convertflesh
+#execute positioned ~ ~5 ~ run place feature cryptid:convertflesh
+
+setblock ~ ~-1 ~ grass_block
+
+
+
+execute if score @s cryptid.player.random matches 5..7 run place feature cryptid:weepingwillow
 
 execute if score @s cryptid.player.random matches 1 run place feature minecraft:fancy_oak
 execute if score @s cryptid.player.random matches 2 run place feature minecraft:spruce

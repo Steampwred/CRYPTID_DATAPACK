@@ -17,7 +17,7 @@ execute if items entity @s contents netherrack[minecraft:custom_data~{deadsmallt
 execute if block ~ ~ ~ fire if items entity @s contents sugar[minecraft:custom_data~{cryptid.heartfrag:1b}] run function cryptid:action/cleanse
 
 ##Revive sacrifice
-execute if predicate cryptid:check_revive_alter if items entity @s contents sugar[minecraft:custom_data~{cryptid.fullheart:1b}] run function cryptid:events/cryptid/returnedsoul
+#execute if predicate cryptid:check_revive_alter if items entity @s contents sugar[minecraft:custom_data~{cryptid.fullheart:1b}] run function cryptid:events/cryptid/returnedsoul
 #-Revive trigger
 execute if items entity @s contents potion[minecraft:custom_data~{cryptid.revivetrigger:1b}] at @s run function cryptid:action/reviveplayer
 

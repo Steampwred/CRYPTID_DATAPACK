@@ -12,3 +12,5 @@ execute if entity @p[distance=0..10] if score @s cryptid.player.random matches 5
 execute if score @s cryptid.player.random matches 1..5 run function cryptid:action/cursedevent
 
 execute as @s[tag=cursed.tokill] run function cryptid:events/cryptid/sethostile
+##cursed to kill doesnt actually kill anything adding this just in creatures
+execute as @s[tag=cursed.tokill] at @s run function cryptid:action/general/explodedeath
