@@ -1,4 +1,8 @@
 execute unless block ~ ~1 ~ #cryptid:occultfocus as @s[tag=ritual.translate] run tellraw @a[distance=..10] {"text":"Ritual Focus Invalid","color":"dark_purple","bold":true}
+execute if block ~ ~1 ~ #cryptid:occultfocus run scoreboard players add @s cryptid.ritual.focicount 1
+
+execute if score @s cryptid.ritual.focicount matches 6.. run fill ~ ~ ~ ~ ~1 ~ air destroy
+execute if score @s[tag=ritual.translate] cryptid.ritual.focicount matches 6.. run tellraw @a[distance=..10] {"text":"Maximum Foci Reached","color":"dark_purple","bold":true}
 
 # Tier 0 Focus Blocks
 execute if block ~ ~1 ~ redstone_block run scoreboard players remove @s cryptid.ritual.stability 1

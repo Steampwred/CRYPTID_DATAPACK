@@ -1,0 +1,1 @@
+function cryptid:rituals/result/_enraged

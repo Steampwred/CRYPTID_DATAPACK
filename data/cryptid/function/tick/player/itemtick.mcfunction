@@ -28,8 +28,8 @@ execute as @s at @s[scores={cryptid.click=1}] if items entity @s weapon.* minecr
 execute if items entity @s weapon.mainhand minecraft:villager_spawn_egg[minecraft:custom_model_data=1319] run execute if entity @e[tag=!cryptid.lessertotem,tag=cryptid, distance=0..5] at @s run function cryptid:action/repell
 
 ## Tick knife
-execute as @s at @s[scores={cryptid.click=1}] if items entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.athame:1}] anchored eyes positioned ^ ^ ^ run function cryptid:rituals/action/athame/usemainhand
-execute as @s at @s[scores={cryptid.click=1}] if items entity @s weapon.offhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.athame:1}] anchored eyes positioned ^ ^ ^ run function cryptid:rituals/action/athame/useoffhand
+execute as @s at @s[scores={cryptid.click=1}] if items entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.athame:1}] anchored eyes positioned ^ ^ ^ run function cryptid:rituals/athame/usemainhand
+execute as @s at @s[scores={cryptid.click=1}] if items entity @s weapon.offhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.athame:1}] anchored eyes positioned ^ ^ ^ run function cryptid:rituals/athame/useoffhand
 
 
 ##read totem
