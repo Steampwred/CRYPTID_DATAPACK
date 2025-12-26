@@ -63,6 +63,12 @@ execute as @s if items entity @s hotbar.* sugar[minecraft:custom_data~{cryptid.c
 execute as @s if items entity @s inventory.* sugar[minecraft:custom_data~{cryptid.compass:1b}] run tag @s remove cryptid.missingradio
 
 
+
+##axe envets tick
+execute as @s at @s[scores={cryptid.click=1}] if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.axe:1b}] run function cryptid:action/axe/swing
+
+
+
 ####machete and warped fungus ticks item checks
 
 execute as @s at @s[scores={cryptid.player.crouch=1..,cryptid.click=1}] if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.blade:1}] run function cryptid:action/sword/clear
