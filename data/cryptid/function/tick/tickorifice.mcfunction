@@ -10,24 +10,18 @@ execute if score @s cryptid.timer matches 20..41 run tp @s ~ ~0.2 ~ facing entit
 execute if score @s cryptid.timer matches 1..20 run tp @s ~ ~0.05 ~ facing entity @p
 execute if score @s cryptid.timer matches 0 run tp @s ~ ~ ~ facing entity @p
 
-#### Ritual Initiate (timer value 200-300)
-# Check cardinal and ordinal directions for ritual (could be optimeized with periodic checks based on global heartbeat, + # of checks counter)
-execute if score @s cryptid.timer matches 300 run function cryptid:rituals/initial/checkfocus
-execute if score @s cryptid.timer matches 290 run function cryptid:rituals/initial/checkfocus
-execute if score @s cryptid.timer matches 280 run function cryptid:rituals/initial/checkfocus
-execute if score @s cryptid.timer matches 270 run function cryptid:rituals/initial/checkfocus
-execute if score @s cryptid.timer matches 260 run function cryptid:rituals/initial/checkfocus
-execute if score @s cryptid.timer matches 250 run function cryptid:rituals/initial/checkfocus
-execute if score @s cryptid.timer matches 240 run function cryptid:rituals/initial/checkfocus
-execute if score @s cryptid.timer matches 230 run function cryptid:rituals/initial/checkfocus
+#### Ritual Initiate (timer value 200-400)
+# Check cardinal and ordinal directions for ritual
+execute if score @s[scores={cryptid.ritual.turns=..8}] cryptid.timer matches 208..400 if score .heartbeat cryptid.globalevent matches 5 run function cryptid:rituals/initial/checkfocus
+# E-table translate
+execute if score @s cryptid.timer matches 205 run function cryptid:rituals/initial/checkalter1
 
 #### Ritual Activly running (timer value 100-200)
-execute if score @s cryptid.timer matches 100..200 if score .heartbeat cryptid.globalevent matches 18 run tp @s ~ ~ ~ facing entity @e[sort=random,limit=1]
-execute if score @s cryptid.timer matches 100..200 run particle dust_pillar{block_state:{Name:nether_wart_block}} ~ ~-4 ~ 2 0 2 0 10
-execute if score @s[tag=ritual.translate] cryptid.timer matches 110 run tellraw @a[distance=..10] {"text":"Ritual Stability: ","color":"dark_purple","bold":true,"extra":[{"score":{"name":"@s","objective":"cryptid.ritual.stability"},"color":"aqua","bold":false}]}
+execute if score @s cryptid.timer matches 100..200 if score .heartbeat cryptid.globalevent matches 1..12 run tp @s ~ ~ ~ facing entity @p
+execute if score @s cryptid.timer matches 100..400 run particle dust_pillar{block_state:{Name:nether_wart_block}} ~ ~-4 ~ 2 0 2 0 10
 
 # Generate Random Number for Ritual Outcome
-execute if score @s cryptid.timer matches 100 run function cryptid:rituals/initial/checkalter
+execute if score @s cryptid.timer matches 100 run function cryptid:rituals/result/checkalter2
 execute if score @s cryptid.timer matches 100 run function cryptid:rituals/random/numbergenerator
 
 

@@ -12,6 +12,6 @@ execute store result storage cryptid:ritual range.x int 1 run scoreboard players
 
 function cryptid:rituals/random/macrovariable with storage cryptid:ritual range
 
-execute if score @s cryptid.ritual.probability matches ..30 run tag @s add ritual.failure
-execute if score @s cryptid.ritual.probability matches 31.. run tag @s add ritual.success
+execute if score @s cryptid.ritual.probability matches ..30 run function cryptid:rituals/result/failure
+execute if score @s cryptid.ritual.probability matches 31.. run function cryptid:rituals/result/success
 scoreboard players set @s cryptid.timer 0

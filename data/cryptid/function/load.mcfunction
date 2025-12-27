@@ -105,6 +105,7 @@ scoreboard objectives add cryptid.ritual.stability dummy
 scoreboard objectives add cryptid.ritual.focicount dummy
 scoreboard objectives add cryptid.ritualrangecap dummy
 scoreboard objectives add cryptid.ritual.probability dummy
+scoreboard objectives add cryptid.ritual.turns dummy
 
 team add cryptid.glitch
 team modify cryptid.glitch nametagVisibility always

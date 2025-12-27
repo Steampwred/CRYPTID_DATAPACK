@@ -2,5 +2,5 @@
 function cryptid:rituals/result/_enraged
 
 ## function
-fill ~1 ~-4 ~1 ~-1 ~-1 ~-1 air destroy
+tag @s add ritual.failure
 playsound minecraft:entity.ender_dragon.growl hostile @a

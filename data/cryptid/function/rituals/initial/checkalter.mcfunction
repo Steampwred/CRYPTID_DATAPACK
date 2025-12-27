@@ -1,4 +1,0 @@
-execute anchored feet positioned ~ ~-4 ~ unless block ~ ~ ~ air run particle dust_pillar{block_state:{Name:red_concrete}} ~ ~1 ~ 2.5 0 2.5 0 100
-execute anchored feet positioned ~ ~-4 ~ unless block ~ ~ ~ air run playsound minecraft:ambient.nether_wastes.mood master @a ~ ~ ~ 1.4 1.2
-
-execute anchored feet positioned ~ ~-2 ~ if predicate cryptid:alter/revival run scoreboard players remove @s cryptid.ritual.stability 5
