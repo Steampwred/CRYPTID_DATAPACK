@@ -1,6 +1,6 @@
 execute if entity @s[nbt={HurtTime:9s}] run function cryptid:action/heart/damageheart
-
-
+# bugged for now, requires tick marker to check death 
+#execute if entity @s[nbt={DeathTime:1s}] run function cryptid:action/heart/heartdeath
 
 execute store result score @s cryptid.random run random value 1..3000
 
