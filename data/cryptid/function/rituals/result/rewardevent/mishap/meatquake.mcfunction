@@ -1,4 +1,4 @@
-place feature cryptid:convertflesh
+place feature cryptid:convertflesh ~ ~-4 ~
 
 summon minecraft:armor_stand ~ ~-4 ~ {Invisible:1b, Tags:["cryptid","cryptid.quake.surface"]}
 

@@ -14,15 +14,21 @@ execute if score @s cryptid.timer matches 0 run tp @s ~ ~ ~ facing entity @p
 # Check cardinal and ordinal directions for ritual
 execute if score @s[scores={cryptid.ritual.turns=..8}] cryptid.timer matches 208..400 if score .heartbeat cryptid.globalevent matches 5 run function cryptid:rituals/initial/checkfocus
 # E-table translate
-execute if score @s cryptid.timer matches 205 run function cryptid:rituals/initial/checkalter1
+execute if score @s cryptid.timer matches 205 run function cryptid:rituals/initial/identifyalter
+
 
 #### Ritual Activly running (timer value 100-200)
 execute if score @s cryptid.timer matches 100..200 if score .heartbeat cryptid.globalevent matches 1..12 run tp @s ~ ~ ~ facing entity @p
 execute if score @s cryptid.timer matches 100..400 run particle dust_pillar{block_state:{Name:nether_wart_block}} ~ ~-4 ~ 2 0 2 0 10
 
+
+
 # Generate Random Number for Ritual Outcome
-execute if score @s cryptid.timer matches 100 run function cryptid:rituals/result/checkalter2
 execute if score @s cryptid.timer matches 100 run function cryptid:rituals/random/numbergenerator
+
+## Checks that all ritual conditions are met via a MACRO
+execute if score @s cryptid.timer matches 100 run function cryptid:rituals/result/macrocheck with storage cryptid:ritual alter
+
 
 ## Outcome Result Handling (timer value -100 - -200)
 # Fail
