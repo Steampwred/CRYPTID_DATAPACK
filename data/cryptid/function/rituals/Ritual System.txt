@@ -1,0 +1,60 @@
+------------------------< Ritual System Process >------------------------
+
+Each ritual consists of 3 main parts:  The Orifice, The Alter,  and The Offerings. 
+for more advanced &/or stable rituals, The Summoning Circle and Modifier Blocks are required. 
+
+ 
+The Orifice 
+    Entity that stores data, and origin where ritual commands are executed from 
+
+
+The Alter 
+    Unique block structure built at the center under the orifice. Serves as a key that tells the orifice which Ritual type is selected. 
+    Ritual Type is stored and later referenced through a macro to provide the corresponding reward function 
+
+
+The Offerings 
+    Placed blocks, dropped items, and mobs within the range of the ritual when activated become offerings. this is how the orifice detects material components for an induvial ritual type. 
+    When preforming a ritual, you need the required offerings for it to be successful. This is used mainly in crafting or upgrading cryptid items 
+    Technically the Alter is a placed block offering although, these blocks are typically not consumed as they only serve to select a Ritual Type. 
+
+
+
+The Summoning Circle 
+    The "floor" which the ritual takes place on. A physical block design that if present tells the Orifice that the ritual is organized and less severe mishaps can occur 
+    If present Orifice will check 8 points spaced 45 degrees each. These are the Modifier slots. 
+
+
+Modifier Slots 
+    Modifier Slots and the associated Modifier Blocks allow players a few customization options for a ritual. Essentially these are futureproofing for whenever we want to add new mechanics to rituals. 
+
+Modifier Blocks and their effects:
+
+- Lodestone, focus block that takes another material block (Occult focus) place on top of the lodestone. The Occult Foci increase or decrease the probability of success, but, are consumable. Up to 5 lodestones can be used at max. 
+
+- Enchanting table, adds the translate tag to the orifice. This provides additional information throughout the duration of a ritual intended to help players learn how to use the system and, fix misplaced blocks. 
+
+ 
+
+ 
+
+File organisation structure 
+
+When calculating a ritual, its done in phases, each phase and its respective functions are ordered first to last in the order they are called in the tickorifice function. 
+
+
+In function/rituals folder as such in order
+
+    Anthame             (The Ritual Knife, used to summon the orifice and Initiate a Ritual)
+
+    Initial             (Inital checks that store data about the selected ritual and its modifiers)
+
+    Random              (Calculation and final check phase)
+
+    Result              (Handles the various Outputs, succeses and failures along with individual ritual rewards)
+
+ 
+
+Notes
+- alter and circle check are defined in predicates
+- orifice code is located outside /rituals, it is under cryptid/function/tick/tickorifice.mcfunction
