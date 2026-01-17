@@ -8,8 +8,8 @@ scoreboard players set @s cryptid.ritual.turns 0
 
 execute positioned ~ ~-4 ~ if predicate cryptid:checkritual_etable run function cryptid:rituals/initial/blockcheck/enchanting_table
 
-tag @e[type=#cryptid:innocent,distance=..4] add sacrifice.mob
-tag @e[type=item,distance=..4] add sacrifice.item
+tag @e[type=#cryptid:innocent,distance=..8] add sacrifice.mob
+tag @e[type=item,distance=..8] add sacrifice.item
 
 
 

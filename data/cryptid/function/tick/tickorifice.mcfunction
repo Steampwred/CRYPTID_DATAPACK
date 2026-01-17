@@ -22,7 +22,10 @@ execute if score @s cryptid.timer matches 203 run function cryptid:rituals/initi
 execute if score @s cryptid.timer matches 100..200 if score .heartbeat cryptid.globalevent matches 1..12 run tp @s ~ ~ ~ facing entity @p
 execute if score @s cryptid.timer matches 100..400 run particle dust_pillar{block_state:{Name:nether_wart_block}} ~ ~-4 ~ 2 0 2 0 10
 
+execute as @e[tag=sacrifice.mob,distance=..10] at @s run tp @s ~ ~ ~ facing entity @n[tag=cryptid.orifice]
+execute as @e[tag=sacrifice.mob,distance=..10] at @s anchored eyes positioned ^ ^-0.00035 ^ run particle minecraft:item{item:{id:redstone_block}} ^ ^-0.2 ^0.9 ^ ^300000 ^1000000 0.0000004 0
 
+execute as @e[tag=sacrifice.item,distance=..10] at @s anchored eyes run particle dust{color:[1,0,0],scale:2} ~ ~0.2 ~ 0 0 0 1 1
 
 # Generate Random Number for Ritual Outcome and decide result in 1 Tick
 execute if score @s cryptid.timer matches 100 run function cryptid:rituals/random/numbergenerator
