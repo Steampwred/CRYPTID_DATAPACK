@@ -8,9 +8,14 @@ scoreboard players set @s cryptid.ritual.turns 0
 
 execute positioned ~ ~-4 ~ if predicate cryptid:checkritual_etable run function cryptid:rituals/initial/blockcheck/enchanting_table
 
+tag @e[type=#cryptid:innocent,distance=..4] add sacrifice.mob
+tag @e[type=item,distance=..4] add sacrifice.item
+
+
+
 ## Initaite Ritual With Circle
 tp @s ~ ~ ~ 0 0
-execute positioned ~ ~-5 ~ if predicate cryptid:checkritual_circle run scoreboard players set @s cryptid.timer 400
+execute positioned ~ ~-5 ~ if predicate cryptid:checkritual_circle run scoreboard players set @s cryptid.timer 300
 
 ### Initaite Ritual Without Circle
 execute positioned ~ ~-5 ~ unless predicate cryptid:checkritual_circle run kill @s

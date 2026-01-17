@@ -7,6 +7,17 @@ tag @s add ritual.failure
 scoreboard players remove @a[distance=..30] cryptid.player.harmony 10000
 
 ## function
-execute if score @s cryptid.ritual.probability matches 20..30 run function cryptid:rituals/result/failurelow
-execute if score @s cryptid.ritual.probability matches 5..20 run function cryptid:rituals/result/failuremid
-execute if score @s cryptid.ritual.probability matches ..5 run function cryptid:rituals/result/failurehigh
+
+execute store result score @s cryptid.random run random value 1..2
+
+execute if score @s cryptid.random matches 1 run function cryptid:rituals/ritualmishap/low1
+
+## low Severity 20-30
+execute if score @s cryptid.ritual.probability matches 20..30 if score @s cryptid.random matches 1 run function cryptid:rituals/result/rewardevent/mishap/low1
+execute if score @s cryptid.ritual.probability matches 20..30 if score @s cryptid.random matches 2 run function cryptid:rituals/result/rewardevent/mishap/low2
+## Medium Severity 5-20
+execute if score @s cryptid.ritual.probability matches 5..20 if score @s cryptid.random matches 1 run function cryptid:rituals/result/rewardevent/mishap/mid1
+execute if score @s cryptid.ritual.probability matches 5..20 if score @s cryptid.random matches 2 run function cryptid:rituals/result/rewardevent/mishap/mid2
+## High Severity 0-5
+execute if score @s cryptid.ritual.probability matches ..5 if score @s cryptid.random matches 1 run function cryptid:rituals/result/rewardevent/mishap/high
+execute if score @s cryptid.ritual.probability matches ..5 if score @s cryptid.random matches 2 run function cryptid:rituals/result/rewardevent/mishap/high2

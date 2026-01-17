@@ -12,9 +12,10 @@ execute if score @s cryptid.timer matches 0 run tp @s ~ ~ ~ facing entity @p
 
 #### Ritual Initiate (timer value 200-400)
 # Check cardinal and ordinal directions for ritual
-execute if score @s[scores={cryptid.ritual.turns=..8}] cryptid.timer matches 208..400 if score .heartbeat cryptid.globalevent matches 5 run function cryptid:rituals/initial/checkfocus
+execute if score @s[scores={cryptid.ritual.turns=..8}] cryptid.timer matches 204..300 if score .heartbeat cryptid.globalevent matches 5 run function cryptid:rituals/initial/checkfocus
+execute if score @s[scores={cryptid.ritual.turns=..8}] cryptid.timer matches 204..300 if score .heartbeat cryptid.globalevent matches 17 run function cryptid:rituals/initial/checkfocus
 # E-table translate
-execute if score @s cryptid.timer matches 205 run function cryptid:rituals/initial/identifyalter
+execute if score @s cryptid.timer matches 203 run function cryptid:rituals/initial/identifyalter
 
 
 #### Ritual Activly running (timer value 100-200)
@@ -23,20 +24,16 @@ execute if score @s cryptid.timer matches 100..400 run particle dust_pillar{bloc
 
 
 
-# Generate Random Number for Ritual Outcome
+# Generate Random Number for Ritual Outcome and decide result in 1 Tick
 execute if score @s cryptid.timer matches 100 run function cryptid:rituals/random/numbergenerator
 
-## Checks that all ritual conditions are met via a MACRO
-execute if score @s cryptid.timer matches 100 run function cryptid:rituals/result/macrocheck with storage cryptid:ritual alter
-
-
-## Outcome Result Handling (timer value -100 - -200)
-# Fail
+## Outcome Animation Handling (timer value -100 - -200)
+# Fail animation
 execute if score @s[tag=ritual.failure] cryptid.timer matches -120..-100 run tp @s ~ ~0.5 ~
 execute if score @s[tag=ritual.failure] cryptid.timer matches -200..-120 run tp @s ~ ~-0.6 ~
 execute if score @s[tag=ritual.failure] cryptid.timer matches -200 run kill @s
 
-# success
+# Success animation
 execute if score @s[tag=ritual.success] cryptid.timer matches -100 run playsound minecraft:cryptid.sword.spawn hostile @a
 execute if score @s[tag=ritual.success] cryptid.timer matches -120..-110 run tp @s ~ ~0.1 ~
 execute if score @s[tag=ritual.success] cryptid.timer matches -200..-120 run tp @s ~ ~-0.2 ~

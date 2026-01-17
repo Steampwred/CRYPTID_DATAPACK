@@ -1,0 +1,1 @@
+execute as @p run function cryptid:action/give/givevoidtotem

@@ -1,6 +1,5 @@
 
 tag @s add ritual.success
 
-## check for revival alter and reward our devout servant
-execute anchored feet positioned ~ ~-2 ~ if predicate cryptid:alter/revival run return run function cryptid:rituals/result/rewardevent/revival
-execute anchored feet positioned ~ ~-4 ~ if predicate cryptid:alter/voidtotem run return run function cryptid:rituals/result/rewardevent/voidtotem
+## Checks that all ritual conditions are met via a MACRO. This step runs the macro with the correct data context
+function cryptid:rituals/result/macrocheck with storage cryptid:ritual alter
