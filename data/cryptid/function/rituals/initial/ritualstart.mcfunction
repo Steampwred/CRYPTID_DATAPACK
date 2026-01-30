@@ -10,6 +10,7 @@ execute positioned ~ ~-4 ~ if predicate cryptid:checkritual_etable run function 
 
 tag @e[type=#cryptid:innocent,distance=..8] add sacrifice.mob
 tag @e[type=item,distance=..8] add sacrifice.item
+execute as @e[tag=sacrifice.item,type=item] run data merge entity @s {NoGravity:1b}
 
 
 
