@@ -8,3 +8,4 @@ playsound minecraft:music.credits ambient @a
 scoreboard players set cleared cryptid.globalevent 1
 
 execute as @a at @s run function cryptid:action/give/givehand
+bossbar set minecraft:cryptid.root players
