@@ -16,7 +16,7 @@
         "text": "[MODE] Secondary: ",
         "extra": [
           {
-            "text": "Paranormal Detection",
+            "text": "Harmony GUI",
             "color": "#a35252",
             "bold": false,
             "italic": false
@@ -50,40 +50,7 @@
         "color": "#672222",
         "bold": false,
         "italic": false
-      },
-      {
-        "text": ""
-      },
-      {
-        "text": "Cryptid Class: [",
-        "extra": [
-          {
-            "score": {
-              "objective": "cryptid.mob.class",
-              "name": "@e[tag=cryptid,sort=nearest,limit=1]"
-            },
-            "type": "score",
-            "extra": [
-              {
-                "text": "]",
-                "color": "#672222",
-                "bold": false,
-                "italic": false
-              }
-            ],
-            "color": "#c25151",
-            "bold": true,
-            "italic": false
-          }
-        ],
-        "color": "#672222",
-        "bold": false,
-        "italic": false
-      },
-      {
-        "text": ""
       }
-
     ],
     "mode": "replace_all",
     "conditions": []
@@ -94,7 +61,7 @@
       "cryptid.compass.status": 2,
       "cryptid.compass": 1,
       "cryptid.item": true,
-      "cryptid.firstcompass" : 0
+      "cryptid.firstcompass": 0
     }
   }
 ]
