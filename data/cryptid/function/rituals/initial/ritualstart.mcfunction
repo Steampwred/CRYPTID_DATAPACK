@@ -8,9 +8,8 @@ scoreboard players set @s cryptid.ritual.turns 0
 
 execute positioned ~ ~-4 ~ if predicate cryptid:checkritual_etable run function cryptid:rituals/initial/blockcheck/enchanting_table
 
-tag @e[type=#cryptid:innocent,distance=..8] add sacrifice.mob
-tag @e[type=item,distance=..8] add sacrifice.item
-execute as @e[tag=sacrifice.item,type=item] run data merge entity @s {NoGravity:1b}
+tag @e[type=#cryptid:innocent,distance=..5.25] add sacrifice.mob
+execute as @e[type=item,distance=..5.25] run data merge entity @s {NoGravity:1b,Tags:["sacrifice.item"]}
 
 
 
@@ -19,4 +18,4 @@ tp @s ~ ~ ~ 0 0
 execute positioned ~ ~-5 ~ if predicate cryptid:checkritual_circle run scoreboard players set @s cryptid.timer 300
 
 ### Initaite Ritual Without Circle
-execute positioned ~ ~-5 ~ unless predicate cryptid:checkritual_circle run kill @s
+execute positioned ~ ~-5 ~ unless predicate cryptid:checkritual_circle run function cryptid:action/general/grounddeath

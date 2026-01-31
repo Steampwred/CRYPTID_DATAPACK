@@ -1,3 +1,4 @@
+
 summon minecraft:zombie ~ ~-2 ~ {CustomName:'[{"text":"Orifice"}]', Silent:1b, NoAI:1b, Tags:["cryptid","cryptid.orifice"], ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]}
 effect give @e[type=minecraft:zombie, tag=cryptid.orifice] minecraft:invisibility infinite 1 true
 

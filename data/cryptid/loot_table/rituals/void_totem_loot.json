@@ -1,0 +1,27 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{cryptid.item:1,cryptid.voidtotem:1}",
+                "minecraft:custom_name": "[\"\",{\"text\":\"Void Protection Totem\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]",
+                "minecraft:lore": [
+                  "[\"\",{\"text\":\"Hold in mainhand to negate\",\"italic\":false,\"color\":\"dark_gray\"}]",
+                  "[\"\",{\"text\":\"the effects of the void. \",\"italic\":false,\"color\":\"dark_gray\"}]"
+                ],
+                "minecraft:custom_model_data": 1310
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
