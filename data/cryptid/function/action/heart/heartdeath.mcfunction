@@ -1,7 +1,7 @@
 particle block_marker{block_state:{Name:red_concrete}} ~ ~ ~ 0.8 0.8 0.8 0 20
 playsound minecraft:cryptid.mob.death ambient @a[distance=..20] ~ ~ ~ 1.5 0.8
 
-place feature cryptid:clearflesh.json ~ ~ ~ 
+place feature cryptid:clearflesh ~ ~ ~ 
 
 execute unless entity @e[type=vindicator,distance=5..40,tag=cryptid.vorheart] if score @p cryptid.player.harmony matches ..0 run scoreboard players set @s cryptid.player.harmony 0 
 
