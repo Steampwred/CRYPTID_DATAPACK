@@ -53,3 +53,4 @@ execute if score @s cryptid.timer matches 0 unless entity @p[distance=..12] run 
 
 ######### Timer
 execute unless score @s cryptid.timer matches 0 run scoreboard players remove @s cryptid.timer 1
+#execute unless score @s cryptid.timer matches 90 run scoreboard players remove @s cryptid.timer 1sum
