@@ -6,3 +6,4 @@ scoreboard players set @e[tag=cryptid.vorheart,type=vindicator] cryptid.mob.clas
 effect give @e[type=minecraft:vindicator, tag=cryptid.vorheart] minecraft:invisibility infinite 1 true
 
 
+execute as @e[type=vindicator, tag=cryptid.vorheart, tag=!cryptid.markerapplied] at @s run function cryptid:action/general/spawntickmarker {"name":"heart"}

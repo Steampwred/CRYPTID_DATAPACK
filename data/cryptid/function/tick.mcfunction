@@ -56,7 +56,7 @@ execute if score .global cryptid.worldtimer matches 25000.. if score count crypt
 execute if score count cryptid.heartcount > maxcount cryptid.heartcount run kill @e[tag=cryptid.vorheart,type=vindicator, sort=random, limit=1]
 
 ##tickhearts
-execute as @e[tag=cryptid.vorheart, type=minecraft:vindicator] at @s run function cryptid:tick/heart
+#execute as @e[tag=cryptid.vorheart, type=minecraft:vindicator] at @s run function cryptid:tick/heart
 
 ##event cap increase 1 per day
 execute if score .globaltime cryptid.time matches 1200 run function cryptid:action/world/dayincrease
