@@ -1,0 +1,291 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "[\"\",{\"text\":\"Artery Carver\",\"italic\":false,\"color\":\"red\"}]",
+                "minecraft:lore": [
+                  "[\"\",{\"text\":\"Carves through flesh with ease.\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[\"\"]",
+                  "[\"\",{\"text\":\"<Shift Right Click> \",\"italic\":false,\"color\":\"dark_red\"},{\"text\":\"- To look\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[\"\",{\"text\":\"in the direction of the nearest heart\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[\"\",{\"text\":\"at the cost of health. \",\"italic\":false,\"color\":\"gray\"}]"
+                ],
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "player.mining_efficiency",
+                      "amount": 3,
+                      "slot": "mainhand",
+                      "operation": "add_value",
+                      "id": "1747965469589"
+                    }
+                  ],
+                  "show_in_tooltip": false
+                },
+                "minecraft:tool": {
+                  "default_mining_speed": 1.5,
+                  "damage_per_block": 1,
+                  "rules": [
+                    {
+                      "blocks": [
+                        "netherrack",
+                        "nether_wart_block",
+                        "red_terracotta",
+                        "obsidian",
+                        "stone"
+                      ],
+                      "speed": 2,
+                      "correct_for_drops": true
+                    },
+                    {
+                      "blocks": [
+                        "iron_ore",
+                        "coal_ore",
+                        "gold_ore",
+                        "redstone_ore",
+                        "deepslate_iron_ore",
+                        "deepslate_gold_ore",
+                        "deepslate_redstone_ore",
+                        "deepslate_coal_ore"
+                      ],
+                      "speed": 1.5,
+                      "correct_for_drops": true
+                    }
+                  ]
+                },
+                "minecraft:max_damage": 600,
+                "minecraft:custom_model_data": 1305,
+                "minecraft:custom_data": "{cryptid.item:1b,cryptid.pickaxe:1}",
+                "minecraft:fire_resistant": {}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "[\"\",{\"text\":\"Portable Radar\",\"italic\":false,\"color\":\"red\"}]",
+                "minecraft:lore": [
+                  "[\"\",{\"text\":\"The Radar hums quietly in your hands.\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[\"\"]",
+                  "[\"\",{\"text\":\"Displays nearby Cryptids, and their \",\"italic\":false,\"color\":\"gray\"}]",
+                  "[\"\",{\"text\":\"threat class within a 150 block range.\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[\"\"]",
+                  "[\"\",{\"text\":\"<Right Click> \",\"italic\":false,\"color\":\"dark_red\"},{\"text\":\"- Identifies and \",\"italic\":false,\"color\":\"gray\"}]",
+                  "[\"\",{\"text\":\"points towards the closest Cryptid. \",\"italic\":false,\"color\":\"gray\"}]",
+                  "[\"\"]",
+                  "[\"\",{\"text\":\"\\\"Beware the past Tortured\\\"\",\"color\":\"red\"}]"
+                ],
+                "minecraft:custom_model_data": 1306,
+                "minecraft:custom_data": "{cryptid.item:1,cryptid.radar:1}"
+              }
+            }
+        ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:charged_projectiles": [
+                  {
+                    "id": "minecraft:firework_rocket",
+                    "count": 1,
+                    "components": {
+                      "minecraft:custom_model_data": 1300,
+                      "custom_data": {
+                        "cryptid.shotgunarrow": 1
+                      },
+                      "custom_name": "[\"\",{\"text\":\"Shrapnel round\",\"italic\":false}]"
+                    }
+                  }
+                ],
+                "minecraft:custom_name": "[\"\",{\"text\":\"Bloodsteel Shotgun\",\"italic\":false,\"color\":\"red\"}]",
+                "minecraft:lore": [
+                  "[\"\",{\"text\":\"Smells like copper\",\"italic\":false,\"color\":\"dark_red\"}]"
+                ],
+                "minecraft:custom_data": "{cryptid.shotgun:1,cryptid.shot:1,cryptid.item:1}",
+                "minecraft:custom_model_data": 1300
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",       
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "[\"\",{\"text\":\"Rusty Beartrap\",\"italic\":false,\"color\":\"red\"}]",
+                "minecraft:lore": [
+                  "[\"\",{\"text\":\"LEFT CLICK\",\"italic\":false,\"color\":\"yellow\",\"bold\":true},{\"text\":\" to place down.\",\"italic\":false,\"color\":\"dark_red\"}]",
+                  "[\"\",{\"text\":\"Break the block below to pick up.\",\"italic\":false,\"color\":\"dark_red\"}]",
+                  "[\"\",{\"text\":\"It's held together by scrap.\",\"italic\":false,\"color\":\"dark_gray\"}]"
+                ],
+                "minecraft:custom_model_data": 1307,
+                "minecraft:custom_data": "{cryptid.item:1,cryptid.beartrap:1}"
+              }
+            },
+            {
+                "function": "set_count",
+                "count": 5
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:villager_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  "[\"\",{\"text\":\"Fueled by suffering\",\"italic\":false,\"color\":\"dark_red\"}]"
+                ],
+                "minecraft:custom_data": "{cryptid.item:1b}",
+                "minecraft:custom_model_data": 1319,
+                "minecraft:custom_name": "[{\"text\":\"Lesser Bloodstone Totem\",\"italic\":false}]",
+                "minecraft:entity_data": {
+                  "id": "villager",
+                  "VillagerData": {
+                    "type": "plains",
+                    "profession": "farmer",
+                    "level": 2
+                  },
+                  "CustomName": "[{\"text\":\"Lesser Bloodstone Totem\",\"color\":\"red\"}]",
+                  "NoAI": true,
+                  "NoGravity": true,
+                  "PersistenceRequired": true,
+                  "Silent": true,
+                  "Tags": [
+                    "cryptid",
+                    "cryptid.lessertotem"
+                  ],
+                  "active_effects": [
+                    {
+                      "id": "invisibility",
+                      "duration": 1231231241231231,
+                      "show_particles": true
+                    }
+                  ],
+                  "ArmorItems": [
+                    {},
+                    {},
+                    {},
+                    {
+                      "id": "potion",
+                      "components": {
+                        "minecraft:custom_model_data": 1318
+                      },
+                      "count": 1
+                    }
+                  ],
+                  "ArmorDropChances": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "attributes": [
+                    {
+                      "id": "generic.armor",
+                      "base": 15
+                    },
+                    {
+                      "id": "generic.scale",
+                      "base": 0.05
+                    },
+                    {
+                      "id": "generic.gravity",
+                      "base": 1
+                    },
+                    {
+                      "id": "generic.movement_speed",
+                      "base": 0
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{cryptid.item:1b,cryptid.catcher:1}",
+                "minecraft:lore": [
+                  "[\"\",{\"text\":\"Keeps the demons away\",\"italic\":false,\"color\":\"dark_red\"}]"
+                ],
+                "minecraft:custom_model_data": 1304,
+                "minecraft:custom_name": "[{\"text\":\"Warped Nightmare Catcher\",\"italic\":false,\"color\":\"dark_red\"}]"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{cryptid.item:1b,cryptid.blade:1}",
+                "minecraft:custom_model_data": 1301,
+                "minecraft:custom_name": "[\"\",{\"text\":\"Steel Torment\",\"italic\":false,\"color\":\"red\"}]",
+                "minecraft:lore": [
+                  "[\"\",{\"text\":\"The blade is \",\"italic\":false,\"color\":\"dark_red\"},{\"text\":\"ice cold\",\"bold\":true,\"italic\":false,\"color\":\"aqua\"},{\"text\":\" to the touch\",\"italic\":false,\"color\":\"dark_red\"}]",
+                  "[\"\"]",
+                  "[\"\",{\"text\":\"<Shift Right Click>\",\"italic\":false,\"color\":\"dark_red\"},{\"text\":\" - Clear away\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[\"\",{\"text\":\"a large area of flesh, cleansing the area.\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[\"\"]",
+                  "[\"\",{\"text\":\"<Attack>\",\"italic\":false,\"color\":\"dark_red\"},{\"text\":\" - Apply slowness and bleed\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[\"\",{\"text\":\"to the affected cryptid.\",\"italic\":false,\"color\":\"gray\"}]"
+                ],
+                "minecraft:item_name": "[\"\",{\"text\":\"Steel Torment\",\"italic\":false,\"color\":\"red\"}]",
+                "minecraft:rarity": "rare",
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:enchantments": {
+                  "levels": {
+                    "sharpness": 12
+                  },
+                  "show_in_tooltip": false
+                },
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "player.sweeping_damage_ratio",
+                      "amount": 1,
+                      "slot": "mainhand",
+                      "operation": "add_value",
+                      "id": "1747965469589"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+
+      ]
+    }
+  ]
+}
