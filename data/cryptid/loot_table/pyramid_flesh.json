@@ -6,6 +6,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:warped_fungus_on_a_stick",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -69,64 +70,11 @@
             }
           ]
         },
+
         {
           "type": "minecraft:item",
-          "name": "minecraft:warped_fungus_on_a_stick",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_name": "[\"\",{\"text\":\"Portable Radar\",\"italic\":false,\"color\":\"red\"}]",
-                "minecraft:lore": [
-                  "[\"\",{\"text\":\"The Radar hums quietly in your hands.\",\"italic\":false,\"color\":\"gray\"}]",
-                  "[\"\"]",
-                  "[\"\",{\"text\":\"Displays nearby Cryptids, and their \",\"italic\":false,\"color\":\"gray\"}]",
-                  "[\"\",{\"text\":\"threat class within a 150 block range.\",\"italic\":false,\"color\":\"gray\"}]",
-                  "[\"\"]",
-                  "[\"\",{\"text\":\"<Right Click> \",\"italic\":false,\"color\":\"dark_red\"},{\"text\":\"- Identifies and \",\"italic\":false,\"color\":\"gray\"}]",
-                  "[\"\",{\"text\":\"points towards the closest Cryptid. \",\"italic\":false,\"color\":\"gray\"}]",
-                  "[\"\"]",
-                  "[\"\",{\"text\":\"\\\"Beware the past Tortured\\\"\",\"color\":\"red\"}]"
-                ],
-                "minecraft:custom_model_data": 1306,
-                "minecraft:custom_data": "{cryptid.item:1,cryptid.radar:1}"
-              }
-            }
-        ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:crossbow",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:charged_projectiles": [
-                  {
-                    "id": "minecraft:firework_rocket",
-                    "count": 1,
-                    "components": {
-                      "minecraft:custom_model_data": 1300,
-                      "custom_data": {
-                        "cryptid.shotgunarrow": 1
-                      },
-                      "custom_name": "[\"\",{\"text\":\"Shrapnel round\",\"italic\":false}]"
-                    }
-                  }
-                ],
-                "minecraft:custom_name": "[\"\",{\"text\":\"Bloodsteel Shotgun\",\"italic\":false,\"color\":\"red\"}]",
-                "minecraft:lore": [
-                  "[\"\",{\"text\":\"Smells like copper\",\"italic\":false,\"color\":\"dark_red\"}]"
-                ],
-                "minecraft:custom_data": "{cryptid.shotgun:1,cryptid.shot:1,cryptid.item:1}",
-                "minecraft:custom_model_data": 1300
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:warped_fungus_on_a_stick",       
+          "name": "minecraft:warped_fungus_on_a_stick", 
+          "weight": 1,      
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -147,9 +95,11 @@
             }
           ]
         },
+
         {
           "type": "minecraft:item",
           "name": "minecraft:villager_spawn_egg",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -224,26 +174,11 @@
             }
           ]
         },
+
         {
           "type": "minecraft:item",
           "name": "minecraft:warped_fungus_on_a_stick",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": "{cryptid.item:1b,cryptid.catcher:1}",
-                "minecraft:lore": [
-                  "[\"\",{\"text\":\"Keeps the demons away\",\"italic\":false,\"color\":\"dark_red\"}]"
-                ],
-                "minecraft:custom_model_data": 1304,
-                "minecraft:custom_name": "[{\"text\":\"Warped Nightmare Catcher\",\"italic\":false,\"color\":\"dark_red\"}]"
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:warped_fungus_on_a_stick",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -283,8 +218,47 @@
               }
             }
           ]
-        }
+        },
 
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sugar",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 1308,
+                "minecraft:food": {
+                  "nutrition": 2,
+                  "saturation": 2,
+                  "can_always_eat": true,
+                  "eat_seconds": 2,
+                  "using_converts_to": {
+                    "id": "minecraft:sugar",
+                    "components": {
+                      "minecraft:custom_data": {
+                        "cryptid.usedhoney": 1,
+                        "cryptid.item": 1
+                      },
+                      "minecraft:custom_model_data": 1308
+                    }
+                  }
+                },
+                "minecraft:custom_name": "[\"\",{\"text\":\"Rotted Bee Balm\",\"italic\":false,\"color\":\"red\"}]",
+                "minecraft:lore": [
+                  "[\"\",{\"text\":\"[Consumable up to 5 times]\",\"italic\":false,\"color\":\"dark_red\"}]",
+                  "[\"\",{\"text\":\"Increases max harmony cap by 500\",\"italic\":false,\"color\":\"dark_red\"}]",
+                  "[\"\",{\"text\":\"Events will happen more often\",\"italic\":false,\"color\":\"dark_red\"}]"
+                ],
+                "minecraft:custom_data": {
+                  "cryptid.beebalm": 1
+                }
+              }
+            }
+          ]
+        }
+        
       ]
     },
     {

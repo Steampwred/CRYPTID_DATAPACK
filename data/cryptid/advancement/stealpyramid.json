@@ -3,7 +3,7 @@
     "stealfromsky": {
       "trigger": "minecraft:player_generates_container_loot",
       "conditions": {
-        "loot_table": ""
+        "loot_table": "cryptid:pyramid_flesh"
       }
     }
   },

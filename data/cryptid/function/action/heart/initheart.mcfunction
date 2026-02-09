@@ -23,7 +23,6 @@ execute positioned as @s if block ~ ~1 ~ air run tp @s ~ ~-46 ~
 
 
 
-
 tag @s remove heartbuilt
 ##spawning initation
 
