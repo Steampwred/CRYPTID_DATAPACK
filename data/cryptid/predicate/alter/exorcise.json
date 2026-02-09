@@ -1,0 +1,23 @@
+{
+    "condition": "all_of",
+    "terms": [
+
+     { "condition": "minecraft:location_check", "offsetX": 0, "offsetY": 0, "offsetZ": 0, "predicate": { "block": { "blocks": "minecraft:diamond_block" } } }, 
+
+     { "condition": "minecraft:location_check", "offsetX": -1, "offsetY": 0, "offsetZ": 0,  "predicate": { "block": { "blocks": "calcite" } } }, 
+     { "condition": "minecraft:location_check", "offsetX": 1,  "offsetY": 0, "offsetZ": 0,  "predicate": { "block": { "blocks": "calcite" } } }, 
+     { "condition": "minecraft:location_check", "offsetX": 0,  "offsetY": 0, "offsetZ": 1,  "predicate": { "block": { "blocks": "calcite" } } }, 
+     { "condition": "minecraft:location_check", "offsetX": 0, "offsetY": 0, "offsetZ": -1,  "predicate": { "block": { "blocks": "calcite" } } },
+
+     { "condition": "minecraft:location_check", "offsetX": -1, "offsetY": 0, "offsetZ": 1,  "predicate": { "block": { "blocks": "smooth_stone_slab" } } }, 
+     { "condition": "minecraft:location_check", "offsetX": -1,  "offsetY": 0, "offsetZ": -1,  "predicate": { "block": { "blocks": "smooth_stone_slab" } } }, 
+     { "condition": "minecraft:location_check", "offsetX": 1,  "offsetY": 0, "offsetZ": 1,  "predicate": { "block": { "blocks": "smooth_stone_slab" } } }, 
+     { "condition": "minecraft:location_check", "offsetX": 1, "offsetY": 0, "offsetZ": -1,  "predicate": { "block": { "blocks": "smooth_stone_slab" } } },
+
+     { "condition": "minecraft:location_check", "offsetX": -2, "offsetY": 0, "offsetZ": 0,  "predicate": { "block": { "blocks": "calcite" } } }, 
+     { "condition": "minecraft:location_check", "offsetX": 2,  "offsetY": 0, "offsetZ": 0,  "predicate": { "block": { "blocks": "calcite" } } }, 
+     { "condition": "minecraft:location_check", "offsetX": 0,  "offsetY": 0, "offsetZ": 2,  "predicate": { "block": { "blocks": "calcite" } } }, 
+     { "condition": "minecraft:location_check", "offsetX": 0, "offsetY": 0, "offsetZ": -2,  "predicate": { "block": { "blocks": "calcite" } } } 
+
+      ]
+}

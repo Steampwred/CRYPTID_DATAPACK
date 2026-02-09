@@ -14,6 +14,9 @@ execute as @e[tag=cryptid.vorheart,type=vindicator,sort=random, limit=1] at @s r
 #heartbeat
 execute if score .heartbeat cryptid.globalevent matches 1 run playsound minecraft:cryptid.heartbeat ambient @a[distance=0..45] ~ ~ ~ 4 0.1
 
+## Player kills a heart
+execute if entity @s[nbt={DeathTime:1s}] run function cryptid:action/heart/heartdeath
+
 ##kill system
 
 tag @s remove cryptid.playernearheart

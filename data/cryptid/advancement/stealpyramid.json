@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "stealfromsky": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "cryptid:pyramid_flesh"
+      }
+    }
+  },
+  "rewards": {
+    "function": "cryptid:events/sky/stealpyramid"
+  }
+}
