@@ -14,6 +14,10 @@ kill @e[tag=cryptid, sort=nearest, limit=3, distance=0..7]
 
 scoreboard players set @s cryptid.player.harmony 0
 
+
+##kill all lost souls prior to spawning a new one
+kill @e[type=minecraft:vindicator, tag=cryptid.digger]
+
 summon vindicator ~ ~ ~ {CustomName:'[{"text":"Lost Soul","color":"red"}]', Tags:["cryptid", "cryptid.digger"], Silent:1, ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1303},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 scoreboard players set @e[tag=cryptid.digger,type=vindicator] cryptid.mob.class 2
 

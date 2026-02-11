@@ -1,6 +1,7 @@
 
 ##init
 execute as @s[tag=!init] at @s run tp @s ^ ^ ^-2 facing entity @p
+
 execute as @s[tag=!init] at @s run tag @s add init
 
 

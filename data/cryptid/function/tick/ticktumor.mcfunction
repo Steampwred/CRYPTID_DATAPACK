@@ -19,3 +19,10 @@ execute if entity @p[distance=0..20] run execute facing entity @e[sort=random, l
 execute if entity @p[distance=0..20] run execute facing entity @e[sort=random, limit=1] eyes positioned ^ ^ ^3 run fill ~1 ~1 ~1 ~-1 ~-1 ~-1 minecraft:nether_wart_block replace #minecraft:mineable/hoe
 execute if entity @p[distance=0..20] run execute facing entity @e[sort=random, limit=1] eyes positioned ^ ^ ^3 run fill ~1 ~1 ~1 ~-1 ~-1 ~-1 minecraft:nether_wart_block replace #minecraft:mineable/pickaxe
 
+
+execute store result score @s cryptid.random run random value 1..70
+
+
+
+execute if entity @p[distance=100..] if score .globaltime cryptid.time matches 1000..12000 run kill @s
+execute if entity @p[distance=100..] if score .globaltime cryptid.time matches 1000..12000 run function cryptid:events/general/breakerant

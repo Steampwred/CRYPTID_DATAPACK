@@ -5,3 +5,5 @@ effect give @e[type=zombie, sort=nearest, tag=cryptid.tumor] minecraft:invisibil
 playsound minecraft:entity.warden.emerge ambient @a[distance=0..30] ~ ~ ~ 1 0.1
 fill ~3 ~3 ~3 ~-3 ~-3 ~-3 minecraft:netherrack replace #minecraft:base_stone_overworld
 execute as @e[type=zombie, tag=cryptid.tumor, tag=!cryptid.markerapplied] at @s run function cryptid:action/general/spawntickmarker {"name":"ticktumor"}
+
+function cryptid:events/general/breakerant

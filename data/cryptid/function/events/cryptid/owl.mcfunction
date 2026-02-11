@@ -10,7 +10,3 @@ execute as @e[type=husk, tag=cryptid.owl, tag=!cryptid.markerapplied] at @s run 
 
 execute positioned ~ ~620 ~ as @e[type=husk, sort=nearest, limit=1, tag=cryptid.owl] at @s run function cryptid:action/general/placerandom {"min":"10","max":"30","underheight":"500"}
 
-
-
-
-function cryptid:events/cryptid/flicker2
