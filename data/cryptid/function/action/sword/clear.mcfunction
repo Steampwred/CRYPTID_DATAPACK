@@ -9,8 +9,8 @@ fill ~6 ~8 ~6 ~-6 ~-8 ~-6 wall_torch[facing=south] replace redstone_wall_torch[f
 fill ~10 ~10 ~10 ~-10 ~-10 ~-10 wall_torch[facing=east] replace redstone_wall_torch[facing=east]
 fill ~10 ~10 ~10 ~-10 ~-10 ~-10 wall_torch[facing=west] replace redstone_wall_torch[facing=west]
 
-execute positioned ~ ~-4 ~ run place feature cryptid:clearflesh.json
-execute positioned ~ ~5 ~ run place feature cryptid:clearflesh.json
+execute positioned ~ ~-4 ~ run place feature cryptid:clearflesh
+execute positioned ~ ~5 ~ run place feature cryptid:clearflesh
 
 execute as @e[tag=cryptid.worm, distance=..7.5] at @s run function cryptid:action/general/explodedeath
 
