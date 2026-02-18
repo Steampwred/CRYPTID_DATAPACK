@@ -16,5 +16,4 @@ attribute @s minecraft:generic.scale base set 0.01
 
 
 execute if score @s cryptid.timer matches ..-750 run effect give @p[distance=0..20] minecraft:blindness 5 5 true
-execute if score @s cryptid.timer matches ..-750 run function cryptid:events/cryptid/nerve
 execute if score @s cryptid.timer matches ..-750 run kill @e[type=!player, distance=0..10]

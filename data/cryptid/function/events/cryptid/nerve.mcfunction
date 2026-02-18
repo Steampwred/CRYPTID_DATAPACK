@@ -1,7 +1,8 @@
 execute store result score @s cryptid.player.random run random value 1..3
 execute if score @s cryptid.player.random matches 1 run tellraw @s {"text":"Look up :)","color":"red"}
 
-
+execute as @e[tag=cryptid.nerve, type=vindicator] at @s run tp @s ~ -1000 ~
+execute as @e[tag=cryptid.nerve, type=vindicator] at @s run kill @s
 summon vindicator ~ ~120 ~ {NoGravity:1b,Invincible:1,NoAI:1,DeathLootTable:"minecraft:empty",NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Prion Cluster"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.nerve"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1354},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
 execute positioned ~ ~220 ~ run effect give @e[type=vindicator, sort=nearest, tag=cryptid.nerve] minecraft:invisibility infinite 1 true
