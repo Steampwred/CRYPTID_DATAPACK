@@ -18,4 +18,4 @@ execute if data storage cryptid:ritual {alter:{revival:1}} run data modify stora
 execute if data storage cryptid:ritual {alter:{voidtotem:1}} run data modify storage cryptid:ritual alter.type set value "voidtotem"
 
 # INVALID alter 
-execute anchored feet positioned ~ ~-4 ~ unless predicate cryptid:alter/exorcise unless predicate cryptid:alter/revival unless predicate cryptid:alter/voidtotem run scoreboard players set @s cryptid.timer 200
+execute anchored feet positioned ~ ~-4 ~ unless predicate cryptid:alter/exorcise unless predicate cryptid:alter/revival unless predicate cryptid:alter/voidtotem run function cryptid:rituals/result/invalidalter

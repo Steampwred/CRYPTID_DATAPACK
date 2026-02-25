@@ -15,7 +15,9 @@ execute as @e[type=item,distance=..5.25] run data merge entity @s {NoGravity:1b,
 
 ## Initaite Ritual With Circle
 tp @s ~ ~ ~ 0 0
-execute positioned ~ ~-5 ~ if predicate cryptid:checkritual_circle run scoreboard players set @s cryptid.timer 300
+execute positioned ~ ~-5 ~ if predicate cryptid:checkritual_circle run return run scoreboard players set @s cryptid.timer 300
 
 ### Initaite Ritual Without Circle
-execute positioned ~ ~-5 ~ unless predicate cryptid:checkritual_circle run function cryptid:action/general/grounddeath
+#execute positioned ~ ~-5 ~ unless predicate cryptid:checkritual_circle run scoreboard players set @s cryptid.timer 200
+tag @s add ritual.unbound
+scoreboard players set @s cryptid.timer 200

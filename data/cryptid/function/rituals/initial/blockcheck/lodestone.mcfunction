@@ -40,6 +40,7 @@ execute if block ~ ~1 ~ lapis_block run scoreboard players add @s cryptid.ritual
 execute if block ~ ~1 ~ diamond_block run scoreboard players add @s cryptid.ritual.stability 13
 execute if block ~ ~1 ~ netherite_block run scoreboard players add @s cryptid.ritual.stability 15
 
+execute if block ~ ~1 ~ command_block run scoreboard players add @s cryptid.ritual.stability 1500
 ##### Transmute Focuses to less valueble blocks
 
 fill ~ ~1 ~ ~ ~1 ~ nether_wart_block replace redstone_block

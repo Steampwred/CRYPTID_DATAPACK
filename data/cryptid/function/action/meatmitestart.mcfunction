@@ -4,6 +4,6 @@ particle dust_pillar{block_state:{Name:redstone_block}} ~ ~1 ~ 0 0 0 0 500
 
 playsound minecraft:entity.bogged.hurt ambient @a ~ ~ ~ 1 0.1
 
-fill ~ ~-5 ~ ~ ~ ~ minecraft:red_concrete destroy
+fill ~ ~-4 ~ ~ ~ ~ minecraft:red_concrete
 
 execute as @e[type=armor_stand, tag=cryptid.meatmite, tag=!cryptid.markerapplied] at @s run function cryptid:action/general/spawntickmarker {"name":"tickmeatmite"}
