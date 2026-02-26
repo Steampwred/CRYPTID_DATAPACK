@@ -58,3 +58,30 @@ In function/rituals folder as such in order
 Notes
 - alter and circle check are defined in predicates
 - orifice code is located outside /rituals, it is under cryptid/function/tick/tickorifice.mcfunction
+
+
+TO do
+Finish Anthame
+    - model, description and lore
+    - rewrite as enchantment to avoid raycasting
+    - make scaning a nonsolid block above a flesh block work as well
+
+
+Ritual
+ both circle and unbound rituals should have roughly equal amounts of code for them. expand unbound rituals to be equal in content and complexity as circled.
+    Circle rituals
+
+
+    unbound rituals
+
+
+
+Hersical rep system intigration
+
+Progression of sacrifices
+
+Againts corruption
+    A ritual Circle and mask is used to Bind the Orifice to do the players bidding and make whatever tools they need  
+
+Serving coruption
+    more difficult mobs and in greater numbers are required for each ritual, rewards ccryptid curse powers or items
