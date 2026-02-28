@@ -1,0 +1,27 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{cryptid.item:1,cryptid.totem2:1}",
+                "minecraft:custom_name": "[\"\",{\"text\":\"Consecrated Bloodstone Totem\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]",
+                "minecraft:lore": [
+                  "[\"\",{\"text\":\"Place to create a region of safety\",\"italic\":false,\"color\":\"dark_gray\"}]",
+                  "[\"\",{\"text\":\"No longer requires fuel to power\",\"italic\":false,\"color\":\"dark_gray\"}]"
+                ],
+                "minecraft:custom_model_data": 1311
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
