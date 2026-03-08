@@ -32,8 +32,8 @@ execute as @e[tag=sacrifice.item,distance=..10,type=item] at @s run tp @s ^ ^ ^0
 
 
 # Generate Random Number for Ritual Outcome and decide result in 1 Tick
-execute if score @s cryptid.timer matches 100 run function cryptid:rituals/random/numbergenerator
-
+execute if score @s[tag=!ritual.unbound] cryptid.timer matches 100 run function cryptid:rituals/random/numberforcircle
+execute if score @s[tag=ritual.unbound] cryptid.timer matches 100 run function cryptid:rituals/random/numberforunbound
 ## Outcome Animation Handling (timer value -100 - -140) orifice decends 10 blocks then dies
 # Fail animation
 execute if score @s[tag=ritual.failure] cryptid.timer matches -120..-100 run tp @s ~ ~0.35 ~
@@ -43,13 +43,13 @@ execute if score @s[tag=ritual.failure] cryptid.timer matches -140..-120 run tp 
 execute if score @s[tag=ritual.success] cryptid.timer matches -100 run playsound minecraft:cryptid.sword.spawn hostile @a
 execute if score @s[tag=ritual.success] cryptid.timer matches -120..-110 run tp @s ~ ~0.1 ~
 execute if score @s[tag=ritual.success] cryptid.timer matches -140..-120 run tp @s ~ ~-0.55 ~
-
 # GIVE REWAR!!
-execute if score @s[tag=ritual.requirmentmet] cryptid.timer matches -140 positioned ~ ~6 ~ run function cryptid:rituals/result/macroreward with storage cryptid:ritual alter
-execute if score @s cryptid.timer matches -140 run kill @s
+    execute if score @s[tag=ritual.requirmentmet] cryptid.timer matches -140 positioned ~ ~6 ~ run function cryptid:rituals/result/macroreward with storage cryptid:ritual alter
+    execute if score @s cryptid.timer matches -140 run kill @s
 
 # Despawn
 execute if score @s cryptid.timer matches 0 unless entity @p[distance=..12] run function cryptid:action/general/grounddeath
+execute if score @s[nbt={HurtTime:2s}] cryptid.timer matches 0 run function cryptid:action/general/grounddeath
 
 ######### Timer
 execute unless score @s cryptid.timer matches 0 run scoreboard players remove @s cryptid.timer 1

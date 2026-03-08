@@ -14,8 +14,8 @@ execute if score @s cryptid.player.random matches 100..200 run execute as @a[dis
 execute if score @s cryptid.player.random matches 200..300 run execute as @a[distance=0..25] at @s run tp @s ~ ~ ~ ~1 ~
 execute if score @s cryptid.player.random matches 300..400 run execute as @a[distance=0..25] at @s run tp @s ~ ~ ~ ~-1 ~
 
-execute if score @s cryptid.player.random matches 200..225 run execute positioned ^ ^2 ^8 run function cryptid:action/meatmitestart
-execute if score @s cryptid.player.random matches 225..255 run execute positioned ^ ^2 ^10 run function cryptid:action/meatmitestart
+execute if score @s cryptid.player.random matches 200..225 run execute positioned ^ ^2.5 ^8 run function cryptid:action/meatmitestart
+execute if score @s cryptid.player.random matches 225..255 run execute positioned ^ ^2.5 ^10 run function cryptid:action/meatmitestart
 execute if score @s cryptid.player.random matches 200..225 run tp @s ~ ~ ~ ~33 ~
 execute if score @s cryptid.player.random matches 200..255 run scoreboard players remove @a[distance=0..15] cryptid.player.harmony 800
 
