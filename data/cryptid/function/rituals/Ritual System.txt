@@ -76,12 +76,26 @@ Ritual
 
 
 
-Hersical rep system intigration
+Hersical rep system intigration for future mod version
 
 Progression of sacrifices
 
-Againts corruption
-    A ritual Circle and mask is used to Bind the Orifice to do the players bidding and make whatever tools they need  
+    Againts corruption
+        A ritual Circle and mask is used to Bind the Orifice to do the players bidding and make whatever tools they need  
 
-Serving coruption
-    more difficult mobs and in greater numbers are required for each ritual, rewards ccryptid curse powers or items
+    Serving coruption
+        more difficult mobs and in greater numbers are required for each ritual, rewards ccryptid curse powers or items
+
+
+Compromise for current datapack version
+
+    Againts corruption
+       within a preivous players base, the anthame is found, books written by them describe a binding ritual that they preformed but ultimatles \
+       is responsible for their deaths in the process. 
+       using the anthame summons the orifice bound by the calcified mask.
+       all crafting and other benifical rituals require the circle
+
+    Serving coruption
+        Without a circle, no items can be crafted, sacrifices will only decrease some wold fury, and act as a way for players to spread the corruption and spawn cryptids.
+        the cryptids will still try to kill you the flesh cares not if you devote yourself to it, it hungers for all just the same.
+        really small chance of being gifted a rare cryptid item after many sacrices. (arm?)
