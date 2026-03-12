@@ -1,0 +1,1 @@
+loot spawn ~ ~ ~ loot cryptid:rituals/upgrade_totem_loot

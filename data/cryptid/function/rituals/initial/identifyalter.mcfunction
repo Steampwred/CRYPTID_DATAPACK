@@ -12,10 +12,14 @@ execute anchored feet positioned ~ ~-4 ~ store success storage cryptid:ritual al
 execute anchored feet positioned ~ ~-4 ~ if predicate cryptid:alter/voidtotem run scoreboard players remove @s cryptid.ritual.stability 15
 execute anchored feet positioned ~ ~-4 ~ store success storage cryptid:ritual alter.voidtotem int 1 if predicate cryptid:alter/voidtotem
 
+execute anchored feet positioned ~ ~-4 ~ if predicate cryptid:alter/upgradetotem run scoreboard players remove @s cryptid.ritual.stability 25
+execute anchored feet positioned ~ ~-4 ~ store success storage cryptid:ritual alter.upgradetotem int 1 if predicate cryptid:alter/upgradetotem
+
 ## Modify storage, stores Type Name
 execute if data storage cryptid:ritual {alter:{exorcise:1}} run data modify storage cryptid:ritual alter.type set value "exorcise"
 execute if data storage cryptid:ritual {alter:{revival:1}} run data modify storage cryptid:ritual alter.type set value "revival"
 execute if data storage cryptid:ritual {alter:{voidtotem:1}} run data modify storage cryptid:ritual alter.type set value "voidtotem"
+execute if data storage cryptid:ritual {alter:{upgradetotem:1}} run data modify storage cryptid:ritual alter.type set value "upgradetotem"
 
 # INVALID alter 
 execute anchored feet positioned ~ ~-4 ~ unless predicate cryptid:alter/exorcise unless predicate cryptid:alter/revival unless predicate cryptid:alter/voidtotem run function cryptid:rituals/result/invalidalter

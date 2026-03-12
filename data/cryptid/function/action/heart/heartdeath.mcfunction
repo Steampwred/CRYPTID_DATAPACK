@@ -1,5 +1,3 @@
-##debug
-say A Heart Has Died
 
 particle block_marker{block_state:{Name:red_concrete}} ~ ~ ~ 0.8 0.8 0.8 0 20
 particle dust_pillar{block_state:{Name:red_concrete_powder}} ~ ~1 ~ 1 1 1 0.1 300
@@ -13,5 +11,5 @@ execute unless entity @e[type=vindicator,distance=5..40,tag=cryptid.vorheart] if
 ##increae Fury if Player near 
 execute unless entity @p[distance=..6] run return fail 
 execute if score .global cryptid.day matches 1..3 run scoreboard players add .global cryptid.world.fury 1 
-execute if score .global cryptid.day matches 3..10 run scoreboard players add .global cryptid.world.fury 5 
-execute if score .global cryptid.day matches 10.. run scoreboard players add .global cryptid.world.fury 10 
+execute if score .global cryptid.day matches 3..10 run scoreboard players add .global cryptid.world.fury 3 
+execute if score .global cryptid.day matches 10.. run scoreboard players add .global cryptid.world.fury 7 
