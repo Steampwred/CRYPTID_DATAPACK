@@ -32,8 +32,8 @@ execute as @e[tag=sacrifice.item,distance=..10,type=item] at @s run tp @s ^ ^ ^0
 
 
 # Generate Random Number for Ritual Outcome and decide result in 1 Tick
-execute if score @s[tag=!ritual.unbound] cryptid.timer matches 100 run function cryptid:rituals/random/numberforcircle
-execute if score @s[tag=ritual.unbound] cryptid.timer matches 100 run function cryptid:rituals/random/numberforunbound
+execute if score @s[tag=!ritual.unbound] cryptid.timer matches 100 run function cryptid:rituals/random/output_circle
+execute if score @s[tag=ritual.unbound] cryptid.timer matches 100 run function cryptid:rituals/random/output_unbound
 ## Outcome Animation Handling (timer value -100 - -140) orifice decends 10 blocks then dies
 # Fail animation
 execute if score @s[tag=ritual.failure] cryptid.timer matches -120..-100 run tp @s ~ ~0.35 ~
