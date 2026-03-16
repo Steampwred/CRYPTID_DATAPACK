@@ -114,7 +114,7 @@ execute as @e[type=!player,tag=cryptid, type=!item, type=!#cryptid:projectiles, 
 execute as @e[tag=cryptid.catcher, type=armor_stand] at @s run function cryptid:tick/tickcatcher
 execute as @e[type=armor_stand,tag=cryptid.playernode] at @s run function cryptid:tick/ticknode
 execute as @e[type=villager, tag=cryptid.lessertotem] at @s run function cryptid:tick/ticktotem
-execute as @e[type=armor_stand, tag=cryptid.lessertotem] at @s run function cryptid:tick/ticktotem2
+execute as @e[type=armor_stand, tag=cryptid.totem2] at @s run function cryptid:tick/ticktotem2
 
 
 ##player tick
