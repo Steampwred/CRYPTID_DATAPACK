@@ -1,0 +1,1 @@
+execute unless entity @e[type=armor_stand, distance=0..30, tag=cryptid.totem2] run kill @s

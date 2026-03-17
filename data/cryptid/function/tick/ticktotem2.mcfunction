@@ -1,6 +1,6 @@
 ##init
 
-execute if entity @s[tag=!init] run function cryptid:action/totem/inittoteminit2
+execute if entity @s[tag=!init] run function cryptid:action/totem2/inittoteminit2
 execute if entity @s[tag=!init] run tag @s add init
 
 
@@ -17,8 +17,10 @@ execute if score @s cryptid.player.random matches 1..5 run playsound minecraft:b
 particle falling_dust{block_state:{Name:nether_wart,Properties:{age:"3"}}} ~ ~1 ~ 5 5 5 0.01 7
 
 
-##done?
+##kill entities
 
+execute if entity @e[tag=cryptid, distance=0..30] run function cryptid:action/totem2/flickertotem2
+execute as @e[tag=cryptid, distance=0..30] at @s run function cryptid:events/quietkill
 
 
 ##block check
