@@ -1,1 +1,4 @@
-say pet
+execute unless entity @e[limit=2, distance=..11,type=wolf] run return fail
+particle crimson_spore ~ ~ ~ 0 0 0 1 200
+playsound minecraft:cryptid.ambient.hand ambient @a ~ ~ ~ 1 1
+tellraw @a {"text":"WOLVES","color":"red"}
