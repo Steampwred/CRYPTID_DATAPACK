@@ -178,3 +178,7 @@ execute as @s[scores={cryptid.click=1..}] if items entity @s weapon.mainhand min
 
 ##radio
 
+
+
+###use totem2
+execute as @s[scores={cryptid.click=1..}] if items entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.totem2:1}] run function cryptid:action/totem2/placetotem2
