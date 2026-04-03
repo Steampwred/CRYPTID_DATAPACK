@@ -1,8 +1,8 @@
 
-summon minecraft:zombie ~ ~-2 ~ {CustomName:'[{"text":"Orifice"}]', Silent:1b, NoAI:1b, Tags:["cryptid","cryptid.orifice"], ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],attributes:[{id:"minecraft:generic.max_health",base:50f}],active_effects:[{id:instant_damage,amplifier:4,duration:1,show_particles:0b}]}
+summon minecraft:zombie ~ ~-4 ~ {CustomName:'[{"text":"Orifice"}]', Silent:1b, NoAI:1b, Tags:["cryptid","cryptid.orifice"], ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],attributes:[{id:"minecraft:generic.max_health",base:50f}],active_effects:[{id:instant_damage,amplifier:4,duration:1,show_particles:0b}]}
 effect give @e[type=minecraft:zombie, tag=cryptid.orifice] minecraft:invisibility infinite 1 true
 
-execute positioned ~ ~-2 ~ run item replace entity @e[type=minecraft:zombie, sort=nearest, tag=cryptid.orifice, limit=1] armor.head with potion[minecraft:custom_model_data=1414]
+execute positioned ~ ~-4 ~ run item replace entity @e[type=minecraft:zombie, sort=nearest, tag=cryptid.orifice, limit=1] armor.head with potion[minecraft:custom_model_data=1414]
 
 execute as @e[ tag=cryptid.orifice, tag=!cryptid.markerapplied,type=minecraft:zombie] at @s run function cryptid:action/general/spawntickmarker {"name":"tickorifice"}
 

@@ -4,7 +4,7 @@ playsound minecraft:cryptid.skull1 hostile @a
 tag @s add ritual.failure
 place feature cryptid:convertflesh ~ ~-4 ~
 scoreboard players remove @a[distance=..30] cryptid.player.harmony 10000
-
+function cryptid:rituals/random/randommessage
 
 execute as @e[tag=sacrifice.item,type=item] run data merge entity @s {NoGravity:0b}
 execute as @e[tag=sacrifice.item,type=item] run tag @s remove sacrifice.item
