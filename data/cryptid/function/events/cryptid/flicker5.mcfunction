@@ -1,5 +1,4 @@
 execute store result score @s cryptid.player.random run random value 1..60
-execute if score @s cryptid.player.random matches 1 run tellraw @s {"text":"You anger us.","color":"red"}
 
 ##fill ~4 ~4 ~4 ~-4 ~-4 ~-4 furnace[facing=south,lit=true] replace furnace[facing=south]
 ##fill ~4 ~4 ~4 ~-4 ~-4 ~-4 furnace[facing=north,lit=true] replace furnace[facing=north]
