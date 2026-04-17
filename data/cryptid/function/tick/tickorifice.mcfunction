@@ -53,9 +53,9 @@ execute if score @s[tag=ritual.success] cryptid.timer matches -140..-120 run tp 
 
 # Despawn
 execute if score @s cryptid.timer matches 0 unless entity @p[distance=..12] run function cryptid:action/general/grounddeath
-execute if score @s[nbt={HurtTime:2s}] cryptid.timer matches 0 run function cryptid:action/general/grounddeath
 execute if score @s[nbt={HurtTime:2s}] cryptid.timer matches 0 run function cryptid:rituals/random/randommessage
+execute if score @s[nbt={HurtTime:2s}] cryptid.timer matches 0 run function cryptid:action/general/grounddeath
+
 
 ######### Timer
 execute unless score @s cryptid.timer matches 0 run scoreboard players remove @s cryptid.timer 1
-#execute unless score @s cryptid.timer matches 90 run scoreboard players remove @s cryptid.timer 1sum

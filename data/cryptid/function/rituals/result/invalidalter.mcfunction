@@ -1,6 +1,7 @@
 scoreboard players set @s cryptid.timer 0 
 title @a[distance=..10] actionbar {"text":"we see you","color":"dark_red","bold":false,"obfuscated": true}
-playsound minecraft:cryptid.bone.knock ambient @a[distance=..10] ~ ~ ~ 1
+
+
 execute if entity @s[tag=ritual.translate] run tellraw @a[distance=..10] {"text":"The alter seems to be missing something...","color":"dark_purple","bold":true}
 
 function cryptid:rituals/random/randommessage

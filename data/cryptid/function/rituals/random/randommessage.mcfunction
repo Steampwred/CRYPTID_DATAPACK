@@ -15,3 +15,5 @@ execute if score @s cryptid.player.random matches 12 run tellraw @a[distance=..1
 execute if score @s cryptid.player.random matches 13 run tellraw @a[distance=..12] [{"text":"˙˙˙ʍou ɹɐɟ ʇou","color":"red"}]
 execute if score @s cryptid.player.random matches 14 run tellraw @a[distance=..12] [{"text":"ɘɔiᎸiɿɔɒꙅ","color":"red"}]
 execute if score @s cryptid.player.random matches 15 run tellraw @a[distance=..12] [{"text":"ƎƆNƎ˥OSNI","color":"red"}]
+
+function cryptid:rituals/speakfx
