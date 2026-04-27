@@ -1,4 +1,6 @@
 
+function cryptid:rituals/random/randommessage
+
 effect give @a[distance=..10] minecraft:darkness 3 1 true
 playsound minecraft:cryptid.ambient.mimic ambient @a[distance=..10] ~ ~ ~ 1 0.5
 #tag @s add counting
@@ -10,7 +12,6 @@ execute positioned ~ ~-4 ~ if predicate cryptid:checkritual_etable run function 
 
 tag @e[type=#cryptid:innocent,distance=..5.25] add sacrifice.mob
 execute as @e[type=item,distance=..5.25] run data merge entity @s {NoGravity:1b,Tags:["sacrifice.item"]}
-
 
 
 ## Initaite Ritual With Circle
