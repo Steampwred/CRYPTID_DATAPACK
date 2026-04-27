@@ -1,3 +1,5 @@
+execute at @s as @e[distance=..25,tag=cryptid.orifice,type=zombie] run function cryptid:action/general/grounddeath
+
 
 summon minecraft:zombie ~ ~-4 ~ {CustomName:'[{"text":"Orifice"}]', Silent:1b, NoAI:1b, Tags:["cryptid","cryptid.orifice"], ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],attributes:[{id:"minecraft:generic.max_health",base:50f}],active_effects:[{id:instant_damage,amplifier:4,duration:1,show_particles:0b}]}
 effect give @e[type=minecraft:zombie, tag=cryptid.orifice] minecraft:invisibility infinite 1 true

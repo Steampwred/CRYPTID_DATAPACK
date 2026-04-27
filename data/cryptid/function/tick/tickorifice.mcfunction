@@ -2,13 +2,13 @@ execute as @s[tag=cryptid.fallground] run return fail
 
 ##init
 execute if entity @s[tag=!init] run scoreboard players set @s cryptid.timer 48
-execute if entity @s[tag=!init] run function cryptid:rituals/random/randommessage
 execute if entity @s[tag=!init] run tag @s add init
 
 
 # Spawn and Idle Animation (timer value 0-40) (asends 6 blocks over 40 ticks)
 execute if score @s cryptid.timer matches 20..49 run tp @s ~ ~0.25 ~ facing entity @p
 execute if score @s cryptid.timer matches 1..20 run tp @s ~ ~0.105 ~ facing entity @p
+execute if score @s cryptid.timer matches 25 run function cryptid:rituals/speakfx
 execute if score @s cryptid.timer matches 0 run tp @s ~ ~ ~ facing entity @p
 
 particle falling_dust{block_state:{Name:red_concrete}} ^ ^ ^-1.6 0.3 0.6 0.3 5 1
