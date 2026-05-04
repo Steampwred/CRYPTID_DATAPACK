@@ -6,9 +6,9 @@ place feature cryptid:convertflesh ~ ~-4 ~
 scoreboard players remove @a[distance=..30] cryptid.player.harmony 10000
 #function cryptid:rituals/random/randommessage
 
-execute as @e[tag=sacrifice.item,type=item] run data merge entity @s {NoGravity:0b}
-execute as @e[tag=sacrifice.item,type=item] run tag @s remove sacrifice.item
-tag @e[tag=sacrifice.mob, distance=..5.25] remove sacrifice.mob
+execute as @e[distance=..30,tag=sacrifice.item,type=item] run data merge entity @s {NoGravity:0b}
+tag @e[tag=sacrifice.item, distance=..30] remove sacrifice.item
+tag @e[tag=sacrifice.mob, distance=..30] remove sacrifice.mob
 
 
 ## function

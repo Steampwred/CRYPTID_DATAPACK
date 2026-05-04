@@ -45,7 +45,7 @@ When calculating a ritual, its done in phases, each phase and its respective fun
 
 In function/rituals folder as such in order
 
-    Anthame             (The Ritual Knife, used to summon the orifice and Initiate a Ritual)
+    athame             (The Ritual Knife, used to summon the orifice and Initiate a Ritual)
 
     Initial             (Inital checks that store data about the selected ritual and its modifiers)
 
@@ -61,7 +61,7 @@ Notes
 
 
 TO do
-Finish Anthame
+Finish athame
     - model, description and lore
     - rewrite as enchantment to avoid raycasting
     - make scaning a nonsolid block above a flesh block work as well
@@ -90,9 +90,9 @@ Progression of sacrifices
 Compromise for current datapack version
 
     Againts corruption
-       within a preivous players base, the anthame is found, books written by them describe a binding ritual that they preformed but ultimatles \
+       within a preivous players base, the athame is found, books written by them describe a binding ritual that they preformed but ultimatles \
        is responsible for their deaths in the process. 
-       using the anthame summons the orifice bound by the calcified mask.
+       using the athame summons the orifice bound by the calcified mask.
        all crafting and other benifical rituals require the circle
 
     Serving coruption

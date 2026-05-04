@@ -8,5 +8,5 @@ execute if entity @s[tag=ritual.failure] run return fail
 
 #on requirments met
 tag @s add ritual.success
-execute as @e[tag=sacrifice.mob,distance=..10,type=#cryptid:innocent] run function cryptid:action/general/grounddeath
-execute as @e[tag=sacrifice.item,distance=..10,type=item] run kill @s
+execute as @e[tag=sacrifice.mob,distance=..30,type=#cryptid:innocent] run function cryptid:action/general/grounddeath
+execute as @e[tag=sacrifice.item,distance=..30,type=item] run kill @s

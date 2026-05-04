@@ -1,0 +1,1 @@
+give @s warped_fungus_on_a_stick[lore=['["",{"color":"gray","italic":false,"text":"The Sacrifice."}]','["",{"color":"dark_red","italic":false,"text":" "}]'],custom_model_data=1314,custom_data={cryptid.item:1,cryptid.athame:1},enchantments={"cryptid:athameleftclick":1}] 1
