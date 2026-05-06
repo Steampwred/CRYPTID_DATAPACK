@@ -1,6 +1,7 @@
 execute unless entity @s[tag=init] rotated as @p run tp @s ~ ~ ~ ~ ~
 execute unless entity @s[tag=init] run data merge entity @s {item:{id:diamond_sword,components:{"minecraft:custom_model_data":1304},count:1},teleport_duration:2}
 execute unless entity @s[tag=init] run tag @s add cryptid.timer
+
 tag @s add init
 
 particle minecraft:electric_spark ~ ~0.2 ~

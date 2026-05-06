@@ -109,6 +109,8 @@ scoreboard objectives add cryptid.ritual.probability dummy
 scoreboard objectives add cryptid.ritual.turns dummy
 execute as @r run function cryptid:rituals/initial/fleshydemand
 scoreboard objectives add cryptid.ritual.sacrificecounter dummy
+scoreboard objectives add cryptid.athame.cooldown dummy
+
 
 team add cryptid.glitch
 team modify cryptid.glitch nametagVisibility always
