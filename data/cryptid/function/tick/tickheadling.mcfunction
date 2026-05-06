@@ -4,7 +4,7 @@ execute store result score @s cryptid.random run random value 1..70
 ##damage
 
 tag @s remove hitting
-execute if entity @e[type=!#cryptid:nonliving, distance=0.1..7] run tag @s add hitting
+execute if entity @e[type=!#cryptid:nonliving,type=!player, distance=0.1..7] run tag @s add hitting
 
 
 
@@ -16,9 +16,9 @@ execute if entity @s[tag=dig] unless block ~ ~2 ~ air run item replace entity @s
 
 
 ##hiting logic
-execute if entity @s[tag=!dig, tag=hitting] run tp @s ~ ~ ~ facing entity @e[type=!#cryptid:nonliving, distance=0.1..8, sort=nearest, limit=1]
-execute if entity @s[tag=!dig, tag=hitting] run damage @e[type=!#cryptid:nonliving, distance=0.1..4, sort=nearest, limit=1] 1 cryptid:chomp by @s
-execute if entity @s[tag=!dig, tag=hitting] run effect give @e[type=!#cryptid:nonliving, distance=0.1..4, sort=nearest, limit=1] slowness 2 2 true
+execute if entity @s[tag=!dig, tag=hitting] run tp @s ~ ~ ~ facing entity @e[type=!#cryptid:nonliving, type=!player, distance=0.1..8, sort=nearest, limit=1]
+execute if entity @s[tag=!dig, tag=hitting] run damage @e[type=!#cryptid:nonliving, type=!player, distance=0.1..4, sort=nearest, limit=1] 1 cryptid:chomp by @s
+execute if entity @s[tag=!dig, tag=hitting] run effect give @e[type=!#cryptid:nonliving, type=!player, distance=0.1..4, sort=nearest, limit=1] slowness 2 2 true
 
 
 ##looking

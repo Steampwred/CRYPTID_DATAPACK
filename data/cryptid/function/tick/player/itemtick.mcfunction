@@ -27,11 +27,11 @@ execute as @s at @s[scores={cryptid.click=1}] if items entity @s weapon.* minecr
 ## tick totem
 execute if items entity @s weapon.mainhand minecraft:villager_spawn_egg[minecraft:custom_model_data=1319] run execute if entity @e[tag=!cryptid.lessertotem,tag=cryptid, distance=0..5] at @s run function cryptid:action/repell
 
-## Tick knife
-execute as @s at @s[scores={cryptid.click=1}] if items entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.athame:1}] anchored eyes positioned ^ ^ ^ run function cryptid:rituals/athame/usemainhand
+## Tick athame knife
+execute as @s at @s[scores={cryptid.click=1, cryptid.athame.cooldown=..1}] if items entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.athame:1}] anchored eyes positioned ^ ^ ^ run function cryptid:rituals/athame/usemainhand
 execute as @s at @s[scores={cryptid.click=1}] if items entity @s weapon.offhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.athame:1}] anchored eyes positioned ^ ^ ^ run function cryptid:rituals/athame/useoffhand
-
-
+execute if items entity @s[scores={cryptid.athame.cooldown=1..}] weapon.mainhand minecraft:warped_fungus_on_a_stick[custom_data~{cryptid.athame:1}] run scoreboard players remove @s[scores={cryptid.athame.cooldown=1..}] cryptid.athame.cooldown 1
+execute if items entity @s[scores={cryptid.athame.cooldown=1}] weapon.mainhand minecraft:warped_fungus_on_a_stick[custom_data~{cryptid.athame:1}] run function cryptid:rituals/athame/return
 ##read totem
 
 execute if items entity @s hotbar.* minecraft:villager_spawn_egg[minecraft:custom_data~{faketotem:1b}] run function cryptid:action/give/givetotem

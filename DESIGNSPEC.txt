@@ -43,6 +43,8 @@ Instead, it uses a dynamic marker macro to apply data to a marker entity, force 
 than checking for every entity with a tag!) and ticks the function in the marker data, onto the cryptid entity. Sounds like a hassle? It's simplified with the 
 ``function cryptid:action/general/spawntickmarker {"name":"tickskinned"}`` macro, which handles it all for you! 
 
+Note: tickmarker mus be called on an entity that has the cryptid tag
+
 ACTION handles all functions that execute for a short time, or only once. Its used for things like shotgun blasts or entity actions, like chompers eating or curators digging.
 ACTION is also divided into subfolders, based on the entity doing the action. action/player is a very useful folder
 

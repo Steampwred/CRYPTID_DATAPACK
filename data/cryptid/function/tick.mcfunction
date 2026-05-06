@@ -124,4 +124,4 @@ execute as @a at @s run function cryptid:tick/player/playertick
 
 ###randommobnamer
 
-execute if score .global cryptid.day matches 2.. run execute as @e[type=!#cryptid:nonliving, tag=!cryptid.nameinit, type=!#cryptid:projectiles, type=!#can_breathe_under_water] at @s run function cryptid:events/cryptid/nameinit
+execute if score .global cryptid.day matches 2.. run execute as @e[type=!#cryptid:nonliving, tag=!cryptid.nameinit, type=!#cryptid:projectiles, type=!#can_breathe_under_water,type=!player] at @s run function cryptid:events/cryptid/nameinit

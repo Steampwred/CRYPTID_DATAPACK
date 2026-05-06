@@ -44,10 +44,11 @@ execute as @s[tag=cryptid.nokb] at @s run function cryptid:action/effect/nokb
 
 
 ##leave game simulator
-
 execute as @s[scores={cryptid.leave=1..}] if dimension overworld at @s run function cryptid:action/onjoin
 execute as @s[scores={cryptid.leave=1..}] run scoreboard players set @s cryptid.leave 0
 
+##Give Players a Unique ID if not present
+execute as @s unless score @s cryptid.player.id = @s cryptid.player.id store result score @s cryptid.player.id run scoreboard players add .global cryptid.player.id 1
 
 ##void
 execute if entity @s[tag=!cryptid.invoid] run scoreboard players reset @s cryptid.voidtimer
