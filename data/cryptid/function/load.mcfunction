@@ -6,6 +6,10 @@ scoreboard objectives add cryptid.player.minharmony dummy
 scoreboard objectives add cryptid.chomptime dummy
 scoreboard objectives add cryptid.handitem dummy
 scoreboard objectives add cryptid.world.fury dummy
+
+##individual player ID
+scoreboard objectives add cryptid.player.id dummy
+
 ##gamerules
 scoreboard objectives add cryptid.eventhandler dummy
 scoreboard objectives add cryptid.voidambiencetimer dummy

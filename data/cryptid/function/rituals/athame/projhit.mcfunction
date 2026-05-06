@@ -1,10 +1,14 @@
 
 particle item{item:{id:red_concrete}} ~ ~ ~ 0.3 0.3 0.3 0.2 180
-playsound minecraft:entity.wither.hurt ambient @a ~ ~ ~ 0.2 0.1
+playsound minecraft:cryptid.sword.hit ambient @a
+#minecraft:entity.wither.hurt ambient @a ~ ~ ~ 0.2 0.1
 
 
 ## spawn chains
 execute as @s[tag=!chained] run function cryptid:action/chaindebuff/spawnchain
+
+execute on passengers run scoreboard players operation @s[tag=cryptid.chainer] cryptid.player.id = @n[tag=cryptid.athameproj,type=item_display] cryptid.player.id 
+
 
 execute as @n[tag=cryptid.athameproj,type=item_display] run kill @s 
 
