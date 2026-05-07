@@ -1,6 +1,6 @@
 playsound minecraft:cryptid.world.infection ambient @a ~ ~ ~ 1 0.4
 
-execute facing entity @e[sort=random, limit=1] eyes positioned ^ ^ ^8 run summon armor_stand ~ ~ ~ {CustomName:'[{"text":"Bit cleanup"}]',Marker:1b, Invisible:1b, NoGravity:1b, Tags:["cryptid","cryptid.breakerant","cryptid.timer","cryptid.radarignore"]}
+execute facing entity @e[sort=random, limit=1] eyes positioned ^ ^ ^8 run summon armor_stand ~ ~ ~ {CustomName:'[{"text":"Bit cleanup"}]',Marker:1b, Invisible:1b, NoGravity:1b, Tags:["cryptid","cryptid.breakerant","cryptid.timer","cryptid.ignore.radar"]}
 
 
 

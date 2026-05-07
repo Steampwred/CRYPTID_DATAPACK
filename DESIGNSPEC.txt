@@ -16,8 +16,9 @@ The majority of the mod is made by me, Steampwered; Fin mun did a few textures, 
 2. Entity methods
 3. World ticking
 4. Custom models/animations
-5. Structures and block changes
-6. Shader utils
+5. Custom Tags
+6. Structures and block changes
+7. Shader utils
 
 
 
@@ -43,7 +44,7 @@ Instead, it uses a dynamic marker macro to apply data to a marker entity, force 
 than checking for every entity with a tag!) and ticks the function in the marker data, onto the cryptid entity. Sounds like a hassle? It's simplified with the 
 ``function cryptid:action/general/spawntickmarker {"name":"tickskinned"}`` macro, which handles it all for you! 
 
-Note: tickmarker mus be called on an entity that has the cryptid tag
+Note: tickmarker must be called on an entity that has the cryptid tag
 
 ACTION handles all functions that execute for a short time, or only once. Its used for things like shotgun blasts or entity actions, like chompers eating or curators digging.
 ACTION is also divided into subfolders, based on the entity doing the action. action/player is a very useful folder
@@ -65,8 +66,20 @@ summon entities with /function cryptid:events/[EVENTNAME]
 
 
 [#5]
+****Custom Tags****
+all Entity and Item tags should begin with "cryptid." followed by the mob
+Mobs should have both the tag "cryptid" and a specific "cryptid.mobname"
+example mob Tags:["cryptid","cryptid.vorheart"]
+
+Due to the many feature of the Cryptid pack, the tools players have at their disposal and complex mob ai, certin effects may overlap and cause bugs or unintended results.
+To avoid unwanted interations there exists ignore tags. when making a new ignore tag follow the format cryptid.ignore.insertname.optionalspecs
+List of current ignore tags
+- cryptid.ignore.radar              Entites with this tag only apear as small dots and are not prioritixed by tracking ping
+- cryptid.ignore.totemward.held     cryptid entity will not be affected by Lesser blood totem ward held effects
+
+[#6]
 ****STRUCTURES AND BLOCKS****
 
 
-[#6]
+[#7]
 ****SHADER UTILS****
