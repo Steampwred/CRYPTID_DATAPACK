@@ -1,7 +1,7 @@
 tag @s remove cryptid.totemward
 execute store result score @s cryptid.player.random run random value 1..200
 execute if score @s cryptid.player.random matches 1..10 run tellraw @s [{"text":"Your totem warded off a ","color":"dark_red"},{"color":"red","selector":"@e[tag=cryptid,sort=nearest,limit=1]"},{"text":"!","color":"dark_red"}]
-execute if score @s cryptid.player.random matches 1..10 run execute as @e[tag=cryptid,tag=!cryptid.ignore.totemward.held distance=0..10, sort=nearest, limit=1] at @s run spreadplayers ~ ~ 50 90 false @s
+execute if score @s cryptid.player.random matches 1..10 run execute as @e[tag=cryptid,tag=!cryptid.ignore.totemward.held, distance=0..10, sort=nearest, limit=1] at @s run spreadplayers ~ ~ 50 90 false @s
 execute if score @s cryptid.player.random matches 1..10 run playsound minecraft:block.respawn_anchor.deplete ambient @a[distance=0..10] ~ ~ ~ 1 0.1
 execute if score @s cryptid.player.random matches 1..10 run effect give @s minecraft:blindness 1 2 true
 execute if score @s cryptid.player.random matches 1..10 run execute anchored eyes run particle minecraft:crimson_spore ^ ^ ^ 0.4 0.4 0.4 0.001 1000

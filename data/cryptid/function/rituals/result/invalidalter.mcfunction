@@ -1,7 +1,7 @@
 scoreboard players set @s cryptid.timer 0 
 
 
-execute if entity @s[tag=ritual.translate] run tellraw @a[distance=..10] {"text":"The alter seems to be missing something...","color":"dark_purple","bold":true}
+execute if entity @s[tag=ritual.translate] run tellraw @a[distance=..10] {"text":"Valid ritual circle, although the alter seems to be missing something...","color":"dark_purple","bold":true}
 
 function cryptid:rituals/speakfx
 

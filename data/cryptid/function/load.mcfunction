@@ -111,7 +111,7 @@ scoreboard objectives add cryptid.ritual.focicount dummy
 scoreboard objectives add cryptid.ritualrangecap dummy
 scoreboard objectives add cryptid.ritual.probability dummy
 scoreboard objectives add cryptid.ritual.turns dummy
-execute as @r run function cryptid:rituals/initial/fleshydemand
+execute as @r run function cryptid:rituals/initial/orificecraving
 scoreboard objectives add cryptid.ritual.sacrificecounter dummy
 scoreboard objectives add cryptid.athame.cooldown dummy
 

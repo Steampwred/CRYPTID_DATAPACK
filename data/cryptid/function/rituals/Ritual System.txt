@@ -60,11 +60,6 @@ Notes
 - orifice code is located outside /rituals, it is under cryptid/function/tick/tickorifice.mcfunction
 
 
-TO do
-Finish athame
-    - model, description and lore
-    - rewrite as enchantment to avoid raycasting
-    - make scaning a nonsolid block above a flesh block work as well
 
 
 Ritual
@@ -99,3 +94,37 @@ Compromise for current datapack version
         Without a circle, no items can be crafted, sacrifices will only decrease some wold fury, and act as a way for players to spread the corruption and spawn cryptids.
         the cryptids will still try to kill you the flesh cares not if you devote yourself to it, it hungers for all just the same.
         really small chance of being gifted a rare cryptid item after many sacrices. (arm?)
+
+
+
+
+
+
+
+
+
+
+  TOOOO DOOOOOOOOO
+Finish athame
+    - model, description
+
+Fix cryptid items
+ - cooldowns
+ - unified descriptions
+ 
+
+
+Corrupted mobs
+    -make sure there is a way to protect mobs
+    - make less laggy
+    - make not constantly corrupting and lagging
+
+rituals 
+    - Craving refresh
+    - Unbound rewards
+    - Unbound sacrifice macro functionality bug test
+    - High Mishap events 
+
+    - Circle story Structures
+    - Enchanting table translation touch up
+    

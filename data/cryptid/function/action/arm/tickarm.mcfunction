@@ -8,7 +8,7 @@ execute if score @s cryptid.click matches 1.. run item replace entity @s weapon.
 execute if score @s cryptid.click matches 1.. run scoreboard players set @s cryptid.handitem 15
 
 
-execute if score @s cryptid.click matches 1.. run execute anchored eyes positioned ^ ^ ^4 as @e[distance=0..3.6, sort=nearest, limit=1, type=!#cryptid:nonliving] at @s run function cryptid:action/party/explode
+execute if score @s cryptid.click matches 1.. run execute anchored eyes positioned ^ ^ ^4 as @e[distance=0..3.6, sort=nearest, limit=1, type=!#cryptid:nonliving] at @s unless items entity @s weapon.* minecraft:warped_fungus_on_a_stick[custom_data~{cryptid.arm:1b}] run function cryptid:action/party/explode
 
 
 
