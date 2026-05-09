@@ -5,5 +5,8 @@ execute unless score @s cryptid.ritual.sacrificecounter matches 2.. run return f
 
 particle crimson_spore ~ ~ ~ 0 0 0 1 200
 playsound minecraft:cryptid.ambient.hand ambient @a ~ ~ ~ 1 1
-tellraw @a {"text":"TWO GOATS","color":"red"}
+
 tag @s add ritual.cravingmet
+
+loot spawn ~ ~ ~ loot cryptid:rituals/rewardprecious
+loot spawn ~ ~ ~ loot cryptid:rituals/meats

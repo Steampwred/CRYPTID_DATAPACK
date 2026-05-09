@@ -1,0 +1,49 @@
+{
+  "pools": [
+    {
+      "rolls": 16,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sugar",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "[\"\",{\"text\":\"item.prion.cluster\",\"italic\":false}]",
+                "minecraft:food": {
+                  "nutrition": 1,
+                  "saturation": 1,
+                  "can_always_eat": true,
+                  "eat_seconds": 1.5,
+                  "effects": [
+                    {
+                      "effect": {
+                        "id": "wither",
+                        "duration": 55,
+                        "amplifier": 1
+                      },
+                      "probability": 0.6
+                    }
+                  ]
+                },
+                "minecraft:custom_model_data": 1307
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nether_wart_block",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherrack",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
