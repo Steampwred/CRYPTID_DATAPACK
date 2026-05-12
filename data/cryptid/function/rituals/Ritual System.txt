@@ -121,10 +121,10 @@ Corrupted mobs
 
 rituals 
     - Craving refresh
-    - Unbound rewards
-    - Unbound sacrifice macro functionality bug test
+    X- Unbound rewards
+    X- Unbound sacrifice macro functionality bug test
     - High Mishap events 
 
     - Circle story Structures
-    - Enchanting table translation touch up
+
     

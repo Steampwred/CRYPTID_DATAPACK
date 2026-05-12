@@ -11,7 +11,7 @@ particle item{item:{id:cobblestone}} ~ ~.5 ~ 0.2 0.3 0.2 0.2 900
 fill ~ ~ ~ ~ ~ ~ air
 
 #summon familiar soul
-summon vindicator ~ ~ ~ {Silent:1b,Tags:["cryptid","cryptid.digger"],CustomName:'{"color":"red","text":"Familiar Soul"}',CustomNameVisible:1b,ArmorItems:[{},{},{},{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":1303,"minecraft:custom_data":{cryptid.revivetrigger:1b}}}],ArmorDropChances:[0.085F,0.085F,0.085F,1.000F]} 
+summon vindicator ~ ~ ~ {Silent:1b,Tags:["cryptid","cryptid.digger", "cryptid.ignore.totemward.held"],CustomName:'{"color":"red","text":"Familiar Soul"}',CustomNameVisible:1b,ArmorItems:[{},{},{},{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":1303,"minecraft:custom_data":{cryptid.revivetrigger:1b}}}],ArmorDropChances:[0.085F,0.085F,0.085F,1.000F]} 
 effect give @n[type=vindicator, tag=cryptid.digger] slowness 3 5 true
 
 scoreboard players set @e[tag=cryptid.digger,type=vindicator] cryptid.mob.class 2 

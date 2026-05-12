@@ -1,6 +1,6 @@
 tellraw @s {"text":":)","color":"red"}
 
-summon vindicator ^ ^-10 ^-20 {CanBreakDoors:1,CustomName:'[{"text":"Stagnant"}]',Invulnerable:1b,PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.tank"],active_effects:[{id:invisibility,duration:123151231231,amplifier:1,show_particles:0b}],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1314},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon vindicator ^ ^-10 ^-20 {CanBreakDoors:1,CustomName:'[{"text":"Stagnant"}]',Invulnerable:1b,PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.tank"],active_effects:[{id:invisibility,duration:-1,amplifier:1,show_particles:0b}],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1314},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
 execute positioned ^ ^-10 ^-20 run summon lightning_bolt
 

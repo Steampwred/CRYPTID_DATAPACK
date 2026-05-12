@@ -21,7 +21,7 @@ execute if score @s[scores={cryptid.ritual.turns=..8}] cryptid.timer matches 204
 execute if score @s[scores={cryptid.ritual.turns=..8}] cryptid.timer matches 204..300 if score .heartbeat cryptid.globalevent matches 17 run function cryptid:rituals/initial/checkslot
 
 
-execute as @s[tag=ritual.translate] if score @s cryptid.timer matches 203 run tellraw @a[distance=..10] {"text":"Ritual Stability: ","color":"dark_purple","bold":true,"extra":[{"score":{"name":"@s","objective":"cryptid.ritual.stability"},"color":"aqua","bold":false}]}
+execute as @s[tag=ritual.translate] if score @s cryptid.timer matches 203 run tellraw @a[distance=..10] {"text":"Total Stability Bonus: ","color":"dark_purple","bold":true,"extra":[{"score":{"name":"@s","objective":"cryptid.ritual.stability"},"color":"aqua","bold":false}]}
 
 #### Ritual Activly running (timer value 100-200)
 execute if score @s cryptid.timer matches 100..200 if score .heartbeat cryptid.globalevent matches 1..12 run tp @s ~ ~ ~ facing entity @p

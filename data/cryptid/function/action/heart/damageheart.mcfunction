@@ -14,4 +14,3 @@ execute if score @s cryptid.random matches 5 run function cryptid:events/undergr
 execute if score @s cryptid.random matches 6 run function cryptid:events/underground/tunnel
 execute if score @s cryptid.random matches 7 run function cryptid:events/cryptid/flicker2
 execute if score @s cryptid.random matches 8 run function cryptid:events/cryptid/flicker5
-

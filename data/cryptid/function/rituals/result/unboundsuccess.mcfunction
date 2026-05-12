@@ -1,6 +1,6 @@
 scoreboard players add @a[distance=..20] cryptid.player.harmony 18000
 scoreboard players remove .global cryptid.world.fury 15
-function cryptid:rituals/initial/orificecraving
+#function cryptid:rituals/initial/orificecraving
 
 execute store result score @s cryptid.player.random run random value 1..8
 execute if score @s cryptid.player.random matches 1 run tellraw @a[distance=..10] {"text":"W E   A R E   S A T I A T E D","color":"red","bold":true}

@@ -34,7 +34,7 @@ scoreboard players add .chomper cryptid.globalevent 1
 execute if score .chomper cryptid.globalevent matches 41.. run scoreboard players set .chomper cryptid.globalevent 1
 
 #life per day
-execute if score .globalspawn cryptid.globalevent matches 12 run execute as @a[scores={cryptid.player.flux=0..,cryptid.player.harmony=0..,cryptid.maxlives=..3}] run function cryptid:events/gainlife
+execute if score .globalspawn cryptid.globalevent matches 12 run execute as @a[scores={cryptid.player.flux=0..,cryptid.player.harmony=0..,cryptid.maxlives=..3},gamemode=!spectator] run function cryptid:events/gainlife
 
 
 #############heart spawning logic reworked
