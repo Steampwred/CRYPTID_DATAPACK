@@ -1,3 +1,13 @@
+scoreboard players add .global cryptid.pyramidsteal 1
+execute if score .global cryptid.pyramidsteal matches 1 run function cryptid:events/cryptid/flicker2
+execute if score .global cryptid.pyramidsteal matches 2 run function cryptid:events/cryptid/flicker5
+advancement revoke @a only cryptid:stealpyramid
+
+execute if score .global cryptid.pyramidsteal matches 4 run scoreboard players set .global cryptid.pyramidsteal 2
+execute unless score .global cryptid.pyramidsteal matches 3 run return fail
+
+
+
 playsound minecraft:cryptid.sky.ambient ambient @a[distance=0..30] ~ ~ ~ 10 0.6
 weather thunder 800
 
@@ -24,4 +34,3 @@ execute if score @s cryptid.player.random matches 40 run function cryptid:events
 
 
 scoreboard players reset @s cryptid.random
-advancement revoke @a only cryptid:stealpyramid

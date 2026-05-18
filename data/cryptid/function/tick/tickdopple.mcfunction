@@ -2,13 +2,13 @@
 execute store result score @s cryptid.player.random run random value 1..3000
 execute if score @s cryptid.player.random matches 1..100 run tag @s add cryptid.doppleprime
 
-
+##prevent premature death
+execute as @n[tag=cryptid.doppleclone] if entity @p[distance=..5] run data merge entity @s {Invulnerable:0b}
+effect give @s[tag=!cryptid.doppleawakened] minecraft:resistance 1 255 true
 
 
 ##start and kill logic
-#execute as @s at @s if score @s[tag=!cryptid.doppleawakened] cryptid.player.random matches 1..360 if entity @p[distance=0..10] run function cryptid:action/dopplestart
-
-
+execute at @s if score @s[tag=!cryptid.doppleawakened] cryptid.player.random matches 1..28 if entity @p[distance=0..10] run function cryptid:action/dopplestart
 
 
 
@@ -22,7 +22,8 @@ execute as @s[tag=!cryptid.doppleawakened, tag=cryptid.doppleprime] at @s if sco
 
 
 ##spreadplay
-execute positioned as @s if score @s[tag=cryptid.doppleawakened] cryptid.player.random matches 4..7 run spreadplayers ~ ~ 10 20 false @s
+execute positioned as @s if score @s[tag=cryptid.doppleawakened,tag=!lookedat] cryptid.player.random matches 7..40 if entity @p[distance=10..40] positioned as @p run spreadplayers ~ ~ 10 25 false @s
+execute positioned as @s if score @s[tag=cryptid.doppleawakened] cryptid.player.random matches 1..800 if entity @p[scores={cryptid.player.damage=1..}] positioned as @p run spreadplayers ~ ~ 10 25 false @s
 
 
 ##if not, kill

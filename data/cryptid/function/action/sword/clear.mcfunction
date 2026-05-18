@@ -4,8 +4,8 @@ particle minecraft:poof ~ ~ ~ 2 2 2 0.01 500 force
 
 playsound minecraft:entity.allay.hurt ambient @a ~ ~ ~ 1 0.1
 
-execute positioned ~ ~-4 ~ run place feature cryptid:clearflesh
-execute positioned ~ ~5 ~ run place feature cryptid:clearflesh
+#execute positioned ~ ~-4 ~ run place feature cryptid:clearflesh
+execute positioned ~ ~1 ~ run place feature cryptid:clearflesh
 
-execute as @e[tag=cryptid.worm, distance=..7.5] at @s run function cryptid:action/general/explodedeath
+execute as @e[tag=cryptid.worm, distance=..7] at @s run function cryptid:action/general/explodedeath
 

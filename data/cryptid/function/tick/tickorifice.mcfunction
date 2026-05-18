@@ -49,6 +49,7 @@ execute if score @s[tag=ritual.success] cryptid.timer matches -120..-110 run tp 
 execute if score @s[tag=ritual.success] cryptid.timer matches -140..-120 run tp @s ~ ~-0.55 ~
 # GIVE REWAR!!
     execute if score @s[tag=ritual.requirmentmet] cryptid.timer matches -140 positioned ~ ~6 ~ run function cryptid:rituals/result/macroreward with storage cryptid:ritual alter
+  
     execute if score @s cryptid.timer matches -140 run kill @s
 
 # Despawn

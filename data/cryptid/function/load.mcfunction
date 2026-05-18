@@ -55,6 +55,7 @@ scoreboard objectives add cryptid.wallspawn dummy
 scoreboard objectives add cryptid.crawlerspawn dummy
 scoreboard objectives add cryptid.wavespawn dummy
 scoreboard objectives add cryptid.anitimer dummy
+scoreboard objectives add cryptid.pyramidsteal dummy
 scoreboard players set 24000 cryptid.anitimer 24000
 scoreboard players set 80 cryptid.anitimer 80
 scoreboard players set 50 cryptid.anitimer 50

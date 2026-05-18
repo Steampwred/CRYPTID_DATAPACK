@@ -75,7 +75,7 @@ Due to the many feature of the Cryptid pack, the tools players have at their dis
 To avoid unwanted interations there exists ignore tags. when making a new ignore tag follow the format cryptid.ignore.insertname.optionalspecs
 List of current ignore tags
 - cryptid.ignore.radar              Entites with this tag only apear as small dots and are not prioritixed by tracking ping
-- cryptid.ignore.totemward.held     cryptid entity will not be affected by Lesser blood totem ward held effects
+- cryptid.ignore.totemward     cryptid entity will not be affected by Lesser blood totem ward held effects
 
 [#6]
 ****STRUCTURES AND BLOCKS****
