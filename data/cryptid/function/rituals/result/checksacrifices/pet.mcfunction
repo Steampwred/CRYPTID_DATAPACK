@@ -1,1 +1,12 @@
-say pet
+## Check conditions
+scoreboard players reset @s cryptid.ritual.sacrificecounter
+execute as @e[distance=0.5..11,type=wolf,tag=sacrifice.mob] run scoreboard players add @n[distance=..11,tag=cryptid.orifice,type=zombie] cryptid.ritual.sacrificecounter 1
+execute unless score @s cryptid.ritual.sacrificecounter matches 1.. run return fail
+
+particle crimson_spore ~ ~ ~ 0 0 0 1 200
+playsound minecraft:cryptid.ambient.hand ambient @a ~ ~ ~ 1 1
+
+tag @s add ritual.cravingmet
+
+loot spawn ~ ~ ~ loot cryptid:rituals/rewardprecious
+loot spawn ~ ~ ~ loot cryptid:rituals/meats

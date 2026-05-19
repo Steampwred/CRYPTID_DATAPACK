@@ -98,7 +98,7 @@
             "type": "score",
             "extra": [
               {
-                "text": "]",
+                "text": "]   (remaining lives)",
                 "color": "#672222",
                 "bold": false,
                 "italic": false

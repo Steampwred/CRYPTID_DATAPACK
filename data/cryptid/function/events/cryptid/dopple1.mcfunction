@@ -7,16 +7,16 @@ execute store result score @s cryptid.player.random run random value 1..10
 
 summon vindicator ~ ~120 ~ {CustomName:'[{"text":"Friend"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.dopple"],ArmorDropChances:[0f,0f,0f,0f]}
 
-execute if score @s cryptid.player.random matches 1 run summon villager ~ ~122 ~ {Invulnerable:1, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
-execute if score @s cryptid.player.random matches 2 run summon cow ~ ~123 ~ {Invulnerable:1, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
-execute if score @s cryptid.player.random matches 3 run summon sheep ~ ~124 ~ {Invulnerable:1, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
-execute if score @s cryptid.player.random matches 4 run summon chicken ~ ~125 ~ {Invulnerable:1, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
-execute if score @s cryptid.player.random matches 5 run summon pig ~ ~126 ~ {Invulnerable:1, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
-execute if score @s cryptid.player.random matches 6 run summon horse ~ ~127 ~ {Invulnerable:1, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
-execute if score @s cryptid.player.random matches 7 run summon wolf ~ ~128 ~ {Invulnerable:1, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
-execute if score @s cryptid.player.random matches 8 run summon llama ~ ~129 ~ {Invulnerable:1, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
-execute if score @s cryptid.player.random matches 9 run summon witch ~ ~130 ~ {Invulnerable:1, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
-execute if score @s cryptid.player.random matches 10 run summon spider ~ ~131 ~ {Invulnerable:1, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
+execute if score @s cryptid.player.random matches 1 run summon villager ~ ~122 ~ {Invulnerable:1b, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
+execute if score @s cryptid.player.random matches 2 run summon cow ~ ~123 ~ {Invulnerable:1b, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
+execute if score @s cryptid.player.random matches 3 run summon sheep ~ ~124 ~ {Invulnerable:1b, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
+execute if score @s cryptid.player.random matches 4 run summon chicken ~ ~125 ~ {Invulnerable:1b, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
+execute if score @s cryptid.player.random matches 5 run summon pig ~ ~126 ~ {Invulnerable:1b, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
+execute if score @s cryptid.player.random matches 6 run summon horse ~ ~127 ~ {Invulnerable:1b, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
+execute if score @s cryptid.player.random matches 7 run summon wolf ~ ~128 ~ {Invulnerable:1b, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
+execute if score @s cryptid.player.random matches 8 run summon llama ~ ~129 ~ {Invulnerable:1b, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
+execute if score @s cryptid.player.random matches 9 run summon witch ~ ~130 ~ {Invulnerable:1b, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
+execute if score @s cryptid.player.random matches 10 run summon spider ~ ~131 ~ {Invulnerable:1b, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
 
 
 
@@ -33,13 +33,9 @@ execute positioned ~ ~120 ~ run tag @e[tag=!init,sort=nearest, tag=cryptid.doppl
 
 
 execute positioned ~ ~120 ~ run effect give @e[type=vindicator, sort=nearest, tag=cryptid.dopple] minecraft:invisibility infinite 1 true
-
-
 execute positioned ~ ~120 ~ run effect give @e[type=vindicator, sort=nearest, tag=cryptid.dopple] minecraft:slowness infinite 1 true
-
-
-
 execute positioned ~ ~120 ~ run effect give @e[type=vindicator, sort=nearest, tag=cryptid.dopple] minecraft:weakness infinite 200 true
+execute positioned ~ ~120 ~ run effect give @e[type=vindicator, sort=nearest, tag=cryptid.dopple] minecraft:regeneration infinite 1 true
 
 execute positioned ~ ~120 ~ run attribute @e[type=vindicator, sort=nearest, tag=cryptid.dopple,limit=1] minecraft:generic.jump_strength base set 0.3
 
@@ -51,6 +47,9 @@ execute positioned ~ ~120 ~ run attribute @e[type=vindicator, sort=nearest, tag=
 
 execute positioned ~ ~120 ~ run attribute @e[type=vindicator, sort=nearest, tag=cryptid.dopple,limit=1] minecraft:generic.fall_damage_multiplier base set 0
 
+execute positioned ~ ~120 ~ run attribute @e[type=vindicator, sort=nearest, tag=cryptid.dopple,limit=1] minecraft:generic.water_movement_efficiency base set 1
+
+execute positioned ~ ~120 ~ run attribute @e[type=vindicator, sort=nearest, tag=cryptid.dopple,limit=1] minecraft:generic.max_health base set 40
 
 execute positioned ~ ~120 ~ run attribute @e[type=vindicator, sort=nearest, tag=cryptid.dopple,limit=1] minecraft:generic.follow_range base set 20000
 

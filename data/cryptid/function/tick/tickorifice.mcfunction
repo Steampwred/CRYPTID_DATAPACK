@@ -1,13 +1,17 @@
 execute as @s[tag=cryptid.fallground] run return fail
 
 ##init
-execute if entity @s[tag=!init] run scoreboard players set @s cryptid.timer 40
+execute if entity @s[tag=!init] run scoreboard players set @s cryptid.timer 48
 execute if entity @s[tag=!init] run tag @s add init
 
+
 # Spawn and Idle Animation (timer value 0-40) (asends 6 blocks over 40 ticks)
-execute if score @s cryptid.timer matches 20..41 run tp @s ~ ~0.25 ~ facing entity @p
+execute if score @s cryptid.timer matches 20..49 run tp @s ~ ~0.25 ~ facing entity @p
 execute if score @s cryptid.timer matches 1..20 run tp @s ~ ~0.105 ~ facing entity @p
+execute if score @s cryptid.timer matches 25 run function cryptid:rituals/speakfx
 execute if score @s cryptid.timer matches 0 run tp @s ~ ~ ~ facing entity @p
+
+particle falling_dust{block_state:{Name:red_concrete}} ^ ^ ^-1.6 0.3 0.6 0.3 5 1
 
 #### Ritual Initiate (timer value 200-400)
 # Identify Alter (ritual type)
@@ -17,7 +21,7 @@ execute if score @s[scores={cryptid.ritual.turns=..8}] cryptid.timer matches 204
 execute if score @s[scores={cryptid.ritual.turns=..8}] cryptid.timer matches 204..300 if score .heartbeat cryptid.globalevent matches 17 run function cryptid:rituals/initial/checkslot
 
 
-execute as @s[tag=ritual.translate] if score @s cryptid.timer matches 203 run tellraw @a[distance=..10] {"text":"Ritual Stability: ","color":"dark_purple","bold":true,"extra":[{"score":{"name":"@s","objective":"cryptid.ritual.stability"},"color":"aqua","bold":false}]}
+execute as @s[tag=ritual.translate] if score @s cryptid.timer matches 203 run tellraw @a[distance=..10] {"text":"Total Stability Bonus: ","color":"dark_purple","bold":true,"extra":[{"score":{"name":"@s","objective":"cryptid.ritual.stability"},"color":"aqua","bold":false}]}
 
 #### Ritual Activly running (timer value 100-200)
 execute if score @s cryptid.timer matches 100..200 if score .heartbeat cryptid.globalevent matches 1..12 run tp @s ~ ~ ~ facing entity @p
@@ -45,12 +49,14 @@ execute if score @s[tag=ritual.success] cryptid.timer matches -120..-110 run tp 
 execute if score @s[tag=ritual.success] cryptid.timer matches -140..-120 run tp @s ~ ~-0.55 ~
 # GIVE REWAR!!
     execute if score @s[tag=ritual.requirmentmet] cryptid.timer matches -140 positioned ~ ~6 ~ run function cryptid:rituals/result/macroreward with storage cryptid:ritual alter
+  
     execute if score @s cryptid.timer matches -140 run kill @s
 
 # Despawn
 execute if score @s cryptid.timer matches 0 unless entity @p[distance=..12] run function cryptid:action/general/grounddeath
+execute if score @s[nbt={HurtTime:2s}] cryptid.timer matches 0 run function cryptid:rituals/random/randommessage
 execute if score @s[nbt={HurtTime:2s}] cryptid.timer matches 0 run function cryptid:action/general/grounddeath
+
 
 ######### Timer
 execute unless score @s cryptid.timer matches 0 run scoreboard players remove @s cryptid.timer 1
-#execute unless score @s cryptid.timer matches 90 run scoreboard players remove @s cryptid.timer 1sum

@@ -10,6 +10,8 @@ execute as @s[tag=cryptid.fallground, scores={cryptid.timer=..0}] at @s run tp @
 execute as @s[tag=cryptid.fallground, scores={cryptid.timer=..-10}] run tp @s ~ ~-0.4 ~
 
 execute as @s[tag=cryptid.fallground] at @s run particle dust_pillar{block_state:{Name:netherrack}} ~ ~ ~ 0.3 0 0.3 0.1 15 normal
+
+execute as @s[tag=cryptid.fallground, scores={cryptid.timer=..-40}] run tp @s ~ -300 ~
 execute as @s[tag=cryptid.fallground, scores={cryptid.timer=..-40}] run kill @s
 
 ##general check

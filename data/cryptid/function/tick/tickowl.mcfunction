@@ -52,10 +52,8 @@ execute unless block ^ ^-10 ^10 air run tp @s[tag=!agro] ~ ~0.2 ~
 
 
 ##fill
-execute if entity @p[distance=0..20] run fill ~2 ~2 ~2 ~-2 ~-2 ~-2 minecraft:nether_wart_block replace #minecraft:mineable/axe
-execute if entity @p[distance=0..20] run fill ~2 ~2 ~2 ~-2 ~-2 ~-2 minecraft:nether_wart_block replace #minecraft:mineable/hoe
-execute if entity @p[distance=0..20] run fill ~2 ~2 ~2 ~-2 ~-2 ~-2 minecraft:nether_wart_block replace #minecraft:mineable/pickaxe
-execute if entity @p[distance=0..20] run fill ~2 ~2 ~2 ~-2 ~-2 ~-2 minecraft:nether_wart_block replace #minecraft:mineable/shovel
+execute if entity @p[distance=0..20] run fill ~2 ~2 ~2 ~-2 ~-2 ~-2 minecraft:nether_wart_block replace #cryptid:replaceable/base_all
+
 
 ##onactivation
 

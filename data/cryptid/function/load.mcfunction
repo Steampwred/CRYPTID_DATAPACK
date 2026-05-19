@@ -6,6 +6,10 @@ scoreboard objectives add cryptid.player.minharmony dummy
 scoreboard objectives add cryptid.chomptime dummy
 scoreboard objectives add cryptid.handitem dummy
 scoreboard objectives add cryptid.world.fury dummy
+
+##individual player ID
+scoreboard objectives add cryptid.player.id dummy
+
 ##gamerules
 scoreboard objectives add cryptid.eventhandler dummy
 scoreboard objectives add cryptid.voidambiencetimer dummy
@@ -51,6 +55,7 @@ scoreboard objectives add cryptid.wallspawn dummy
 scoreboard objectives add cryptid.crawlerspawn dummy
 scoreboard objectives add cryptid.wavespawn dummy
 scoreboard objectives add cryptid.anitimer dummy
+scoreboard objectives add cryptid.pyramidsteal dummy
 scoreboard players set 24000 cryptid.anitimer 24000
 scoreboard players set 80 cryptid.anitimer 80
 scoreboard players set 50 cryptid.anitimer 50
@@ -107,7 +112,10 @@ scoreboard objectives add cryptid.ritual.focicount dummy
 scoreboard objectives add cryptid.ritualrangecap dummy
 scoreboard objectives add cryptid.ritual.probability dummy
 scoreboard objectives add cryptid.ritual.turns dummy
-execute as @r run function cryptid:rituals/initial/fleshydemand
+execute as @r run function cryptid:rituals/initial/orificecraving
+scoreboard objectives add cryptid.ritual.sacrificecounter dummy
+scoreboard objectives add cryptid.athame.cooldown dummy
+
 
 team add cryptid.glitch
 team modify cryptid.glitch nametagVisibility always

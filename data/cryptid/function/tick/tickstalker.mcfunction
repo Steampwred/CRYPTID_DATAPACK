@@ -1,9 +1,10 @@
 execute unless score .globaltime cryptid.time matches 1..14000 run tp @s ~ ~ ~ facing entity @p
-execute unless score .globaltime cryptid.time matches 1..14000 run execute if score .heartbeat cryptid.globalevent matches 1 run execute if entity @p[distance=0..55] at @s run tp @s ^ ^ ^2 facing entity @p
-execute unless score .globaltime cryptid.time matches 1..14000 run execute if score .heartbeat cryptid.globalevent matches 1 run playsound minecraft:block.stone.break ambient @a
-execute unless score .globaltime cryptid.time matches 1..14000 run execute if score .heartbeat cryptid.globalevent matches 1 run execute if entity @p[distance=0..55] at @s run execute align xyz run tp @s ~0.5 ~ ~0.5
+execute unless score .globaltime cryptid.time matches 1..14000 run execute if score .heartbeat cryptid.globalevent matches 1 unless entity @s[tag=chained] run execute if entity @p[distance=0..55] at @s run tp @s ^ ^ ^2 facing entity @p
+execute unless score .globaltime cryptid.time matches 1..14000 run execute if score .heartbeat cryptid.globalevent matches 1 unless entity @s[tag=chained] run playsound minecraft:block.stone.break ambient @a
+execute unless score .globaltime cryptid.time matches 1..14000 run execute if score .heartbeat cryptid.globalevent matches 1 unless entity @s[tag=chained] run execute if entity @p[distance=0..55] at @s run execute align xyz run tp @s ~0.5 ~ ~0.5
 
 effect give @s minecraft:invisibility infinite 20 true
+effect give @s minecraft:regeneration infinite 5 true
 
 
 execute store result score @s cryptid.player.random run random value 1..120000

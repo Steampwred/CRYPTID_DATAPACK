@@ -1,4 +1,6 @@
 
+function cryptid:rituals/random/randommessage
+
 effect give @a[distance=..10] minecraft:darkness 3 1 true
 playsound minecraft:cryptid.ambient.mimic ambient @a[distance=..10] ~ ~ ~ 1 0.5
 #tag @s add counting
@@ -6,16 +8,17 @@ scoreboard players set @s cryptid.ritual.stability 0
 scoreboard players set @s cryptid.ritual.focicount 0
 scoreboard players set @s cryptid.ritual.turns 0
 
-execute positioned ~ ~-4 ~ if predicate cryptid:checkritual_etable run function cryptid:rituals/initial/blockcheck/enchanting_table
+execute positioned ~ ~-4 ~ if predicate cryptid:checkritual_etable run tag @s add ritual.translate
 
-tag @e[type=#cryptid:innocent,distance=..5.25] add sacrifice.mob
-execute as @e[type=item,distance=..5.25] run data merge entity @s {NoGravity:1b,Tags:["sacrifice.item"]}
-
+execute positioned ~ ~-4 ~ run tag @e[type=#cryptid:sacrificeable,distance=..5.25,tag=!cryptid.orifice] add sacrifice.mob
+execute positioned ~ ~-4 ~ as @e[type=item,distance=..5.25] run data merge entity @s {NoGravity:1b,Tags:["sacrifice.item"]}
 
 
 ## Initaite Ritual With Circle
 tp @s ~ ~ ~ 0 0
 execute positioned ~ ~-5 ~ if predicate cryptid:checkritual_circle run return run scoreboard players set @s cryptid.timer 300
+
+execute positioned ~ ~-5 ~ if predicate cryptid:checkritual_circle_incomplete run return run function cryptid:rituals/result/incompletealter
 
 ### Initaite Ritual Without Circle
 #execute positioned ~ ~-5 ~ unless predicate cryptid:checkritual_circle run scoreboard players set @s cryptid.timer 200

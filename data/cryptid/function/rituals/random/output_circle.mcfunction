@@ -2,7 +2,9 @@ scoreboard players set @s cryptid.ritualrangecap 100
 ## Add stability
 scoreboard players operation @s cryptid.ritualrangecap += @s cryptid.ritual.stability
 
-tellraw @a[distance=..10] {"text":"Ritual Range Cap: ","color":"dark_purple","bold":true,"extra":[{"score":{"name":"@s","objective":"cryptid.ritualrangecap"},"color":"aqua","bold":false}]}
+
+#debug
+#tellraw @a[distance=..10] {"text":"Ritual Range Cap: ","color":"dark_purple","bold":true,"extra":[{"score":{"name":"@s","objective":"cryptid.ritualrangecap"},"color":"aqua","bold":false}]}
 
 
 ##set to storage

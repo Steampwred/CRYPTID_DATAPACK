@@ -45,9 +45,10 @@ execute if score @s cryptid.random matches 8 run tellraw @s [{"text":"\n [HINT]:
 execute if score @s cryptid.random matches 9 run tellraw @s [{"text":"\n [HINT]: The occult can hear you","color":"dark_red","bold":false}]
 execute if score @s cryptid.random matches 10 run tellraw @s [{"text":"\n [HINT]: Possessed mobs walk like a horse","color":"dark_red","bold":false}]
 execute if score @s cryptid.random matches 12 run tellraw @s [{"text":"\n [HINT]: Shotguns can be combined into quad barrel","color":"dark_red","bold":false}]
-execute if score @s cryptid.random matches 13 run tellraw @s [{"text":"\n [HINT]: Radar can spawn the tortured","color":"dark_red","bold":false}]
+execute if score @s cryptid.random matches 13 run tellraw @s [{"text":"\n [HINT]: Radar can spawn the tortured if harmony is low","color":"dark_red","bold":false}]
 execute if score @s cryptid.random matches 14 run tellraw @s [{"text":"\n [HINT]: If you hear noises, run","color":"dark_red","bold":false}]
 execute if score @s cryptid.random matches 15 run tellraw @s [{"text":"\n [HINT]: Most sounds mean something has spawned","color":"dark_red","bold":false}]
 execute if score @s cryptid.random matches 16 run tellraw @s [{"text":"\n [HINT]: Don't look at the hands","color":"dark_red","bold":false}]
 execute if score @s cryptid.random matches 17 run tellraw @s [{"text":"\n [HINT]: Don't skybase","color":"dark_red","bold":false}]
-
+execute if score @s cryptid.random matches 18..19 run tellraw @s [{"text":"\n [HINT]: Players can be revived via a ritual with the Athame","color":"dark_red","bold":false}]
+execute if score @s cryptid.random matches 20..21 run tellraw @s [{"text":"\n [HINT]: Seek past subjects bases, they may hold clues","color":"dark_red","bold":false}]

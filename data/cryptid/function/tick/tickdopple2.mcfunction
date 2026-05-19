@@ -23,13 +23,13 @@ fill ~4 ~4 ~4 ~-4 ~-4 ~-4 air replace cobblestone
 fill ~4 ~4 ~4 ~-4 ~-4 ~-4 red_concrete_powder replace #minecraft:sand
 fill ~4 ~4 ~4 ~-4 ~-4 ~-4 red_terracotta replace sandstone
 fill ~4 ~4 ~4 ~-4 ~-4 ~-4 redstone_torch replace torch
-execute as @a[distance=0..3] at @s run damage @s 2 minecraft:starve by @s
+execute as @a[distance=0..3] at @s run damage @s 1.5 minecraft:starve by @s
 
 playsound minecraft:entity.enderman.scream ambient @a[distance=0..12] ~ ~ ~ 1 0.1
 
 effect give @a[distance=0..4] minecraft:blindness 1
 
-effect give @a[distance=0..4] minecraft:slowness 1
+#effect give @a[distance=0..4] minecraft:slowness 1
 
 
 
