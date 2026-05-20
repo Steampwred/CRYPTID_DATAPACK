@@ -22,7 +22,9 @@
         "components": {
             "minecraft:custom_model_data": 1312,
             "minecraft:custom_data": {
-                "cryptid.fakeaxe": true
+                "cryptid.fakeaxe": true,
+                "cryptid.item": true
+
             },
             "minecraft:item_name": "\"Steel Suffering\""
         },

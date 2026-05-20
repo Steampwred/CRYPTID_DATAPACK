@@ -45,6 +45,7 @@ gamerule logAdminCommands false
 scoreboard objectives add cryptid.timer dummy
 
 scoreboard objectives add cryptid.damagedealt minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add cryptid.damagedealt2 minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add cryptid.skytime dummy
 scoreboard objectives add cryptid.anitimer2 dummy
 scoreboard objectives add cryptid.darksound dummy

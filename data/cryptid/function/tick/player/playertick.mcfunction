@@ -166,6 +166,9 @@ execute anchored eyes facing entity @e[type=vindicator,tag=cryptid.mimic,limit=1
 execute if items entity @s weapon.* *[minecraft:custom_data~{cryptid.item:1b}] run function cryptid:tick/player/itemtick
 execute if items entity @s weapon.* *[minecraft:custom_data~{cryptid.item:1}] run function cryptid:tick/player/itemtick
 
+####reset the damagedealt2 AFTER checking for items and effects
+execute if entity @s[scores={cryptid.damagedealt2=1..}] at @s run scoreboard players set @s cryptid.damagedealt2 0
+
 ####################################biome logic
 
 execute if biome ~ ~ ~ cryptid:empty run stopsound @s
