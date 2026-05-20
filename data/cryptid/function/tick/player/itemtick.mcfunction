@@ -10,6 +10,12 @@ execute if items entity @s hotbar.* minecraft:crossbow[custom_data~{fakeshotgun:
 execute if items entity @s hotbar.* minecraft:crossbow[custom_data~{fakeshotgun:1b}] run clear @s crossbow[custom_data~{fakeshotgun:1b}]
 
 
+##kill bad axes
+execute if items entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick[custom_data~{cryptid.fakeaxe:1b}] run function cryptid:action/give/giveaxe
+execute if items entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick[custom_data~{cryptid.fakeaxe:1b}] run clear @s crossbow[custom_data~{cryptid.fakeaxe:1b}]
+
+
+##voidtotem
 execute if items entity @s hotbar.* minecraft:warped_fungus_on_a_stick[custom_data~{cryptid.voidtotem:1}] run effect give @s night_vision 12 12 true
 
 
@@ -66,6 +72,7 @@ execute as @s if items entity @s inventory.* sugar[minecraft:custom_data~{crypti
 
 ##axe envets tick
 execute as @s at @s[scores={cryptid.click=1}] if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.axe:1b}] run function cryptid:action/axe/swing
+execute as @s at @s[scores={cryptid.damagedealt2=1..}] if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.axe:1b}] run function cryptid:action/axe/entitycheck
 
 
 
