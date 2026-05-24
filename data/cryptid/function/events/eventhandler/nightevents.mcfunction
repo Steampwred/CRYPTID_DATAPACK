@@ -24,14 +24,14 @@ execute if score .random cryptid.player.random matches 1..400 if score .global c
 
 
 ##tank
-execute if score .global cryptid.world.fury matches 60.. if score @s cryptid.event.random matches 10..11 run function cryptid:events/cryptid/spawntank
+execute if score .global cryptid.world.fury matches 60.. if score @s cryptid.event.random matches 11 run function cryptid:events/cryptid/spawntank
 
 execute if score .global cryptid.world.fury matches 60.. if score @s cryptid.event.random matches 6..17 run function cryptid:events/night/spotlight
 
 
 execute if score .global cryptid.day matches 20.. if score @s cryptid.event.random matches 10..12 run function cryptid:events/cryptid/spawntank
 
-execute if score .global cryptid.day matches 20.. if score @s cryptid.player.heart.distance matches 0..50 if score @s cryptid.event.random matches 0..60 run function cryptid:events/cryptid/spawntank
+execute if score .global cryptid.day matches 20.. if score @s cryptid.player.heart.distance matches 0..20 if score @s cryptid.event.random matches 0..5 run function cryptid:events/cryptid/spawntank
 
 
 
