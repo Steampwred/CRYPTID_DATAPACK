@@ -6,6 +6,7 @@ playsound minecraft:entity.allay.hurt ambient @a ~ ~ ~ 1 0.1
 
 #execute positioned ~ ~-4 ~ run place feature cryptid:clearflesh
 execute positioned ~ ~1 ~ run place feature cryptid:clearflesh
+fillbiome ~-10 ~-10 ~-10 ~10 ~10 ~10 cryptid:petrified_fields replace cryptid:empty
 
 execute as @e[tag=cryptid.worm, distance=..7] at @s run function cryptid:action/general/explodedeath
 

@@ -12,7 +12,7 @@ tag @s remove chained
 scoreboard players remove @s cryptid.maxlives 1
 playsound minecraft:cryptid.soul.trap ambient @s
 ##killingcryptyids
-kill @e[tag=cryptid, sort=nearest, limit=3, distance=0..7,tag=!cryptid.totem2,tag=!cryptid.totem,tag=!cryptid.catcher]
+kill @e[tag=cryptid, sort=nearest, limit=3, distance=0..7,tag=!cryptid.totem2,tag=!cryptid.lessertotem,tag=!cryptid.catcher]
 
 scoreboard players set @s cryptid.player.harmony 0
 
