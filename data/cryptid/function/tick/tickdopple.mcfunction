@@ -22,8 +22,8 @@ execute as @s[tag=!cryptid.doppleawakened, tag=cryptid.doppleprime] at @s if sco
 
 
 ##spreadplay
-execute positioned as @s if score @s[tag=cryptid.doppleawakened,tag=!lookedat] cryptid.player.random matches 7..40 if entity @p[distance=10..40] positioned as @p run spreadplayers ~ ~ 10 25 false @s
-execute positioned as @s if score @s[tag=cryptid.doppleawakened] cryptid.player.random matches 1..800 if entity @p[scores={cryptid.player.damage=1..}] positioned as @p run spreadplayers ~ ~ 10 25 false @s
+execute positioned as @s if score @s[tag=cryptid.doppleawakened,tag=!lookedat] cryptid.player.random matches 7..40 if entity @p[distance=10..40] positioned as @p run spreadplayers ~ ~ 15 25 false @s
+execute positioned as @s if score @s[tag=cryptid.doppleawakened] cryptid.player.random matches 1..1000 if entity @p[scores={cryptid.player.damage=1..}] positioned as @p run spreadplayers ~ ~ 15 25 false @s
 
 
 ##if not, kill
@@ -55,6 +55,7 @@ execute as @s[tag=cryptid.doppleawakened] at @s run function cryptid:tick/tickdo
 
 execute as @s[tag=lookedat] at @s anchored eyes facing entity @p eyes positioned ^ ^ ^5 rotated as @s positioned ^ ^ ^5 facing entity @s eyes facing ^ ^ ^-1 positioned as @s run tp @s ^ ^ ^0.25 ~ ~
 execute as @s[tag=lookedat] at @s run effect give @s slow_falling 1 1 true
+execute as @s[tag=lookedat] unless block ~ ~ ~ #air run tp @s ~ ~0.5 ~
 
 
 tag @s remove lookedat

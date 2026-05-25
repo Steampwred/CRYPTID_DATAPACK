@@ -291,7 +291,6 @@ execute as @s[tag=cryptid.missingradio,tag=!cryptid.radiomessage1] if score @s c
 
 ##items
 
-execute as @s if score @s cryptid.pick.cooldown matches 1.. run scoreboard players remove @s cryptid.pick.cooldown 1
 
 ##rese crtouch
 scoreboard players set @s cryptid.player.crouch 0
@@ -391,3 +390,7 @@ scoreboard players set @s cryptid.click 0
 scoreboard players set @s cryptid.damagetaken 0
 
 execute as @e[type=item, distance=0.2..8] at @s run function cryptid:tick/player/nearitemcheck
+
+
+## Count down all cooldowns
+function cryptid:tick/player/itemcooldowns

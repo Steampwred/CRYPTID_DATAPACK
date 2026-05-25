@@ -31,13 +31,15 @@ execute if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[custom_da
 execute as @s at @s[scores={cryptid.click=1}] if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.radar:1}] run function cryptid:action/radar/scanradar
 
 ## tick totem
-execute if items entity @s weapon.mainhand minecraft:villager_spawn_egg[minecraft:custom_model_data=1319] run execute if entity @e[tag=!cryptid.lessertotem,tag=cryptid, distance=0..5] at @s run function cryptid:action/totem1/repell
+execute if items entity @s weapon.mainhand minecraft:villager_spawn_egg[minecraft:custom_model_data=1319] run execute if entity @e[tag=!cryptid.lessertotem,tag=cryptid, distance=0..5,tag=!cryptid.ignore.totemward] at @s run function cryptid:action/totem1/repell
 
 ## Tick athame knife
-execute as @s at @s[scores={cryptid.click=1, cryptid.athame.cooldown=..1}] if items entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.athame:1}] anchored eyes positioned ^ ^ ^ run function cryptid:rituals/athame/usemainhand
+#execute as @s unless score @s cryptid.athame.cooldown matches -2147483648..2147483647 run scoreboard players set @s[scores={cryptid.click=1}] cryptid.athame.cooldown 3
+execute as @s at @s[scores={cryptid.click=1}] unless score @s cryptid.athame.cooldown matches -1.. if items entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.athame:1}] anchored eyes positioned ^ ^ ^ run function cryptid:rituals/athame/usemainhand
 execute as @s at @s[scores={cryptid.click=1}] if items entity @s weapon.offhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.athame:1}] anchored eyes positioned ^ ^ ^ run function cryptid:rituals/athame/useoffhand
-execute if items entity @s[scores={cryptid.athame.cooldown=1..}] weapon.mainhand minecraft:warped_fungus_on_a_stick[custom_data~{cryptid.athame:1}] run scoreboard players remove @s[scores={cryptid.athame.cooldown=1..}] cryptid.athame.cooldown 1
-execute if items entity @s[scores={cryptid.athame.cooldown=1}] weapon.mainhand minecraft:warped_fungus_on_a_stick[custom_data~{cryptid.athame:1}] run function cryptid:rituals/athame/return
+
+execute if items entity @s[scores={cryptid.athame.cooldown=0}] weapon.mainhand minecraft:warped_fungus_on_a_stick[custom_data~{cryptid.athame:1}] run function cryptid:rituals/athame/return
+
 ##read totem
 
 execute if items entity @s hotbar.* minecraft:villager_spawn_egg[minecraft:custom_data~{faketotem:1b}] run function cryptid:action/give/givetotem
@@ -75,7 +77,6 @@ execute as @s at @s[scores={cryptid.click=1}] if items entity @s weapon.* minecr
 execute as @s at @s[scores={cryptid.damagedealt2=1..}] if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.axe:1b}] run function cryptid:action/axe/entitycheck
 
 
-
 ####machete and warped fungus ticks item checks
 
 execute as @s at @s[scores={cryptid.player.crouch=1..,cryptid.click=1}] if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.blade:1}] run function cryptid:action/sword/clear
@@ -87,11 +88,10 @@ execute as @s at @s if items entity @s weapon.mainhand minecraft:warped_fungus_o
 ##general tiem cghecks ------------------------
 
 ##lantern and lantern item checks
-scoreboard players remove @s[scores={cryptid.item.lantern.cooldown=1..}] cryptid.item.lantern.cooldown 1
 
-execute as @s at @s[scores={cryptid.click=1,cryptid.item.lantern.cooldown=..3}] if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.lantern:1b}] run function cryptid:action/lantern/harmony
+execute as @s at @s[scores={cryptid.click=1}] unless score @s cryptid.item.lantern.cooldown matches -1.. if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.lantern:1b}] run function cryptid:action/lantern/harmony
 
-execute as @s at @s[scores={cryptid.click=1,cryptid.item.lantern.cooldown=4..}] if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.lantern:1b}] run title @s actionbar [{"text":"Lantern on cooldown!","color":"red"}]
+execute as @s at @s[scores={cryptid.click=1,cryptid.item.lantern.cooldown=1..}] if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.lantern:1b}] run title @s actionbar [{"text":"Lantern on cooldown!","color":"red"}]
 
 execute as @s[scores={cryptid.damagetaken=1..}] at @s if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.lantern:1b}] run execute as @e[distance=0.1..5] at @s run function cryptid:action/lantern/ignite
 
@@ -111,7 +111,7 @@ execute as @s at @s if items entity @s weapon.mainhand minecraft:warped_fungus_o
 
 execute as @s[scores={cryptid.click=1..}] at @s if items entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.catcher:1}] run function cryptid:action/catcher/placecatcher
 
-execute as @s[scores={cryptid.player.crouch=1..,cryptid.click=1..,cryptid.pick.cooldown=..2}] at @s if items entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.pickaxe:1}] run function cryptid:action/pickaxe/usepick
+execute as @s[scores={cryptid.player.crouch=1..,cryptid.click=1..}] unless score @s cryptid.pick.cooldown matches -1.. at @s if items entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.pickaxe:1}] run function cryptid:action/pickaxe/usepick
 
 
 
@@ -135,7 +135,7 @@ execute as @s[tag=!cryptid.info.blade] at @s if items entity @s weapon.mainhand 
 execute as @s[tag=!cryptid.info.blade] at @s if items entity @s weapon.mainhand warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.blade:1}] run tag @s add cryptid.info.blade
 ##lantern
 execute as @s[tag=!cryptid.info.lantern] at @s if items entity @s weapon.mainhand warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.lantern:1b}] run tellraw @s {"text":"[???] item.obtained.lantern. Pretty sure that thing has a soul trapped inside of it. Don't light your friends on fire.","color":"dark_red"}
-execute as @s[tag=!cryptid.info.shotgun] at @s if items entity @s weapon.mainhand warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.lantern:1b}] run tag @s add cryptid.info.lantern
+execute as @s[tag=!cryptid.info.lantern] at @s if items entity @s weapon.mainhand warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.lantern:1b}] run tag @s add cryptid.info.lantern
 
 
 ##other shotguns
