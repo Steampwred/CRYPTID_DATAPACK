@@ -1,5 +1,4 @@
 scoreboard players set @s cryptid.maxlives 5
-scoreboard players set @s cryptid.pick.cooldown 0
 title @s times 0 3t 0
 recipe give @s *
 
@@ -19,7 +18,6 @@ scoreboard players set @s cryptid.shotgunammo 0
 scoreboard players set @s cryptid.shotgunammo2 0
 scoreboard players set @s cryptid.shotgunammo3 0
 scoreboard players set @s cryptid.shotguntimer 0
-scoreboard players set @s cryptid.item.lantern.cooldown 0
 scoreboard players set @s cryptid.jumptimer 0
 
 tellraw @s [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n"},{"text":"\ua055","font":"minecraft:images"},{"text":" ","font":"minecraft:default"}]
