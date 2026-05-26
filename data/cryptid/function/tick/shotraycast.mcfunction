@@ -27,4 +27,6 @@ particle ash ~ ~ ~ 0.1 0.1 0.1 0.01 10
 
 scoreboard players remove @s cryptid.range 1
 
-execute if score @s cryptid.range matches 1.. if block ~ ~ ~ #minecraft:enchantment_power_transmitter positioned ^ ^ ^0.6 run function cryptid:tick/shotraycast
+execute if score @s cryptid.range matches 1.. if block ~ ~ ~ #minecraft:enchantment_power_transmitter positioned ^ ^ ^0.6 run return run function cryptid:tick/shotraycast
+
+tag @s remove shootingun

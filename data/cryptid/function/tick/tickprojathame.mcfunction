@@ -1,5 +1,5 @@
 execute unless entity @s[tag=init] rotated as @p run tp @s ~ ~ ~ ~ ~
-execute unless entity @s[tag=init] run data merge entity @s {item:{id:potion,components:{"minecraft:custom_model_data":1396},count:1},teleport_duration:2}
+execute unless entity @s[tag=init] run data merge entity @s {item:{id:warped_fungus_on_a_stick,components:{"minecraft:custom_model_data":1314},count:1},teleport_duration:2}
 #{item:{id:diamond_sword,components:{"minecraft:custom_model_data":1304},count:1},teleport_duration:2}
 execute unless entity @s[tag=init] run tag @s add cryptid.timer
 execute unless entity @s[tag=init] run scoreboard players operation @s cryptid.player.id = @p cryptid.player.id 

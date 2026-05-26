@@ -102,12 +102,12 @@ scoreboard objectives add cryptid.item.lantern.cooldown dummy
 scoreboard objectives add cryptid.shotgunammo dummy
 scoreboard objectives add cryptid.shotgunammo2 dummy
 scoreboard objectives add cryptid.shotgunammo3 dummy
-scoreboard objectives add cryptid.shotguntimer dummy
+scoreboard objectives add cryptid.shotgun.cooldown dummy
 
 scoreboard players set @a cryptid.shotgunammo 0
 scoreboard players set @a cryptid.shotgunammo2 0
 scoreboard players set @a cryptid.shotgunammo3 0
-scoreboard players set @a cryptid.shotguntimer 0
+tag @a remove gunloaded
 
 scoreboard objectives add cryptid.ritual.stability dummy
 scoreboard objectives add cryptid.ritual.focicount dummy

@@ -123,9 +123,9 @@ execute as @s at @s run execute unless items entity @s weapon.mainhand sugar[min
 ##############shotgunhandler
 
 ##shotgunround
-execute as @e[distance=0..3, type=firework_rocket] at @s if entity @s[type=firework_rocket, nbt={FireworksItem:{components:{"minecraft:custom_data":{cryptid.shotgunarrow:1b}}}}] at @s run function cryptid:action/shotgunhandler
-execute as @e[distance=0..3, type=firework_rocket] at @s if entity @s[type=firework_rocket, nbt={FireworksItem:{components:{"minecraft:custom_data":{cryptid.shotgunarrow:2b}}}}] at @s run function cryptid:action/shotgunhandler
-execute as @e[distance=0..3, type=firework_rocket] at @s if entity @s[type=firework_rocket, nbt={FireworksItem:{components:{"minecraft:custom_data":{cryptid.shotgunarrow:3b}}}}] at @s run function cryptid:action/shotgunhandler
+#execute as @e[distance=0..3, type=firework_rocket] at @s if entity @s[type=firework_rocket, nbt={FireworksItem:{components:{"minecraft:custom_data":{cryptid.shotgunarrow:1b}}}}] at @s run function cryptid:action/shotgun/shotgunhandler
+#execute as @e[distance=0..3, type=firework_rocket] at @s if entity @s[type=firework_rocket, nbt={FireworksItem:{components:{"minecraft:custom_data":{cryptid.shotgunarrow:2b}}}}] at @s run function cryptid:action/shotgun/shotgunhandler
+#execute as @e[distance=0..3, type=firework_rocket] at @s if entity @s[type=firework_rocket, nbt={FireworksItem:{components:{"minecraft:custom_data":{cryptid.shotgunarrow:3b}}}}] at @s run function cryptid:action/shotgun/shotgunhandler
 
 ##skytime
 scoreboard players remove @s[scores={cryptid.skytime=1..}] cryptid.skytime 1
@@ -370,9 +370,9 @@ execute if score .heartbeat cryptid.globalevent matches 3 run function cryptid:t
 
 
 ##fixes
-execute as @s if score @s cryptid.shotgunammo matches ..-1 run scoreboard players set @s cryptid.shotgunammo 0
-execute as @s if score @s cryptid.shotgunammo2 matches ..-1 run scoreboard players set @s cryptid.shotgunammo2 0
-execute as @s if score @s cryptid.shotgunammo3 matches ..-1 run scoreboard players set @s cryptid.shotgunammo3 0
+#execute as @s if score @s cryptid.shotgunammo matches ..-1 run scoreboard players set @s cryptid.shotgunammo 0 
+#execute as @s if score @s cryptid.shotgunammo2 matches ..-1 run scoreboard players set @s cryptid.shotgunammo2 0
+#execute as @s if score @s cryptid.shotgunammo3 matches ..-1 run scoreboard players set @s cryptid.shotgunammo3 0
 
 
 ##testing
