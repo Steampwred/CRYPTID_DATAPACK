@@ -106,7 +106,7 @@ Compromise for current datapack version
 
   TOOOO DOOOOOOOOO
 Finish athame
-    - model, description
+    - model
 
 Fix cryptid items
  - cooldowns
@@ -121,10 +121,6 @@ Corrupted mobs
 
 rituals 
     - Craving refresh
-    X- Unbound rewards
-    X- Unbound sacrifice macro functionality bug test
-    - High Mishap events 
-
     - Circle story Structures
 
     

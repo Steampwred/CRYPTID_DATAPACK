@@ -19,8 +19,8 @@ particle falling_dust{block_state:{Name:nether_wart,Properties:{age:"3"}}} ~ ~1 
 
 ##kill entities
 
-execute if entity @e[tag=cryptid, distance=0..30] run function cryptid:action/totem2/flickertotem2
-execute as @e[tag=cryptid, distance=0..30] at @s run function cryptid:events/quietkill
+execute if entity @e[tag=cryptid, distance=0..30,tag=!cryptid.ignore.totemward] run function cryptid:action/totem2/flickertotem2
+execute as @e[tag=cryptid, distance=0..30,tag=!cryptid.ignore.totemward] at @s run function cryptid:events/quietkill
 
 
 ##block check
