@@ -5,4 +5,8 @@ scoreboard players add @a[distance=0..20] cryptid.player.harmony 500
 particle minecraft:end_rod ~ ~1 ~ 1.4 1.4 1.4 0.1 100
 
 
+##clear region
+function cryptid:action/sword/clear
+
+
 kill @s
