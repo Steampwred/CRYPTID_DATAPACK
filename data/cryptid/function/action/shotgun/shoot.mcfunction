@@ -1,5 +1,6 @@
-function cryptid:action/shotgun/ammo
-
+##check if loaded
+execute if score @s cryptid.shotgunammo matches ..0 run return fail
+scoreboard players remove @s cryptid.shotgunammo 1
 scoreboard players set @s cryptid.shotgun.cooldown 80
 
 stopsound @s ambient minecraft:cryptid.shotfire

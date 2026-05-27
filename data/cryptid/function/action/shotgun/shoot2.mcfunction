@@ -1,4 +1,8 @@
-scoreboard players remove @p cryptid.shotgunammo2 1
+##check if loaded
+execute if score @s cryptid.shotgunammo2 matches ..0 run return fail
+scoreboard players remove @s cryptid.shotgunammo2 1
+scoreboard players set @s cryptid.shotgun.cooldown 80
+
 
 
 stopsound @p ambient minecraft:cryptid.shotfire
@@ -7,9 +11,9 @@ execute as @p[tag=!boss.fight.1] anchored eyes run damage @s 4 minecraft:out_of_
 attribute @p minecraft:generic.knockback_resistance base set 0
 
 
-
-execute as @p at @s anchored eyes run scoreboard players set @s cryptid.range 90
-execute as @p at @s anchored eyes positioned ^ ^ ^0.2 run function cryptid:tick/shotraycast
+tag @s add shootingun
+execute at @s anchored eyes run scoreboard players set @s cryptid.range 90
+execute at @s anchored eyes positioned ^ ^ ^0.2 run function cryptid:tick/shotraycast
 
 execute as @p at @s run tp @s ^ ^ ^ ~ ~-20
 
@@ -51,6 +55,5 @@ execute as @p at @s anchored eyes run particle minecraft:campfire_signal_smoke ^
 
 
 
-kill @s
 
 

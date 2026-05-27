@@ -1,17 +1,27 @@
-
+## remove firework and rest detetcion method
 execute as @n[type=firework_rocket,distance=..2] run kill @s
 stopsound @s * minecraft:entity.firework_rocket.launch
 stopsound @s player minecraft:item.crossbow.shoot
-execute if items entity @s weapon.mainhand minecraft:crossbow[custom_data~{cryptid.shotgun:1b}] run item modify entity @s weapon.mainhand cryptid:reloadshotgun2
-execute if items entity @s weapon.offhand minecraft:crossbow[custom_data~{cryptid.shotgun:1b}] run item modify entity @s weapon.offhand cryptid:reloadshotgun2
-
+execute if items entity @s weapon.mainhand minecraft:crossbow[custom_data~{cryptid.shotgun:1b},charged_projectiles=[]] run item modify entity @s weapon.mainhand cryptid:reloadshotgun2
+execute if items entity @s weapon.offhand minecraft:crossbow[custom_data~{cryptid.shotgun:1b},charged_projectiles=[]] run item modify entity @s weapon.offhand cryptid:reloadshotgun2
 advancement revoke @p only cryptid:shootgun
 
-execute if score @s cryptid.shotgunammo matches ..0 run return fail
-execute if score @s cryptid.shotgunammo2 matches ..0 run return fail
-execute if score @s cryptid.shotgunammo3 matches ..0 run return fail
-function cryptid:action/shotgun/shoot
-tag @s remove gunloaded
+## ptioitize main hand
+execute if items entity @s weapon.mainhand minecraft:crossbow[custom_data~{cryptid.maxammo:1}] run return run function cryptid:action/shotgun/shoot
+execute if items entity @s weapon.mainhand minecraft:crossbow[custom_data~{cryptid.maxammo:2}] run return run function cryptid:action/shotgun/shoot2
+execute if items entity @s weapon.mainhand minecraft:crossbow[custom_data~{cryptid.maxammo:4}] run return run function cryptid:action/shotgun/shoot3
+
+# else offhand
+execute if items entity @s weapon.offhand minecraft:crossbow[custom_data~{cryptid.maxammo:1}] run return run function cryptid:action/shotgun/shoot
+execute if items entity @s weapon.offhand minecraft:crossbow[custom_data~{cryptid.maxammo:2}] run return run function cryptid:action/shotgun/shoot2
+execute if items entity @s weapon.offhand minecraft:crossbow[custom_data~{cryptid.maxammo:4}] run return run function cryptid:action/shotgun/shoot3
+
+
+
+
+
+
+
 
 
 

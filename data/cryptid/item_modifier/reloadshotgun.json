@@ -6,7 +6,10 @@
         {
           "id": "minecraft:firework_rocket",
           "components": {
-            "minecraft:custom_name": "{\"text\":\"o w n  B l o o d\",\"color\":\"dark_red\",\"italic\":true}"
+            "minecraft:custom_name": "{\"text\":\"o w n  B l o o d\",\"color\":\"dark_red\",\"italic\":true}",
+            "fireworks": {
+              "flight_duration": 2
+            }
           },
           "count": 1
         }

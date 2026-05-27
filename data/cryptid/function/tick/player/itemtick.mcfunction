@@ -139,7 +139,7 @@ execute as @s[tag=!cryptid.info.lantern] at @s if items entity @s weapon.mainhan
 
 ##other shotguns
 
-execute if items entity @s[tag=!gunloaded] weapon.* minecraft:crossbow[custom_data~{cryptid.shotgun:1b}] unless score @s cryptid.shotgun.cooldown matches -1.. run function cryptid:action/shotgun/reload
+execute unless score @s cryptid.shotgun.cooldown matches -1.. if items entity @s weapon.* minecraft:crossbow[custom_data~{cryptid.shotgun:1b},charged_projectiles=[{id:"minecraft:firework_rocket"}]] run function cryptid:action/shotgun/reload
 
 #execute unless items entity @s weapon.mainhand minecraft:crossbow[minecraft:custom_data~{cryptid.shot:1}] run tag @s remove shootingun
 
