@@ -11,7 +11,7 @@ effect give @e[type=zombie, tag=boss.ring] invisibility infinite 1 true
 
 #####################spawn cores
 
-summon armor_stand ~ ~ ~ {Tags:[Invulnerable:1b,"bosscryptid","boss.core1","killignore"],NoGravity:1,ShowArms:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1393},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon armor_stand ~ ~ ~ {Invulnerable:1b,Tags:["bosscryptid","boss.core1","killignore"],NoGravity:1,ShowArms:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1393},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
 
 
