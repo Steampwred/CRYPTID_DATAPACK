@@ -5,6 +5,7 @@ execute if items entity @s inventory.* sugar[minecraft:custom_data~{cryptid.used
 execute if items entity @s hotbar.* sugar[minecraft:custom_data~{cryptid.usedhoney:1b}] run function cryptid:action/player/usebalm
 
 
+
 ##kill bad shotguns
 execute if items entity @s hotbar.* minecraft:crossbow[custom_data~{fakeshotgun:1b}] run function cryptid:action/give/giveshotgun
 execute if items entity @s hotbar.* minecraft:crossbow[custom_data~{fakeshotgun:1b}] run clear @s crossbow[custom_data~{fakeshotgun:1b}]
@@ -58,10 +59,6 @@ execute if items entity @s[scores={cryptid.click=1..}] weapon.mainhand minecraft
 execute as @s[tag=!deadradio] at @s run execute if items entity @s weapon.mainhand sugar[minecraft:custom_data~{cryptid.compass.status:1b}] run item modify entity @s weapon.mainhand cryptid:setcompass
 execute as @s[tag=!deadradio] at @s run execute if items entity @s weapon.mainhand sugar[minecraft:custom_data~{cryptid.compass.status:2b}] run item modify entity @s weapon.mainhand cryptid:setcompass2
 execute as @s[tag=!deadradio] at @s run execute if items entity @s weapon.mainhand sugar[minecraft:custom_data~{cryptid.compass.status:3b}] run item modify entity @s weapon.mainhand cryptid:setcompass3
-
-
-##eatinghearts logic gross right?
-execute as @s at @s if items entity @s container.* minecraft:sugar[minecraft:custom_data~{cryptid.heatenheart:1b}] run function cryptid:events/gainlife
 
 ##missing radio
 tag @s add cryptid.missingradio

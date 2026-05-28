@@ -1,6 +1,6 @@
-execute if score @s cryptid.range matches 80..110 positioned ~-.99 ~-.99 ~-.99 as @e[tag=!shootingun, type=!item, type=!firework_rocket,type=!armor_stand] positioned ~.99 ~.99 ~.99 as @s[dx=0] run function cryptid:action/getshot
-execute if score @s cryptid.range matches 30..80 as @e[distance=0.1..2.9, limit=3, sort=random,tag=!shootingun, type=!item, type=!firework_rocket,type=!armor_stand] run function cryptid:action/getshot
-execute if score @s cryptid.range matches ..29 as @e[distance=0.1..2.9, limit=3, sort=random, type=!item, type=!firework_rocket,type=!armor_stand] run function cryptid:action/getshot
+execute if score @s cryptid.range matches 80..110 positioned ~-.99 ~-.99 ~-.99 as @e[tag=!shootingun, type=!item, type=!firework_rocket,type=!armor_stand] positioned ~.99 ~.99 ~.99 as @s[dx=0] run function cryptid:action/shotgun/getshot
+execute if score @s cryptid.range matches 30..80 as @e[distance=0.1..2.9, limit=3, sort=random,tag=!shootingun, type=!item, type=!firework_rocket,type=!armor_stand] run function cryptid:action/shotgun/getshot
+execute if score @s cryptid.range matches ..29 as @e[distance=0.1..2.9, limit=3, sort=random, type=!item, type=!firework_rocket,type=!armor_stand] run function cryptid:action/shotgun/getshot
 execute if score @s cryptid.range matches ..29 if entity @e[distance=0.1..2.9, limit=3, sort=random,type=!item, type=!firework_rocket,type=!armor_stand] run scoreboard players set @s cryptid.range 0
 
 

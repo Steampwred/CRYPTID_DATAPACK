@@ -109,7 +109,6 @@ Finish athame
     - model
 
 Fix cryptid items
- - cooldowns
  - unified descriptions
  
 
@@ -132,4 +131,3 @@ Elder tree
 - slight event percetage increas on feshy blocks?
 
 totems
-- protect area around them from glitch effects and stucture placement

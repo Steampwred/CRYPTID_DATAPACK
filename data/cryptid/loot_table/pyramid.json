@@ -179,7 +179,7 @@
                   "active_effects": [
                     {
                       "id": "invisibility",
-                      "duration": 1231231241231231,
+                      "duration": -1,
                       "show_particles": true
                     }
                   ],
