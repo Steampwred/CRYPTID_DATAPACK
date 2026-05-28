@@ -1,5 +1,5 @@
 
-execute store result score @s cryptid.player.random run random value 1..4
+execute store result score @s cryptid.player.random run random value 1..10
 
 
 execute if score @s cryptid.player.random matches 1 run title @s title {"text":"\ua014","font":"minecraft:images"}

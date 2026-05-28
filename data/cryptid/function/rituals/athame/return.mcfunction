@@ -1,4 +1,4 @@
-item modify entity @s weapon.mainhand cryptid:setathame
+item modify entity @s weapon.mainhand cryptid:setathame1
 playsound item.armor.equip_chain ambient @a ~ ~ ~ 0.3 0.5
 scoreboard players reset @s cryptid.athame.cooldown
 

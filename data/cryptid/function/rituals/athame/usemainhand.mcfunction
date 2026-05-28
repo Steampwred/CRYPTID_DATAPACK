@@ -1,5 +1,5 @@
 ## Summon blade
-execute anchored feet run summon item_display ^ ^-0.5 ^0.4 {Tags:["cryptid","cryptid.athameproj","cryptid.ignore.totemward","cryptid.ignore.radar"],id:"minecraft:item_display",item:{id:"minecraft:air",Count:1},item_display:"none",transformation:[1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f],teleport_duration:0}
+execute anchored feet run summon item_display ^ ^-0.5 ^0.4 {Tags:["cryptid","cryptid.athameproj","cryptid.ignore.totemward","cryptid.ignore.radar"],id:"minecraft:item_display",item:{id:"minecraft:air",Count:1},item_display:"none",transformation:[2.0000f,0.0000f,0.0000f,0.0000f,0.0000f,2.0000f,0.0000f,1.0000f,0.0000f,0.0000f,2.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f],teleport_duration:0}
 
 #execute anchored feet run summon item_display ^ ^-0.5 ^0.4 {Tags:["cryptid","cryptid.athameproj"],id:"minecraft:item_display",item:{id:"minecraft:air",Count:1},item_display:"none",transformation:[1.0607f,1.0607f,-0.0000f,0.0000f,0.0000f,-0.0000f,-1.4375f,0.0000f,-1.0607f,1.0607f,-0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f],teleport_duration:0}
 
@@ -8,7 +8,7 @@ execute as @e[tag=cryptid.athameproj, tag=!cryptid.markerapplied,type=minecraft:
 scoreboard players set @s cryptid.athame.cooldown 130
 
 #animated model
-item modify entity @s weapon.mainhand cryptid:blank
+item modify entity @s weapon.mainhand cryptid:setathame2
 
 #summon minecraft:zombie ~ ~-4 ~ {Tags:["cryptid","cryptid.orifice"]}
 #execute as @e[ tag=cryptid.orifice, tag=!cryptid.markerapplied,type=minecraft:zombie] at @s run function cryptid:action/general/spawntickmarker {"name":"tickorifice"}

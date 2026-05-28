@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "eat a heart": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {},
+        "item": {
+          "items": [
+            "minecraft:sugar"
+          ],
+          "predicates": {
+            "minecraft:custom_data": "{\"cryptid.beebalm\":1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "cryptid:action/player/usebalm"
+  }
+}

@@ -1,8 +1,8 @@
 
 
-execute if entity @s[nbt={Item:{components:{"minecraft:custom_data":{cryptid.shotgun:1}}}}] if entity @e[limit=1,type=item, distance=0.1..2, nbt={Item:{components:{"minecraft:custom_data":{cryptid.shotgun:1}}}}] run function cryptid:action/craftshotgun2
+execute if entity @s[nbt={Item:{components:{"minecraft:custom_data":{cryptid.shotgun:1b,cryptid.maxammo:1}}}}] if entity @e[limit=1,type=item, distance=0.1..2, nbt={Item:{components:{"minecraft:custom_data":{cryptid.shotgun:1b,cryptid.maxammo:1}}}}] run function cryptid:action/craftshotgun2
 
-execute if entity @s[nbt={Item:{components:{"minecraft:custom_data":{cryptid.shotgun:2}}}}] if entity @e[limit=1,type=item, distance=0.1..2, nbt={Item:{components:{"minecraft:custom_data":{cryptid.shotgun:2}}}}] run function cryptid:action/craftshotgun3
+execute if entity @s[nbt={Item:{components:{"minecraft:custom_data":{cryptid.shotgun:1b,cryptid.maxammo:2}}}}] if entity @e[limit=1,type=item, distance=0.1..2, nbt={Item:{components:{"minecraft:custom_data":{cryptid.shotgun:1b,cryptid.maxammo:2}}}}] run function cryptid:action/craftshotgun3
 
 execute as @s[nbt={Item:{id:"minecraft:sugar",components:{"minecraft:custom_model_data":1309}}}] run kill @s
 

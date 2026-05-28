@@ -22,8 +22,8 @@ execute as @s[tag=!cryptid.doppleawakened, tag=cryptid.doppleprime] at @s if sco
 
 
 ##spreadplay
-execute positioned as @s if score @s[tag=cryptid.doppleawakened,tag=!lookedat] cryptid.player.random matches 7..40 if entity @p[distance=10..40] positioned as @p run spreadplayers ~ ~ 15 25 false @s
-execute positioned as @s if score @s[tag=cryptid.doppleawakened] cryptid.player.random matches 1..1000 if entity @p[scores={cryptid.player.damage=1..}] positioned as @p run spreadplayers ~ ~ 15 25 false @s
+execute positioned as @s if score @s[tag=cryptid.doppleawakened,tag=!lookedat] cryptid.player.random matches 7..40 if entity @p[distance=10..40] positioned as @p run spreadplayers ~ ~ 15 25 under 160 false @s
+execute positioned as @s if score @s[tag=cryptid.doppleawakened] cryptid.player.random matches 1..1000 if entity @p[scores={cryptid.player.damage=1..}] positioned as @p run spreadplayers ~ ~ 15 25 under 160 false @s
 
 
 ##if not, kill

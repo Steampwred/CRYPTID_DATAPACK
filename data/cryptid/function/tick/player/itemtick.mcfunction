@@ -5,6 +5,7 @@ execute if items entity @s inventory.* sugar[minecraft:custom_data~{cryptid.used
 execute if items entity @s hotbar.* sugar[minecraft:custom_data~{cryptid.usedhoney:1b}] run function cryptid:action/player/usebalm
 
 
+
 ##kill bad shotguns
 execute if items entity @s hotbar.* minecraft:crossbow[custom_data~{fakeshotgun:1b}] run function cryptid:action/give/giveshotgun
 execute if items entity @s hotbar.* minecraft:crossbow[custom_data~{fakeshotgun:1b}] run clear @s crossbow[custom_data~{fakeshotgun:1b}]
@@ -34,7 +35,6 @@ execute as @s at @s[scores={cryptid.click=1}] if items entity @s weapon.* minecr
 execute if items entity @s weapon.mainhand minecraft:villager_spawn_egg[minecraft:custom_model_data=1319] run execute if entity @e[tag=!cryptid.lessertotem,tag=cryptid, distance=0..5,tag=!cryptid.ignore.totemward] at @s run function cryptid:action/totem1/repell
 
 ## Tick athame knife
-#execute as @s unless score @s cryptid.athame.cooldown matches -2147483648..2147483647 run scoreboard players set @s[scores={cryptid.click=1}] cryptid.athame.cooldown 3
 execute as @s at @s[scores={cryptid.click=1}] unless score @s cryptid.athame.cooldown matches -1.. if items entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.athame:1}] anchored eyes positioned ^ ^ ^ run function cryptid:rituals/athame/usemainhand
 execute as @s at @s[scores={cryptid.click=1}] if items entity @s weapon.offhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.athame:1}] anchored eyes positioned ^ ^ ^ run function cryptid:rituals/athame/useoffhand
 
@@ -59,10 +59,6 @@ execute if items entity @s[scores={cryptid.click=1..}] weapon.mainhand minecraft
 execute as @s[tag=!deadradio] at @s run execute if items entity @s weapon.mainhand sugar[minecraft:custom_data~{cryptid.compass.status:1b}] run item modify entity @s weapon.mainhand cryptid:setcompass
 execute as @s[tag=!deadradio] at @s run execute if items entity @s weapon.mainhand sugar[minecraft:custom_data~{cryptid.compass.status:2b}] run item modify entity @s weapon.mainhand cryptid:setcompass2
 execute as @s[tag=!deadradio] at @s run execute if items entity @s weapon.mainhand sugar[minecraft:custom_data~{cryptid.compass.status:3b}] run item modify entity @s weapon.mainhand cryptid:setcompass3
-
-
-##eatinghearts logic gross right?
-execute as @s at @s if items entity @s container.* minecraft:sugar[minecraft:custom_data~{cryptid.heatenheart:1b}] run function cryptid:events/gainlife
 
 ##missing radio
 tag @s add cryptid.missingradio
@@ -140,22 +136,24 @@ execute as @s[tag=!cryptid.info.lantern] at @s if items entity @s weapon.mainhan
 
 ##other shotguns
 
-execute unless items entity @s weapon.mainhand minecraft:crossbow[minecraft:custom_data~{cryptid.shot:1}] run tag @s remove shootingun
+execute unless score @s cryptid.shotgun.cooldown matches -1.. if items entity @s weapon.* minecraft:crossbow[custom_data~{cryptid.shotgun:1b},charged_projectiles=[{id:"minecraft:firework_rocket"}]] run function cryptid:action/shotgun/reload
+
+#execute unless items entity @s weapon.mainhand minecraft:crossbow[minecraft:custom_data~{cryptid.shot:1}] run tag @s remove shootingun
 
 
-execute if items entity @s weapon.mainhand minecraft:crossbow[minecraft:custom_data~{cryptid.shotgun:1}] run item replace entity @s weapon.mainhand with crossbow[charged_projectiles=[{id:"minecraft:firework_rocket", count:1, components:{"minecraft:custom_model_data":1300,custom_data:{cryptid.shotgunarrow:1b},custom_name:'["",{"text":"Shrapnel round","italic":false}]'}}], custom_name='["",{"text":"Bloodsteel Shotgun","italic":false,"color":"red"}]',lore=['["",{"text":"Smells like copper","italic":false,"color":"dark_red"}]'],custom_data={cryptid.shotgun:1,cryptid.shot:1,cryptid.item:1},custom_model_data=1300]
+#execute if items entity @s weapon.mainhand minecraft:crossbow[minecraft:custom_data~{cryptid.shotgun:1}] run item replace entity @s weapon.mainhand with crossbow[charged_projectiles=[{id:"minecraft:firework_rocket", count:1, components:{"minecraft:custom_model_data":1300,custom_data:{cryptid.shotgunarrow:1b},custom_name:'["",{"text":"Shrapnel round","italic":false}]'}}], custom_name='["",{"text":"Bloodsteel Shotgun","italic":false,"color":"red"}]',lore=['["",{"text":"Smells like copper","italic":false,"color":"dark_red"}]'],custom_data={cryptid.shotgun:1,cryptid.shot:1,cryptid.item:1},custom_model_data=1300]
 
-execute if items entity @s weapon.offhand minecraft:crossbow[minecraft:custom_data~{cryptid.shotgun:1}] run item replace entity @s weapon.offhand with crossbow[charged_projectiles=[{id:"minecraft:firework_rocket", count:1, components:{"minecraft:custom_model_data":1300,custom_data:{cryptid.shotgunarrow:1b},custom_name:'["",{"text":"Shrapnel round","italic":false}]'}}], custom_name='["",{"text":"Bloodsteel Shotgun","italic":false,"color":"red"}]',lore=['["",{"text":"Smells like copper","italic":false,"color":"dark_red"}]'],custom_data={cryptid.shotgun:1,cryptid.shot:1,cryptid.item:1},custom_model_data=1300]
+#execute if items entity @s weapon.offhand minecraft:crossbow[minecraft:custom_data~{cryptid.shotgun:1}] run item replace entity @s weapon.offhand with crossbow[charged_projectiles=[{id:"minecraft:firework_rocket", count:1, components:{"minecraft:custom_model_data":1300,custom_data:{cryptid.shotgunarrow:1b},custom_name:'["",{"text":"Shrapnel round","italic":false}]'}}], custom_name='["",{"text":"Bloodsteel Shotgun","italic":false,"color":"red"}]',lore=['["",{"text":"Smells like copper","italic":false,"color":"dark_red"}]'],custom_data={cryptid.shotgun:1,cryptid.shot:1,cryptid.item:1},custom_model_data=1300]
 
-execute if items entity @s weapon.mainhand minecraft:crossbow[minecraft:custom_data~{cryptid.shotgun:2}] run item replace entity @s weapon.mainhand with crossbow[custom_name='["",{"text":"Bloodsteel Double Barrel Shotgun","italic":false,"color":"red"}]',lore=['["",{"text":"When one barrel isn\'t enough.","italic":false,"color":"gray"}]'],charged_projectiles=[{id:"minecraft:firework_rocket", count:1, components:{"minecraft:custom_model_data":1300,custom_data:{cryptid.shotgunarrow:2b},custom_name:'["",{"text":"Shrapnel round","italic":false}]'}}],custom_data={cryptid.shotgun:2,cryptid.shot:1,cryptid.item:1},custom_model_data=1301]
+#execute if items entity @s weapon.mainhand minecraft:crossbow[minecraft:custom_data~{cryptid.shotgun:2}] run item replace entity @s weapon.mainhand with crossbow[custom_name='["",{"text":"Bloodsteel Double Barrel Shotgun","italic":false,"color":"red"}]',lore=['["",{"text":"When one barrel isn\'t enough.","italic":false,"color":"gray"}]'],charged_projectiles=[{id:"minecraft:firework_rocket", count:1, components:{"minecraft:custom_model_data":1300,custom_data:{cryptid.shotgunarrow:2b},custom_name:'["",{"text":"Shrapnel round","italic":false}]'}}],custom_data={cryptid.shotgun:2,cryptid.shot:1,cryptid.item:1},custom_model_data=1301]
 
-execute if items entity @s weapon.offhand minecraft:crossbow[minecraft:custom_data~{cryptid.shotgun:2}] run item replace entity @s weapon.offhand with crossbow[custom_name='["",{"text":"Bloodsteel Double Barrel Shotgun","italic":false,"color":"red"}]',lore=['["",{"text":"When one barrel isn\'t enough.","italic":false,"color":"gray"}]'],charged_projectiles=[{id:"minecraft:firework_rocket", count:1, components:{"minecraft:custom_model_data":1300,custom_data:{cryptid.shotgunarrow:2b},custom_name:'["",{"text":"Shrapnel round","italic":false}]'}}],custom_data={cryptid.shotgun:2,cryptid.shot:1,cryptid.item:1},custom_model_data=1301]
+#execute if items entity @s weapon.offhand minecraft:crossbow[minecraft:custom_data~{cryptid.shotgun:2}] run item replace entity @s weapon.offhand with crossbow[custom_name='["",{"text":"Bloodsteel Double Barrel Shotgun","italic":false,"color":"red"}]',lore=['["",{"text":"When one barrel isn\'t enough.","italic":false,"color":"gray"}]'],charged_projectiles=[{id:"minecraft:firework_rocket", count:1, components:{"minecraft:custom_model_data":1300,custom_data:{cryptid.shotgunarrow:2b},custom_name:'["",{"text":"Shrapnel round","italic":false}]'}}],custom_data={cryptid.shotgun:2,cryptid.shot:1,cryptid.item:1},custom_model_data=1301]
 
-execute if items entity @s weapon.mainhand minecraft:crossbow[minecraft:custom_data~{cryptid.shotgun:3}] run item replace entity @s weapon.mainhand with crossbow[custom_name='["",{"text":"Bloodsteel Quad Barrel Shotgun","italic":false,"color":"red"}]',lore=['["",{"text":"And when that dont work, just add more gun","italic":false,"color":"gray"}]'],charged_projectiles=[{id:"minecraft:firework_rocket", count:1, components:{"minecraft:custom_model_data":1300,custom_data:{cryptid.shotgunarrow:3b},custom_name:'["",{"text":"Shrapnel round","italic":false}]'}}],custom_data={cryptid.shotgun:3,cryptid.shot:1,cryptid.item:1},custom_model_data=1302]
+#execute if items entity @s weapon.mainhand minecraft:crossbow[minecraft:custom_data~{cryptid.shotgun:3}] run item replace entity @s weapon.mainhand with crossbow[custom_name='["",{"text":"Bloodsteel Quad Barrel Shotgun","italic":false,"color":"red"}]',lore=['["",{"text":"And when that dont work, just add more gun","italic":false,"color":"gray"}]'],charged_projectiles=[{id:"minecraft:firework_rocket", count:1, components:{"minecraft:custom_model_data":1300,custom_data:{cryptid.shotgunarrow:3b},custom_name:'["",{"text":"Shrapnel round","italic":false}]'}}],custom_data={cryptid.shotgun:3,cryptid.shot:1,cryptid.item:1},custom_model_data=1302]
 
-execute if items entity @s weapon.offhand minecraft:crossbow[minecraft:custom_data~{cryptid.shotgun:3}] run item replace entity @s weapon.offhand with crossbow[custom_name='["",{"text":"Bloodsteel Quad Barrel Shotgun","italic":false,"color":"red"}]',lore=['["",{"text":"And when that dont work, just add more gun","italic":false,"color":"gray"}]'],charged_projectiles=[{id:"minecraft:firework_rocket", count:1, components:{"minecraft:custom_model_data":1300,custom_data:{cryptid.shotgunarrow:3b},custom_name:'["",{"text":"Shrapnel round","italic":false}]'}}],custom_data={cryptid.shotgun:3,cryptid.shot:1,cryptid.item:1},custom_model_data=1302]
+#execute if items entity @s weapon.offhand minecraft:crossbow[minecraft:custom_data~{cryptid.shotgun:3}] run item replace entity @s weapon.offhand with crossbow[custom_name='["",{"text":"Bloodsteel Quad Barrel Shotgun","italic":false,"color":"red"}]',lore=['["",{"text":"And when that dont work, just add more gun","italic":false,"color":"gray"}]'],charged_projectiles=[{id:"minecraft:firework_rocket", count:1, components:{"minecraft:custom_model_data":1300,custom_data:{cryptid.shotgunarrow:3b},custom_name:'["",{"text":"Shrapnel round","italic":false}]'}}],custom_data={cryptid.shotgun:3,cryptid.shot:1,cryptid.item:1},custom_model_data=1302]
 
-execute if items entity @s weapon.* minecraft:crossbow[minecraft:custom_data~{cryptid.shot:1}] run function cryptid:tick/tickshotgun
+#execute if items entity @s weapon.* minecraft:crossbow[minecraft:custom_data~{cryptid.shot:1}] run function cryptid:tick/tickshotgun
 
 ##############title display
 

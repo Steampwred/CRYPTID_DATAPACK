@@ -1,4 +1,0 @@
-execute if entity @s[type=firework_rocket, nbt={FireworksItem:{components:{"minecraft:custom_data":{cryptid.shotgunarrow:1b}}}}] if entity @p[tag=shootingun, scores={cryptid.shotgunammo=1..}] run function cryptid:action/shootgun
-execute if entity @s[type=firework_rocket, nbt={FireworksItem:{components:{"minecraft:custom_data":{cryptid.shotgunarrow:2b}}}}] if entity @p[tag=shootingun, scores={cryptid.shotgunammo2=1..}] run function cryptid:action/shootgun2
-execute if entity @s[type=firework_rocket, nbt={FireworksItem:{components:{"minecraft:custom_data":{cryptid.shotgunarrow:3b}}}}] if entity @p[tag=shootingun, scores={cryptid.shotgunammo3=1..}] run function cryptid:action/shootgun3
-kill @s

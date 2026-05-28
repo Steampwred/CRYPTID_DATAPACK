@@ -109,7 +109,6 @@ Finish athame
     - model
 
 Fix cryptid items
- - cooldowns
  - unified descriptions
  
 
@@ -123,4 +122,12 @@ rituals
     - Craving refresh
     - Circle story Structures
 
-    
+Declutter system?
+- remove any multiple day old markers and despawns trapped hostile cryptids
+
+Elder tree 
+- long term corruption spawner removble by axe.
+- soma maybe more cryptid spawns or no despawns within the soma biome
+- slight event percetage increas on feshy blocks?
+
+totems

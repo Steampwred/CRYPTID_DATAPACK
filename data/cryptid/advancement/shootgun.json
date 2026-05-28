@@ -1,0 +1,20 @@
+{
+"criteria": {
+    "shootgun": {
+      "trigger": "minecraft:shot_crossbow",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:crossbow"
+          ],
+          "predicates": {
+            "minecraft:custom_data": "{\"cryptid.shotgun\":1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "cryptid:action/shotgun/shotgunhandler"
+  }
+}

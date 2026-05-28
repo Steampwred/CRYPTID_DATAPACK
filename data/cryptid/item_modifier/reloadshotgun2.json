@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:charged_projectiles": [
+        {
+          "id": "minecraft:firework_rocket",
+          "count": 1
+        }
+      ]
+    }
+  }
+]
