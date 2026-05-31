@@ -56,7 +56,7 @@ execute if score .global cryptid.world.fury matches 110.. if score @s cryptid.ev
 
 execute if score .global cryptid.world.fury matches 10.. if score @s cryptid.event.random matches 14..21 run execute as @e[type=!player, sort=furthest, limit=2, distance=1..30] at @s run function cryptid:events/underground/spawndecimator
 
-execute if score .global cryptid.world.fury matches 110.. if score @s cryptid.event.random matches 14 run execute as @e[type=!player, sort=furthest, limit=1, distance=15..20] at @s run function cryptid:events/general/spawnglitch
+execute if score .global cryptid.world.fury matches 220.. if score @s cryptid.event.random matches 14 run execute as @e[type=!player, sort=furthest, limit=1, distance=15..20] at @s run function cryptid:events/general/spawnglitch
 
 execute if score .global cryptid.world.fury matches 75.. if score @s cryptid.event.random matches 35..46 run function cryptid:events/cryptid/chomper
 

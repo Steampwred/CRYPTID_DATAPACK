@@ -208,6 +208,9 @@ scoreboard objectives add cryptid.bonusharmcooldown dummy
 scoreboard objectives add cryptid.player.eventscore dummy
 scoreboard objectives add cryptid.range dummy
 
+## debug
+scoreboard objectives add debug.scoreboard dummy
+
 team add cryptid.evilmob
 team modify cryptid.evilmob prefix "Corrupted "
 team modify cryptid.evilmob color dark_red
