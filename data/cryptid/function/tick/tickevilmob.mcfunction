@@ -1,15 +1,17 @@
-execute store result score @s cryptid.player.random run random value 1..4000
+execute store result score @s cryptid.player.random run random value 1..3000
 
 #   deat clear
 execute if entity @s[nbt={DeathTime:1s}] run tag @s add dead
 execute if entity @s[nbt={DeathTime:1s}] on passengers run kill @s[tag=cryptid.brainparasite]
 
+## hostless pariste fix
+execute as @e[tag=cryptid.brainparasite,distance=..4] unless predicate cryptid:checkriding run kill @s
 
 
 
-execute if score @s[tag=!dead] cryptid.player.random matches 1..4 run function cryptid:events/cryptid/sethostile
+execute if score @s[tag=!dead] cryptid.player.random matches 1..5 run function cryptid:events/cryptid/sethostile
 
-execute if score @s[tag=!dead] cryptid.player.random matches 5..6 run function cryptid:action/infested/unhostile
+execute if score @s[tag=!dead] cryptid.player.random matches 6..10 unless entity @e[tag=cryptid.brainparasite,distance=1.3..3,type=zombified_piglin] run function cryptid:action/hostile/unhostile
 
 
 #execute unless entity @e[tag=cryptid.brainparasite, type=zombified_piglin, sort=nearest, limit=1, distance=0..2] run function cryptid:action/hostile/unhostile
