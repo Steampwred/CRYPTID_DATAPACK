@@ -12,7 +12,7 @@ execute if score @s cryptid.event.random matches 26 run function cryptid:events/
 execute if score @s cryptid.event.random matches 27 run function cryptid:events/cryptid/chunkred
 execute if score @s cryptid.event.random matches 28 run function cryptid:events/cryptid/chunktorch
 execute if score @s cryptid.event.random matches 19..32 run function cryptid:events/cryptid/radiodead
-
+execute if score @s cryptid.event.random matches 26..31 run function cryptid:events/cryptid/fireworks
 
 ###regular events that are spaced out
 execute if score @s cryptid.event.random matches 1..3 run function cryptid:events/cryptid/flicker5

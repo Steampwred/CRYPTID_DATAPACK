@@ -16,7 +16,7 @@
             {
               "function": "minecraft:exploration_map",
               "destination": "maps:house1map",
-              "decoration": "minecraft:target_x",
+              "decoration": "minecraft:player_off_limits",
               "search_radius": 10000,
               "skip_existing_chunks": true
             },

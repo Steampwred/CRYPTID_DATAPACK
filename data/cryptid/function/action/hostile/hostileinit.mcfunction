@@ -12,7 +12,7 @@ execute at @s if score @s cryptid.player.random matches 1..20 run particle dust_
 
 tag @s add cryptid.evilmob
 team join cryptid.evilmob
-execute if entity @s[tag=cryptid.evilmob] run summon minecraft:zombified_piglin ~ ~ ~ {CustomName:'[{"text":"Brain parasite"}]',DeathLootTable:"minecraft:empty",Silent:1b, attributes:[{id:"generic.scale",base:0.01f}], Tags:["cryptid","cryptid.brainparasite"]}
+execute if entity @s[tag=cryptid.evilmob] run summon minecraft:zombified_piglin ~ ~ ~ {CustomName:'[{"text":"Brain parasite"}]',DeathLootTable:"minecraft:empty",Silent:1b, attributes:[{id:"generic.scale",base:0.01f}], Tags:["cryptid","cryptid.brainparasite","cryptid.ignore.totemward"]}
 ride @n[type=zombified_piglin, tag=cryptid.brainparasite] mount @s
 
 function cryptid:action/general/spawntickmarker {"name":"tickevilmob"}
