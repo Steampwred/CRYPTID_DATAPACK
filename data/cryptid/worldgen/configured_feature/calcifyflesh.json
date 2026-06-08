@@ -111,7 +111,7 @@
       "min_inclusive": 8,
       "max_inclusive": 8
     },
-    "half_height": 4,
+    "half_height": 3,
     "target": {
       "type": "minecraft:matching_blocks",
       "blocks": [
