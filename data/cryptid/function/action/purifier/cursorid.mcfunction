@@ -1,1 +1,0 @@
-tp @n[tag=cryptid.cursor] @p
