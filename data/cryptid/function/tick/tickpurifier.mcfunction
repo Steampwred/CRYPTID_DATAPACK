@@ -1,51 +1,33 @@
+execute unless entity @s[tag=init] run summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Invulnerable:1b,Tags:["cryptid.cursor"]}
 
-execute if score .heartbeat cryptid.globalevent matches 0 anchored eyes run function cryptid:action/purifier/purify_step1
-execute if score .heartbeat cryptid.globalevent matches 1 anchored eyes run function cryptid:action/purifier/purify_step2
-execute if score .heartbeat cryptid.globalevent matches 2 anchored eyes run function cryptid:action/purifier/purify_step3
-execute if score .heartbeat cryptid.globalevent matches 3 anchored eyes run function cryptid:action/purifier/purify_step4
-execute if score .heartbeat cryptid.globalevent matches 4 anchored eyes run function cryptid:action/purifier/purify_step5
-execute if score .heartbeat cryptid.globalevent matches 5 anchored eyes run function cryptid:action/purifier/purify_step6
+## link to player
+execute unless entity @s[tag=init] run scoreboard players operation @s cryptid.player.id = @p cryptid.player.id
+execute unless entity @s[tag=init] run scoreboard players operation @n[tag=cryptid.cursor,distance=..1,type=armor_stand] cryptid.player.id = @s cryptid.player.id
 
-execute if score .heartbeat cryptid.globalevent matches 5 run tp @s ~ ~-0.4 ~ ~18 ~
-
-#execute if score .heartbeat cryptid.globalevent matches 6 anchored eyes run function cryptid:action/purifier/purify_step1
-#execute if score .heartbeat cryptid.globalevent matches 7 anchored eyes run function cryptid:action/purifier/purify_step2
-#execute if score .heartbeat cryptid.globalevent matches 8 anchored eyes run function cryptid:action/purifier/purify_step3
-#execute if score .heartbeat cryptid.globalevent matches 9 anchored eyes run function cryptid:action/purifier/purify_step4
-#execute if score .heartbeat cryptid.globalevent matches 10 anchored eyes run function cryptid:action/purifier/purify_step5
-#execute if score .heartbeat cryptid.globalevent matches 11 anchored eyes run function cryptid:action/purifier/purify_step6
-
-#execute if score .heartbeat cryptid.globalevent matches 11 run tp @s ~ ~-0.4 ~ ~18 ~
-
-execute if score .heartbeat cryptid.globalevent matches 12 anchored eyes run function cryptid:action/purifier/purify_step1
-execute if score .heartbeat cryptid.globalevent matches 13 anchored eyes run function cryptid:action/purifier/purify_step2
-execute if score .heartbeat cryptid.globalevent matches 14 anchored eyes run function cryptid:action/purifier/purify_step3
-execute if score .heartbeat cryptid.globalevent matches 15 anchored eyes run function cryptid:action/purifier/purify_step4
-execute if score .heartbeat cryptid.globalevent matches 16 anchored eyes run function cryptid:action/purifier/purify_step5
-execute if score .heartbeat cryptid.globalevent matches 17 anchored eyes run function cryptid:action/purifier/purify_step6
-
-#execute if score .heartbeat cryptid.globalevent matches 17 run tp @s ~ ~-0.4 ~ ~18 ~
-
-#execute if score .heartbeat cryptid.globalevent matches 18 anchored eyes run function cryptid:action/purifier/purify_step1
-#execute if score .heartbeat cryptid.globalevent matches 19 anchored eyes run function cryptid:action/purifier/purify_step2
-#execute if score .heartbeat cryptid.globalevent matches 20 anchored eyes run function cryptid:action/purifier/purify_step3
-#execute if score .heartbeat cryptid.globalevent matches 21 anchored eyes run function cryptid:action/purifier/purify_step4
-#execute if score .heartbeat cryptid.globalevent matches 22 anchored eyes run function cryptid:action/purifier/purify_step5
-#execute if score .heartbeat cryptid.globalevent matches 23 anchored eyes run function cryptid:action/purifier/purify_step6
-
-
-execute if score .heartbeat cryptid.globalevent matches 23 run tp @s ~ ~-0.4 ~ ~18 ~
-
+tag @s add init
 #execute store result score @s cryptid.player.random run random value 1..1000
 
-execute if score @s cryptid.timer matches ..0 run kill @s
-execute if score .heartbeat cryptid.globalevent matches 23 run scoreboard players remove @s cryptid.timer 1
+
+
+
+## match cursor tp to it
+execute at @e[tag=cryptid.cursor,type=armor_stand] if score @s cryptid.player.id = @n[tag=cryptid.cursor] cryptid.player.id run tag @n[tag=cryptid.cursor] add current_cursor
+tp @s ^ ^ ^0.3 facing entity @n[tag=cryptid.cursor,type=armor_stand,tag=current_cursor]
+execute if score @s cryptid.timer matches ..-900 as @e[tag=cryptid.cursor,tag=current_cursor,type=armor_stand,distance=..100] run kill @n[tag=cryptid.cursor]
+execute as @e[tag=cryptid.cursor,tag=current_cursor,type=armor_stand,distance=..100] run tag @s remove current_cursor
+
+execute if score @s cryptid.timer matches ..-900 run kill @s
+
+execute if score .heartbeat cryptid.globalevent matches 1 run playsound minecraft:block.beacon.ambient ambient @a[distance=0..30] ~ ~ ~ 10 0.1
+
+place feature cryptid:calcifyflesh ~ ~ ~
 
 
 
 
-playsound minecraft:block.beacon.ambient ambient @a[distance=0..30] ~ ~ ~ 10 0.1
+execute if score .heartbeat cryptid.globalevent matches 1 run function cryptid:action/purifier/cursorid
 
-
-#particle end_rod ~ ~0.25 ~ 10 1.5 10 0 200
+particle enchant ~ ~1.5 ~ 0.1 0.1 0.1 10 120
+particle end_rod ~ ~1.5 ~ 0.1 0.1 0.1 0.16 20
+particle sonic_boom ~ ~1.5 ~ 0.2 0.2 0.2 1 3
 
