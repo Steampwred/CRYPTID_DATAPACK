@@ -112,10 +112,8 @@ Fix cryptid items
  - unified descriptions
  
 
-
 Corrupted mobs
-    -make sure there is a way to protect mobs
-    - currently not able to occur naturally, fix by adding events
+
 
 rituals 
     - Craving refresh
@@ -135,5 +133,3 @@ Structures
 - structure place configuration
 - story struture biome tags
 
-Multiplayer start support
-- no reseting to box in sky

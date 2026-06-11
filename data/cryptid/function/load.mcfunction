@@ -213,6 +213,7 @@ scoreboard objectives add debug.scoreboard dummy
 
 team add cryptid.evilmob
 team modify cryptid.evilmob prefix "Corrupted "
+team modify cryptid.evilmob collisionRule always
 team modify cryptid.evilmob color dark_red
 forceload add 0 0
 
