@@ -129,7 +129,13 @@ Elder tree ?
 
 Structures
 - more story Structures
-- events that give maps
 - structure place configuration
 - story struture biome tags
 
+Dream
+- finish it visuals
+- incorperate into events more
+
+Fury events
+- balance occurance
+- rework?? where ever we left off
