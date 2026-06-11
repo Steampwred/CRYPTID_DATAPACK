@@ -7,6 +7,7 @@ execute if score .globaltime cryptid.time matches 13000..24000 run execute if sc
 
 execute if score .globaltime cryptid.time matches 13000..24000 run execute if score @s cryptid.player.random matches 1 run playsound minecraft:cryptid.caveeye.ambient ambient @a[distance=0..20]
 
+execute if score @s cryptid.player.random matches 1..50 as @e[tag=cryptid.infested, distance=0..25,type=#cryptid:infestable,limit=2] at @s run function cryptid:action/hostile/cure
 
 ##bad
 

@@ -123,7 +123,8 @@
         "minecraft:red_concrete",
         "minecraft:weeping_vines",
         "minecraft:sculk_vein",
-        "crimson_roots"
+        "crimson_roots",
+        "red_nether_brick_wall"
       ]
     }
   }

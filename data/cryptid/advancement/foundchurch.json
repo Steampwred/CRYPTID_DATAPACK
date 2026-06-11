@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "find_the_church": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "cryptid:churchtemp"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    [
+      "find_the_church"
+    ]
+  ],
+  "rewards": {
+    "function": "cryptid:events/cryptid/dreamofanotherworld"
+  },
+  "sends_telemetry_event": true
+}

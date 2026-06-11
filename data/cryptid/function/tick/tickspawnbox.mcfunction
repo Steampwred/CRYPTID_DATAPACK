@@ -4,12 +4,16 @@ execute as @s[tag=!init] run tag @s add init
 
 
 
-
-
+execute if score @p cryptid.trigger.tutorialskip matches 1 run scoreboard players set @s cryptid.timer 80
+execute as @p if score @s cryptid.trigger.tutorialskip matches 1 run scoreboard players reset @s cryptid.trigger.tutorialskip
 
 ##display tutorials
 
-execute if score @s cryptid.timer matches 1600..1800 run title @a[distance=0..10] actionbar {"text":"Welcome to CRYPTID. This tutorial will help increase your life expectancy.","color":"red"}
+execute if score @s cryptid.timer matches 1900 run tellraw @a[distance=0..10] [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n"},{"text":"Scroll up for more info! (And turn up entity distance in video settings!)","bold":false,"color":"red"}, {"text":"\n\nCLICK TO JOIN DISCORD","bold":true,"color":"red","clickEvent":{"action":"open_url","value":"https://discord.gg/RZjTKNRJpR"}}, {"text":"\n"}]
+execute if score @s cryptid.timer matches 1900 run tellraw @a[distance=0..10] ["skip tutorial: ",{"text":"CLICK ","clickEvent":{"action":"run_command","value":"/trigger cryptid.trigger.tutorialskip set 1"},"bold":true,"color":"red"}]
+
+
+execute if score @s cryptid.timer matches 1600..2000 run title @a[distance=0..10] actionbar {"text":"Welcome to CRYPTID. This tutorial will help increase your life expectancy.","color":"red"}
 
 execute if score @s cryptid.timer matches 1400..1600 run title @a[distance=0..10] actionbar {"text":"In your inventory you have been given several starter items. Do not lose them.","color":"red"}
 

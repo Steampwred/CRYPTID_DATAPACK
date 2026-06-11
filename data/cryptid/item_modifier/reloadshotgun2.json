@@ -5,6 +5,9 @@
       "minecraft:charged_projectiles": [
         {
           "id": "minecraft:firework_rocket",
+          "components": {
+            "minecraft:custom_name": "{\"text\":\"empty\",\"color\":\"gray\",\"italic\":true}"
+          },
           "count": 1
         }
       ]

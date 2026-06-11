@@ -61,6 +61,6 @@ execute if score .global cryptid.world.fury matches 20.. if score @s cryptid.eve
 
 execute if score .global cryptid.world.fury matches 20.. if score @s cryptid.event.random matches 35..45 run function cryptid:events/cryptid/flicker5
 
-execute if score .global cryptid.world.fury matches 75.. if score @s cryptid.event.random matches 35..39 run function cryptid:events/cryptid/chomper
+execute if score .global cryptid.world.fury matches 100.. if score @s cryptid.event.random matches 35..39 run function cryptid:events/cryptid/chomper
 
 

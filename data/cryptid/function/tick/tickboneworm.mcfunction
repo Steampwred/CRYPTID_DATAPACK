@@ -7,10 +7,11 @@ execute unless block ~ ~-1 ~ air run execute if score @s cryptid.player.random m
 execute unless block ~ ~-1 ~ air run execute if score @s cryptid.player.random matches 9 run function cryptid:events/general/spawnrelic
 
 #infest single mob
-execute if score @s cryptid.player.random matches 1..500 as @e[type=!player, type=!#cryptid:projectiles, type=!item, type=!villager, type=!armor_stand, tag=!cryptid, type=!marker, distance=..5,type=!experience_orb] run function cryptid:action/general/infestsingle
+execute if score @s cryptid.player.random matches 1..600 as @e[tag=cryptid.infested,tag=!cryptid.evilmob, tag=!cryptid.brainparasite, distance=2..20, sort=nearest, limit=5, type=#cryptid:infestable] run function cryptid:action/hostile/hostileinit
+execute if score @s cryptid.player.random matches 20..45 as @e[tag=!cryptid,tag=!cryptid.evilmob, tag=!cryptid.brainparasite, distance=2..20, sort=nearest, limit=5, type=#cryptid:infestable] run function cryptid:action/hostile/infestinit
 
 ##Absorb items on the ground
-execute as @e[type=item,distance=0..4] run function cryptid:events/quietkill
+execute unless entity @s[tag=cryptid.ignore.items] as @e[type=item,distance=0..4] run function cryptid:events/quietkill
 
 execute unless block ~ ~-1 ~ air run setblock ~ ~-1 ~ minecraft:netherrack
 

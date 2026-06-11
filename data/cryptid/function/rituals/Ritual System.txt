@@ -112,11 +112,8 @@ Fix cryptid items
  - unified descriptions
  
 
-
 Corrupted mobs
-    -make sure there is a way to protect mobs
-    - make less laggy
-    - make not constantly corrupting and lagging
+
 
 rituals 
     - Craving refresh
@@ -125,9 +122,14 @@ rituals
 Declutter system?
 - remove any multiple day old markers and despawns trapped hostile cryptids
 
-Elder tree 
+Elder tree ?
 - long term corruption spawner removble by axe.
 - soma maybe more cryptid spawns or no despawns within the soma biome
 - slight event percetage increas on feshy blocks?
 
-totems
+Structures
+- more story Structures
+- events that give maps
+- structure place configuration
+- story struture biome tags
+

@@ -1,0 +1,2 @@
+execute as @e[distance=..12,type=#cryptid:infestable,limit=2,tag=!cryptid] run function cryptid:action/general/fireworksdeath
+execute as @e[distance=..25,type=#cryptid:infestable,tag=cryptid.infested] run function cryptid:action/general/fireworksdeath

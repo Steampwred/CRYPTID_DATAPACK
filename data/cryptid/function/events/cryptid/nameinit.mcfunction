@@ -46,6 +46,7 @@ execute if score @s cryptid.player.random matches 1..80 run tag @s add cryptid
 execute if score @s cryptid.player.random matches 1..80 run function cryptid:action/general/spawntickmarker {"name":"tickcursed"}
 
 
+execute if score .global cryptid.day matches 8.. if entity @s[tag=!cryptid,type=!marker,type=!armor_stand,type=!zombified_piglin,type=!#cryptid:nonliving] run function cryptid:action/hostile/infestinit
 
 execute if score @p cryptid.player.harmony matches -20000..-10000 run execute store result score @s cryptid.player.random run random value 1..1000
 

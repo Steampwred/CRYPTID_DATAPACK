@@ -19,12 +19,10 @@ scoreboard players set @s cryptid.shotgunammo2 0
 scoreboard players set @s cryptid.shotgunammo3 0
 scoreboard players set @s cryptid.shotguntimer 0
 scoreboard players set @s cryptid.jumptimer 0
+scoreboard players enable @s cryptid.trigger.tutorialskip
 
 tellraw @s [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n"},{"text":"\ua055","font":"minecraft:images"},{"text":" ","font":"minecraft:default"}]
 tellraw @s [{"text":"\n\n\n\n\n"},{"text":"\ua056","font":"minecraft:images"},{"text":" ","font":"minecraft:default"}]
-
-tellraw @s [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n"},{"text":"Scroll up for more info! (And turn up entity distance in video settings!)","bold":false,"color":"red"}, {"text":"\n\nCLICK TO JOIN DISCORD","bold":true,"color":"red","clickEvent":{"action":"open_url","value":"https://discord.gg/RZjTKNRJpR"}}]
-
 
 time set 1200
 

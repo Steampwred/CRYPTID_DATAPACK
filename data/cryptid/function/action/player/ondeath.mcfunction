@@ -34,7 +34,7 @@ scoreboard players set @s cryptid.deaths 0
 
 
 ##hints
-execute store result score @s cryptid.random run random value 1..30
+execute store result score @s cryptid.random run random value 1..25
 
 execute if score @s cryptid.random matches 1 run tellraw @s [{"text":"\n [HINT]: Don't stay out at night","color":"dark_red","bold":false}]
 execute if score @s cryptid.random matches 2 run tellraw @s [{"text":"\n [HINT]: The lamposts are evil","color":"dark_red","bold":false}]
@@ -54,3 +54,5 @@ execute if score @s cryptid.random matches 16 run tellraw @s [{"text":"\n [HINT]
 execute if score @s cryptid.random matches 17 run tellraw @s [{"text":"\n [HINT]: Don't skybase","color":"dark_red","bold":false}]
 execute if score @s cryptid.random matches 18..19 run tellraw @s [{"text":"\n [HINT]: Players can be revived via a ritual with the Athame","color":"dark_red","bold":false}]
 execute if score @s cryptid.random matches 20..21 run tellraw @s [{"text":"\n [HINT]: Seek past subjects bases, they may hold clues","color":"dark_red","bold":false}]
+execute if score @s cryptid.random matches 23 run tellraw @s [{"text":"\n [HINT]: Cryptid items can be enchanted in an anvil","color":"dark_red","bold":false}]
+execute if score @s cryptid.random matches 24 run tellraw @s [{"text":"\n [HINT]: Fear the Dark, carry spare torches :)","color":"dark_red","bold":false}]

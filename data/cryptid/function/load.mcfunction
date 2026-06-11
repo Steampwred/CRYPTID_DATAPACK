@@ -135,7 +135,7 @@ scoreboard objectives add cryptid.mobspeedbase dummy
 
 
 scoreboard objectives add cryptid.worldtimer dummy
-
+scoreboard objectives add cryptid.trigger.tutorialskip trigger
 
 scoreboard objectives add cryptid.challenge dummy
 ##heartcount
@@ -208,8 +208,12 @@ scoreboard objectives add cryptid.bonusharmcooldown dummy
 scoreboard objectives add cryptid.player.eventscore dummy
 scoreboard objectives add cryptid.range dummy
 
+## debug
+scoreboard objectives add debug.scoreboard dummy
+
 team add cryptid.evilmob
 team modify cryptid.evilmob prefix "Corrupted "
+team modify cryptid.evilmob collisionRule always
 team modify cryptid.evilmob color dark_red
 forceload add 0 0
 
