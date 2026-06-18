@@ -10,8 +10,6 @@ execute as @s[tag=!init] at @s if block ~ ~ ~ water positioned ~ 512 ~ positione
 
 execute as @s[tag=init, tag=!active] run tp @s ~ 50 ~
 execute as @s[tag=init, tag=!active] at @s if score @s cryptid.timer matches ..-40 run item replace entity @s armor.head with potion[custom_model_data=1383]
-execute as @s[tag=!init2,tag=init] at @s run fill ~-8 ~10 ~-8 ~8 ~-50 ~8 water
-execute as @s[tag=!init2,tag=init] run tag @s add init2
 
 
 ###END INIT
@@ -31,8 +29,8 @@ execute if score @s cryptid.random matches 1..30 run playsound minecraft:cryptid
 
 
 ##killfish
-execute unless entity @s[tag=eating] as @e[distance=25..30] at @s if block ~ ~1 ~ #cryptid:water run function cryptid:action/kraken/drag
-execute unless entity @s[tag=eating] as @e[distance=15..70] at @s if block ~ ~1 ~ #cryptid:water run function cryptid:action/kraken/draglite
+execute unless entity @s[tag=eating] as @e[distance=25..30,tag=!cryptid] at @s if block ~ ~ ~ #cryptid:water run function cryptid:action/kraken/drag
+execute unless entity @s[tag=eating] as @e[distance=15..70,tag=!cryptid,type=!boat] at @s if block ~ ~1 ~ #cryptid:water run function cryptid:action/kraken/draglite
 
 ###triggers
 execute positioned ~ 512 ~ positioned over world_surface if entity @a[distance=0..15] run tag @s[tag=init] add active

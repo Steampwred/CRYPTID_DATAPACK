@@ -1,1 +1,1 @@
-execute if score @s cryptid.event.random matches 100..110 run function cryptid:events/ocean/kraken
+execute if score @s cryptid.event.random matches 80..90 run function cryptid:events/ocean/kraken
