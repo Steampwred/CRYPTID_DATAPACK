@@ -17,7 +17,12 @@
      { "condition": "minecraft:location_check", "offsetX": -1, "offsetY": 0, "offsetZ": 1,  "predicate": { "block": { "blocks": "#candles" } } }, 
      { "condition": "minecraft:location_check", "offsetX": -1,  "offsetY": 0, "offsetZ": -1,  "predicate": { "block": { "blocks": "#candles" } } }, 
      { "condition": "minecraft:location_check", "offsetX": 1,  "offsetY": 0, "offsetZ": 1,  "predicate": { "block": { "blocks": "#candles" } } }, 
-     { "condition": "minecraft:location_check", "offsetX": 1, "offsetY": 0, "offsetZ": -1,  "predicate": { "block": { "blocks": "#candles" } } } 
+     { "condition": "minecraft:location_check", "offsetX": 1, "offsetY": 0, "offsetZ": -1,  "predicate": { "block": { "blocks": "#candles" } } },
+     
+          { "condition": "minecraft:location_check", "offsetX": -2, "offsetY": 0, "offsetZ": 0,  "predicate": { "block": { "blocks": "redstone_wire" } } }, 
+     { "condition": "minecraft:location_check", "offsetX": 2,  "offsetY": 0, "offsetZ": 0,  "predicate": { "block": { "blocks": "redstone_wire" } } }, 
+     { "condition": "minecraft:location_check", "offsetX": 0,  "offsetY": 0, "offsetZ": 2,  "predicate": { "block": { "blocks": "redstone_wire" } } }, 
+     { "condition": "minecraft:location_check", "offsetX": 0, "offsetY": 0, "offsetZ": -2,  "predicate": { "block": { "blocks": "redstone_wire" } } } 
 
       ]
     },
