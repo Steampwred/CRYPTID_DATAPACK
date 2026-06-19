@@ -49,7 +49,41 @@ Note: tickmarker must be called on an entity that has the cryptid tag
 ACTION handles all functions that execute for a short time, or only once. Its used for things like shotgun blasts or entity actions, like chompers eating or curators digging.
 ACTION is also divided into subfolders, based on the entity doing the action. action/player is a very useful folder
 
-EVENTS handle 
+EVENTS hander
+Events occur within 1..90 range roll on the random event scorboard. the number rolls a value between 1 and highnumber x. Highnumber x is determined by the randomgenerator function and is adjusted dynamicly depending on harmoney and other world conditions
+as the upper limit of the range will vary frequently the avrage roll will favour numbers closer to 90.
+
+Sub event handler
+not all events are possible everwhere, so depending on player location, harmony or other variables, we run a speific sub evnet handler
+list of sub event handelers
+- belowevents
+- furyevents
+- highevents
+- lowevents
+- midevents
+- nightevents
+- oceanevents
+- skyevents
+
+each should loosly follow this general structure for random events
+General rule is the lower the number the more sever it should be.
+
+75-90 Safe          slots 15
+50-74 Mild          slots 24
+20-49 Danger        slots 29
+1-10  Extreme       slots 9
+
+The slots are the number of events in each, this example totals to 77 meanng there is room to add more events or adjust occurance chances, however since we want an event to always occur empty slots should re-roll the current event table.
+
+
+
+
+
+
+
+
+
+
 
 [#2]
 ****ENTITY METHODS****
