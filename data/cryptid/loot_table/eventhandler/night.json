@@ -1,0 +1,24 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 22, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "story/storywave" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 15, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/flicker" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 10, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/flicker2" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 6, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/flicker5" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 5, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/shy1" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 21, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "night/lostsoul" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 11, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/behindyou" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 1, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/spawntank" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 12, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "night/spotlight" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/spawntank" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 6, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/spawntank" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/dopple1" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 4, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/dopple1" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 11, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/dopple1" } } ] }
+        
+      ]
+    }
+  ]
+}

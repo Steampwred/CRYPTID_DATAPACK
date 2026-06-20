@@ -27,3 +27,7 @@ execute if score @s cryptid.event.random matches 31..60 run function cryptid:eve
 execute if score @s cryptid.event.random matches 61..90 run function cryptid:events/sky/eyewatcher
 execute if score @s cryptid.event.random matches 1..30 run function cryptid:events/sky/roamingentity
 execute if score @s cryptid.event.random matches 31..60 run function cryptid:events/cryptid/nerve
+
+
+## debug
+tellraw @a[tag=cryptid.debug] [{"text": "Below event","color": "dark_aqua"}]

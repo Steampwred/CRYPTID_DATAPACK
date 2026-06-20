@@ -1,0 +1,27 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 34, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "story/storywall" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 6, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/whisper1" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 30, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "general/sprayevent" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 9, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/darkeyes" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/artery" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/quake1" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 7, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/quake2" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/threat1" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 29, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/swapper" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 21, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/spawnscreamer" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 1, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "general/sprayevent" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 21, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/spawnmolder" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 16, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "general/breakerant" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 1, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/tunnel" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 6, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/darkeyes" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 9, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/spawncrawler" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 4, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/spawnspider" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/spawnhand" } } ] }
+    ]
+    }
+  ]
+}

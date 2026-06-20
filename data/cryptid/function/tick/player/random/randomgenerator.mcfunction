@@ -68,4 +68,4 @@ function cryptid:tick/player/random/randommacro with storage cryptid:randomevent
 
 #######execute events
 
-execute as @s at @s run function cryptid:events/eventcheck
+execute as @s at @s if score @s cryptid.event.random matches 1..90 run function cryptid:events/eventhandler/eventcheck
