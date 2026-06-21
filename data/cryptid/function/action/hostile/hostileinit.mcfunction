@@ -8,8 +8,9 @@ execute at @s if score @s cryptid.player.random matches 1..40 run playsound mine
 execute at @s if score @s cryptid.player.random matches 1..20 run particle dust_pillar{block_state:{Name:nether_wart_block}} ~ ~1 ~ 0 .2 0 .0001 90 normal
 
 
-
-
+tag @s add cryptid.ignore.radar
+tag @s add cryptid.ignore.totemward
+tag @s add cryptid
 tag @s add cryptid.evilmob
 team join cryptid.evilmob
 execute if entity @s[tag=cryptid.evilmob] run summon minecraft:zombified_piglin ~ ~ ~ {CustomName:'[{"text":"Brain parasite"}]',DeathLootTable:"minecraft:empty",Silent:1b, attributes:[{id:"generic.scale",base:0.01f}], Tags:["cryptid","cryptid.brainparasite","cryptid.ignore.totemward"]}
