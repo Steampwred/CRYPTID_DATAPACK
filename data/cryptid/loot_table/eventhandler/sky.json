@@ -4,17 +4,17 @@
       "rolls": 1,
       "entries": [
         { "type": "minecraft:item", "name": "minecraft:stone", "weight": 6, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/cloud" } } ] },
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 10, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/whale" } } ] },
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/fathead" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 6, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/whale" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/fathead" ,"fury" : 190} } ] },
         { "type": "minecraft:item", "name": "minecraft:stone", "weight": 9, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/ray" } } ] },
         { "type": "minecraft:item", "name": "minecraft:stone", "weight": 8, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/spiral" } } ] },
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 7, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/vine" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 5, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/vine" } } ] },
         { "type": "minecraft:item", "name": "minecraft:stone", "weight": 9, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/skygrabber" } } ] },
         { "type": "minecraft:item", "name": "minecraft:stone", "weight": 8, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/behindyou" } } ] },
         { "type": "minecraft:item", "name": "minecraft:stone", "weight": 15, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/lowskyroamer" } } ] },
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 17, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/eyewatcher" } } ] },
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 9, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/roamingentity" } } ] },
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 14, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/octopus" } } ] }
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 8, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/eyewatcher", "fury" : 80} } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 12, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/octopus" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 4, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/wyrm", "fury" : 120} } ] }
       ]
     }
   ]

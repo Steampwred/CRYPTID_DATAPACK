@@ -9,6 +9,7 @@
         { "type": "minecraft:item", "name": "minecraft:stone", "weight": 8, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/behindyou" } } ] },
         { "type": "minecraft:item", "name": "minecraft:stone", "weight": 1, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/spawntank" } } ] },
         { "type": "minecraft:item", "name": "minecraft:stone", "weight": 1, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "night/jelly1" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/lampost" } } ] },
    
         { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/dopple1", "fury": 40} } ] },
         { "type": "minecraft:item", "name": "minecraft:stone", "weight": 12, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "night/spotlight", "fury": 70 } } ] },         

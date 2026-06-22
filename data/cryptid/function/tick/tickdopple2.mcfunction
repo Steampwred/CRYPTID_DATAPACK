@@ -30,6 +30,7 @@ playsound minecraft:entity.enderman.scream ambient @a[distance=0..12] ~ ~ ~ 1 0.
 effect give @a[distance=0..4] minecraft:blindness 1
 
 #effect give @a[distance=0..4] minecraft:slowness 1
+item replace entity @s armor.head with potion[minecraft:custom_model_data=1308]
 
 
 

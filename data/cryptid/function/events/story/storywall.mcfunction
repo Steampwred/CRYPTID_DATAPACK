@@ -16,6 +16,7 @@ execute if score @s cryptid.wallspawn matches 3 run function cryptid:events/unde
 execute if score @s cryptid.wallspawn matches 4 run execute positioned ^ ^-20 ^60 run function cryptid:events/underground/wall
 
 execute if score @s cryptid.wallspawn matches 4 run tag @p add wall.chasing
+execute if score @s cryptid.wallspawn matches 4 at @s run kill @e[tag=cryptid.breakerant,distance=..30]
 execute if score @s cryptid.wallspawn matches 4 run stopsound @a
 execute if score @s cryptid.wallspawn matches 4 run playsound minecraft:cryptid.wall.dig ambient @p
 

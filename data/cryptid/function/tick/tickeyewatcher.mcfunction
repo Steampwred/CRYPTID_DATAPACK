@@ -80,7 +80,7 @@ execute if entity @p[distance=0..20] run fill ~4 ~4 ~4 ~-4 ~-4 ~-4 minecraft:wee
 
 ##onactivation
 
-execute if entity @p[distance=..5] run execute at @p run summon zombie ~-2 ~3 ~ {Tags:["cryptid", "cryptid.digger"], Silent:1, ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1303},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+execute if entity @p[distance=..5] run execute at @p run summon zombie ~-2 ~3 ~ {Tags:["cryptid", "cryptid.digger"], Silent:1, ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1303},count:1}],ArmorDropChances:[0f,0f,0f,0f],active_effects:[{id:invisibility,duration:-1}]}
 
 
 
