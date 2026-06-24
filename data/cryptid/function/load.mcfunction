@@ -7,7 +7,7 @@ scoreboard objectives add cryptid.chomptime dummy
 scoreboard objectives add cryptid.handitem dummy
 scoreboard objectives add cryptid.world.fury dummy
 scoreboard objectives add cryptid.world.furyrate dummy
-
+scoreboard objectives add cryptid.world.furymessage dummy
 ##individual player ID
 scoreboard objectives add cryptid.player.id dummy
 

@@ -1,4 +1,5 @@
 scoreboard players set .global cryptid.challenge -1
+scoreboard players set .global cryptid.world.furyrate 5
 
 playsound minecraft:entity.chicken.death ambient @a
 

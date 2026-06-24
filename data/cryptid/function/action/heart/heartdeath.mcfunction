@@ -10,6 +10,6 @@ execute unless entity @e[type=vindicator,distance=5..40,tag=cryptid.vorheart] if
 
 ##increae Fury if Player near 
 execute unless entity @p[distance=..6] run return fail 
-execute if score .global cryptid.day matches 1..3 run scoreboard players add .global cryptid.world.fury 10 
-execute if score .global cryptid.day matches 3..10 run scoreboard players add .global cryptid.world.fury 30 
-execute if score .global cryptid.day matches 10.. run scoreboard players add .global cryptid.world.fury 70 
+execute if score .global cryptid.day matches 1..3 run scoreboard players add .global cryptid.world.fury 50 
+execute if score .global cryptid.day matches 3..10 run scoreboard players add .global cryptid.world.fury 100 
+execute if score .global cryptid.day matches 10.. run scoreboard players add .global cryptid.world.fury 300 

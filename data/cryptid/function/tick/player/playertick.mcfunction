@@ -65,6 +65,7 @@ execute if score .global cryptid.day matches 10.. if score @s cryptid.timer matc
 
 
 ##spawnstructurte on first join
+execute unless score .init cryptid.worldtimer matches 1 run execute as @p at @s run function cryptid:action/setdefault
 execute unless score .init cryptid.worldtimer matches 1 run execute as @p at @s run function cryptid:action/world/spawnstructure
 
 ##advancement check

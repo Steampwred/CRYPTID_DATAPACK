@@ -45,7 +45,5 @@ execute as @a[tag=tutorial.active, distance=9..] at @e[tag=cryptid.spawnbox, typ
 particle minecraft:crimson_spore ~ ~-3 ~ 0.1 0.1 0.1 0.1 50
 
 
-##end
-
-
+## end
 execute if score @s cryptid.timer matches ..0 run function cryptid:tick/player/tutorial/killtutorial

@@ -1,4 +1,5 @@
 scoreboard players add .global cryptid.pyramidsteal 1
+scoreboard players add .global cryptid.world.fury 100
 execute if score .global cryptid.pyramidsteal matches 1 run function cryptid:events/cryptid/flicker2
 execute if score .global cryptid.pyramidsteal matches 2 run function cryptid:events/cryptid/flicker5
 advancement revoke @a only cryptid:stealpyramid
