@@ -17,11 +17,11 @@
         { "type": "minecraft:item", "name": "minecraft:stone", "weight": 1, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "general/spawntumor" } } ] },
 
 
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 8, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/darkeyes" , "fury": 5} } ] },
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 7, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/storycrawler" ,"fury": 100 } } ] },
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 4, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/spawnspider" , "fury": 275} } ] },
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 4, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/spawnhand", "fury": 90 } } ] },
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 5, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/tunnel", "fury": 200 } } ] }
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 8, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/darkeyes" , "fury": 50} } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 7, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/storycrawler" ,"fury": 1000 } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 4, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/spawnspider" , "fury": 2750} } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 4, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/spawnhand", "fury": 900 } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 5, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "underground/tunnel", "fury": 2000 } } ] }
     ]
     }
   ]

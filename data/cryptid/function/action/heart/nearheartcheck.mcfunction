@@ -7,8 +7,8 @@ execute store result score @s cryptid.random run random value 1..3000
 
 
 ###portal
-execute if score .global cryptid.world.fury matches 115.. if score @s cryptid.random matches 1..2 run tellraw @p[distance=0..10] {"text":"The gate to hell has opened","color":"red"}
-execute if score .global cryptid.world.fury matches 115.. if score @s cryptid.random matches 1..2 run execute as @p[distance=0..10] at @s run function cryptid:action/portal/create
+execute if score .global cryptid.world.fury matches 1150.. if score @s cryptid.random matches 1..2 run tellraw @p[distance=0..10] {"text":"The gate to hell has opened","color":"red"}
+execute if score .global cryptid.world.fury matches 1150.. if score @s cryptid.random matches 1..2 run execute as @p[distance=0..10] at @s run function cryptid:action/portal/create
 
 
 execute if score @s cryptid.random matches 1 run function cryptid:events/underground/quake1

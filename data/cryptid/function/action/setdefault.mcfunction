@@ -1,4 +1,6 @@
 scoreboard players set .global cryptid.challenge 3
+scoreboard players set .global cryptid.world.furyrate 10
+
 
 playsound minecraft:entity.villager.death ambient @a
 

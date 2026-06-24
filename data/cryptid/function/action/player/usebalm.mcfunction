@@ -1,8 +1,8 @@
-execute if score @s cryptid.player.maxharmony matches ..20500 run scoreboard players add cryptid.global cryptid.world.fury 10
-execute if score @s cryptid.player.maxharmony matches 21000 run scoreboard players add cryptid.global cryptid.world.fury 25
-execute if score @s cryptid.player.maxharmony matches 21500 run scoreboard players add cryptid.global cryptid.world.fury 45
-execute if score @s cryptid.player.maxharmony matches 22000 run scoreboard players add cryptid.global cryptid.world.fury 50
-execute if score @s cryptid.player.maxharmony matches 22500 run scoreboard players add cryptid.global cryptid.world.fury 60
+execute if score @s cryptid.player.maxharmony matches ..20500 run scoreboard players add cryptid.global cryptid.world.fury 100
+execute if score @s cryptid.player.maxharmony matches 21000 run scoreboard players add cryptid.global cryptid.world.fury 250
+execute if score @s cryptid.player.maxharmony matches 21500 run scoreboard players add cryptid.global cryptid.world.fury 450
+execute if score @s cryptid.player.maxharmony matches 22000 run scoreboard players add cryptid.global cryptid.world.fury 500
+execute if score @s cryptid.player.maxharmony matches 22500 run scoreboard players add cryptid.global cryptid.world.fury 600
 
 
 

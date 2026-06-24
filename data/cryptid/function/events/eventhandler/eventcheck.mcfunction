@@ -1,18 +1,21 @@
- 
+
 ###nosleeping
 
-execute if score @s cryptid.player.harmony matches -20000..-10000 if block ~ ~0.3 ~ #beds run setblock ~ ~ ~ air
+execute if score @s cryptid.player.harmony matches -20000..-10000 if block ~ ~0.3 ~ #beds run setblock ~ ~ ~ air destroy
 execute if score @s cryptid.player.harmony matches -20000..-10000 if block ~ ~0.3 ~ #beds run tp @s ~ ~1 ~
 
 
-##endeventhandler
 
-execute at @s if score @s cryptid.event.random matches 1..90 run scoreboard players add .current cryptid.eventcap 2
+
+### EVENT HANDLER
+execute unless score @s cryptid.event.random matches 1..90 run return fail
+
+scoreboard players add .current cryptid.eventcap 2
 
 
 ##radio factor
-execute at @s if score @s cryptid.event.random matches 1..90 if items entity @s weapon.mainhand sugar[minecraft:custom_data~{cryptid.compass:1b}] run playsound minecraft:cryptid.bone.knock ambient @a
-execute at @s if score @s cryptid.event.random matches 1..90 if items entity @s weapon.mainhand sugar[minecraft:custom_data~{cryptid.compass:1b}] run tellraw @a ["",{"text":"[RADIOLOG] An event is happening! <AVG SEVERITY: ","color":"#D01353"},{"score":{"name":".global","objective":"cryptid.world.fury"},"color":"#D01353"},{"text":">","color":"#D01353"}]
+execute if items entity @s weapon.mainhand sugar[minecraft:custom_data~{cryptid.compass:1b}] run playsound minecraft:cryptid.bone.knock ambient @a
+execute if items entity @s weapon.mainhand sugar[minecraft:custom_data~{cryptid.compass:1b}] run tellraw @a ["",{"text":"[RADIOLOG] An event is happening! <AVG SEVERITY: ","color":"#D01353"},{"score":{"name":".global","objective":"cryptid.world.fury"},"color":"#D01353"},{"text":">","color":"#D01353"}]
 
 
 ############NOTE: most events should be DISABLED in the dimension
@@ -42,7 +45,7 @@ execute at @s as @s[y=110,dy=1000] at @s run function cryptid:events/eventhandle
 
 ####world fury events
 
-#execute if score .global cryptid.world.fury matches 300.. run function cryptid:events/eventhandler/macroroll {"eventgroup":"fury"}
+#execute if score .global cryptid.world.fury matches 3000.. run function cryptid:events/eventhandler/macroroll {"eventgroup":"fury"}
 
 ##low tier events
 
@@ -77,8 +80,7 @@ execute as @s[scores={cryptid.player.harmony=-30000..-7000}] at @s run function 
 
 execute if biome ~ ~ ~ #minecraft:is_ocean run function cryptid:events/eventhandler/macroroll {"eventgroup":"ocean"}
 
-##reset eventrandom
+
+
+## reset eventrandom
 execute at @s if score @s cryptid.event.random matches 1..90 run scoreboard players set @s cryptid.event.random 400001
-
-
-

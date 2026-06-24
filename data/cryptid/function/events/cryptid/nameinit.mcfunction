@@ -59,7 +59,7 @@ execute if score @p cryptid.player.harmony matches 5000..20000 run execute store
 
 execute if score @s cryptid.player.random matches 1..12 run function cryptid:events/underground/spawndecimator
 
-execute if score @s cryptid.player.random matches 13..20 if score .global cryptid.world.fury matches 110.. run function cryptid:events/cryptid/chomper
+execute if score @s cryptid.player.random matches 13..20 if score .global cryptid.world.fury matches 1100.. run function cryptid:events/cryptid/chomper
 
 ##spawn tumors, this can be reworked later
 

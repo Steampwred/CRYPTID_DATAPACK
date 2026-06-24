@@ -9,7 +9,7 @@ execute store result score .globaltime cryptid.time run time query daytime
 function cryptid:action/world/frameanimate
 
 ##worldfury
-execute if score .global cryptid.world.fury matches 50.. run function cryptid:tick/player/worldfury
+execute if score .global cryptid.world.fury matches 500.. run function cryptid:tick/player/worldfury
 
 ##guaranteed events
 execute if score .global cryptid.day matches 30 if score .globaltime cryptid.time matches 3000 run function cryptid:action/portal/create
@@ -48,6 +48,7 @@ execute as @e[type=vindicator,tag=cryptid.vorheart] run scoreboard players add c
 ##10t loop to reduce lag
 execute if score .global 10t matches ..700 run scoreboard players add .global 10t 1
 execute if score .global 10t matches 700.. run scoreboard players set .global 10t 0
+execute if score .global 10t matches 1 run say ji
 
 ##spawn hearts
 execute if score .global cryptid.worldtimer matches 25000.. if score count cryptid.heartcount < maxcount cryptid.heartcount if score .global 10t matches 1 run execute as @a[sort=random] at @s if entity @s[dy=-520,y=180] run function cryptid:spawn/heart

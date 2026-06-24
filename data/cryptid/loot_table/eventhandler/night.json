@@ -11,16 +11,16 @@
         { "type": "minecraft:item", "name": "minecraft:stone", "weight": 1, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "night/jelly1" } } ] },
         { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/lampost" } } ] },
    
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/dopple1", "fury": 40} } ] },
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 12, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "night/spotlight", "fury": 70 } } ] },         
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/dopple1", "fury": 400} } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 12, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "night/spotlight", "fury": 700 } } ] },         
 
 
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "story/dopple1", "fury": 100} } ] },
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 4, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/dopple1", "fury": 200} } ] },
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "story/storywave", "fury": 120} } ] },
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 4, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/storywave", "fury": 250} } ] },
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "story/spawntank", "fury": 100} } ] },
-        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 8, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/spawntank", "fury": 200} } ] }
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "story/dopple1", "fury": 1000} } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 4, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/dopple1", "fury": 2000} } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "story/storywave", "fury": 1200} } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 4, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/storywave", "fury": 2500} } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "story/spawntank", "fury": 1000} } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 8, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/spawntank", "fury": 2000} } ] }
       ]
     }
   ]

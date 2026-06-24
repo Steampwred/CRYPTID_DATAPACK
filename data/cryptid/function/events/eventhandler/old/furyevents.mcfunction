@@ -7,8 +7,8 @@
 
 
 ##entity events
-execute if score .global cryptid.world.fury matches 40.. if score @s cryptid.event.random matches 20..35 run function cryptid:events/sky/lowskyroamer
-execute if score .global cryptid.world.fury matches 60.. if score @s cryptid.event.random matches 36..50 run function cryptid:events/cryptid/spawntank
-execute if score .global cryptid.world.fury matches 80.. if score @s cryptid.event.random matches 51..65 run function cryptid:events/sky/wyrm
-execute if score .global cryptid.world.fury matches 120.. if score @s cryptid.event.random matches 66..80 run function cryptid:events/cryptid/youngheadpeeper
+execute if score .global cryptid.world.fury matches 400.. if score @s cryptid.event.random matches 20..35 run function cryptid:events/sky/lowskyroamer
+execute if score .global cryptid.world.fury matches 600.. if score @s cryptid.event.random matches 36..50 run function cryptid:events/cryptid/spawntank
+execute if score .global cryptid.world.fury matches 800.. if score @s cryptid.event.random matches 51..65 run function cryptid:events/sky/wyrm
+execute if score .global cryptid.world.fury matches 1200.. if score @s cryptid.event.random matches 66..80 run function cryptid:events/cryptid/youngheadpeeper
 

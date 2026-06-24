@@ -50,31 +50,15 @@ ACTION handles all functions that execute for a short time, or only once. Its us
 ACTION is also divided into subfolders, based on the entity doing the action. action/player is a very useful folder
 
 EVENTS hander
-Events occur within 1..90 range roll on the random event scorboard. the number rolls a value between 1 and highnumber x. Highnumber x is determined by the randomgenerator function and is adjusted dynamicly depending on harmoney and other world conditions
-as the upper limit of the range will vary frequently the avrage roll will favour numbers closer to 90.
+Events occur within 1..90 range roll on the random event scorboard. the number rolls a value between 1 and highnumber x. Highnumber x is determined by the randomgenerator function and is adjusted
+ dynamicly depending on harmoney and other world conditions
 
-Sub event handler
-not all events are possible everwhere, so depending on player location, harmony or other variables, we run a speific sub evnet handler
-list of sub event handelers
-- belowevents
-- furyevents
-- highevents
-- lowevents
-- midevents
-- nightevents
-- oceanevents
-- skyevents
+Within event check which runs on a random roll from 1..90, we run apppropreate events depending on location y level, or time and run any of the events that apply, giving yourself
+the tag "cryptid.debug" will show the types of events and the specific events that run every time an event is called
+eventcheck is the maser controler that can overlaps main event types and general atmoshpheric events
 
-each should loosly follow this general structure for random events
-General rule is the lower the number the more sever it should be.
-
-75-90 Safe          slots 15
-50-74 Mild          slots 24
-20-49 Danger        slots 29
-1-10  Extreme       slots 9
-
-The slots are the number of events in each, this example totals to 77 meanng there is room to add more events or adjust occurance chances, however since we want an event to always occur empty slots should re-roll the current event table.
-
+the rolling of random events is selcedted by a loot table, which allows you to specifiy weight of an event and a minimum worldfury requirment
+see _template.txt for more info on the format
 
 
 
@@ -93,7 +77,13 @@ summon entities with /function cryptid:events/[EVENTNAME]
 
 [#3]
 ****WORLD TICKING****
+World fury and difficulty
 
+Nightmare ~ 0 hours w hy w o uld yo u  w ai t
+
+Manic ~ 5 hours to reach max fury
+Default ~ 10 hours to reach max fury
+Essentially ~ 20 hours to reach max fury
 
 [#4]
 ****MODELS****

@@ -1,7 +1,7 @@
 ##increase fury when near
 execute store result score @s cryptid.random run random value 1..2000
-execute if entity @p[distance=0..10] if entity @s[scores={cryptid.mob.class=3..4}] if score @s cryptid.random matches 1 run scoreboard players add .global cryptid.world.fury 1
-execute if entity @p[distance=0..10] if entity @s[scores={cryptid.mob.class=4..6}] if score @s cryptid.random matches 1..2 run scoreboard players add .global cryptid.world.fury 1
+execute if entity @p[distance=0..10] if entity @s[scores={cryptid.mob.class=3..4}] if score @s cryptid.random matches 1 run scoreboard players add .global cryptid.world.fury 10
+execute if entity @p[distance=0..10] if entity @s[scores={cryptid.mob.class=4..6}] if score @s cryptid.random matches 1..2 run scoreboard players add .global cryptid.world.fury 10
 
 
 ##underground only
