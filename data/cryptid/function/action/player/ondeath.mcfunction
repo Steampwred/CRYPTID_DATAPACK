@@ -5,7 +5,7 @@ playsound minecraft:cryptid.wall.end ambient @s[tag=wall.chasing]
 tag @s remove wall.chasing
 tag @s remove cryptid.handed
 tag @s remove chained
-
+tag @s remove trap.trapped
 
 
 ##other
