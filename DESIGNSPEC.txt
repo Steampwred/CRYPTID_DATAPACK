@@ -49,7 +49,25 @@ Note: tickmarker must be called on an entity that has the cryptid tag
 ACTION handles all functions that execute for a short time, or only once. Its used for things like shotgun blasts or entity actions, like chompers eating or curators digging.
 ACTION is also divided into subfolders, based on the entity doing the action. action/player is a very useful folder
 
-EVENTS handle 
+EVENTS hander
+Events occur within 1..90 range roll on the random event scorboard. the number rolls a value between 1 and highnumber x. Highnumber x is determined by the randomgenerator function and is adjusted
+ dynamicly depending on harmoney and other world conditions
+
+Within event check which runs on a random roll from 1..90, we run apppropreate events depending on location y level, or time and run any of the events that apply, giving yourself
+the tag "cryptid.debug" will show the types of events and the specific events that run every time an event is called
+eventcheck is the maser controler that can overlaps main event types and general atmoshpheric events
+
+the rolling of random events is selcedted by a loot table, which allows you to specifiy weight of an event and a minimum worldfury requirment
+see _template.txt for more info on the format
+
+
+
+
+
+
+
+
+
 
 [#2]
 ****ENTITY METHODS****
@@ -59,7 +77,13 @@ summon entities with /function cryptid:events/[EVENTNAME]
 
 [#3]
 ****WORLD TICKING****
+World fury and difficulty
 
+Nightmare ~ 0 hours w hy w o uld yo u  w ai t
+
+Manic ~ 5 hours to reach max fury
+Default ~ 10 hours to reach max fury
+Essentially ~ 20 hours to reach max fury
 
 [#4]
 ****MODELS****

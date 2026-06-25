@@ -1,0 +1,16 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/chunkgrass" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/chunkred" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/chunktorch" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/chunktall" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/chunkleaves" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 9, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/placestructure" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/worldshift" } } ] }
+      ]
+    }
+  ]
+}

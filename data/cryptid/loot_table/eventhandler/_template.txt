@@ -1,0 +1,12 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 1, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "any/any" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "any/any" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "any/any" , "fury": 100} } ] }
+    ]
+    }
+  ]
+}

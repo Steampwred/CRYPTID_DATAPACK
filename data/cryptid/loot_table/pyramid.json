@@ -133,12 +133,14 @@
               "components": {
                 "minecraft:custom_name": "[\"\",{\"text\":\"Rusty Beartrap\",\"italic\":false,\"color\":\"red\"}]",
                 "minecraft:lore": [
-                  "[\"\",{\"text\":\"LEFT CLICK\",\"italic\":false,\"color\":\"yellow\",\"bold\":true},{\"text\":\" to place down.\",\"italic\":false,\"color\":\"dark_red\"}]",
+                  "[\"\",{\"text\":\"RIGHT CLICK\",\"italic\":false,\"color\":\"yellow\",\"bold\":true},{\"text\":\" to place down.\",\"italic\":false,\"color\":\"dark_red\"}]",
                   "[\"\",{\"text\":\"Break the block below to pick up.\",\"italic\":false,\"color\":\"dark_red\"}]",
                   "[\"\",{\"text\":\"It's held together by scrap.\",\"italic\":false,\"color\":\"dark_gray\"}]"
                 ],
                 "minecraft:custom_model_data": 1307,
-                "minecraft:custom_data": "{cryptid.item:1,cryptid.beartrap:1}"
+                "minecraft:custom_data": "{cryptid.item:1,cryptid.beartrap:1}",
+                "!minecraft:max_damage": {},
+                "minecraft:max_stack_size": 4
               }
             },
             {

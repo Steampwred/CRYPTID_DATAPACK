@@ -1,0 +1,47 @@
+mid overlap
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 5, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/worldshift" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 30, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/flicker2" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/chunktall" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 28, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/placestructure" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 6, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/chunkgrass" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 5, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/chunkleaves" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 4, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/chunkred" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/chunktorch" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 30, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/message1" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 13, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/stalker1" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 9, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/mimic" } } ] }
+      ]
+    }
+  ]
+}
+
+
+high overlap
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 20, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/flicker2" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 9, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/mimic" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 5, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/altar" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/chunkgrass" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 12, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/chunkred" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/chunktorch" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 5, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/behindyou" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 28, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/placestructure" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 27, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/shy2" } } ] }
+      ]
+    }
+  ]
+}
+
+low
+  { "type": "minecraft:item", "name": "minecraft:stone", "weight": 18, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/placestructure" } } ] },
+
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 14, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/radiodead" } } ] },

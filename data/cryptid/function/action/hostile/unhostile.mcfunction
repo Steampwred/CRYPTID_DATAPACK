@@ -1,4 +1,7 @@
 tag @s remove cryptid.evilmob
+tag @s remove cryptid
+tag @s remove cryptid.ignore.radar
+tag @s remove cryptid.ignore.totemward
 team leave @s
 
 execute on passengers if entity @s[type=marker,nbt={Tags:["cryptid.tickmarker"],data:{cmd:"cryptid:tick/tickevilmob"}}] run kill @s

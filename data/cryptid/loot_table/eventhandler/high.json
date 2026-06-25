@@ -1,0 +1,36 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/jelly1" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 4, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/flicker3" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 4, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/radiodead" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "general/screencorrupt" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/glitchtool" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/interactionblock" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "general/sprayevent" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/tortured" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/flooreye" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "general/distort1" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/jellyswarm" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/fakemountain" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/ant" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "general/sinkhole" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 1, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/angrystalker" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 5, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/setnight" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/uncanny2" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/whisper1" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/soma" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "general/breakerant" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 7, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/chomper", "fury" : 1100 } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/spire", "fury" : 1800 } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/pinhead", "fury" : 200 } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 7, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/lowskyroamer" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 4, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/screendash2" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 2, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "cryptid/youngheadpeeper" } } ] },
+        { "type": "minecraft:item", "name": "minecraft:stone", "weight": 3, "functions": [ { "function": "minecraft:set_custom_data", "tag": { "event": "sky/octopus" } } ] }
+      ]
+    }
+  ]
+}

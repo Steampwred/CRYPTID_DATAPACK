@@ -1,5 +1,5 @@
 scoreboard players add @a[distance=..20] cryptid.player.harmony 18000
-scoreboard players remove .global cryptid.world.fury 15
+scoreboard players remove .global cryptid.world.fury 150
 #function cryptid:rituals/initial/orificecraving
 
 execute store result score @s cryptid.player.random run random value 1..8

@@ -92,6 +92,10 @@ title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=-19999..-19990}
 
 
 
+##increase fury when near high level cryptids
+
+execute if score .heartbeat cryptid.globalevent matches 6 if entity @e[tag=cryptid,scores={cryptid.mob.class=3..4},distance=..20] run scoreboard players add .global cryptid.world.fury 1
+execute if score .heartbeat cryptid.globalevent matches 3 if entity @e[tag=cryptid,scores={cryptid.mob.class=5..},distance=..20] run scoreboard players add .global cryptid.world.fury 1
 
 
 

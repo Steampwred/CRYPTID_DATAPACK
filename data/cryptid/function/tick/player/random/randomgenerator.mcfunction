@@ -16,12 +16,12 @@ execute if score .global cryptid.challenge matches 2 run scoreboard players set 
 ########################################################now apply influences to lower it
 
 
-##############World Fury influence...
+##############World Fury influence... 
 scoreboard players operation .buffer cryptid.randomeventcap = .global cryptid.world.fury
 ##lock past 500
-execute if score .global cryptid.world.fury matches 500.. run scoreboard players set .buffer cryptid.randomeventcap 500
-scoreboard players set .mult cryptid.randomeventcap 9
-scoreboard players operation .buffer cryptid.randomeventcap *= .mult cryptid.randomeventcap
+execute if score .global cryptid.world.fury matches 4000.. run scoreboard players set .buffer cryptid.randomeventcap 4000
+#scoreboard players set .mult cryptid.randomeventcap 9
+#scoreboard players operation .buffer cryptid.randomeventcap *= .mult cryptid.randomeventcap
 scoreboard players operation @s cryptid.randomeventcap -= .buffer cryptid.randomeventcap
 
 #############cryptid harmony influence
@@ -52,7 +52,7 @@ scoreboard players operation @s cryptid.randomeventcap *= .mult cryptid.randomev
 
 
 ######################################################### hard limit to 1000
-execute if score @s cryptid.randomeventcap matches ..1000 run scoreboard players set @s cryptid.randomeventcap 1000
+execute if score @s cryptid.randomeventcap matches ..900 run scoreboard players set @s cryptid.randomeventcap 900
 
 
 
@@ -68,4 +68,4 @@ function cryptid:tick/player/random/randommacro with storage cryptid:randomevent
 
 #######execute events
 
-execute as @s at @s run function cryptid:events/eventcheck
+execute as @s at @s run function cryptid:events/eventhandler/eventcheck

@@ -6,7 +6,8 @@ scoreboard objectives add cryptid.player.minharmony dummy
 scoreboard objectives add cryptid.chomptime dummy
 scoreboard objectives add cryptid.handitem dummy
 scoreboard objectives add cryptid.world.fury dummy
-
+scoreboard objectives add cryptid.world.furyrate dummy
+scoreboard objectives add cryptid.world.furymessage dummy
 ##individual player ID
 scoreboard objectives add cryptid.player.id dummy
 
@@ -219,7 +220,7 @@ forceload add 0 0
 
 scoreboard players set 20 cryptid.challengetime 20
 
-###team stuff
+###team stufffu
 team add nodeathmessage
 team modify nodeathmessage deathMessageVisibility never
 
@@ -229,3 +230,7 @@ scoreboard players set .global 10t 0
 execute if score .global cryptid.worldtimer matches ..12000 run scoreboard players set .current cryptid.eventcap 0
 
 scoreboard players set -1 cryptid.roty -1
+
+
+## Long tick loop 1 minute
+function cryptid:ticklong
