@@ -1,2 +1,2 @@
-give @s paper[custom_name='["",{"text":"Dirty paper","italic":false}]',lore=['["",{"text":"Keeps the demons away","italic":false,"color":"dark_red"}]'],custom_model_data=1325]
+give @s paper[custom_name='["",{"translate":"cryptid.item.dirty_paper.name","italic":false}]',lore=['["",{"translate":"cryptid.item.dirty_paper.lore.1","italic":false,"color":"dark_red"}]'],custom_model_data=1325]
 tag @s add cryptid.recipe.catcher

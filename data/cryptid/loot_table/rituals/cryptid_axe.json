@@ -12,19 +12,19 @@
               "components": {
                 "minecraft:custom_data": "{cryptid.item:1b,cryptid.axe:1b}",
                 "minecraft:custom_model_data": 1312,
-                "minecraft:custom_name": "[\"\",{\"text\":\"Steel Suffering\",\"italic\":false,\"color\":\"red\"}]",
+                "minecraft:custom_name": "[\"\",{\"translate\":\"cryptid.item.axe.custom_name\",\"italic\":false,\"color\":\"red\"}]",
                 "minecraft:lore": [
-                  "[{\"text\":\"Touching the blade leaves a sense\",\"italic\":true,\"color\":\"dark_red\"}]",
-                  "[\"\",{\"text\":\"of \",\"italic\":true,\"color\":\"dark_red\"},{\"text\":\"Pricking\",\"bold\":true,\"italic\":false,\"color\":\"#00ffff\"},{\"text\":\" numbness\",\"italic\":true,\"color\":\"dark_red\"}]",
+                  "[{\"translate\":\"cryptid.item.axe.lore.1\",\"italic\":true,\"color\":\"dark_red\"}]",
+                  "[\"\",{\"translate\":\"cryptid.item.axe.lore.2_1\",\"italic\":true,\"color\":\"dark_red\"},{\"translate\":\"cryptid.item.axe.lore.2_2\",\"bold\":true,\"italic\":false,\"color\":\"#00ffff\"},{\"translate\":\"cryptid.item.axe.lore.2_3\",\"italic\":true,\"color\":\"dark_red\"}]",
                   "[\"\"]",
-                  "[\"\",{\"text\":\"<Attack>\",\"italic\":false,\"color\":\"dark_red\"},{\"text\":\" - apply poison and bleed\",\"italic\":false,\"color\":\"gray\"}]",
-                  "[{\"text\":\"to the affected Cryptid\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[\"\",{\"translate\":\"cryptid.item.axe.lore.4_1\",\"italic\":false,\"color\":\"dark_red\"},{\"translate\":\"cryptid.item.axe.lore.4_2\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"cryptid.item.axe.lore.5\",\"italic\":false,\"color\":\"gray\"}]",
                   "[\"\"]",
-                  "[\"\",{\"text\":\"<Right Click> \",\"italic\":false,\"color\":\"dark_red\"},{\"text\":\"- launch a cleaving attack, \",\"italic\":false,\"color\":\"gray\"}]",
-                  "[{\"text\":\"beware after three consecutive uses \",\"italic\":false,\"color\":\"gray\"}]",
-                  "[{\"text\":\"it will begin consuming the user\",\"italic\":false,\"color\":\"gray\"}]"
+                  "[\"\",{\"translate\":\"cryptid.item.axe.lore.7_1\",\"italic\":false,\"color\":\"dark_red\"},{\"translate\":\"cryptid.item.axe.lore.7_2\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"cryptid.item.axe.lore.8\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"cryptid.item.axe.lore.9\",\"italic\":false,\"color\":\"gray\"}]"
                 ],
-                "minecraft:item_name": "[\"\",{\"text\":\"Steel Torment\",\"italic\":false,\"color\":\"red\"}]",
+                "minecraft:item_name": "[\"\",{\"translate\":\"cryptid.item.axe.item_name\",\"italic\":false,\"color\":\"red\"}]",
                 "minecraft:rarity": "rare",
                 "minecraft:attribute_modifiers": {
                   "modifiers": [

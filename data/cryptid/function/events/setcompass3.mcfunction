@@ -20,6 +20,6 @@ playsound minecraft:cryptid.radiolong3 ambient @s ~ ~ ~ 1000 1 1
 
 
 
-#title @s[tag=!deadradio] actionbar ["",{"text":"[RADIO]","color":"red"},": <",{"text":"Distance To Heart","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"score":{"objective":"cryptid.player.heart.distance","name":"@s"}},{"text":"}, ","color":"#996633"},"<",{"text":"Event Percent","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"text":"0.000","color":"white"},{"score":{"objective":"cryptid.player.event","name":"@s"}},{"text":"}, ","color":"#996633"},"<",{"text":"Heart Capsules","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"score":{"objective":"cryptid.maxlives","name":"@s"}},{"text":"}","color":"#996633"}]
+#title @s[tag=!deadradio] actionbar ["",{"translate":"chat.cryptid.radio3.prefix","color":"red"},": <",{"translate":"chat.cryptid.radio3.distance","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"score":{"objective":"cryptid.player.heart.distance","name":"@s"}},{"text":"}, ","color":"#996633"},"<",{"translate":"chat.cryptid.radio3.event_percent","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"text":"0.000","color":"white"},{"score":{"objective":"cryptid.player.event","name":"@s"}},{"text":"}, ","color":"#996633"},"<",{"translate":"chat.cryptid.radio3.capsules","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"score":{"objective":"cryptid.maxlives","name":"@s"}},{"text":"}","color":"#996633"}]
 
-title @s[tag=deadradio] actionbar ["",{"text":"--- INTERFERENCE DETECTED ---","color":"gray"}]
+title @s[tag=deadradio] actionbar ["",{"translate":"chat.cryptid.radio3.interference","color":"gray"}]

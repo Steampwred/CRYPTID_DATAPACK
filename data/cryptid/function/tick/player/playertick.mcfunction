@@ -42,7 +42,7 @@ tag @s remove boss.fight.1
 ##nokb
 
 attribute @s minecraft:generic.knockback_resistance modifier remove 1302
-execute as @s[tag=cryptid.nokb] at @s run function cryptid:action/effect/nokb
+execute as @s[tag=cryptid.nokb] at @s run function cryptid:action/player/nokb
 
 
 
@@ -192,7 +192,7 @@ execute if score @s cryptid.random matches 1 run title @s times 0 3t 0
 execute store result score @s cryptid.random run random value 1..200
 execute if score @s cryptid.random matches 1 run tag @s remove cryptid.mouthtarget
 
-## This block is really wird why do it repeate also the @r selector means it selects a random of it type not specific looking at target so idk
+## This block is really weird why do it repeate also the @r selector means it selects a random of it type not specific looking at target so idk
 ######################Tracks the look angle for 
 
 ##checks for specific cryptids in a view cone (multiple eneities supporded at once)
@@ -244,10 +244,10 @@ execute as @s[tag=cryptid.readytoswap] at @s run tag @s remove cryptid.readytosw
 
 
 ##death logic
-execute as @s[scores={cryptid.deaths=1..,cryptid.maxlives=1}] at @s run tellraw @a ["",{"color":"dark_red","bold":true,"selector":"@s"}," has run out of lives! May their soul rest in peace.."]
+execute as @s[scores={cryptid.deaths=1..,cryptid.maxlives=1}] at @s run tellraw @a ["",{"color":"dark_red","bold":true,"selector":"@s"},{"translate":"cryptid.event.death.no_lives_left","color":"dark_red","bold":true}]
 
 #donate lives
-execute if score .global cryptid.challenge matches 3 as @s[scores={cryptid.deaths=1..,cryptid.maxlives=1}] run tellraw @a ["Donate life: ",{"text":"CLICK ","clickEvent":{"action":"run_command","value":"/trigger cryptid.trigger.donatelife set 1"},"bold":true,"color":"red"}]
+execute if score .global cryptid.challenge matches 3 as @s[scores={cryptid.deaths=1..,cryptid.maxlives=1}] run tellraw @a [{"translate":"cryptid.event.death.donate_life_prefix"},{"translate":"cryptid.event.death.donate_life_click","clickEvent":{"action":"run_command","value":"/trigger cryptid.trigger.donatelife set 1"},"bold":true,"color":"red"}]
 execute as @a[scores={cryptid.trigger.donatelife=1}] run function cryptid:action/player/donate
 
 execute as @s[scores={cryptid.deaths=1..,cryptid.maxlives=1}] at @s run playsound minecraft:entity.wither.death ambient @a ~ ~ ~ 0.1 0.1
@@ -266,7 +266,7 @@ execute as @s[scores={cryptid.maxlives=1..}, tag=cryptid.dead] at @s run tag @s 
 ##radiomissing
 execute as @s[tag=cryptid.missingradio] run execute store result score @s cryptid.random run random value 1..200
 
-execute as @s[tag=cryptid.missingradio,tag=!cryptid.radiomessage1] if score @s cryptid.random matches 1 run tellraw @s [{"text":"You can craft a new radio with 1 redstone and 1 iron","color":"gray"}]
+execute as @s[tag=cryptid.missingradio,tag=!cryptid.radiomessage1] if score @s cryptid.random matches 1 run tellraw @s [{"translate":"cryptid.event.radio.craft_hint","color":"gray"}]
 
 execute as @s[tag=cryptid.missingradio,tag=!cryptid.radiomessage1] if score @s cryptid.random matches 1 run tag @s add cryptid.radiomessage1
 

@@ -1,11 +1,11 @@
 execute store result score @s cryptid.player.random run random value 1..7
-execute if score @s cryptid.player.random matches 1 run tellraw @s {"text":":)","color":"red"}
+execute if score @s cryptid.player.random matches 1 run tellraw @s {"translate":"cryptid.event.dopple.smile","color":"red"}
 
 
 execute store result score @s cryptid.player.random run random value 1..10
 
 
-summon vindicator ~ ~120 ~ {CustomName:'[{"text":"Friend"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.dopple"],ArmorDropChances:[0f,0f,0f,0f]}
+summon vindicator ~ ~120 ~ {CustomName:'[{"translate":"cryptid.entity.friend"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.dopple"],ArmorDropChances:[0f,0f,0f,0f]}
 
 execute if score @s cryptid.player.random matches 1 run summon villager ~ ~122 ~ {Invulnerable:1b, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
 execute if score @s cryptid.player.random matches 2 run summon cow ~ ~123 ~ {Invulnerable:1b, PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.doppleclone"],ArmorDropChances:[0f,0f,0f,0f]}
@@ -65,5 +65,3 @@ team join cryptid.nocollide @e[tag=cryptid.dopple, type=vindicator]
 team join cryptid.nocollide @e[tag=cryptid.doppleclone]
 
 function cryptid:events/cryptid/flicker4
-
-

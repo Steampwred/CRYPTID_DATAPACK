@@ -1,6 +1,4 @@
-
-
-summon armor_stand ~ ~420 ~ {DisabledSlots:4144959, Invisible:1b, NoGravity:1b, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Deep Lurker"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.kraken","cryptid.timer"],ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f]}
+summon armor_stand ~ ~420 ~ {DisabledSlots:4144959, Invisible:1b, NoGravity:1b, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.deep_lurker"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.kraken","cryptid.timer"],ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f]}
 
 
 

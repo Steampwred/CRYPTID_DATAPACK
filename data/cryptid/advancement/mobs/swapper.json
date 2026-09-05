@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "Deep in the earth",
-      "description": "Find a barnacle. He's very friendly",
+      "title": {
+        "translate": "advancement.cryptid.deep_in_the_earth.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.deep_in_the_earth.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

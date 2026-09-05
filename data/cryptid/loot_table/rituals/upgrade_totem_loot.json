@@ -11,15 +11,15 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_data": "{cryptid.item:1,cryptid.totem2:1}",
-                "minecraft:custom_name": "[\"\",{\"text\":\"Consecrated Bloodstone Totem\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]",
+                "minecraft:custom_name": "[\"\",{\"translate\":\"cryptid.item.totem2.custom_name\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]",
                 "minecraft:lore": [
-                  "[{\"text\":\"The parasitic monolith\",\"color\":\"dark_red\"}]",
-                  "[{\"text\":\"<When Placed> \",\"italic\":false,\"color\":\"dark_red\"}]",
-                  "[{\"text\":\"- Creates a massive barrier that \",\"italic\":false,\"color\":\"gray\"}]",
-                  "[\"\",{\"text\":\"passively \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"deflects reality warping \",\"italic\":false,\"color\":\"gray\"}]",
-                  "[\"\",{\"text\":\"events. \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Ideal for fortifying a region\",\"italic\":false,\"color\":\"gray\"}]",
-                  "[{\"text\":\"- No longer requires fuel, will banish\",\"italic\":false,\"color\":\"gray\"}]",
-                  "[{\"text\":\" all Cryptids within its barrier\",\"italic\":false,\"color\":\"gray\"}]"
+                  "[{\"translate\":\"cryptid.item.totem2.lore.1\",\"color\":\"dark_red\"}]",
+                  "[{\"translate\":\"cryptid.item.totem2.lore.2\",\"italic\":false,\"color\":\"dark_red\"}]",
+                  "[{\"translate\":\"cryptid.item.totem2.lore.3\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"cryptid.item.totem2.lore.4\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"cryptid.item.totem2.lore.5\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"cryptid.item.totem2.lore.6\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"cryptid.item.totem2.lore.7\",\"italic\":false,\"color\":\"gray\"}]"
                 ],
                 "minecraft:custom_model_data": 1313
               }

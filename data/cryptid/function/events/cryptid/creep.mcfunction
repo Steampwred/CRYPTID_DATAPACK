@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~ ~ {Invisible:1,CustomName:'[{"text":"Empty Obelisk"}]', Tags:["cryptid","cryptid.creep"], Silent:1, Invulnerable:1, NoAI:1,NoGravity:1}
+summon minecraft:armor_stand ~ ~ ~ {Invisible:1,CustomName:'[{"translate":"cryptid.entity.empty_obelisk"}]', Tags:["cryptid","cryptid.creep"], Silent:1, Invulnerable:1, NoAI:1,NoGravity:1}
  
 
 

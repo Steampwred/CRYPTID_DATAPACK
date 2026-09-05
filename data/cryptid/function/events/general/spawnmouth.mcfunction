@@ -1,4 +1,4 @@
-summon armor_stand ~ ~-20 ~ {DisabledSlots:4144959, Invisible:1, NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Earth Philogen"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.mouth"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1348},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon armor_stand ~ ~-20 ~ {DisabledSlots:4144959, Invisible:1, NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.earth_philogen"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.mouth"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1348},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
 execute positioned ~ ~-20 ~ run effect give @e[type=armor_stand, sort=nearest, tag=cryptid.mouth] minecraft:invisibility infinite 1 true
 effect give @a[distance=0..5] minecraft:slowness 3 3 true
@@ -15,5 +15,3 @@ execute as @e[type=armor_stand, tag=cryptid.mouth, tag=!cryptid.markerapplied] a
 
 
 tag @s add cryptid.mouthtarget
-
-

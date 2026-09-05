@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "Tall man",
-      "description": "Find a watcher. Remember not to stare",
+      "title": {
+        "translate": "advancement.cryptid.tall_man.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.tall_man.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

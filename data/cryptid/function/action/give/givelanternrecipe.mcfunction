@@ -1,1 +1,1 @@
-give @s paper[custom_name='["",{"text":"Torn paper","italic":false}]',lore=['["",{"text":"Smells a little burnt","italic":false,"color":"dark_red"}]'],custom_model_data=1324]
+give @s paper[custom_name='["",{"translate":"cryptid.item.torn_paper_burnt.name","italic":false}]',lore=['["",{"translate":"cryptid.item.torn_paper_burnt.lore.1","italic":false,"color":"dark_red"}]'],custom_model_data=1324]

@@ -1,1 +1,1 @@
-give @s paper[custom_name='["",{"text":"Torn paper","italic":false}]',lore=['["",{"text":"Free blood included","italic":false,"color":"dark_red"}]'],custom_model_data=1327]
+give @s paper[custom_name='["",{"translate":"cryptid.item.torn_paper_blood.name","italic":false}]',lore=['["",{"translate":"cryptid.item.torn_paper_blood.lore.1","italic":false,"color":"dark_red"}]'],custom_model_data=1327]

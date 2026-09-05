@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "A bit shy",
-      "description": "Find the living obelisk. Maybe stay home at night.",
+      "title": {
+        "translate": "advancement.cryptid.a_bit_shy.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.a_bit_shy.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

@@ -1,4 +1,4 @@
-tellraw @p {"text":"The burnt fragment grants temporary harmony","color":"red"}
+tellraw @p {"translate":"cryptid.message.burnt_fragment","color":"red"}
 
 playsound minecraft:cryptid.fog.ambient ambient @a[distance=0..20]
 scoreboard players add @a[distance=0..20] cryptid.player.harmony 500

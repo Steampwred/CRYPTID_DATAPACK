@@ -21,7 +21,7 @@
     "id": "minecraft:warped_fungus_on_a_stick",
     "components": {
       "minecraft:custom_model_data": 1305,
-      "minecraft:custom_name": "[\"\",{\"text\":\"Artery Carver\",\"italic\":false,\"color\":\"dark_red\"}]",
+      "minecraft:custom_name": "[\"\",{\"translate\":\"item.cryptid.artery_carver.name\",\"italic\":false,\"color\":\"dark_red\"}]",
       "minecraft:custom_data": {
         "cryptid.fakepick": 1,
         "cryptid.item": 1

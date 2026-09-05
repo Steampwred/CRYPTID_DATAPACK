@@ -19,8 +19,8 @@ execute as @e[distance=1..10, sort=random, limit=10, type=!player] at @s run fun
 
 execute store result score @s cryptid.player.random run random value 1..5
 
-execute if score @s cryptid.player.random matches 1 run tellraw @s ["",{"text":"<"},{"selector":"@s"},{"text":"> Run"}]
-execute if score @s cryptid.player.random matches 2 run tellraw @s ["",{"text":"<"},{"selector":"@s"},{"text":"> We see you"}]
-execute if score @s cryptid.player.random matches 3 run tellraw @s ["",{"text":"<"},{"selector":"@s"},{"text":"> ?"}]
-execute if score @s cryptid.player.random matches 4 run tellraw @s ["",{"text":"<"},{"selector":"@s"},{"text":"> We hunger"}]
-execute if score @s cryptid.player.random matches 5 run tellraw @s ["",{"text":"<"},{"selector":"@s"},{"text":"> :)"}]
+execute if score @s cryptid.player.random matches 1 run tellraw @s ["",{"text":"<"},{"selector":"@s"},{"text":"> "},{"translate":"cryptid.event.flicker2.run"}]
+execute if score @s cryptid.player.random matches 2 run tellraw @s ["",{"text":"<"},{"selector":"@s"},{"text":"> "},{"translate":"cryptid.event.flicker2.see_you"}]
+execute if score @s cryptid.player.random matches 3 run tellraw @s ["",{"text":"<"},{"selector":"@s"},{"text":"> "},{"translate":"cryptid.event.flicker2.question"}]
+execute if score @s cryptid.player.random matches 4 run tellraw @s ["",{"text":"<"},{"selector":"@s"},{"text":"> "},{"translate":"cryptid.event.flicker2.hunger"}]
+execute if score @s cryptid.player.random matches 5 run tellraw @s ["",{"text":"<"},{"selector":"@s"},{"text":"> "},{"translate":"cryptid.event.flicker2.smile"}]

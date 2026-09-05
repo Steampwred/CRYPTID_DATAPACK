@@ -1,5 +1,4 @@
-
-summon vindicator ~ ~-5 ~ {Invisible:1,CustomNameVisible:1b,CustomName:'[{"text":"Phantom Stalwart"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.glitch","cryptid.deci4"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1333},count:1}],ArmorDropChances:[0f,0f,0f,0f],attributes:[{id:"generic.armor",base:15f},{id:"generic.max_health",base:30f},{id:"generic.gravity",base:0.1f},{id:"generic.follow_range",base:32f},{id:"generic.water_movement_efficiency",base:0f},{id:"piglin.spawn_reinforcements",base:10f}]}
+summon vindicator ~ ~-5 ~ {Invisible:1,CustomNameVisible:1b,CustomName:'[{"translate":"cryptid.entity.phantom_stalwart"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.glitch","cryptid.deci4"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1333},count:1}],ArmorDropChances:[0f,0f,0f,0f],attributes:[{id:"generic.armor",base:15f},{id:"generic.max_health",base:30f},{id:"generic.gravity",base:0.1f},{id:"generic.follow_range",base:32f},{id:"generic.water_movement_efficiency",base:0f},{id:"piglin.spawn_reinforcements",base:10f}]}
 
 summon armor_stand ~ ~ ~ {Invisible:1,CustomNameVisible:1b,CustomName:'[{"text":"\\ua010","font":"minecraft:images"}]', Tags:["cryptid.glitchface"]}
 
@@ -16,7 +15,7 @@ execute as @e[tag=cryptid.deci4, type=vindicator] at @s run effect give @s resis
 
 execute as @e[type=minecraft:armor_stand, tag=cryptid.glitchface] at @s run attribute @s minecraft:generic.scale base set 0.1
 
-tellraw @a[distance=0..70] ["",{"text":"[???] has arrived","bold":true,"color":"red"},"\n "]
+tellraw @a[distance=0..70] ["",{"translate":"cryptid.event.glitch.has_arrived","bold":true,"color":"red"},"\n "]
 playsound minecraft:cryptid.high.spawn ambient @a[distance=0..70] ~ ~ ~ 10 1
 
 effect give @e[tag=cryptid.deci4, type=vindicator] minecraft:invisibility infinite 3 true

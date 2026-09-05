@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "Off the rails",
-      "description": "Run into a haunted minecart",
+      "title": {
+        "translate": "advancement.cryptid.off_the_rails.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.off_the_rails.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

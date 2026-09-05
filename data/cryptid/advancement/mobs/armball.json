@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "Need a hand?",
-      "description": "Get torn apart by the ball of arms",
+      "title": {
+        "translate": "advancement.cryptid.need_a_hand.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.need_a_hand.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

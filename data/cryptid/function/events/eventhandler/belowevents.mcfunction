@@ -30,4 +30,4 @@ execute if score @s cryptid.event.random matches 31..60 run function cryptid:eve
 
 
 ## debug
-tellraw @a[tag=cryptid.debug] [{"text": "Below event","color": "dark_aqua"}]
+tellraw @a[tag=cryptid.debug] [{"translate":"debug.cryptid.below_event","color":"dark_aqua"}]

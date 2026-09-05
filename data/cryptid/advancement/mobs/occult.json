@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "Silent presence",
-      "description": "He can hear you walk.",
+      "title": {
+        "translate": "advancement.cryptid.silent_presence.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.silent_presence.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

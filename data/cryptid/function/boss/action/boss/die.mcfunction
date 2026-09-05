@@ -1,6 +1,6 @@
 kill @e[tag=bosscryptid]
 
-tellraw @a "This world has been cleansed. Thank you for your service"
+tellraw @a {"translate":"chat.cryptid.ending.cleansed"}
 
 execute as @a at @s if dimension cryptid:below run execute in minecraft:overworld positioned ~ 1000 ~ positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
 

@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "Stagnation",
-      "description": "Meet the steroid abuser. Don't fight, just run",
+      "title": {
+        "translate": "advancement.cryptid.stagnation.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.stagnation.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

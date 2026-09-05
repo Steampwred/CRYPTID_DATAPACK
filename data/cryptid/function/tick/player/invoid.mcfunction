@@ -25,9 +25,9 @@ execute if score @s cryptid.voidtimer matches 1600 run function cryptid:events/v
 
 ##skip
 
-execute if score @s cryptid.voidtimer matches 100 run tellraw @s[tag=cryptid.skipvoidcut] {"text":"[entity.name] Back again?","color":"red"}
+execute if score @s cryptid.voidtimer matches 100 run tellraw @s[tag=cryptid.skipvoidcut] {"translate":"cryptid.event.void.skip1","color":"red"}
 
-execute if score @s cryptid.voidtimer matches 200 run tellraw @s[tag=cryptid.skipvoidcut] {"text":"[entity.name] Have fun down there","color":"red"}
+execute if score @s cryptid.voidtimer matches 200 run tellraw @s[tag=cryptid.skipvoidcut] {"translate":"cryptid.event.void.skip2","color":"red"}
 
 execute if score @s cryptid.voidtimer matches 250 run execute in cryptid:below run tp @s ~ 500 ~
 
@@ -37,17 +37,17 @@ execute if score @s cryptid.voidtimer matches 250 run effect give @s minecraft:s
 
 ##message
 
-execute if score @s cryptid.voidtimer matches 100 run tellraw @s {"text":"[entity.name] There's a lot of space down here","color":"red"}
+execute if score @s cryptid.voidtimer matches 100 run tellraw @s {"translate":"cryptid.event.void.msg1","color":"red"}
 
-execute if score @s cryptid.voidtimer matches 500 run tellraw @s {"text":"[entity.name] Took a long time for the first spores to get to the top.","color":"red"}
+execute if score @s cryptid.voidtimer matches 500 run tellraw @s {"translate":"cryptid.event.void.msg2","color":"red"}
 
-execute if score @s cryptid.voidtimer matches 900 run tellraw @s {"text":"[entity.name] But getting through the bedrock was the most difficult.","color":"red"}
+execute if score @s cryptid.voidtimer matches 900 run tellraw @s {"translate":"cryptid.event.void.msg3","color":"red"}
 
-execute if score @s cryptid.voidtimer matches 1200 run tellraw @s {"text":"[entity.name] Colonization took years.","color":"red"}
+execute if score @s cryptid.voidtimer matches 1200 run tellraw @s {"translate":"cryptid.event.void.msg4","color":"red"}
 
-execute if score @s cryptid.voidtimer matches 1600 run tellraw @s {"text":"[entity.name] Approaching the border now.","color":"red"}
+execute if score @s cryptid.voidtimer matches 1600 run tellraw @s {"translate":"cryptid.event.void.msg5","color":"red"}
 
-execute if score @s cryptid.voidtimer matches 1900 run tellraw @s {"text":"[entity.name] Head to the origin, there you will find the root","color":"red"}
+execute if score @s cryptid.voidtimer matches 1900 run tellraw @s {"translate":"cryptid.event.void.msg6","color":"red"}
 
 execute if score @s cryptid.voidtimer matches 2100 run effect give @s minecraft:slow_falling 500 0 true
 

@@ -1,7 +1,7 @@
 execute store result score @s cryptid.player.random run random value 1..7
-execute if score @s cryptid.player.random matches 1 run tellraw @s {"text":"It hurts.","color":"red"}
+execute if score @s cryptid.player.random matches 1 run tellraw @s {"translate":"cryptid.event.tortured.it_hurts","color":"red"}
 
-summon zombified_piglin ~ ~620 ~ {DisabledSlots:4144959, Invisible:1, CanBreakDoors:1,zombified_piglinConversionTime:29381927839812,CustomName:'[{"text":"Tortured"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.tortured"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1361},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon zombified_piglin ~ ~620 ~ {DisabledSlots:4144959, Invisible:1, CanBreakDoors:1,zombified_piglinConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.tortured"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.tortured"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1361},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
 execute positioned ~ ~620 ~ run effect give @e[type=zombified_piglin, sort=nearest, tag=cryptid.tortured] minecraft:invisibility infinite 1 true
 

@@ -1,4 +1,4 @@
-summon vindicator ~ ~620 ~ {IsBaby:1,CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Skinned Philogen"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.skinned"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1304},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon vindicator ~ ~620 ~ {IsBaby:1,CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"entity.cryptid.skinned_philogen.name"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.skinned"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1304},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
 execute positioned ~ ~620 ~ run execute as @e[type=vindicator, sort=nearest, tag=cryptid.skinned] at @s run team join cryptid.nocollide @s
 

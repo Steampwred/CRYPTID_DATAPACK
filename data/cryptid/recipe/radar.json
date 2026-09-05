@@ -22,7 +22,7 @@
     "id": "minecraft:warped_fungus_on_a_stick",
     "components": {
       "minecraft:custom_model_data": 1306,
-      "minecraft:custom_name": "[\"\",{\"text\":\"Portable Radar\",\"italic\":false,\"color\":\"red\"}]",
+      "minecraft:custom_name": "[\"\",{\"translate\":\"item.cryptid.portable_radar.name\",\"italic\":false,\"color\":\"red\"}]",
       "minecraft:custom_data": {
         "cryptid.item": 1,
         "cryptid.fakeradar": 1

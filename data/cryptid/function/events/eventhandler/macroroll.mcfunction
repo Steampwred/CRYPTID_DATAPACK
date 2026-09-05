@@ -7,7 +7,7 @@ execute positioned ~ ~300 ~ run data modify storage cryptid:randomevent current 
 kill @e[tag=eventhandler.lootroll,type=armor_stand]
 
 #debug check
-$tellraw @a[tag=cryptid.debug] {"text": "$(eventgroup) event", "color": "green", "bold": true}
+$tellraw @a[tag=cryptid.debug] {"translate":"debug.cryptid.event_group","with":["$(eventgroup)"],"color":"green","bold":true}
 
 ## Load and store fury requirment of event
 scoreboard players set .buffer cryptid.world.fury 0
@@ -18,6 +18,6 @@ execute if score .global cryptid.world.fury >= .buffer cryptid.world.fury run re
 
 # else REROLL
 
-tellraw @a[tag=cryptid.debug] {"text": "rerolling", "color": "green", "bold": true}
+tellraw @a[tag=cryptid.debug] {"translate":"debug.cryptid.rerolling","color":"green","bold":true}
 
 $function cryptid:events/eventhandler/macroroll {eventgroup:"$(eventgroup)"}

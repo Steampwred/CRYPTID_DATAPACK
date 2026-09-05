@@ -1,4 +1,3 @@
-
 ###check for bee balm
 
 execute if items entity @s inventory.* sugar[minecraft:custom_data~{cryptid.usedhoney:1b}] run function cryptid:action/player/usebalm
@@ -89,7 +88,7 @@ execute as @s at @s if items entity @s weapon.mainhand minecraft:warped_fungus_o
 
 execute as @s at @s[scores={cryptid.click=1}] unless score @s cryptid.item.lantern.cooldown matches -1.. if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.lantern:1b}] run function cryptid:action/lantern/harmony
 
-execute as @s at @s[scores={cryptid.click=1,cryptid.item.lantern.cooldown=1..}] if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.lantern:1b}] run title @s actionbar [{"text":"Lantern on cooldown!","color":"red"}]
+execute as @s at @s[scores={cryptid.click=1,cryptid.item.lantern.cooldown=1..}] if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.lantern:1b}] run title @s actionbar [{"translate":"cryptid.item.lantern.cooldown","color":"red"}]
 
 execute as @s[scores={cryptid.damagetaken=1..}] at @s if items entity @s weapon.* minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.lantern:1b}] run execute as @e[distance=0.1..5] at @s run function cryptid:action/lantern/ignite
 
@@ -115,24 +114,24 @@ execute as @s[scores={cryptid.player.crouch=1..,cryptid.click=1..}] unless score
 
 ##item info
 ##totem
-execute as @s at @s if items entity @s[tag=!cryptid.info.totem] weapon.mainhand minecraft:villager_spawn_egg[minecraft:custom_model_data=1319] run tellraw @s {"text":"[???] item.obtained.totem. This server totem requires fuel to function.\n {Hold it to ward}, at the cost of breaking it","color":"dark_red"}
+execute as @s at @s if items entity @s[tag=!cryptid.info.totem] weapon.mainhand minecraft:villager_spawn_egg[minecraft:custom_model_data=1319] run tellraw @s {"translate":"cryptid.info.totem","color":"dark_red"}
 execute as @s at @s if items entity @s[tag=!cryptid.info.totem] weapon.mainhand minecraft:villager_spawn_egg[minecraft:custom_model_data=1319] run tag @s add cryptid.info.totem
 ##catcher
-execute as @s at @s if items entity @s[tag=!cryptid.info.catcher] weapon.mainhand minecraft:warped_fungus_on_a_stick[custom_data={cryptid.catcher:1}] run tellraw @s {"text":"[???] item.obtained.dream_catcher. This thing will keep your nightmares away... at a cost\n Place it down to keep hearts away at night.\n However, it will attract other unwanted attention","color":"dark_red"}
+execute as @s at @s if items entity @s[tag=!cryptid.info.catcher] weapon.mainhand minecraft:warped_fungus_on_a_stick[custom_data={cryptid.catcher:1}] run tellraw @s {"translate":"cryptid.info.catcher","color":"dark_red"}
 execute as @s at @s if items entity @s[tag=!cryptid.info.catcher] weapon.mainhand minecraft:warped_fungus_on_a_stick[custom_data={cryptid.catcher:1}] run tag @s add cryptid.info.catcher
 
-execute as @s at @s if items entity @s[tag=!cryptid.info.pick] weapon.mainhand minecraft:warped_fungus_on_a_stick[custom_data={cryptid.pickaxe:1}] run tellraw @s {"text":"[???] item.obtained.pickaxe. Quite the heavy item. It'll make finding hearts a bit easier, and its a good pickaxe before you get some diamonds","color":"dark_red"}
+execute as @s at @s if items entity @s[tag=!cryptid.info.pick] weapon.mainhand minecraft:warped_fungus_on_a_stick[custom_data={cryptid.pickaxe:1}] run tellraw @s {"translate":"cryptid.info.pick","color":"dark_red"}
 execute as @s at @s if items entity @s[tag=!cryptid.info.pick] weapon.mainhand minecraft:warped_fungus_on_a_stick[custom_data={cryptid.pickaxe:1}] run tag @s add cryptid.info.pick
 
 
 ##shotgun
-execute as @s[tag=!cryptid.info.shotgun] at @s if items entity @s weapon.mainhand minecraft:crossbow[minecraft:custom_data~{cryptid.shotgun:1b}] run tellraw @s {"text":"[???] item.obtained.shotgun. Theres no ammo for it. Upgrade it by dropping two shotguns together. The range is limited, but you can break glass and doors with it as well. Just hold it steady, and watch out for kickback.","color":"dark_red"}
+execute as @s[tag=!cryptid.info.shotgun] at @s if items entity @s weapon.mainhand minecraft:crossbow[minecraft:custom_data~{cryptid.shotgun:1b}] run tellraw @s {"translate":"cryptid.info.shotgun","color":"dark_red"}
 execute as @s[tag=!cryptid.info.shotgun] at @s if items entity @s weapon.mainhand minecraft:crossbow[minecraft:custom_data~{cryptid.shotgun:1b}] run tag @s add cryptid.info.shotgun
 ##sword
-execute as @s[tag=!cryptid.info.blade] at @s if items entity @s weapon.mainhand warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.blade:1}] run tellraw @s {"text":"[???] item.obtained.machete. That thing looks a little rusty. It's a good melee, and clears flesh out fast.","color":"dark_red"}
+execute as @s[tag=!cryptid.info.blade] at @s if items entity @s weapon.mainhand warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.blade:1}] run tellraw @s {"translate":"cryptid.info.blade","color":"dark_red"}
 execute as @s[tag=!cryptid.info.blade] at @s if items entity @s weapon.mainhand warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.blade:1}] run tag @s add cryptid.info.blade
 ##lantern
-execute as @s[tag=!cryptid.info.lantern] at @s if items entity @s weapon.mainhand warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.lantern:1b}] run tellraw @s {"text":"[???] item.obtained.lantern. Pretty sure that thing has a soul trapped inside of it. Don't light your friends on fire.","color":"dark_red"}
+execute as @s[tag=!cryptid.info.lantern] at @s if items entity @s weapon.mainhand warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.lantern:1b}] run tellraw @s {"translate":"cryptid.info.lantern","color":"dark_red"}
 execute as @s[tag=!cryptid.info.lantern] at @s if items entity @s weapon.mainhand warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.lantern:1b}] run tag @s add cryptid.info.lantern
 
 
@@ -143,18 +142,18 @@ execute unless score @s cryptid.shotgun.cooldown matches -1.. if items entity @s
 ##############title display
 
 
-execute unless score @s cryptid.player.titlecooldown matches -2147483648..2147483647 if items entity @s[scores={cryptid.sprinting=0,cryptid.walking=0,cryptid.inair=0}] weapon.mainhand sugar[minecraft:custom_data~{cryptid.compass.status:1b}] run title @s[tag=!deadradio] actionbar ["",{"text":"[RADIO]","color":"red"},": <",{"text":"Flux Rating","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"color":"#996633","score":{"objective":"cryptid.player.flux","name":"@s"}},{"color":"#996633","text":"}, "},"<",{"text":"Harmony","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"color":"#996633","score":{"objective":"cryptid.player.harmony","name":"@s"}},{"color":"#996633","text":"},"},"<",{"text":"Strength Rating","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"color":"#996633","score":{"objective":"cryptid.player.strength","name":"@s"}},{"color":"#996633","text":"}"}]
+execute unless score @s cryptid.player.titlecooldown matches -2147483648..2147483647 if items entity @s[scores={cryptid.sprinting=0,cryptid.walking=0,cryptid.inair=0}] weapon.mainhand sugar[minecraft:custom_data~{cryptid.compass.status:1b}] run title @s[tag=!deadradio] actionbar ["",{"translate":"cryptid.radio.prefix","color":"red"},": <",{"translate":"cryptid.radio.flux","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"color":"#996633","score":{"objective":"cryptid.player.flux","name":"@s"}},{"color":"#996633","text":"}, "},"<",{"translate":"cryptid.radio.harmony","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"color":"#996633","score":{"objective":"cryptid.player.harmony","name":"@s"}},{"color":"#996633","text":"},"},"<",{"translate":"cryptid.radio.strength","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"color":"#996633","score":{"objective":"cryptid.player.strength","name":"@s"}},{"color":"#996633","text":"}"}]
 
 execute unless score @s cryptid.player.titlecooldown matches -2147483648..2147483647 if items entity @s weapon.mainhand sugar[minecraft:custom_data~{cryptid.compass.status:2b}] run function cryptid:tick/player/harmonycheck
 
-execute unless score @s cryptid.player.titlecooldown matches -2147483648..2147483647 if items entity @s[scores={cryptid.sprinting=0,cryptid.walking=0,cryptid.inair=0}] weapon.mainhand sugar[minecraft:custom_data~{cryptid.compass.status:3b}] run title @s[tag=!deadradio] actionbar ["",{"text":"[RADIO]","color":"red"},": <",{"text":"Distance To Heart","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"score":{"objective":"cryptid.player.heart.distance","name":"@s"}},{"text":"}, ","color":"#996633"},"<",{"text":"Event Chance","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"text":"1 in ","color":"white"},{"score":{"objective":"cryptid.player.event","name":"@s"}},{"text":"}, ","color":"#996633"},"<",{"text":"Heart Capsules","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"score":{"objective":"cryptid.maxlives","name":"@s"}},{"text":"}","color":"#996633"}]
+execute unless score @s cryptid.player.titlecooldown matches -2147483648..2147483647 if items entity @s[scores={cryptid.sprinting=0,cryptid.walking=0,cryptid.inair=0}] weapon.mainhand sugar[minecraft:custom_data~{cryptid.compass.status:3b}] run title @s[tag=!deadradio] actionbar ["",{"translate":"cryptid.radio.prefix","color":"red"},": <",{"translate":"cryptid.radio.heart_distance","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"score":{"objective":"cryptid.player.heart.distance","name":"@s"}},{"text":"}, ","color":"#996633"},"<",{"translate":"cryptid.radio.event_chance","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"translate":"cryptid.radio.one_in","color":"white"},{"score":{"objective":"cryptid.player.event","name":"@s"}},{"text":"}, ","color":"#996633"},"<",{"translate":"cryptid.radio.heart_capsules","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"score":{"objective":"cryptid.maxlives","name":"@s"}},{"text":"}","color":"#996633"}]
 
 execute unless score @s cryptid.player.titlecooldown matches -2147483648..2147483647 if items entity @s weapon.offhand sugar[minecraft:custom_data~{cryptid.compass:1b}] run function cryptid:tick/player/harmonycheck
 
 ##disc1
 execute as @s[scores={cryptid.click=1..}] if items entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.tape:1b}] run playsound cryptid.disc1 ambient @a[distance=0..30] ~ ~ ~ 1200 1 1
 execute as @s[scores={cryptid.click=1..}] if items entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.tape:1b}] run time add 3000
-execute as @s[scores={cryptid.click=1..}] if items entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.tape:1b}] run tellraw @s {"text":"The tape crumbles in your hands","color":"dark_red"}
+execute as @s[scores={cryptid.click=1..}] if items entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{cryptid.tape:1b}] run tellraw @s {"translate":"cryptid.item.tape.crumbles","color":"dark_red"}
 
 
 

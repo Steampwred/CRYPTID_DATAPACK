@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "Sacrificial object",
-      "description": "Discover an altar",
+      "title": {
+        "translate": "advancement.cryptid.sacrificial_object.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.sacrificial_object.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

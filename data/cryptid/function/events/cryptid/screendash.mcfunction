@@ -1,12 +1,11 @@
-
 execute store result score @s cryptid.player.random run random value 1..15
 
 
-execute if score @s cryptid.player.random matches 1..5 run execute anchored eyes run summon minecraft:armor_stand ^4 ^-4 ^4.5 {CustomName:'[{"text":"Jester"}]',Invisible:1b, Tags:["cryptid","cryptid.sidescreen"]}
+execute if score @s cryptid.player.random matches 1..5 run execute anchored eyes run summon minecraft:armor_stand ^4 ^-4 ^4.5 {CustomName:'[{"translate":"entity.cryptid.jester.name"}]',Invisible:1b, Tags:["cryptid","cryptid.sidescreen"]}
 
-execute if score @s cryptid.player.random matches 5..10 run execute anchored eyes run summon minecraft:armor_stand ^-3 ^-3 ^5.1 {CustomName:'[{"text":"Jester"}]',Invisible:1b, Tags:["cryptid","cryptid.sidescreen"]}
+execute if score @s cryptid.player.random matches 5..10 run execute anchored eyes run summon minecraft:armor_stand ^-3 ^-3 ^5.1 {CustomName:'[{"translate":"entity.cryptid.jester.name"}]',Invisible:1b, Tags:["cryptid","cryptid.sidescreen"]}
 
-execute if score @s cryptid.player.random matches 10..15 run execute anchored eyes run summon minecraft:armor_stand ^2 ^2.6 ^4.1 {CustomName:'[{"text":"Jester"}]',Invisible:1b, Tags:["cryptid","cryptid.sidescreen"]}
+execute if score @s cryptid.player.random matches 10..15 run execute anchored eyes run summon minecraft:armor_stand ^2 ^2.6 ^4.1 {CustomName:'[{"translate":"entity.cryptid.jester.name"}]',Invisible:1b, Tags:["cryptid","cryptid.sidescreen"]}
 
 
 execute if score @s cryptid.player.random matches 1 run item replace entity @e[type=minecraft:armor_stand, sort=nearest, limit=5, tag=cryptid.sidescreen] armor.head with potion[minecraft:custom_model_data=1315]
@@ -46,8 +45,3 @@ execute if score @s cryptid.player.random matches 1 run execute as @e[distance=5
 execute if score @s cryptid.player.random matches 2 run execute as @e[distance=5..20, sort=nearest, limit=1, type=!player] at @s run function cryptid:events/underground/spawnhand
 
 execute if score @s cryptid.player.random matches 3 run execute as @e[distance=5..20, sort=nearest, limit=1, type=!player] at @s run function cryptid:events/cryptid/sethostile
-
-
-
-
-

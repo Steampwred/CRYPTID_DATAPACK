@@ -1,1 +1,1 @@
-give @s paper[custom_name='["",{"text":"Torn paper","italic":false}]',lore=['["",{"text":"Do not forget the tripwire.","italic":false,"color":"dark_red"}]'],custom_model_data=1321]
+give @s paper[custom_name='["",{"translate":"item.cryptid.torn_paper.name","italic":false}]',lore=['["",{"translate":"item.cryptid.torn_paper.lore.tripwire","italic":false,"color":"dark_red"}]'],custom_model_data=1321]

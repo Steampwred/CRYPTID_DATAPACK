@@ -1,4 +1,4 @@
-summon vindicator ~ ~620 ~ {CanBreakDoors:1,CustomName:'[{"text":"Living Obelisk"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.stalker"],active_effects:[{id:invisibility,duration:-1,amplifier:1,show_particles:0b}],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1303},count:1}],ArmorDropChances:[0f,0f,0f,0f],attributes:[]}
+summon vindicator ~ ~620 ~ {CanBreakDoors:1,CustomName:'[{"translate":"entity.cryptid.living_obelisk.name"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.stalker"],active_effects:[{id:invisibility,duration:-1,amplifier:1,show_particles:0b}],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1303},count:1}],ArmorDropChances:[0f,0f,0f,0f],attributes:[]}
 
 execute positioned ~ ~620 ~ run effect give @e[type=vindicator, sort=nearest, tag=cryptid.stalker] minecraft:invisibility infinite 1 true
 execute positioned ~ ~620 ~ run effect give @e[type=vindicator, sort=nearest, tag=cryptid.stalker] minecraft:slowness infinite 120 true

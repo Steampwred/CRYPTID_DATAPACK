@@ -1,4 +1,4 @@
-summon vindicator ^ ^1 ^3 {NoAI:1, DeathLootTable:"minecraft:empty", CustomName:'[{"text":"Phantom Undertow"}]',Tags:["cryptid","cryptid.grabber"],Sheared:1,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,attributes:[{id:"generic.gravity",base:3.7f},{id:"generic.step_height",base:10000f},{id:"generic.knockback_resistance",base:120f}]}
+summon vindicator ^ ^1 ^3 {NoAI:1, DeathLootTable:"minecraft:empty", CustomName:'[{"translate":"cryptid.entity.phantom_undertow"}]',Tags:["cryptid","cryptid.grabber"],Sheared:1,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,attributes:[{id:"generic.gravity",base:3.7f},{id:"generic.step_height",base:10000f},{id:"generic.knockback_resistance",base:120f}]}
 
 
 item replace entity @e[type=vindicator,tag=cryptid.grabber,sort=nearest] armor.head with potion[minecraft:custom_model_data=1338]

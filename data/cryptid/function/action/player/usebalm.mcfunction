@@ -11,7 +11,7 @@ execute if score @s cryptid.player.maxharmony matches 0..22000 run scoreboard pl
 
 execute if score @s cryptid.player.maxharmony matches 22500.. run damage @s 4 cryptid:bleedout by @s
 
-tellraw @a ["",{"selector":"@p","color":"dark_red"},{"text":" has increased their maximum harmony to ","color":"dark_red"},{"score":{"name":"@p","objective":"cryptid.player.maxharmony"},"color":"dark_red"},{"text":"!","color":"dark_red"}]
+tellraw @a ["",{"selector":"@p","color":"dark_red"},{"translate":"chat.cryptid.harmony.increase_announce","color":"dark_red"},{"score":{"name":"@p","objective":"cryptid.player.maxharmony"},"color":"dark_red"},{"translate":"chat.cryptid.harmony.exclamation","color":"dark_red"}]
 
 
 playsound minecraft:cryptid.cloud.ambience ambient @s

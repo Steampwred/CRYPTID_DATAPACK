@@ -1,9 +1,7 @@
-
-
 ##summon replaceitem
-summon item ~ ~ ~ {Tags:["cryptid.corruptitem"],Item:{id:sugar,count:1,components:{custom_data:{randomval:0b},custom_model_data:1309,custom_name:'["",{"text":"corruption","font":"minecraft:images"}]'}}}
-summon item ~ ~0.01 ~ {Tags:["cryptid.corruptitem"],Item:{id:sugar,count:1,components:{custom_data:{randomval:0b},custom_model_data:1309,custom_name:'["",{"text":"corruption","font":"minecraft:images"}]'}}}
-summon item ~ ~0.02 ~ {Tags:["cryptid.corruptitem"],Item:{id:sugar,count:1,components:{custom_data:{randomval:0b},custom_model_data:1309,custom_name:'["",{"text":"corruption","font":"minecraft:images"}]'}}}
+summon item ~ ~ ~ {Tags:["cryptid.corruptitem"],Item:{id:sugar,count:1,components:{custom_data:{randomval:0b},custom_model_data:1309,custom_name:'["",{"translate":"item.cryptid.corruptitem.name","font":"minecraft:images"}]'}}}
+summon item ~ ~0.01 ~ {Tags:["cryptid.corruptitem"],Item:{id:sugar,count:1,components:{custom_data:{randomval:0b},custom_model_data:1309,custom_name:'["",{"translate":"item.cryptid.corruptitem.name","font":"minecraft:images"}]'}}}
+summon item ~ ~0.02 ~ {Tags:["cryptid.corruptitem"],Item:{id:sugar,count:1,components:{custom_data:{randomval:0b},custom_model_data:1309,custom_name:'["",{"translate":"item.cryptid.corruptitem.name","font":"minecraft:images"}]'}}}
 
 
 ##summon dummyitem

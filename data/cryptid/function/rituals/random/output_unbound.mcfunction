@@ -1,7 +1,7 @@
 ##check critirea
 function cryptid:rituals/result/macrosacrificecheck with storage cryptid:sacrifice craving
 
-execute if entity @s[tag=!ritual.cravingmet] run tellraw @a [{"text":"BRING US ","color":"red"},{"nbt":"craving.display","storage":"cryptid:sacrifice"}]
+execute if entity @s[tag=!ritual.cravingmet] run tellraw @a [{"translate":"chat.cryptid.bring_us","with":[{"nbt":"craving.display","storage":"cryptid:sacrifice"}],"color":"red"}]
 
 scoreboard players set @s cryptid.timer -100
 

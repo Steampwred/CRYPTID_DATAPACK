@@ -1,15 +1,14 @@
-
 tag @s add cryptid.jointimer
 execute store result score @s cryptid.player.random run random value 8..20
 
 
-tellraw @s[scores={cryptid.player.random=8}] ["",{"text":"[???] Thanks for coming back","color":"#990033"}]
-tellraw @s[scores={cryptid.player.random=9}] ["",{"text":"[???] Good luck","color":"#990033"}]
-tellraw @s[scores={cryptid.player.random=10}] ["",{"text":"[Greetings]","color":"#990033"}]
-tellraw @s[scores={cryptid.player.random=11}] ["",{"text":"[][][][][][][][][][][][][][][]","color":"#990033"}]
-tellraw @s[scores={cryptid.player.random=12}] ["",{"text":"Failed loading chunk [???], unknown entity","color":"#990033"}]
-tellraw @s[scores={cryptid.player.random=13}] ["",{"text":"Failed loading chunk [???], unknown storage value","color":"#990033"}]
-tellraw @s[scores={cryptid.player.random=13}] ["",{"text":"Joining existing server as player logged in","color":"#990033"}]
+tellraw @s[scores={cryptid.player.random=8}] ["",{"translate":"cryptid.event.join.thanks","color":"#990033"}]
+tellraw @s[scores={cryptid.player.random=9}] ["",{"translate":"cryptid.event.join.good_luck","color":"#990033"}]
+tellraw @s[scores={cryptid.player.random=10}] ["",{"translate":"cryptid.event.join.greetings","color":"#990033"}]
+tellraw @s[scores={cryptid.player.random=11}] ["",{"translate":"cryptid.event.join.boxes","color":"#990033"}]
+tellraw @s[scores={cryptid.player.random=12}] ["",{"translate":"cryptid.event.join.failed_chunk_entity","color":"#990033"}]
+tellraw @s[scores={cryptid.player.random=13}] ["",{"translate":"cryptid.event.join.failed_chunk_storage","color":"#990033"}]
+tellraw @s[scores={cryptid.player.random=13}] ["",{"translate":"cryptid.event.join.joining_existing","color":"#990033"}]
 
 
 execute store result score @s cryptid.player.random run random value 1..8
@@ -50,6 +49,3 @@ execute as @e[tag=cryptid, sort=random, limit=7,distance=1..90] at @s run spread
 
 execute as @s at @s run spreadplayers ~ ~ 10 20 false @s
 playsound minecraft:cryptid.screen.corrupted ambient @s ~ ~ ~ 10000 0.1
-
-
-

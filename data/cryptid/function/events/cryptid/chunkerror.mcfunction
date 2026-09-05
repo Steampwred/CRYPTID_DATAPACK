@@ -10,7 +10,7 @@ execute as @e[type=marker,tag=cryptid.chunkerror, sort=nearest, limit=1, scores=
 
 
 ## On Succesful place
-tellraw @a[distance=5..30] {"text":"That's a nice chunk. I think i'll take it.","color":"red"}
+tellraw @a[distance=5..30] {"translate":"cryptid.event.chunkerror.nice_chunk","color":"red"}
 execute as @e[type=marker,tag=cryptid.chunkerror, sort=nearest, limit=1] at @s align xyz at @s run fill ~ ~10 ~ ~16 ~-100 ~16 air
 execute as @e[type=marker,tag=cryptid.chunkerror, sort=nearest, limit=1] at @s align xyz at @s run function cryptid:events/general/spawnanomaly
 execute as @e[type=marker,tag=cryptid.chunkerror, sort=nearest, limit=1] at @s run playsound minecraft:ambient.cave ambient @p[distance=0..60] ~ ~ ~ 10000 1

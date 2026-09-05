@@ -23,7 +23,7 @@
         "cryptid.compass": 1,
         "cryptid.firstcompass": 1
       },
-      "minecraft:custom_name": "{\"text\":\"Dilapidated Radio\",\"italic\":false,\"color\":\"red\"}"
+      "minecraft:custom_name": "{\"translate\":\"item.cryptid.dilapidated_radio.name\",\"italic\":false,\"color\":\"red\"}"
     },
     "count": 1
   }

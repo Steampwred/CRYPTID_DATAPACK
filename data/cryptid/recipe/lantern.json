@@ -21,7 +21,7 @@
         "cryptid.fakelantern": 1,
         "cryptid.item": 1
       },
-      "minecraft:custom_name": "{\"text\":\"Bloodsteel Spirit Lantern\",\"italic\":false,\"color\":\"red\"}",
+      "minecraft:custom_name": "{\"translate\":\"item.cryptid.bloodsteel_spirit_lantern.name\",\"italic\":false,\"color\":\"red\"}",
       "minecraft:custom_model_data": 1302
     },
     "count": 1

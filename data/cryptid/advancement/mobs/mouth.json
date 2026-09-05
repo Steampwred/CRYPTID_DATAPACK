@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "Hungry?",
-      "description": "Get eaten alive by a mouth",
+      "title": {
+        "translate": "advancement.cryptid.hungry.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.hungry.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

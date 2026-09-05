@@ -52,11 +52,11 @@
                       "can_always_eat": true,
                       "eat_seconds": 2
                     },
-                    "minecraft:custom_name": "[\"\",{\"text\":\"Rotted Bee Balm\",\"italic\":false,\"color\":\"red\"}]",
+                    "minecraft:custom_name": "[\"\",{\"translate\":\"cryptid.item.bee_balm.custom_name\",\"italic\":false,\"color\":\"red\"}]",
                     "minecraft:lore": [
-                      "[\"\",{\"text\":\"[Consumable up to 5 times]\",\"italic\":false,\"color\":\"dark_red\"}]",
-                      "[\"\",{\"text\":\"Increases max harmony cap by 500\",\"italic\":false,\"color\":\"dark_red\"}]",
-                      "[\"\",{\"text\":\"Events will happen more often\",\"italic\":false,\"color\":\"dark_red\"}]"
+                      "[\"\",{\"translate\":\"cryptid.item.bee_balm.lore.1\",\"italic\":false,\"color\":\"dark_red\"}]",
+                      "[\"\",{\"translate\":\"cryptid.item.bee_balm.lore.2\",\"italic\":false,\"color\":\"dark_red\"}]",
+                      "[\"\",{\"translate\":\"cryptid.item.bee_balm.lore.3\",\"italic\":false,\"color\":\"dark_red\"}]"
                     ],
                     "minecraft:custom_data": {
                       "cryptid.beebalm": 1

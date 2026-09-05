@@ -24,8 +24,8 @@
           "cryptid.item": 1,
           "faketotem": 1
         },
-        "minecraft:item_name": "\"Lesser Bloodstone Totem\""
+        "minecraft:item_name": "{\"translate\":\"item.cryptid.lesser_bloodstone_totem.name\"}"
       },
       "count": 1
     }
-  }
+}

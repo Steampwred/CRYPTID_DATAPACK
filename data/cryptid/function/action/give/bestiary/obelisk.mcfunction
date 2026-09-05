@@ -1,1 +1,1 @@
-give @s paper[custom_model_data=1322,custom_name='["",{"text":"Bestiary #1: Living Obelisk","italic":false}]']
+give @s paper[custom_model_data=1322,custom_name='["",{"translate":"item.cryptid.bestiary_1.name","italic":false}]']

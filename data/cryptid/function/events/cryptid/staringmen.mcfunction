@@ -1,28 +1,28 @@
 execute store result score @s cryptid.player.random run random value 1..3
-execute if score @s cryptid.player.random matches 1 run tellraw @s {"text":"Meet us eye to eye.","color":"red"}
+execute if score @s cryptid.player.random matches 1 run tellraw @s {"translate":"cryptid.event.creed.meet_eye","color":"red"}
 
 
-summon vindicator ~ ~621 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon vindicator ~ ~621 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
-summon vindicator ~ ~622 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon vindicator ~ ~622 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
-summon vindicator ~ ~623 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon vindicator ~ ~623 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
-summon vindicator ~ ~624 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon vindicator ~ ~624 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
-summon vindicator ~ ~625 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon vindicator ~ ~625 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
-summon vindicator ~ ~626 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon vindicator ~ ~626 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
-summon vindicator ~ ~627 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon vindicator ~ ~627 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
-summon vindicator ~ ~628 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon vindicator ~ ~628 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
-summon vindicator ~ ~629 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon vindicator ~ ~629 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
-summon vindicator ~ ~610 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon vindicator ~ ~610 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
-summon vindicator ~ ~630 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon vindicator ~ ~630 ~ {NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.creed"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.creed"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1344},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
 
 execute positioned ~ ~620 ~ run effect give @e[type=vindicator, sort=nearest, tag=cryptid.creed] minecraft:invisibility infinite 1 true

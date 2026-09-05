@@ -1,4 +1,4 @@
-summon armor_stand ~ ~620 ~ {CustomName:'[{"text":"Dead Light"}]',Tags:["cryptid","cryptid.deadlights"], Invisible:1b}
+summon armor_stand ~ ~620 ~ {CustomName:'[{"translate":"entity.cryptid.dead_light.name"}]',Tags:["cryptid","cryptid.deadlights"], Invisible:1b}
 
 
 #spreadteams

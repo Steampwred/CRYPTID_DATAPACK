@@ -19,7 +19,7 @@
     "id": "minecraft:warped_fungus_on_a_stick",
     "components": {
       "minecraft:custom_model_data": 1307,
-      "minecraft:custom_name": "[\"\",{\"text\":\"Rusty Beartrap\",\"italic\":false,\"color\":\"red\"}]",
+      "minecraft:custom_name": "[\"\",{\"translate\":\"item.cryptid.rusty_beartrap.name\",\"italic\":false,\"color\":\"red\"}]",
       "minecraft:custom_data": {
         "cryptid.item": 1,
         "cryptid.fakebeartrap": 1

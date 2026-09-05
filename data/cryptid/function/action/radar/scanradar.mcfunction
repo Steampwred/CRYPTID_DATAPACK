@@ -1,10 +1,9 @@
-
 playsound minecraft:cryptid.radioshort ambient @s ~ ~ ~ 0.4 1.6
 
 ##Title,Nearest
-execute if entity @n[tag=cryptid, distance=..150] run title @s actionbar ["",{"text":"[RADAR]","color":"red"},": <",{"text":"Tracking Nearest Cryptid","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"selector":"@n[tag=cryptid, distance=..150, limit=1, type=!marker, tag=!cryptid.ignore.radar]"},{"text":"}, ","color":"#996633"},"<",{"text":"Cryptid Class","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"score":{"objective":"cryptid.mob.class","name":"@e[tag=cryptid, sort=nearest, limit=1]"}},{"text":"}","color":"#996633"}]
+execute if entity @n[tag=cryptid, distance=..150] run title @s actionbar ["",{"translate":"chat.cryptid.radar.prefix","color":"red"},": <",{"translate":"chat.cryptid.radar.tracking","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"selector":"@n[tag=cryptid, distance=..150, limit=1, type=!marker, tag=!cryptid.ignore.radar]"},{"text":"}, ","color":"#996633"},"<",{"translate":"chat.cryptid.radar.class","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"score":{"objective":"cryptid.mob.class","name":"@e[tag=cryptid, sort=nearest, limit=1]"}},{"text":"}","color":"#996633"}]
 
-execute unless entity @n[tag=cryptid, distance=..150] run title @s actionbar ["",{"text":"[RADAR]","color":"red"},": <",{"text":"No Nearest Cryptid in Range","color":"dark_red"},": ",{"text":"150","color":"red"},">"]
+execute unless entity @n[tag=cryptid, distance=..150] run title @s actionbar ["",{"translate":"chat.cryptid.radar.prefix","color":"red"},": <",{"translate":"chat.cryptid.radar.not_found","color":"dark_red"},": ",{"text":"150","color":"red"},">"]
 
 #effect give @n[tag=cryptid,limit=1,type=!marker,tag=!cryptid.ignore.radar] minecraft:glowing 1 0 true
 

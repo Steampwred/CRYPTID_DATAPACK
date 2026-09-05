@@ -1,6 +1,6 @@
 playsound minecraft:cryptid.world.detection
 
-tellraw @s "Nobody leaves."
+tellraw @s {"translate":"chat.cryptid.world.nobody_leaves"}
 
 effect give @s minecraft:blindness 2 2 true
 

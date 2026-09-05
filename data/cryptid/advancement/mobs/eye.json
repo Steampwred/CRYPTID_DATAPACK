@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "Eye on you!",
-      "description": "Find an eye. Line of sight is VERY important!",
+      "title": {
+        "translate": "advancement.cryptid.eye_on_you.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.eye_on_you.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

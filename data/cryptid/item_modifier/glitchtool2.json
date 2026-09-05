@@ -2,7 +2,7 @@
   "function": "minecraft:set_name",
   "entity": "this",
   "name": {
-    "text": "areyoureal",
+    "translate": "item.cryptid.reality_check.name",
     "extra": [
       {
         "score": {

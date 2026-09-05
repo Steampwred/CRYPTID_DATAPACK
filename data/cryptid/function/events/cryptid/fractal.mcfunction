@@ -1,7 +1,7 @@
 execute store result score @s cryptid.player.random run random value 1..6
-execute if score @s cryptid.player.random matches 1 run tellraw @s {"text":"Look up.","color":"red"}
+execute if score @s cryptid.player.random matches 1 run tellraw @s {"translate":"cryptid.event.fractal.look_up","color":"red"}
 
-summon minecraft:vindicator ~ ~200 ~ {CustomName:'[{"text":"Curator"}]', Tags:["cryptid","cryptid.fractal","cryptid.timer"], Silent:1b, Invulnerable:1b, NoAI:1b,NoGravity:1b}
+summon minecraft:vindicator ~ ~200 ~ {CustomName:'[{"translate":"cryptid.entity.curator"}]', Tags:["cryptid","cryptid.fractal","cryptid.timer"], Silent:1b, Invulnerable:1b, NoAI:1b,NoGravity:1b}
 spreadplayers ~ ~ 30 90 false @e[type=vindicator, tag=cryptid.fractal, sort=nearest,limit=1,tag=!cryptid.fractalinit]
  
 execute as @e[type=vindicator, tag=cryptid.fractal] at @s run effect give @s invisibility infinite 1 true

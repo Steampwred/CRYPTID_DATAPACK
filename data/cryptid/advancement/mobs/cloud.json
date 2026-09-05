@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "A rainy day",
-      "description": "Find a cloud. Stay low in elevation, or.. you know",
+      "title": {
+        "translate": "advancement.cryptid.rainy_day.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.rainy_day.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

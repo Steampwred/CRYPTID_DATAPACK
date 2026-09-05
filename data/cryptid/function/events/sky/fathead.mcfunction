@@ -1,9 +1,7 @@
-
-
 execute store result score @s cryptid.player.random run random value 1..7
-execute if score @s cryptid.player.random matches 1 run tellraw @s {"text":"REDTEARSFROMABOVE","color":"red"}
+execute if score @s cryptid.player.random matches 1 run tellraw @s {"translate":"cryptid.event.fathead.redtears","color":"red"}
 
-summon zombie ~ 200 ~ {PersistenceRequired:1b, Invisible:1, NoGravity:1, ShowArms:1b,DisabledSlots:4144959,CustomName:[{text:"Young Father",color:dark_red}],Tags:["cryptid","cryptid.fathead","cryptid.lookcount"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1402},count:1}],drop_chances:{head:0f}}
+summon zombie ~ 200 ~ {PersistenceRequired:1b, Invisible:1, NoGravity:1, ShowArms:1b,DisabledSlots:4144959,CustomName:'[{"translate":"cryptid.entity.young_father","color":"dark_red"}]',Tags:["cryptid","cryptid.fathead","cryptid.lookcount"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1402},count:1}],drop_chances:{head:0f}}
 
 
 ##random rotation

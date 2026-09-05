@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "Spider dance",
-      "description": "Meet the void tormentor, and give him a hug",
+      "title": {
+        "translate": "advancement.cryptid.spider_dance.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.spider_dance.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

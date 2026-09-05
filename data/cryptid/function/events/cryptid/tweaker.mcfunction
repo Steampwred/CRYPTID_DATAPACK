@@ -1,5 +1,5 @@
 execute store result score @s cryptid.player.random run random value 1..5
-execute if score @s cryptid.player.random matches 1 run tellraw @s {"text":"[Error] ??????????????????","color":"red"}
+execute if score @s cryptid.player.random matches 1 run tellraw @s {"translate":"cryptid.event.tweaker.error","color":"red"}
 
 
 summon minecraft:vindicator ~ ~200 ~ {Tags:["cryptid","cryptid.tweaker"], Silent:1, Invulnerable:1, NoAI:1}

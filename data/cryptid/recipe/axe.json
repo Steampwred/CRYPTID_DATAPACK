@@ -24,9 +24,8 @@
             "minecraft:custom_data": {
                 "cryptid.fakeaxe": true,
                 "cryptid.item": true
-
             },
-            "minecraft:item_name": "\"Steel Suffering\""
+            "minecraft:item_name": "{\"translate\":\"item.cryptid.steel_suffering.name\"}"
         },
         "count": 1
     }

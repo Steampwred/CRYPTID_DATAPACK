@@ -2,7 +2,7 @@
   "function": "minecraft:set_name",
   "entity": "this",
   "name": {
-    "text": "fear",
+    "translate": "item.cryptid.fear_stat.name",
     "extra": [
       {
         "score": {

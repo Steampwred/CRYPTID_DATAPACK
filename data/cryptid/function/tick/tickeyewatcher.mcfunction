@@ -1,4 +1,3 @@
-
 execute store result score @s cryptid.player.random run random value 1..3000
 
 execute if entity @p[distance=0..50] run execute store result score @s cryptid.player.random run random value 1..1000
@@ -43,11 +42,11 @@ execute as @s[tag=!cryptid.eyeseen] at @s run tp @s[y=60, dy=-1000] ^ ^1 ^0.1
 
 
 #tracking mode
-execute as @s[tag=cryptid.eyeseen] if score @s cryptid.player.random matches 1..600 run title @p title ["",{"text":"I SeE yOU","color":"dark_red"}]
-execute as @s[tag=cryptid.eyeseen] if score @s cryptid.player.random matches 600..1200 run title @p title ["",{"text":"I SEE  YOu ","color":"red","italic": true}]
- execute as @s[tag=cryptid.eyeseen] if score @s cryptid.player.random matches 1200..1800 run title @p title ["",{"text":"i sEE YOU","color":"dark_red","bold": true}]
-execute as @s[tag=cryptid.eyeseen] if score @s cryptid.player.random matches 1800..2400 run title @p title ["",{"text":"I See  yoU ","color":"red","italic": true}]
- 
+execute as @s[tag=cryptid.eyeseen] if score @s cryptid.player.random matches 1..600 run title @p title ["",{"translate":"cryptid.event.eyeseen.1","color":"dark_red"}]
+execute as @s[tag=cryptid.eyeseen] if score @s cryptid.player.random matches 600..1200 run title @p title ["",{"translate":"cryptid.event.eyeseen.2","color":"red","italic":true}]
+execute as @s[tag=cryptid.eyeseen] if score @s cryptid.player.random matches 1200..1800 run title @p title ["",{"translate":"cryptid.event.eyeseen.3","color":"dark_red","bold":true}]
+execute as @s[tag=cryptid.eyeseen] if score @s cryptid.player.random matches 1800..2400 run title @p title ["",{"translate":"cryptid.event.eyeseen.4","color":"red","italic":true}]
+
 
 execute at @p if entity @p[y=60,dy=400] as @s[tag=cryptid.eyeseen] at @s anchored eyes facing entity @p eyes positioned ^ ^ ^1.5 rotated as @s positioned ^ ^ ^15 facing entity @s eyes facing ^ ^ ^-1 positioned as @s run tp @s ^ ^ ^0.25 ~ ~
 
@@ -99,4 +98,3 @@ execute if entity @p[distance=..2] run execute as @p at @s run function cryptid:
 execute if entity @p[distance=..2] run summon tnt
 
 execute if entity @p[distance=..2] run function cryptid:events/quietkill
-

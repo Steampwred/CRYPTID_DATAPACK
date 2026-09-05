@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "Infinite edges",
-      "description": "Greet a curator",
+      "title": {
+        "translate": "advancement.cryptid.infinite_edges.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.infinite_edges.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

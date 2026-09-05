@@ -4,7 +4,7 @@
     "entity": "this",
     "lore": [
       {
-        "text": "\"If you listen closely, you can hear voices inside\"",
+        "translate": "item.cryptid.compass.lore.desc.voices",
         "color": "#896c6c",
         "bold": false,
         "italic": true
@@ -13,10 +13,10 @@
         "text": ""
       },
       {
-        "text": "[MODE] Secondary: ",
+        "translate": "item.cryptid.compass.lore.mode.secondary",
         "extra": [
           {
-            "text": "Harmony GUI",
+            "translate": "item.cryptid.compass.lore.mode.gui",
             "color": "#a35252",
             "bold": false,
             "italic": false
@@ -30,7 +30,7 @@
         "text": ""
       },
       {
-        "text": "Personal Flux: [",
+        "translate": "item.cryptid.compass.lore.flux",
         "extra": [
           {
             "score": {

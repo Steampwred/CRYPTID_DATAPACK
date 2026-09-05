@@ -21,7 +21,7 @@
         "cryptid.item": 1,
         "cryptid.fakeblade": 1
       },
-      "minecraft:custom_name": "{\"text\":\"Steel Torment\",\"italic\":false,\"color\":\"red\"}",
+      "minecraft:custom_name": "{\"translate\":\"item.cryptid.steel_torment.name\",\"italic\":false,\"color\":\"red\"}",
       "minecraft:custom_model_data": 1301
     },
     "count": 1

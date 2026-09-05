@@ -3,7 +3,7 @@ function cryptid:rituals/result/macrocheck with storage cryptid:ritual alter
 function cryptid:rituals/random/randommessage
 
 execute unless entity @s[tag=ritual.requirmentmet] run function cryptid:rituals/result/failure
-execute unless entity @s[tag=ritual.requirmentmet] if entity @s[tag=ritual.translate] run tellraw @a[distance=..15] {"text":"Invalid - Offerings not present","color":"dark_purple","bold":true}
+execute unless entity @s[tag=ritual.requirmentmet] if entity @s[tag=ritual.translate] run tellraw @a[distance=..15] {"translate":"chat.cryptid.ritual_invalid_offerings","color":"dark_purple","bold":true}
 execute if entity @s[tag=ritual.failure] run return fail
 
 #on requirments met

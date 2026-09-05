@@ -6,4 +6,4 @@ scoreboard players set @a cryptid.maxlives 5
 ## Fxs
 execute unless score .globaltime cryptid.time matches 5.. run return fail
 playsound minecraft:entity.villager.death ambient @a
-tellraw @a ["",{"text":"Set to default mode","color":"red"}]
+tellraw @a ["",{"translate":"cryptid.message.set_default","color":"red"}]

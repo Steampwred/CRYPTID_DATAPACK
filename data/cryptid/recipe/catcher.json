@@ -21,7 +21,7 @@
     "id": "minecraft:warped_fungus_on_a_stick",
     "components": {
       "minecraft:custom_model_data": 1304,
-      "minecraft:custom_name": "[{\"text\":\"Warped Nightmare Catcher\",\"italic\":false,\"color\":\"dark_red\"}]",
+      "minecraft:custom_name": "[{\"translate\":\"item.cryptid.warped_nightmare_catcher.name\",\"italic\":false,\"color\":\"dark_red\"}]",
       "minecraft:custom_data": {
         "cryptid.fakecatcher": 1,
         "cryptid.item": 1

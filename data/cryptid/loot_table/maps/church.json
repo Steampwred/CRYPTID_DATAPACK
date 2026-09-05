@@ -3,13 +3,17 @@
     {
       "rolls": 1,
       "entries": [
-        {"type": "minecraft:item",
+        {
+          "type": "minecraft:item",
           "name": "minecraft:map",
           "functions": [
             {
               "function": "minecraft:set_lore",
               "lore": [
-                "This explorer map brings you somewhere"
+                {
+                  "translate": "cryptid.item.explorer_map.lore.1",
+                  "italic": false
+                }
               ],
               "mode": "append"
             },
@@ -22,7 +26,10 @@
             },
             {
               "function": "minecraft:set_name",
-              "name": "he who broke the ineffable"
+              "name": {
+                "translate": "cryptid.item.explorer_map.name",
+                "italic": false
+              }
             }
           ]
         }

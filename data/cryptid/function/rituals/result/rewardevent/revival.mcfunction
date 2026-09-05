@@ -1,6 +1,5 @@
-
 #Visual and sound effects
-tellraw @p {"text":"The Heart calls out into the Flesh... Somthing familar awnsers","color":"red"}
+tellraw @p {"translate":"chat.cryptid.heart_calls","color":"red"}
 playsound minecraft:cryptid.fog.ambient ambient @a[distance=0..20]
 effect give @a[distance=0..20] blindness 1 1 true
 playsound minecraft:entity.warden.emerge ambient @a[distance=0..20] ~ ~ ~ 1 1.2
@@ -11,10 +10,9 @@ particle item{item:{id:cobblestone}} ~ ~.5 ~ 0.2 0.3 0.2 0.2 900
 
 
 #summon familiar soul
-summon vindicator ~ ~ ~ {Silent:1b,Tags:["cryptid","cryptid.digger", "cryptid.ignore.totemward"],CustomName:'{"color":"red","text":"Familiar Soul"}',CustomNameVisible:1b,ArmorItems:[{},{},{},{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":1303,"minecraft:custom_data":{cryptid.revivetrigger:1b}}}],ArmorDropChances:[0.085F,0.085F,0.085F,1.000F]} 
+summon vindicator ~ ~ ~ {Silent:1b,Tags:["cryptid","cryptid.digger", "cryptid.ignore.totemward"],CustomName:'{"color":"red","translate":"cryptid.entity.familiar_soul"}',CustomNameVisible:1b,ArmorItems:[{},{},{},{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":1303,"minecraft:custom_data":{cryptid.revivetrigger:1b}}}],ArmorDropChances:[0.085F,0.085F,0.085F,1.000F]} 
 effect give @n[type=vindicator, tag=cryptid.digger] slowness 3 5 true
 
 scoreboard players set @e[tag=cryptid.digger,type=vindicator] cryptid.mob.class 2 
 
 execute as @e[type=vindicator, tag=cryptid.digger, tag=!cryptid.markerapplied] at @s run function cryptid:action/general/spawntickmarker {"name":"tickdigger"}
-

@@ -1,5 +1,4 @@
-
-summon armor_stand ~ ~ ~ {ShowArms:1b,CustomName:'[{"text":"Unending Despair"}]', Invisible:1,DeathLootTable:{},attributes:[{id:"generic.scale",base:0.0625f}], CanBreakDoors:1,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.caveeye"],equipment:{head:{id:potion,components:{"minecraft:custom_model_data":1340},count:1}},drop_chances:{head:0f}}
+summon armor_stand ~ ~ ~ {ShowArms:1b,CustomName:'[{"translate":"cryptid.entity.unending_despair"}]', Invisible:1,DeathLootTable:{},attributes:[{id:"generic.scale",base:0.0625f}], CanBreakDoors:1,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.caveeye"],equipment:{head:{id:potion,components:{"minecraft:custom_model_data":1340},count:1}},drop_chances:{head:0f}}
 
 effect give @e[type=armor_stand, tag=cryptid.caveeye] minecraft:invisibility infinite 1 true
 scoreboard players set @e[tag=cryptid.caveeye, type=armor_stand] cryptid.mob.class 2

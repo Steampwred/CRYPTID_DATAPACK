@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "Fleshy branches",
-      "description": "Find a tree. It smells awful",
+      "title": {
+        "translate": "advancement.cryptid.fleshy_branches.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.fleshy_branches.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

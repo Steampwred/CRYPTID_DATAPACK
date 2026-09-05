@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "Bloodstone Protection",
-      "description": "Baby's first bloodstone rune totem",
+      "title": {
+        "translate": "advancement.cryptid.bloodstone_protection.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.bloodstone_protection.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

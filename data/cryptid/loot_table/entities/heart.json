@@ -36,7 +36,7 @@
                       {
                         "function": "minecraft:set_name",
                         "name": {
-                          "text": "Calcified Fragment",
+                          "translate": "cryptid.item.calcified_fragment.name",
                           "color": "#c82d70",
                           "italic": false
                         }
@@ -55,13 +55,13 @@
                       {
                         "function": "minecraft:set_lore",
                         "name": {
-                          "text": "Calcified Fragment",
+                          "translate": "cryptid.item.calcified_fragment.name",
                           "color": "#c57272",
                           "italic": false
                         },
                         "lore": [
                           {
-                            "text": "Fractured, yet whole, can be burned",
+                            "translate": "cryptid.item.calcified_fragment.lore.1",
                             "color": "#797272",
                             "italic": false
                           }
@@ -92,7 +92,7 @@
                       {
                         "function": "minecraft:set_name",
                         "name": {
-                          "text": "Calcified Fragment",
+                          "translate": "cryptid.item.calcified_fragment.name",
                           "color": "#c82d70",
                           "italic": false
                         }
@@ -111,13 +111,13 @@
                       {
                         "function": "minecraft:set_lore",
                         "name": {
-                          "text": "Calcified Fragment",
+                          "translate": "cryptid.item.calcified_fragment.name",
                           "color": "#c57272",
                           "italic": false
                         },
                         "lore": [
                           {
-                            "text": "Fractured, yet whole, can be burned",
+                            "translate": "cryptid.item.calcified_fragment.lore.1",
                             "color": "#797272",
                             "italic": false
                           }
@@ -134,7 +134,7 @@
                       {
                         "function": "minecraft:set_name",
                         "name": {
-                          "text": "Calcified Heart",
+                          "translate": "cryptid.item.calcified_heart.name",
                           "color": "#b52130",
                           "bold": true,
                           "italic": false
@@ -162,7 +162,7 @@
                         "function": "minecraft:set_lore",
                         "lore": [
                           {
-                            "text": "Not of animal origin, a worthy sacrifice",
+                            "translate": "cryptid.item.calcified_heart.lore.1",
                             "color": "#625555",
                             "italic": false
                           }

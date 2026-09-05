@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "Keep you down",
-      "description": "Meet the Phantom Undertow",
+      "title": {
+        "translate": "advancement.cryptid.keep_you_down.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.keep_you_down.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

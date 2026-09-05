@@ -1,4 +1,3 @@
-
 ##harmony
 execute if score .global cryptid.challenge matches 1 run scoreboard players set @s cryptid.player.harmony -999999
 
@@ -36,50 +35,50 @@ execute if score .global cryptid.eventcap < .current cryptid.eventcap run scoreb
 
 scoreboard players set @s[tag=!cryptid.missingradio,scores={cryptid.player.harmony=9000}] cryptid.player.titlecooldown 40
 playsound minecraft:cryptid.radiowarning ambient @s[tag=!cryptid.missingradio,scores={cryptid.player.flux=-4..-1,cryptid.player.harmony=9000}] ~ ~ ~ 1 1 1
-title @s[scores={cryptid.player.flux=-4..-1,cryptid.player.harmony=9000}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"text":" [RADIO] ","color":"red"},{"text":"Area unstable. Harmony at [","color":"dark_red"},{"color":"red","bold":true,"score":{"objective":"cryptid.player.harmony","name":"@s"}},{"text":"]. Consider leaving.","color":"dark_red"}]
+title @s[scores={cryptid.player.flux=-4..-1,cryptid.player.harmony=9000}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"translate":"cryptid.radio.prefix","color":"red"},{"translate":"cryptid.radio.harmony_9000_1","color":"dark_red","with":[{"score":{"objective":"cryptid.player.harmony","name":"@s"},"color":"red","bold":true}]}]
 
 playsound minecraft:cryptid.radiowarning ambient @s[tag=!cryptid.missingradio,scores={cryptid.player.flux=-10..-4,cryptid.player.harmony=9000}] ~ ~ ~ 1 1 1
-title @s[scores={cryptid.player.flux=-10..-4,cryptid.player.harmony=9000}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"text":" [RADIO] ","color":"red"},{"text":"Area very unstable. Harmony at [","color":"dark_red"},{"color":"red","bold":true,"score":{"objective":"cryptid.player.harmony","name":"@s"}},{"text":"]. High caution advised","color":"dark_red"}]
+title @s[scores={cryptid.player.flux=-10..-4,cryptid.player.harmony=9000}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"translate":"cryptid.radio.prefix","color":"red"},{"translate":"cryptid.radio.harmony_9000_2","color":"dark_red","with":[{"score":{"objective":"cryptid.player.harmony","name":"@s"},"color":"red","bold":true}]}]
 
 scoreboard players set @s[tag=!cryptid.missingradio,scores={cryptid.player.harmony=3000}] cryptid.player.titlecooldown 40
 #playsound minecraft:cryptid.radiowarning ambient @s[tag=!cryptid.missingradio,scores={cryptid.player.flux=..-1,cryptid.player.harmony=3000}] ~ ~ ~ 1 1 1
-title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=3000..3010}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"text":" [RADIO] ","color":"red"},{"text":"Nearby paranormal activity. Harmony at [","color":"dark_red"},{"color":"red","bold":true,"score":{"objective":"cryptid.player.harmony","name":"@s"}},{"text":"]. Extreme caution advised","color":"dark_red"}]
+title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=3000..3010}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"translate":"cryptid.radio.prefix","color":"red"},{"translate":"cryptid.radio.harmony_3000","color":"dark_red","with":[{"score":{"objective":"cryptid.player.harmony","name":"@s"},"color":"red","bold":true}]}]
 
 scoreboard players set @s[tag=!cryptid.missingradio,scores={cryptid.player.harmony=0}] cryptid.player.titlecooldown 40
 #playsound minecraft:cryptid.radiowarning ambient @s[tag=!cryptid.missingradio,scores={cryptid.player.flux=..-1,cryptid.player.harmony=0}] ~ ~ ~ 1 1 1
-title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=0..10}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"text":" [RADIO] ","color":"red"},{"text":"Caution advised. Harmony leaving safe threshold, at  [","color":"dark_red"},{"color":"red","bold":true,"score":{"objective":"cryptid.player.harmony","name":"@s"}},{"text":"]. Leave immediately!","color":"dark_red"}]
+title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=0..10}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"translate":"cryptid.radio.prefix","color":"red"},{"translate":"cryptid.radio.harmony_0","color":"dark_red","with":[{"score":{"objective":"cryptid.player.harmony","name":"@s"},"color":"red","bold":true}]}]
 
 scoreboard players set @s[tag=!cryptid.missingradio,scores={cryptid.player.harmony=-2000}] cryptid.player.titlecooldown 40
 playsound minecraft:cryptid.radiowarning ambient @s[tag=!cryptid.missingradio,scores={cryptid.player.flux=..-1,cryptid.player.harmony=-2010}] ~ ~ ~ 1 1 1
-title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=-2010..-2000}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"text":" [RADIO] ","color":"red"},{"text":"[???] detection at [20%]? nearby. Harmony at   [","color":"dark_red"},{"color":"red","bold":true,"score":{"objective":"cryptid.player.harmony","name":"@s"}},{"text":"]. Save yourself!","color":"dark_red"}]
+title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=-2010..-2000}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"translate":"cryptid.radio.prefix","color":"red"},{"translate":"cryptid.radio.harmony_m2000","color":"dark_red","with":[{"score":{"objective":"cryptid.player.harmony","name":"@s"},"color":"red","bold":true}]}]
 
 scoreboard players set @s[tag=!cryptid.missingradio,scores={cryptid.player.harmony=-6000}] cryptid.player.titlecooldown 40
 #playsound minecraft:cryptid.radiowarning ambient @s[tag=!cryptid.missingradio,scores={cryptid.player.flux=..-1,cryptid.player.harmony=-6010}] ~ ~ ~ 1 1 1
-title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=-6010..-6000}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"text":" [RADIO] ","color":"red"},{"text":"-------Interference------. Harmony at  [","color":"dark_red"},{"color":"red","bold":true,"score":{"objective":"cryptid.player.harmony","name":"@s"}},{"text":"]. Prepare yourself","color":"dark_red"}]
+title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=-6010..-6000}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"translate":"cryptid.radio.prefix","color":"red"},{"translate":"cryptid.radio.harmony_m6000","color":"dark_red","with":[{"score":{"objective":"cryptid.player.harmony","name":"@s"},"color":"red","bold":true}]}]
 
 scoreboard players set @s[tag=!cryptid.missingradio,scores={cryptid.player.harmony=-9000}] cryptid.player.titlecooldown 40
 playsound minecraft:cryptid.radiowarning ambient @s[tag=!cryptid.missingradio,scores={cryptid.player.flux=..-1,cryptid.player.harmony=-9010}] ~ ~ ~ 1 1 1
-title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=-9010..-9000}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"text":" [RADIO] ","color":"red"},{"text":"You are advised to leave immediately. Harmony at  [","color":"dark_red"},{"color":"red","bold":true,"score":{"objective":"cryptid.player.harmony","name":"@s"}},{"text":"]. ...","color":"dark_red"}]
+title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=-9010..-9000}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"translate":"cryptid.radio.prefix","color":"red"},{"translate":"cryptid.radio.harmony_m9000","color":"dark_red","with":[{"score":{"objective":"cryptid.player.harmony","name":"@s"},"color":"red","bold":true}]}]
 
 scoreboard players set @s[tag=!cryptid.missingradio,scores={cryptid.player.harmony=-14000}] cryptid.player.titlecooldown 40
 #playsound minecraft:cryptid.radiowarning ambient @s[tag=!cryptid.missingradio,scores={cryptid.player.flux=..-1,cryptid.player.harmony=-14000}] ~ ~ ~ 1 1 1
-title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=-14000..-13990}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"text":" [RADIO] ","color":"red"},{"text":"[???] Low harmony extreme warning at .  [","color":"dark_red"},{"color":"red","bold":true,"score":{"objective":"cryptid.player.harmony","name":"@s"}},{"text":"]. ...","color":"dark_red"}]
+title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=-14000..-13990}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"translate":"cryptid.radio.prefix","color":"red"},{"translate":"cryptid.radio.harmony_m14000","color":"dark_red","with":[{"score":{"objective":"cryptid.player.harmony","name":"@s"},"color":"red","bold":true}]}]
 
 scoreboard players set @s[tag=!cryptid.missingradio,scores={cryptid.player.harmony=-15000}] cryptid.player.titlecooldown 40
 playsound minecraft:cryptid.radiowarning ambient @s[tag=!cryptid.missingradio,scores={cryptid.player.flux=..-1,cryptid.player.harmony=-15000}] ~ ~ ~ 1 1 1
-title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=-15000..-14990}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"text":" [RADIO] ","color":"red"},{"text":"Expect pain -> [?] At  [","color":"dark_red"},{"color":"red","bold":true,"score":{"objective":"cryptid.player.harmony","name":"@s"}},{"text":"]. Are you sure this is worth it?","color":"dark_red"}]
+title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=-15000..-14990}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"translate":"cryptid.radio.prefix","color":"red"},{"translate":"cryptid.radio.harmony_m15000","color":"dark_red","with":[{"score":{"objective":"cryptid.player.harmony","name":"@s"},"color":"red","bold":true}]}]
 
 scoreboard players set @s[tag=!cryptid.missingradio,scores={cryptid.player.harmony=-16000}] cryptid.player.titlecooldown 40
 #playsound minecraft:cryptid.radiowarning ambient @s[tag=!cryptid.missingradio,scores={cryptid.player.flux=..-1,cryptid.player.harmony=-16000}] ~ ~ ~ 1 1 1
-title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=-16000..-15990}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"text":" [RADIO] ","color":"red"},{"text":"Arm yourself. Harmony at  [","color":"dark_red"},{"color":"red","bold":true,"score":{"objective":"cryptid.player.harmony","name":"@s"}},{"text":"]. Make your peace","color":"dark_red"}]
+title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=-16000..-15990}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"translate":"cryptid.radio.prefix","color":"red"},{"translate":"cryptid.radio.harmony_m16000","color":"dark_red","with":[{"score":{"objective":"cryptid.player.harmony","name":"@s"},"color":"red","bold":true}]}]
 
 scoreboard players set @s[tag=!cryptid.missingradio,scores={cryptid.player.harmony=-18000}] cryptid.player.titlecooldown 40
 playsound minecraft:cryptid.radiowarning ambient @s[tag=!cryptid.missingradio,scores={cryptid.player.flux=..-1,cryptid.player.harmony=-18000}] ~ ~ ~ 1 1 1
-title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=-18000..-17990}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"text":" [RADIO] ","color":"red"},{"text":"Too late to turn back. Harmony at  [","color":"dark_red"},{"color":"red","bold":true,"score":{"objective":"cryptid.player.harmony","name":"@s"}},{"text":"]. Say your goodbyes","color":"dark_red"}]
+title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=-18000..-17990}] actionbar ["",{"text":"\ua022","font":"minecraft:images"},{"translate":"cryptid.radio.prefix","color":"red"},{"translate":"cryptid.radio.harmony_m18000","color":"dark_red","with":[{"score":{"objective":"cryptid.player.harmony","name":"@s"},"color":"red","bold":true}]}]
 
 scoreboard players set @s[tag=!cryptid.missingradio,scores={cryptid.player.harmony=-19999}] cryptid.player.titlecooldown 40
 playsound minecraft:cryptid.radiowarning ambient @s[tag=!cryptid.missingradio,scores={cryptid.player.flux=..-1,cryptid.player.harmony=-19999}] ~ ~ ~ 1 1 1
-title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=-19999..-19990}] actionbar ["",{"text":"[RADIO] ","color":"red"},{"text":">MAXIMUM NEGATIVE HARMONY REACHED<","bold":true,"color":"#993366"}]
+title @s[scores={cryptid.player.flux=..-1,cryptid.player.harmony=-19999..-19990}] actionbar ["",{"translate":"cryptid.radio.prefix","color":"red"},{"translate":"cryptid.radio.harmony_max_negative","bold":true,"color":"#993366"}]
 
 
 
@@ -92,8 +91,3 @@ execute if score .heartbeat cryptid.globalevent matches 3 if entity @e[tag=crypt
 
 ##apply harmony
 function cryptid:tick/applyharmony
-
-
-
-
-

@@ -1,9 +1,8 @@
+summon armor_stand ~ ~420 ~ {DisabledSlots:4144959, Invisible:1, NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.fake_house"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.fakehouse"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1384},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
-summon armor_stand ~ ~420 ~ {DisabledSlots:4144959, Invisible:1, NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"WRONGWRONGWRONGWRONGWRONGWRONG"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.fakehouse"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1384},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon armor_stand ~ ~421 ~ {DisabledSlots:4144959, Invisible:1, NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.fake_house"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.fakehouse"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1384},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
-summon armor_stand ~ ~421 ~ {DisabledSlots:4144959, Invisible:1, NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"WRONGWRONGWRONGWRONGWRONGWRONG"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.fakehouse"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1384},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
-
-summon armor_stand ~ ~422 ~ {DisabledSlots:4144959, Invisible:1, NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"WRONGWRONGWRONGWRONGWRONGWRONG"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.fakehouse"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1384},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon armor_stand ~ ~422 ~ {DisabledSlots:4144959, Invisible:1, NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.fake_house"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.fakehouse"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1384},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
 
 

@@ -1,4 +1,4 @@
-summon villager ~ ~100 ~ {DeathLootTable:"minecraft:empty", CustomName:'[{"text":"Mimic Worm"}]',Tags:["cryptid","cryptid.shy2"],Sheared:1,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,attributes:[{id:"generic.gravity",base:0.7f},{id:"generic.step_height",base:10000f},{id:"generic.knockback_resistance",base:120f}]}
+summon villager ~ ~100 ~ {DeathLootTable:"minecraft:empty", CustomName:'[{"translate":"entity.cryptid.mimic_worm.name"}]',Tags:["cryptid","cryptid.shy2"],Sheared:1,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,attributes:[{id:"generic.gravity",base:0.7f},{id:"generic.step_height",base:10000f},{id:"generic.knockback_resistance",base:120f}]}
 
 
 execute positioned ^ ^1 ^-6 run execute store result score @e[type=villager, sort=nearest, tag=cryptid.shy2] cryptid.player.random run random value 1..10

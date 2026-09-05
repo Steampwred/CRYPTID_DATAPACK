@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "Bad to the bone",
-      "description": "Meet a harrow. Stay positive!",
+      "title": {
+        "translate": "advancement.cryptid.bad_to_the_bone.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.bad_to_the_bone.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

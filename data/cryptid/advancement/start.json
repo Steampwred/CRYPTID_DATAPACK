@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "C.R.Y.P.T.I.D",
-      "description": "Consider clicking on the radio",
+      "title": {
+        "translate": "advancement.cryptid.root.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.root.description"
+      },
       "background": "minecraft:textures/block/nether_wart_block.png",
       "show_toast": true,
       "announce_to_chat": true

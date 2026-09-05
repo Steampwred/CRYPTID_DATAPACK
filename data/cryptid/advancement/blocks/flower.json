@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "A rotten smell",
-      "description": "Find a flower. Don't sniff it",
+      "title": {
+        "translate": "advancement.cryptid.rotten_smell.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.rotten_smell.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

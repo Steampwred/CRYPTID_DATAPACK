@@ -6,7 +6,7 @@
         {
           "id": "minecraft:firework_rocket",
           "components": {
-            "minecraft:custom_name": "{\"text\":\"empty\",\"color\":\"gray\",\"italic\":true}"
+            "minecraft:custom_name": "{\"translate\":\"item.cryptid.empty_projectile.name\",\"color\":\"gray\",\"italic\":true}"
           },
           "count": 1
         }

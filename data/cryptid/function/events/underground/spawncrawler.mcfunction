@@ -1,5 +1,4 @@
-
-summon minecraft:vindicator ~ 400 ~ {DeathLootTable:"minecraft:empty", CustomName:'[{"text":"Flesh Basilisk"}]',Tags:["cryptid","cryptid.crawler","cryptid.underground","cryptid.timer"],PersistenceRequired:1b,Silent:1b,attributes:[{id:"generic.gravity",base:0.2f},{id:"generic.step_height",base:10000f},{id:"generic.knockback_resistance",base:0.32f}]}
+summon minecraft:vindicator ~ 400 ~ {DeathLootTable:"minecraft:empty", CustomName:'[{"translate":"cryptid.entity.flesh_basilisk"}]',Tags:["cryptid","cryptid.crawler","cryptid.underground","cryptid.timer"],PersistenceRequired:1b,Silent:1b,attributes:[{id:"generic.gravity",base:0.2f},{id:"generic.step_height",base:10000f},{id:"generic.knockback_resistance",base:0.32f}]}
 
 item replace entity @e[type=vindicator,tag=cryptid.crawler] armor.head with potion[minecraft:custom_model_data=1378]
 

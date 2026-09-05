@@ -10,13 +10,13 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": "[\"\",{\"text\":\"Artery Carver\",\"italic\":false,\"color\":\"red\"}]",
+                "minecraft:custom_name": "[\"\",{\"translate\":\"cryptid.item.pickaxe.name\",\"italic\":false,\"color\":\"red\"}]",
                 "minecraft:lore": [
-                  "[\"\",{\"color\":\"gray\",\"italic\":false,\"text\":\"Carves through flesh with ease.\"}]",
+                  "[\"\",{\"color\":\"gray\",\"italic\":false,\"translate\":\"cryptid.item.pickaxe.lore.1\"}]",
                   "[\"\"]",
-                  "[\"\",{\"color\":\"dark_red\",\"italic\":false,\"text\":\" \"},{\"text\":\"<Shift Right Click> \",\"italic\":false,\"color\":\"dark_red\"},{\"text\":\"- To look\",\"italic\":false,\"color\":\"gray\"}]",
-                  "[\"\",{\"color\":\"gray\",\"italic\":false,\"text\":\"in the direction of the nearest heart\"}]",
-                  "[\"\",{\"color\":\"gray\",\"italic\":false,\"text\":\"at the cost of health. \"}]"
+                  "[\"\",{\"color\":\"dark_red\",\"italic\":false,\"text\":\" \"},{\"translate\":\"cryptid.item.pickaxe.lore.3_1\",\"italic\":false,\"color\":\"dark_red\"},{\"translate\":\"cryptid.item.pickaxe.lore.3_2\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[\"\",{\"color\":\"gray\",\"italic\":false,\"translate\":\"cryptid.item.pickaxe.lore.4\"}]",
+                  "[\"\",{\"color\":\"gray\",\"italic\":false,\"translate\":\"cryptid.item.pickaxe.lore.5\"}]"
                 ],
                 "minecraft:fire_resistant": {},
                 "minecraft:custom_model_data": 1305,
@@ -49,7 +49,6 @@
             }
           ]
         },
-
         {
           "type": "minecraft:item",
           "name": "minecraft:warped_fungus_on_a_stick",
@@ -57,11 +56,11 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": "[\"\",{\"text\":\"Rusty Beartrap\",\"italic\":false,\"color\":\"red\"}]",
+                "minecraft:custom_name": "[\"\",{\"translate\":\"cryptid.item.beartrap.name\",\"italic\":false,\"color\":\"red\"}]",
                 "minecraft:lore": [
-                  "[\"\",{\"text\":\"RIGHT CLICK\",\"italic\":false,\"color\":\"yellow\",\"bold\":true},{\"text\":\" to place down.\",\"italic\":false,\"color\":\"dark_red\"}]",
-                  "[\"\",{\"text\":\"Break the block below to pick up.\",\"italic\":false,\"color\":\"dark_red\"}]",
-                  "[\"\",{\"text\":\"It's held together by scrap.\",\"italic\":false,\"color\":\"dark_gray\"}]"
+                  "[\"\",{\"translate\":\"cryptid.item.beartrap.lore.1_1\",\"italic\":false,\"color\":\"yellow\",\"bold\":true},{\"translate\":\"cryptid.item.beartrap.lore.1_2\",\"italic\":false,\"color\":\"dark_red\"}]",
+                  "[\"\",{\"translate\":\"cryptid.item.beartrap.lore.2\",\"italic\":false,\"color\":\"dark_red\"}]",
+                  "[\"\",{\"translate\":\"cryptid.item.beartrap.lore.3\",\"italic\":false,\"color\":\"dark_gray\"}]"
                 ],
                 "minecraft:custom_model_data": 1307,
                 "minecraft:custom_data": "{cryptid.item:1,cryptid.beartrap:1}",
@@ -70,12 +69,11 @@
               }
             },
             {
-                "function": "set_count",
-                "count": 5
+              "function": "set_count",
+              "count": 5
             }
           ]
         },
-
         {
           "type": "minecraft:item",
           "name": "minecraft:villager_spawn_egg",
@@ -84,21 +82,21 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:lore": [
-                  "[{\"text\":\"Fueled by suffering\",\"color\":\"dark_red\"}]",
-                  "[\"\",{\"text\":\"<When Held>\",\"italic\":false,\"color\":\"dark_red\"},{\"text\":\" - protects the user \",\"italic\":false,\"color\":\"gray\"}]",
-                  "[{\"text\":\"warding off an attacking Cryptid\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"cryptid.item.lesser_totem.lore.1\",\"color\":\"dark_red\"}]",
+                  "[\"\",{\"translate\":\"cryptid.item.lesser_totem.lore.2_1\",\"italic\":false,\"color\":\"dark_red\"},{\"translate\":\"cryptid.item.lesser_totem.lore.2_2\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"cryptid.item.lesser_totem.lore.3\",\"italic\":false,\"color\":\"gray\"}]",
                   "[\"\"]",
-                  "[{\"text\":\"<When Placed> \",\"italic\":false,\"color\":\"dark_red\"}]",
-                  "[{\"text\":\"- Creates a large barrier that passively\",\"italic\":false,\"color\":\"gray\"}]",
-                  "[{\"text\":\"deflects reality warping events. \",\"italic\":false,\"color\":\"gray\"}]",
-                  "[{\"text\":\"Ideal for fortifying a settlement\",\"italic\":false,\"color\":\"gray\"}]",
-                  "[{\"text\":\"- Can be fueled by blood to\",\"italic\":false,\"color\":\"gray\"}]",
-                  "[{\"text\":\"temporarily repel Cryptids within \",\"italic\":false,\"color\":\"gray\"}]",
-                  "[{\"text\":\"a short range\",\"italic\":false,\"color\":\"gray\"}]"
+                  "[{\"translate\":\"cryptid.item.lesser_totem.lore.5\",\"italic\":false,\"color\":\"dark_red\"}]",
+                  "[{\"translate\":\"cryptid.item.lesser_totem.lore.6\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"cryptid.item.lesser_totem.lore.7\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"cryptid.item.lesser_totem.lore.8\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"cryptid.item.lesser_totem.lore.9\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"cryptid.item.lesser_totem.lore.10\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"cryptid.item.lesser_totem.lore.11\",\"italic\":false,\"color\":\"gray\"}]"
                 ],
                 "minecraft:custom_data": "{cryptid.item:1b}",
                 "minecraft:custom_model_data": 1319,
-                "minecraft:custom_name": "[{\"text\":\"Lesser Bloodstone Totem\",\"italic\":false,\"color\":\"red\"}]",
+                "minecraft:custom_name": "[{\"translate\":\"cryptid.item.lesser_totem.name\",\"italic\":false,\"color\":\"red\"}]",
                 "minecraft:entity_data": {
                   "id": "villager",
                   "VillagerData": {
@@ -106,7 +104,7 @@
                     "profession": "nitwit",
                     "level": 2
                   },
-                  "CustomName": "[{\"text\":\"Lesser Bloodstone Totem\",\"color\":\"red\"}]",
+                  "CustomName": "[{\"translate\":\"cryptid.item.lesser_totem.name\",\"color\":\"red\"}]",
                   "NoAI": true,
                   "NoGravity": true,
                   "PersistenceRequired": true,
@@ -165,7 +163,6 @@
             }
           ]
         },
-
         {
           "type": "minecraft:item",
           "name": "minecraft:warped_fungus_on_a_stick",
@@ -175,17 +172,17 @@
               "components": {
                 "minecraft:custom_data": "{cryptid.item:1b,cryptid.blade:1}",
                 "minecraft:custom_model_data": 1301,
-                "minecraft:custom_name": "[\"\",{\"text\":\"Steel Torment\",\"italic\":false,\"color\":\"red\"}]",
+                "minecraft:custom_name": "[\"\",{\"translate\":\"cryptid.item.blade.custom_name\",\"italic\":false,\"color\":\"red\"}]",
                 "minecraft:lore": [
-                  "[\"\",{\"text\":\"The blade is \",\"italic\":false,\"color\":\"dark_red\"},{\"text\":\"ice cold\",\"bold\":true,\"italic\":false,\"color\":\"aqua\"},{\"text\":\" to the touch\",\"italic\":false,\"color\":\"dark_red\"}]",
+                  "[\"\",{\"translate\":\"cryptid.item.blade.lore.1_1\",\"italic\":false,\"color\":\"dark_red\"},{\"translate\":\"cryptid.item.blade.lore.1_2\",\"bold\":true,\"italic\":false,\"color\":\"aqua\"},{\"translate\":\"cryptid.item.blade.lore.1_3\",\"italic\":false,\"color\":\"dark_red\"}]",
                   "[\"\"]",
-                  "[\"\",{\"text\":\"<Shift Right Click>\",\"italic\":false,\"color\":\"dark_red\"},{\"text\":\" - Clear away\",\"italic\":false,\"color\":\"gray\"}]",
-                  "[\"\",{\"text\":\"a large area of flesh, cleansing the area.\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[\"\",{\"translate\":\"cryptid.item.blade.lore.3_1\",\"italic\":false,\"color\":\"dark_red\"},{\"translate\":\"cryptid.item.blade.lore.3_2\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[\"\",{\"translate\":\"cryptid.item.blade.lore.4\",\"italic\":false,\"color\":\"gray\"}]",
                   "[\"\"]",
-                  "[\"\",{\"text\":\"<Attack>\",\"italic\":false,\"color\":\"dark_red\"},{\"text\":\" - Apply slowness and bleed\",\"italic\":false,\"color\":\"gray\"}]",
-                  "[\"\",{\"text\":\"to the affected cryptid.\",\"italic\":false,\"color\":\"gray\"}]"
+                  "[\"\",{\"translate\":\"cryptid.item.blade.lore.6_1\",\"italic\":false,\"color\":\"dark_red\"},{\"translate\":\"cryptid.item.blade.lore.6_2\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[\"\",{\"translate\":\"cryptid.item.blade.lore.7\",\"italic\":false,\"color\":\"gray\"}]"
                 ],
-                "minecraft:item_name": "[\"\",{\"text\":\"Steel Torment\",\"italic\":false,\"color\":\"red\"}]",
+                "minecraft:item_name": "[\"\",{\"translate\":\"cryptid.item.blade.item_name\",\"italic\":false,\"color\":\"red\"}]",
                 "minecraft:rarity": "rare",
                 "minecraft:attribute_modifiers": {
                   "modifiers": [
@@ -213,7 +210,6 @@
             }
           ]
         },
-
         {
           "type": "minecraft:item",
           "name": "minecraft:sugar",
@@ -229,11 +225,11 @@
                   "can_always_eat": true,
                   "eat_seconds": 2
                 },
-                "minecraft:custom_name": "[\"\",{\"text\":\"Rotted Bee Balm\",\"italic\":false,\"color\":\"red\"}]",
+                "minecraft:custom_name": "[\"\",{\"translate\":\"cryptid.item.beebalm.name\",\"italic\":false,\"color\":\"red\"}]",
                 "minecraft:lore": [
-                  "[\"\",{\"text\":\"[Consumable up to 5 times]\",\"italic\":false,\"color\":\"dark_red\"}]",
-                  "[\"\",{\"text\":\"Increases max harmony cap by 500\",\"italic\":false,\"color\":\"dark_red\"}]",
-                  "[\"\",{\"text\":\"Events will happen more often\",\"italic\":false,\"color\":\"dark_red\"}]"
+                  "[\"\",{\"translate\":\"cryptid.item.beebalm.lore.1\",\"italic\":false,\"color\":\"dark_red\"}]",
+                  "[\"\",{\"translate\":\"cryptid.item.beebalm.lore.2\",\"italic\":false,\"color\":\"dark_red\"}]",
+                  "[\"\",{\"translate\":\"cryptid.item.beebalm.lore.3\",\"italic\":false,\"color\":\"dark_red\"}]"
                 ],
                 "minecraft:custom_data": {
                   "cryptid.beebalm": 1
@@ -242,12 +238,11 @@
             }
           ]
         }
-        
       ]
     },
     {
-        "rolls": 12,
-        "entries": [
+      "rolls": 12,
+      "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:sugar",
@@ -256,7 +251,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": "[\"\",{\"text\":\"item.prion.cluster\",\"italic\":false}]",
+                "minecraft:custom_name": "[\"\",{\"translate\":\"cryptid.item.prion_cluster.name\",\"italic\":false}]",
                 "minecraft:food": {
                   "nutrition": 1,
                   "saturation": 1,
@@ -279,9 +274,9 @@
           ]
         },
         {
-            "type": "minecraft:item",
-            "name": "nether_wart_block",
-            "weight": 2
+          "type": "minecraft:item",
+          "name": "nether_wart_block",
+          "weight": 2
         }
       ]
     }

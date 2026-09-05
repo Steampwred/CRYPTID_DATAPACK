@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "All muscle",
-      "description": "Meet a skinned for the first time",
+      "title": {
+        "translate": "advancement.cryptid.all_muscle.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.all_muscle.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

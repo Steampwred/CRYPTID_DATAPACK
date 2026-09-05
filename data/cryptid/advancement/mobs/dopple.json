@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "Friend or foe",
-      "description": "Meet the 'friend'",
+      "title": {
+        "translate": "advancement.cryptid.friend_or_foe.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.friend_or_foe.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

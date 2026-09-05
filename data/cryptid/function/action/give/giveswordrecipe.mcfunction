@@ -1,1 +1,1 @@
-give @s paper[custom_name='["",{"text":"Bloodied paper","italic":false}]',lore=['["",{"text":"Flesh is stronger than iron","italic":false,"color":"dark_red"}]'],custom_model_data=1323]
+give @s paper[custom_name='["",{"translate":"item.cryptid.bloodied_paper.name","italic":false}]',lore=['["",{"translate":"item.cryptid.bloodied_paper.lore.1","italic":false,"color":"dark_red"}]'],custom_model_data=1323]

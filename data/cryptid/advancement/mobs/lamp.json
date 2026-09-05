@@ -7,8 +7,12 @@
         },
         "count": 1
       },
-      "title": "Not what it seems",
-      "description": "What a nice lamp post!",
+      "title": {
+        "translate": "advancement.cryptid.not_what_it_seems.title"
+      },
+      "description": {
+        "translate": "advancement.cryptid.not_what_it_seems.description"
+      },
       "background": "nether_wart_block",
       "show_toast": true,
       "announce_to_chat": true

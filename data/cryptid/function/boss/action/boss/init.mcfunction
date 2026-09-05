@@ -3,7 +3,7 @@ tag @s add active
 playsound minecraft:cryptid.music.presenceloop ambient @a[distance=0..50]
 
 
-tellraw @a "Well, you came all this way. Let's get into it."
+tellraw @a {"translate":"chat.cryptid.boss.intro.greeting"}
 
 
 

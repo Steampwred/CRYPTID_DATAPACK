@@ -2,4 +2,4 @@ execute positioned ~ ~-4 ~ if predicate cryptid:alter/upgradetotem if items enti
 execute positioned ~ ~-4 ~ if predicate cryptid:alter/upgradetotem if entity @e[distance=..8,tag=sacrifice.mob,tag=cryptid.lessertotem] run tag @s add ritual.requirmentmet
 
 
-execute if entity @s[tag=ritual.translate] run tellraw @a[distance=..15] {"text":"Ritual Codename:","color":"dark_purple","bold":true,"extra":[{"text":" CONSECRATED BLOODSTONE TOTEM","color":"aqua","bold":false}]}
+execute if entity @s[tag=ritual.translate] run tellraw @a[distance=..15] {"translate":"chat.cryptid.ritual_codename","color":"dark_purple","bold":true,"with":[{"translate":"chat.cryptid.ritual_codename.consecrated_bloodstone_totem"}]}

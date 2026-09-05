@@ -16,6 +16,6 @@ playsound minecraft:cryptid.radiolong ambient @s ~ ~ ~ 1000 1 1
 
 
 #title @s clear
-#title @s[tag=!deadradio] actionbar ["",{"text":"[RADIO]","color":"red"},": <",{"text":"Flux Rating","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"color":"#996633","score":{"objective":"cryptid.player.flux","name":"@s"}},{"color":"#996633","text":"}, "},"<",{"text":"Harmony","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"color":"#996633","score":{"objective":"cryptid.player.harmony","name":"@s"}},{"color":"#996633","text":"},"},"<",{"text":"Strength Rating","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"color":"#996633","score":{"objective":"cryptid.player.strength","name":"@s"}},{"color":"#996633","text":"}"}]
+#title @s[tag=!deadradio] actionbar ["",{"translate":"chat.cryptid.radio.prefix","color":"red"},": <",{"translate":"chat.cryptid.radio.flux","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"color":"#996633","score":{"objective":"cryptid.player.flux","name":"@s"}},{"color":"#996633","text":"}, "},"<",{"translate":"chat.cryptid.radio.harmony","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"color":"#996633","score":{"objective":"cryptid.player.harmony","name":"@s"}},{"color":"#996633","text":"},"},"<",{"translate":"chat.cryptid.radio.strength","color":"dark_red"},">: ",{"text":"{","color":"#996633"},{"color":"#996633","score":{"objective":"cryptid.player.strength","name":"@s"}},{"color":"#996633","text":"}"}]
 
-title @s[tag=deadradio] actionbar ["",{"text":"--- INTERFERENCE DETECTED ---","color":"gray"}]
+title @s[tag=deadradio] actionbar ["",{"translate":"chat.cryptid.radio.interference","color":"gray"}]

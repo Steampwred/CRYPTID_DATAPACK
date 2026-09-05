@@ -1,9 +1,7 @@
-
-
 execute store result score @s cryptid.player.random run random value 1..10
-execute if score @s cryptid.player.random matches 1 run tellraw @s {"text":"[Error] We feel you","color":"red"}
+execute if score @s cryptid.player.random matches 1 run tellraw @s {"translate":"cryptid.event.skygrabber.feel_you","color":"red"}
 
-summon armor_stand ~ 300 ~ {Invisible:1, NoGravity:1, ShowArms:1b,DisabledSlots:4144959,CustomName:[{text:"Silent Behemoth",color:dark_red}],Tags:["cryptid","cryptid.skygrabber"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1370},count:1}],drop_chances:{head:0f}}
+summon armor_stand ~ 300 ~ {Invisible:1, NoGravity:1, ShowArms:1b,DisabledSlots:4144959,CustomName:'[{"translate":"cryptid.entity.silent_behemoth","color":"dark_red"}]',Tags:["cryptid","cryptid.skygrabber"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1370},count:1}],drop_chances:{head:0f}}
 
 
 ##random rotation

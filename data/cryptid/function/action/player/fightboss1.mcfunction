@@ -1,9 +1,7 @@
-
-
 ##remove when done
 execute if score @s cryptid.deaths matches 1.. run tag @s remove boss.fight.1
 execute if score @s cryptid.deaths matches 1.. run tag @s add bosscooldown
-execute if score @s cryptid.deaths matches 1.. run tellraw @s "Pathetic."
+execute if score @s cryptid.deaths matches 1.. run tellraw @s {"translate":"chat.cryptid.boss.death.insult"}
 execute if score @s cryptid.deaths matches 1.. run stopsound @s * minecraft:cryptid.music.presenceloop
 
 

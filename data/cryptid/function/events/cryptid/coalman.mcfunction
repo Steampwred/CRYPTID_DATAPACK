@@ -1,4 +1,4 @@
-summon vindicator ~ 200 ~ {attributes:[{id:"generic.scale",base:0.05f}], CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Coal Man"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.coal","cryptid.timer"],ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f]}
+summon vindicator ~ 200 ~ {attributes:[{id:"generic.scale",base:0.05f}], CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.coal_man"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.coal","cryptid.timer"],ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f]}
 
 execute positioned ~ 200 ~ run execute as @e[type=vindicator, sort=nearest, tag=cryptid.coal,limit=1] at @s run function cryptid:action/stats/coal
 

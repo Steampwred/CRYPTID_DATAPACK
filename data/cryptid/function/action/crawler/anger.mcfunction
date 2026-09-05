@@ -7,6 +7,6 @@ tp @s ~ ~ ~ facing entity @p
 scoreboard players set @s cryptid.timer 2000
 
 scoreboard players set @a[distance=..20] cryptid.player.titlecooldown 40
-title @a[distance=0..25] actionbar {"text":"I haven't tasted flesh in so long.","color":"dark_red"}
+title @a[distance=0..25] actionbar {"translate":"cryptid.message.taste_flesh","color":"dark_red"}
 
 data merge entity @s {DeathLootTable:"minecraft:empty"}

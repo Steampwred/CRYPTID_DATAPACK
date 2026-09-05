@@ -1,4 +1,4 @@
-summon armor_stand ~ ~ ~ {Invisible:1, NoAI:1, DeathLootTable:"minecraft:empty", CustomName:'[{"text":"Silent Philogen"}]',Tags:["cryptid","cryptid.angrystalker","cryptid.timer"],Sheared:1,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,attributes:[{id:"generic.gravity",base:3.7f},{id:"generic.step_height",base:10000f},{id:"generic.knockback_resistance",base:120f}]}
+summon armor_stand ~ ~ ~ {Invisible:1, NoAI:1, DeathLootTable:"minecraft:empty", CustomName:'[{"translate":"entity.cryptid.silent_philogen.name"}]',Tags:["cryptid","cryptid.angrystalker","cryptid.timer"],Sheared:1,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,attributes:[{id:"generic.gravity",base:3.7f},{id:"generic.step_height",base:10000f},{id:"generic.knockback_resistance",base:120f}]}
 
 
 item replace entity @e[type=armor_stand,tag=cryptid.angrystalker,sort=nearest] armor.head with potion[minecraft:custom_model_data=1338]

@@ -11,4 +11,4 @@ scoreboard players set @a cryptid.maxlives 3
 scoreboard players add .global cryptid.worldtimer 1200000
 
 playsound minecraft:cryptid.jelly.capture ambient @a
-tellraw @a ["",{"text":"Manic mode is now active \nLives set to 3, flux in negatives only!\nGood luck!","color":"red"}]
+tellraw @a ["",{"translate":"cryptid.message.set_manic","color":"red"}]

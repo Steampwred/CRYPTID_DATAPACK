@@ -1,15 +1,14 @@
-
 execute store result score @s cryptid.player.random run random value 1..4
 
-execute if score @s cryptid.player.random matches 1 run tellraw @s {"text":"The caves will not protect you.","color":"red"}
+execute if score @s cryptid.player.random matches 1 run tellraw @s {"translate":"cryptid.event.screamer.caves","color":"red"}
 
 
 
-summon minecraft:vindicator ~ 401 ~ {NoAI:1,Invulnerable:1,DeathLootTable:"minecraft:empty", CustomName:'[{"text":"Stone Torture"}]',Tags:["cryptid","cryptid.screamer"],PersistenceRequired:1b,Silent:1b,attributes:[{id:"generic.gravity",base:0f},{id:"generic.step_height",base:10000f},{id:"generic.knockback_resistance",base:0.32f}]}
+summon minecraft:vindicator ~ 401 ~ {NoAI:1,Invulnerable:1,DeathLootTable:"minecraft:empty", CustomName:'[{"translate":"cryptid.entity.stone_torture"}]',Tags:["cryptid","cryptid.screamer"],PersistenceRequired:1b,Silent:1b,attributes:[{id:"generic.gravity",base:0f},{id:"generic.step_height",base:10000f},{id:"generic.knockback_resistance",base:0.32f}]}
 
-summon minecraft:vindicator ~ 402 ~ {NoAI:1,Invulnerable:1,DeathLootTable:"minecraft:empty", CustomName:'[{"text":"Stone Torture"}]',Tags:["cryptid","cryptid.screamer"],PersistenceRequired:1b,Silent:1b,attributes:[{id:"generic.gravity",base:0f},{id:"generic.step_height",base:10000f},{id:"generic.knockback_resistance",base:0.32f}]}
+summon minecraft:vindicator ~ 402 ~ {NoAI:1,Invulnerable:1,DeathLootTable:"minecraft:empty", CustomName:'[{"translate":"cryptid.entity.stone_torture"}]',Tags:["cryptid","cryptid.screamer"],PersistenceRequired:1b,Silent:1b,attributes:[{id:"generic.gravity",base:0f},{id:"generic.step_height",base:10000f},{id:"generic.knockback_resistance",base:0.32f}]}
 
-summon minecraft:vindicator ~ 403 ~ {NoAI:1,Invulnerable:1,DeathLootTable:"minecraft:empty", CustomName:'[{"text":"Stone Torture"}]',Tags:["cryptid","cryptid.screamer"],PersistenceRequired:1b,Silent:1b,attributes:[{id:"generic.gravity",base:0f},{id:"generic.step_height",base:10000f},{id:"generic.knockback_resistance",base:0.32f}]}
+summon minecraft:vindicator ~ 403 ~ {NoAI:1,Invulnerable:1,DeathLootTable:"minecraft:empty", CustomName:'[{"translate":"cryptid.entity.stone_torture"}]',Tags:["cryptid","cryptid.screamer"],PersistenceRequired:1b,Silent:1b,attributes:[{id:"generic.gravity",base:0f},{id:"generic.step_height",base:10000f},{id:"generic.knockback_resistance",base:0.32f}]}
 
 
 

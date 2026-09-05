@@ -1,9 +1,9 @@
 execute store result score @s cryptid.player.random run random value 1..40
-execute if score @s cryptid.player.random matches 1 run tellraw @s {"text":"[Error] Named entity ckw['Altar'] failed tick validation, proceed with caution","color":"red"}
+execute if score @s cryptid.player.random matches 1 run tellraw @s {"translate":"cryptid.event.altar.error","color":"red"}
 
 
 
-summon armor_stand ~ ~620 ~ {DisabledSlots:4144959, Invisible:1, NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Sacrifice"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.altar"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1341},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon armor_stand ~ ~620 ~ {DisabledSlots:4144959, Invisible:1, NoGravity:1, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.sacrifice"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.altar"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1341},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 
 execute positioned ~ ~620 ~ run effect give @e[type=armor_stand, sort=nearest, tag=cryptid.altar] minecraft:invisibility infinite 1 true
 

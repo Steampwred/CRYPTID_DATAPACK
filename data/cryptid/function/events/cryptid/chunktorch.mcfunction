@@ -1,5 +1,5 @@
 execute store result score @s cryptid.player.random run random value 1..3
-execute if score @s cryptid.player.random matches 1 run tellraw @s {"text":"Let's brighten things up a little.","color":"red"}
+execute if score @s cryptid.player.random matches 1 run tellraw @s {"translate":"cryptid.event.chunktorch.brighten","color":"red"}
 
 
 summon marker ~ ~620 ~ {Tags:["cryptid","cryptid.chunktorch"]}

@@ -1,4 +1,4 @@
-summon minecraft:vindicator ^ ^1 ^-15 {DeathLootTable:"minecraft:empty", CustomName:'[{"text":"Putrid Earth Anenome"}]',Tags:["cryptid","cryptid.swapper"],Sheared:1,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,attributes:[{id:"generic.gravity",base:0.7f},{id:"generic.step_height",base:10000f},{id:"generic.knockback_resistance",base:120f}]}
+summon minecraft:vindicator ^ ^1 ^-15 {DeathLootTable:"minecraft:empty", CustomName:'[{"translate":"cryptid.entity.putrid_earth_anenome"}]',Tags:["cryptid","cryptid.swapper"],Sheared:1,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,attributes:[{id:"generic.gravity",base:0.7f},{id:"generic.step_height",base:10000f},{id:"generic.knockback_resistance",base:120f}]}
 
 item replace entity @e[type=vindicator,tag=cryptid.swapper] armor.head with potion[minecraft:custom_model_data=1311]
 
@@ -19,4 +19,3 @@ execute as @e[type=vindicator, tag=cryptid.swapper, tag=!cryptid.markerapplied] 
 
 
 execute as @e[type=vindicator, sort=random, limit=1, tag=cryptid.swapper] at @s run playsound minecraft:ambient.crimson_forest.mood ambient @a[distance=0..50]
-

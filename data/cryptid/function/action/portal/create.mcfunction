@@ -1,7 +1,6 @@
-
 playsound minecraft:cryptid.mob.alert ambient @a ~ ~1000 ~ 100 0.1
-tellraw @a {"text":"The gate to hell has opened","color":"red"}
-tellraw @a ["",{"text":"You have earned our respect, surving this long.\nTake this totem, it will protect you from the void","color":"red"},{"text":"\n"},{"text":"And go beneath the bedrock.","color":"dark_red"}]
+tellraw @a {"translate":"chat.cryptid.event.gate_open","color":"red"}
+tellraw @a ["",{"translate":"chat.cryptid.event.survive_reward","color":"red"},{"text":"\n"},{"translate":"chat.cryptid.event.go_below","color":"dark_red"}]
 time set midnight
 particle block_marker{block_state:{Name:nether_wart_block}} ~ ~ ~2 1.5 10 1.5 1 1000
 place feature cryptid:convertflesh ~ ~ ~2

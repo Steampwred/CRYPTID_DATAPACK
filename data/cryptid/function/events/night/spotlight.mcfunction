@@ -1,7 +1,7 @@
-summon vindicator ~ ~112 ~ {NoAI:1b,DeathLootTable:"minecraft:empty",Invulnerable:1b,DisabledSlots:4144959, Invisible:1, NoGravity:1b, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Sky Philogen"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.spotlight"],ArmorItems:[{},{},{},{id:stone_button}],ArmorDropChances:[0f,0f,0f,0f]}
+summon vindicator ~ ~112 ~ {NoAI:1b,DeathLootTable:"minecraft:empty",Invulnerable:1b,DisabledSlots:4144959, Invisible:1, NoGravity:1b, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.sky_philogen"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.spotlight"],ArmorItems:[{},{},{},{id:stone_button}],ArmorDropChances:[0f,0f,0f,0f]}
 
-#summon vindicator ~ ~110 ~ {NoAI:1b,DeathLootTable:"minecraft:empty",Invulnerable:1b,DisabledSlots:4144959, Invisible:1, NoGravity:1b, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"text":"Sky Ray"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.spotlight2"],ArmorItems:[{},{},{},{id:air,components:{"minecraft:custom_model_data":1360},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
-summon item_display ~ ~110 ~ {CustomName:'[{"text":"Sky Ray"}]',Tags:["cryptid","cryptid.spotlight2"],item:{id:potion,components:{custom_model_data:1360},count:1},item_display:"head",view_range:5,width:500,height:600,teleport_duration:8}
+#summon vindicator ~ ~110 ~ {NoAI:1b,DeathLootTable:"minecraft:empty",Invulnerable:1b,DisabledSlots:4144959, Invisible:1, NoGravity:1b, CanBreakDoors:1,vindicatorConversionTime:29381927839812,CustomName:'[{"translate":"cryptid.entity.sky_ray"}]',PersistenceRequired:1b,Silent:1b,Tags:["cryptid","cryptid.spotlight2"],ArmorItems:[{},{},{},{id:air,components:{"minecraft:custom_model_data":1360},count:1}],ArmorDropChances:[0f,0f,0f,0f]}
+summon item_display ~ ~110 ~ {CustomName:'[{"translate":"cryptid.entity.sky_ray"}]',Tags:["cryptid","cryptid.spotlight2"],item:{id:potion,components:{custom_model_data:1360},count:1},item_display:"head",view_range:5,width:500,height:600,teleport_duration:8}
 
 
 ## Give spotlight 1 and 2 the same id.

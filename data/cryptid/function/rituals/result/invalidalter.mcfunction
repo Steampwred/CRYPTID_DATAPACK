@@ -1,7 +1,7 @@
 scoreboard players set @s cryptid.timer 0 
 
 
-execute if entity @s[tag=ritual.translate] run tellraw @a[distance=..10] {"text":"Valid ritual circle, although the alter seems to be missing something...","color":"dark_purple","bold":true}
+execute if entity @s[tag=ritual.translate] run tellraw @a[distance=..10] {"translate":"chat.cryptid.ritual_missing_alter_item","color":"dark_purple","bold":true}
 
 function cryptid:rituals/speakfx
 
@@ -14,4 +14,3 @@ tag @s remove ritual.translate
 
 tag @e[tag=sacrifice.mob,distance=..15] remove sacrifice.mob
 execute as @e[tag=sacrifice.item,type=item,distance=..15] run data merge entity @s {NoGravity:0b,Tags:[""]}
-

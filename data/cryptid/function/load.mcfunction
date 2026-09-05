@@ -225,7 +225,7 @@ scoreboard objectives add cryptid.range dummy
 scoreboard objectives add debug.scoreboard dummy
 
 team add cryptid.evilmob
-team modify cryptid.evilmob prefix "Corrupted "
+team modify cryptid.evilmob prefix {"translate":"cryptid.team.corrupted"}
 team modify cryptid.evilmob collisionRule always
 team modify cryptid.evilmob color dark_red
 forceload add 0 0
@@ -250,4 +250,4 @@ function cryptid:rituals/initial/orificecraving
 ## Long tick loop 1 minute
 function cryptid:ticklong
 
-tellraw @a ["",{"text":"Welcome","color":"#990033"}]
+tellraw @a ["",{"translate":"cryptid.message.welcome","color":"#990033"}]
