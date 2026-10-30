@@ -8,8 +8,10 @@ particle dust_color_transition{from_color:[0.8,0.24,0.3],to_color:[0.46,0.06,0.0
 # Revive random player from spectator
 execute unless entity @a[gamemode=spectator] as @p run function cryptid:events/gainlife
 
-tp @r[gamemode=spectator,scores={cryptid.maxlives=0}] @s
-execute as @p[gamemode=spectator,scores={cryptid.maxlives=0}] run function cryptid:events/gainlife
+tag @r[gamemode=spectator,scores={cryptid.maxlives=0}] add revivespelltarget
+tp @p[gamemode=spectator,tag=revivespelltarget] @s
+execute as @p[gamemode=spectator,tag=revivespelltarget] run function cryptid:events/gainlife
+
 
 # Remove revive items
 kill @s
