@@ -20,7 +20,7 @@ tag @a[distance=0..20] add cryptid.bosschase
 
 playsound minecraft:cryptid.screen.corrupted ambient @a[distance=0..30] ~ ~ ~ 100 0.1
 
-execute as @e[distance=1..6,sort=random,limit=1,type=!vindicator, type=!marker,type=!item] at @s run function cryptid:events/harrowdeath
+execute as @e[distance=1..6,sort=random,limit=1,type=!vindicator, type=!marker,type=!item,type=!item_display,type=!block_display] at @s run function cryptid:events/harrowdeath
 effect give @s minecraft:invisibility infinite 1 true
 execute if entity @s[y=-70, dy=-120000000] run tag @s remove cryptid.roaming
 
