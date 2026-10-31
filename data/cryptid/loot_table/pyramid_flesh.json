@@ -82,83 +82,35 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:lore": [
-                  "[{\"translate\":\"cryptid.item.lesser_totem.lore.1\",\"color\":\"dark_red\"}]",
-                  "[\"\",{\"translate\":\"cryptid.item.lesser_totem.lore.2_1\",\"italic\":false,\"color\":\"dark_red\"},{\"translate\":\"cryptid.item.lesser_totem.lore.2_2\",\"italic\":false,\"color\":\"gray\"}]",
-                  "[{\"translate\":\"cryptid.item.lesser_totem.lore.3\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"item.cryptid.lesser_bloodstone_totem.lore.1\",\"color\":\"dark_red\"}]",
+                  "[\"\",{\"translate\":\"item.cryptid.lesser_bloodstone_totem.lore.2\",\"italic\":false,\"color\":\"dark_red\"},{\"translate\":\"item.cryptid.lesser_bloodstone_totem.lore.3\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"item.cryptid.lesser_bloodstone_totem.lore.4\",\"italic\":false,\"color\":\"gray\"}]",
                   "[\"\"]",
-                  "[{\"translate\":\"cryptid.item.lesser_totem.lore.5\",\"italic\":false,\"color\":\"dark_red\"}]",
-                  "[{\"translate\":\"cryptid.item.lesser_totem.lore.6\",\"italic\":false,\"color\":\"gray\"}]",
-                  "[{\"translate\":\"cryptid.item.lesser_totem.lore.7\",\"italic\":false,\"color\":\"gray\"}]",
-                  "[{\"translate\":\"cryptid.item.lesser_totem.lore.8\",\"italic\":false,\"color\":\"gray\"}]",
-                  "[{\"translate\":\"cryptid.item.lesser_totem.lore.9\",\"italic\":false,\"color\":\"gray\"}]",
-                  "[{\"translate\":\"cryptid.item.lesser_totem.lore.10\",\"italic\":false,\"color\":\"gray\"}]",
-                  "[{\"translate\":\"cryptid.item.lesser_totem.lore.11\",\"italic\":false,\"color\":\"gray\"}]"
+                  "[{\"translate\":\"item.cryptid.lesser_bloodstone_totem.lore.5\",\"italic\":false,\"color\":\"dark_red\"}]",
+                  "[{\"translate\":\"item.cryptid.lesser_bloodstone_totem.lore.6\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"item.cryptid.lesser_bloodstone_totem.lore.7\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"item.cryptid.lesser_bloodstone_totem.lore.8\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"item.cryptid.lesser_bloodstone_totem.lore.9\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"item.cryptid.lesser_bloodstone_totem.lore.10\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[{\"translate\":\"item.cryptid.lesser_bloodstone_totem.lore.11\",\"italic\":false,\"color\":\"gray\"}]"
                 ],
                 "minecraft:custom_data": "{cryptid.item:1b}",
                 "minecraft:custom_model_data": 1319,
-                "minecraft:custom_name": "[{\"translate\":\"cryptid.item.lesser_totem.name\",\"italic\":false,\"color\":\"red\"}]",
+                "minecraft:custom_name": "[{\"translate\":\"item.cryptid.lesser_bloodstone_totem.name\",\"italic\":false,\"color\": \"red\"}]",
                 "minecraft:entity_data": {
-                  "id": "villager",
-                  "VillagerData": {
-                    "type": "plains",
-                    "profession": "nitwit",
-                    "level": 2
-                  },
-                  "CustomName": "[{\"translate\":\"cryptid.item.lesser_totem.name\",\"color\":\"red\"}]",
-                  "NoAI": true,
-                  "NoGravity": true,
-                  "PersistenceRequired": true,
-                  "Silent": true,
+                  "id": "marker",
+                  "CustomName": "[{\"translate\":\"item.cryptid.lesser_bloodstone_totem.name\",\"color\":\"red\"}]",
+                  "NoGravity": 1,
+                  "PersistenceRequired": 1,
+                  "Silent": 1,
                   "Tags": [
                     "cryptid",
                     "cryptid.lessertotem",
                     "cryptid.ignore.radar",
                     "cryptid.ignore.totemward"
-                  ],
-                  "active_effects": [
-                    {
-                      "id": "invisibility",
-                      "duration": -1,
-                      "show_particles": false
-                    }
-                  ],
-                  "ArmorItems": [
-                    {},
-                    {},
-                    {},
-                    {
-                      "id": "potion",
-                      "components": {
-                        "minecraft:custom_model_data": 1318
-                      },
-                      "count": 1
-                    }
-                  ],
-                  "ArmorDropChances": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ],
-                  "attributes": [
-                    {
-                      "id": "generic.armor",
-                      "base": 15
-                    },
-                    {
-                      "id": "generic.scale",
-                      "base": 0.05
-                    },
-                    {
-                      "id": "generic.gravity",
-                      "base": 1
-                    },
-                    {
-                      "id": "generic.movement_speed",
-                      "base": 0
-                    }
                   ]
-                }
+                },
+                "minecraft:max_stack_size": 5
               }
             }
           ]

@@ -1,10 +1,10 @@
 ##init
 
-execute if entity @s[tag=!init] run function cryptid:action/toteminit
-execute if entity @s[tag=!init] run tag @s add init
+#execute if entity @s[tag=!init] run function cryptid:action/toteminit
+#execute if entity @s[tag=!init] run tag @s add init
 
 
-effect give @s invisibility infinite 255 true
+#effect give @s invisibility infinite 255 true
 
 
 execute store result score @s cryptid.player.random run random value 1..200
