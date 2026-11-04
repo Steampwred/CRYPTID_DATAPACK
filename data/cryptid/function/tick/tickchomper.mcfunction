@@ -54,6 +54,7 @@ execute if entity @s[tag=idle, scores={cryptid.chomptime=..95}] run execute rota
 
 ##angry
 execute if entity @s[tag=angry] run scoreboard players remove @s cryptid.chomptime 1
+execute if entity @s[tag=angry] run damage @s 0 player_attack by @p
 execute if entity @s[tag=angry] run tp @s ~ ~ ~ facing entity @p
 execute if entity @s[tag=angry] run playsound minecraft:entity.warden.roar ambient @a ~ ~ ~ 2 2
 execute if entity @s[tag=angry] run tag @a[distance=0..15] add cryptid.glitchscreen

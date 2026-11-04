@@ -39,11 +39,14 @@ execute if score .global cryptid.world.fury matches 2350.. if score .global cryp
 execute if score .global cryptid.world.fury matches 2550.. if score .global cryptid.world.furymessage matches 9 run tellraw @a {"translate":"cryptid.event.fury.msg10","color":"red"}
 execute if score .global cryptid.world.fury matches 2550.. if score .global cryptid.world.furymessage matches 9 run scoreboard players add .global cryptid.world.furymessage 1
 
-execute if score .global cryptid.world.fury matches 2900.. if score .global cryptid.world.furymessage matches 10 run tellraw @a {"translate":"cryptid.event.fury.msg11","color":"red"}
-execute if score .global cryptid.world.fury matches 2900.. if score .global cryptid.world.furymessage matches 10 run scoreboard players add .global cryptid.world.furymessage 1
+execute if score .global cryptid.world.fury matches 2800.. if score .global cryptid.world.furymessage matches 10 as @a at @s run function cryptid:events/cryptid/dreamoftheroot
+
+execute if score .global cryptid.world.fury matches 2900.. if score .global cryptid.world.furymessage matches 11 run tellraw @a {"translate":"cryptid.event.fury.msg11","color":"red"}
+execute if score .global cryptid.world.fury matches 2900.. if score .global cryptid.world.furymessage matches 11 run scoreboard players add .global cryptid.world.furymessage 1
+
 
 ## Portal logic
-execute unless score .global cryptid.world.furymessage matches 11 run return fail
+execute unless score .global cryptid.world.furymessage matches 12 run return fail
 execute unless score .global cryptid.world.fury matches 3000.. run return fail
 execute as @a[scores={cryptid.player.id=0}] at @s if entity @n[tag=cryptid.totem2,distance=..200] run return fail
 execute as @a[scores={cryptid.player.id=0}] at @s if entity @n[tag=cryptid.lessertotem,distance=..100] run return fail

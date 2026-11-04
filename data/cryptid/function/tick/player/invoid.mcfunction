@@ -17,8 +17,10 @@ scoreboard players add @s cryptid.voidtimer 1
 
 ##spawning things
 
-execute if score @s cryptid.voidtimer matches 100 run function cryptid:events/void/wyrmalt
+execute if score @s cryptid.voidtimer matches 60 run function cryptid:events/void/wyrmalt
+execute if score @s cryptid.voidtimer matches 350 run function cryptid:events/void/wyrmalt
 execute if score @s cryptid.voidtimer matches 600 run function cryptid:events/void/wyrmalt
+execute if score @s cryptid.voidtimer matches 800 run function cryptid:events/void/wyrmalt
 execute if score @s cryptid.voidtimer matches 1100 run function cryptid:events/void/wyrmalt
 execute if score @s cryptid.voidtimer matches 1600 run function cryptid:events/void/wyrmalt
 
@@ -29,9 +31,9 @@ execute if score @s cryptid.voidtimer matches 100 run tellraw @s[tag=cryptid.ski
 
 execute if score @s cryptid.voidtimer matches 200 run tellraw @s[tag=cryptid.skipvoidcut] {"translate":"cryptid.event.void.skip2","color":"red"}
 
-execute if score @s cryptid.voidtimer matches 250 run execute in cryptid:below run tp @s ~ 500 ~
+execute if score @s[tag=cryptid.skipvoidcut] cryptid.voidtimer matches 250 run execute in cryptid:below run tp @s ~ 500 ~
 
-execute if score @s cryptid.voidtimer matches 250 run effect give @s minecraft:slow_falling 100 0 true
+execute if score @s[tag=cryptid.skipvoidcut] cryptid.voidtimer matches 250 run effect give @s minecraft:slow_falling 100 0 true
 
 
 

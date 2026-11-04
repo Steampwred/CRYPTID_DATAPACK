@@ -58,6 +58,8 @@ execute if entity @s[tag=!cryptid.invoid] run scoreboard players reset @s crypti
 execute as @s at @s if entity @s[y=-64, dy=10000] run tag @s remove cryptid.invoid
 execute if entity @s in minecraft:overworld if entity @s[y=-64, dy=-100000] run function cryptid:tick/player/invoid
 
+execute if entity @s in cryptid:below if entity @s[y=500, dy=100000] run function cryptid:tick/player/abovebelow
+
 ###fake house event
 execute if entity @s[tag=cryptid.housewalking] run function cryptid:action/house/walk
 

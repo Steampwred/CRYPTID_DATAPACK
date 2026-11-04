@@ -17,7 +17,7 @@ tp @a[tag=boss.fight.1, distance=40..] ~ ~ ~
 
 
 
-
+execute as @e[type=item_display,tag=pillardisplay] unless predicate cryptid:checkriding2 run kill @s
 
 ##############music timer
 

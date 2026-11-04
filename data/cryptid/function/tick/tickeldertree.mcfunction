@@ -55,6 +55,8 @@ execute if entity @p[distance=..30] if score @s cryptid.mob.cooldown matches ..0
 execute as @s[tag=summonatk] if score @s cryptid.mob.cooldown matches 100.. run function cryptid:action/eldertree/ticksummons
 execute as @s[tag=groundatk] if score @s cryptid.mob.cooldown matches 100.. run function cryptid:action/eldertree/tickground
 
+#heartbeat
+execute if score .heartbeat cryptid.globalevent matches 5 run playsound minecraft:cryptid.heartbeat ambient @a[distance=0..60] ~ ~ ~ 4 0.1
 
 ##### Killing mechanincs
 
