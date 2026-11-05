@@ -18,7 +18,6 @@ tp @a[tag=boss.fight.1, distance=40..] ~ ~ ~
 
 
 
-
 ##############music timer
 
 
@@ -40,7 +39,6 @@ execute if score @s cryptid.boss.musictime matches 5590.. run scoreboard players
 ##each phase is two minutes
 ##phase A attacks
 
-
 ###action scores
 execute if score @s boss.circlesword matches 1.. run function cryptid:boss/action/boss/circlesword
 execute if score @s boss.circlesword matches 1.. run stopsound @a * minecraft:cryptid.sword.spawn
@@ -52,6 +50,9 @@ execute if score @s boss.orbspawner matches 1.. run function cryptid:boss/action
 
 ##reset
 execute if score @s cryptid.bosstime matches 3000.. run scoreboard players set @s cryptid.bosstime 0
+
+## Neuter boss debug 
+#return fail
 
 
 execute if score @s[tag=!phase2] cryptid.bosstime matches 0..1000 run function cryptid:boss/tick/bossmain/phasea1

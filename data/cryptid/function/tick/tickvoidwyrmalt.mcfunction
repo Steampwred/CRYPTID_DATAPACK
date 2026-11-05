@@ -7,8 +7,7 @@ execute if entity @p[distance=0..50] run execute store result score @s cryptid.p
 
 
 ##kill
-execute if entity @p[distance=390..] run function cryptid:events/quietkill
-execute if entity @p[distance=300..] if score @s cryptid.player.random matches 1..3 run function cryptid:events/quietkill
+execute if score @s cryptid.timer matches ..-600 if score @s cryptid.player.random matches 1..3 run function cryptid:events/quietkill
 
 
 ##########tracking mode with no playters
@@ -27,7 +26,7 @@ execute if score @s cryptid.player.random matches 120..160 run tag @s remove lef
 
 
 ##moveforward
-execute positioned as @s rotated as @s run tp @s ^ ^ ^0.25
+execute positioned as @s rotated as @s run tp @s ^ ^ ^1.25
 
 ##sounbds
 
@@ -41,3 +40,5 @@ execute if score @s cryptid.player.random matches 100..170 if entity @p[distance
 execute as @s at @s run tag @a[distance=0..30] add cryptid.fakescreen
 execute as @a[distance=0..30] at @s run damage @s 0.5 cryptid:chomp by @e[tag=cryptid.voidwyrm, type=armor_stand, sort=nearest, limit=1]
 
+execute as @s[tag=!init] run data merge entity @s {item:{id:potion,components:{"minecraft:custom_model_data":1406},count:1},teleport_duration:5}
+execute as @s[tag=!init] run tag @s add init

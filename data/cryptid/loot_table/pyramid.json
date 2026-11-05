@@ -58,10 +58,11 @@
               "components": {
                 "minecraft:custom_name": "[\"\",{\"translate\":\"cryptid.item.radar.name\",\"italic\":false,\"color\":\"red\"}]",
                 "minecraft:lore": [
-                  "[\"\",{\"translate\":\"cryptid.item.radar.lore.1\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[\"\",{\"translate\":\"cryptid.item.radar.lore.1\",\"italic\":true,\"color\":\"dark_red\"}]",
                   "[\"\"]",
                   "[\"\",{\"translate\":\"cryptid.item.radar.lore.3_1\",\"italic\":false,\"color\":\"gray\"}]",
                   "[\"\",{\"translate\":\"cryptid.item.radar.lore.3_2\",\"italic\":false,\"color\":\"gray\"}]",
+                  "[\"\",{\"translate\":\"cryptid.item.radar.lore.3_3\",\"italic\":false,\"color\":\"gray\"}]",
                   "[\"\"]",
                   "[\"\",{\"translate\":\"cryptid.item.radar.lore.5_1\",\"italic\":false,\"color\":\"dark_red\"},{\"translate\":\"cryptid.item.radar.lore.5_2\",\"italic\":false,\"color\":\"gray\"}]",
                   "[\"\",{\"translate\":\"cryptid.item.radar.lore.6\",\"italic\":false,\"color\":\"gray\"}]",

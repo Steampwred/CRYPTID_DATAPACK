@@ -48,6 +48,9 @@ execute as @s[tag=cryptid.nokb] at @s run function cryptid:action/player/nokb
 
 ##leave game simulator
 execute as @s[scores={cryptid.leave=1..}] if dimension overworld at @s run function cryptid:action/onjoin
+## fix boss on relog or crash
+execute as @s[scores={cryptid.leave=1..}] if dimension cryptid:below at @s run schedule function cryptid:boss/action/boss/relog 10t
+
 execute as @s[scores={cryptid.leave=1..}] run scoreboard players set @s cryptid.leave 0
 
 ##Give Players a Unique ID if not present
@@ -57,6 +60,8 @@ execute as @s unless score @s cryptid.player.id = @s cryptid.player.id store res
 execute if entity @s[tag=!cryptid.invoid] run scoreboard players reset @s cryptid.voidtimer
 execute as @s at @s if entity @s[y=-64, dy=10000] run tag @s remove cryptid.invoid
 execute if entity @s in minecraft:overworld if entity @s[y=-64, dy=-100000] run function cryptid:tick/player/invoid
+
+execute if entity @s in cryptid:below if entity @s[y=500, dy=100000] run function cryptid:tick/player/abovebelow
 
 ###fake house event
 execute if entity @s[tag=cryptid.housewalking] run function cryptid:action/house/walk

@@ -22,8 +22,7 @@ execute if score .global cryptid.pillartimer matches ..0 run scoreboard players 
 
 
 ########boss general tick
-execute as @e[tag=bosscryptid, type=armor_stand] at @s run function cryptid:boss/tick/tickgeneral
-execute as @e[tag=bosscryptid, type=zombie] at @s run function cryptid:boss/tick/tickgeneral
+execute as @e[tag=bosscryptid, type=#cryptid:bossbase] at @s run function cryptid:boss/tick/tickgeneral
 
 ##tick marker to save cost
 ##this function basically ticks all cryptids based on marker data
@@ -50,7 +49,7 @@ execute if score .global 10t matches ..700 run scoreboard players add .global 10
 execute if score .global 10t matches 700.. run scoreboard players set .global 10t 0
 
 ##spawn hearts
-execute if score .global cryptid.worldtimer matches 25000.. if score count cryptid.heartcount < maxcount cryptid.heartcount if score .global 10t matches 1 run execute as @a[sort=random] at @s if entity @s[dy=-520,y=180] run function cryptid:spawn/heart
+execute if score .global cryptid.worldtimer matches 25000.. if score count cryptid.heartcount < maxcount cryptid.heartcount if score .global 10t matches 1 run execute as @a[sort=random] at @s if entity @s[dy=-520,y=180] unless dimension cryptid:below run function cryptid:spawn/heart
 
 ##kill if too many
 execute if score count cryptid.heartcount > maxcount cryptid.heartcount run kill @e[tag=cryptid.vorheart,type=vindicator, sort=random, limit=1]

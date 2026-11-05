@@ -11,8 +11,10 @@ execute if score @s cryptid.timer matches ..-1000 run function cryptid:boss/acti
 
 ##check for blocks
 
-execute anchored feet unless block ^ ^ ^1 air unless block ^ ^ ^1 #minecraft:slabs run tp @s ~ ~ ~ ~180 ~
-execute anchored feet unless block ^ ^ ^2 air unless block ^ ^ ^2 #minecraft:slabs run tp @s ~ ~ ~ ~180 ~
+execute anchored feet unless block ^ ^ ^1 #cryptid:nonsolid unless block ^ ^ ^1 #minecraft:slabs run tp @s ~ ~ ~ ~180 ~
+execute anchored feet unless block ^ ^ ^2 #cryptid:nonsolid unless block ^ ^ ^2 #minecraft:slabs run tp @s ~ ~ ~ ~180 ~
+##turn if other pillar
+execute anchored feet positioned ^ ^ ^4 if entity @e[distance=..2.2,tag=boss.pillar] at @s run tp @s ~ ~ ~ ~180 ~
 
 ##switch ai
 
@@ -26,7 +28,7 @@ execute if score @s cryptid.random matches 2..5 run tag @s add playerwalk
 
 
 ##damage
-damage @p[distance=0..4] 5 cryptid:chomp by @s from @s
+execute at @s as @s run damage @p[distance=0..4] 5 explosion by @s from @s
 execute as @p[distance=0..4] at @s run playsound minecraft:cryptid.chomper.bite ambient @a ~ ~ ~ 10 0.1
 
 
@@ -38,6 +40,8 @@ execute positioned as @s if score .global cryptid.pillartimer matches 20 run pla
 execute positioned as @s if score .global cryptid.pillartimer matches 30..40 run tp @s ^ ^ ^0.02
 execute positioned as @s if score .global cryptid.pillartimer matches 10..29 run tp @s ^ ^ ^0.2
 execute positioned as @s if score .global cryptid.pillartimer matches 0..9 run tp @s ^ ^ ^0.02
+
+execute positioned as @s anchored feet if score .global cryptid.pillartimer matches 15..30 run particle minecraft:lava ~ ~ ~ 1.2 0.2 1.2 0.2 4
 
 
 

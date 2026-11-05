@@ -19,7 +19,7 @@ execute if score .global cryptid.skytime matches 200..600 run tag @a[distance=..
 
 execute if score @s cryptid.random matches 1..2 if score .global cryptid.skytime matches 900..1000 run tellraw @a {"translate":"cryptid.message.error.freedom_approaching","color":"red"}
 execute if score @s cryptid.random matches 1..2 if score .global cryptid.skytime matches 750..900 run tellraw @a {"translate":"cryptid.message.warning.shader_dropped","color":"red"}
-execute if score @s cryptid.random matches 1..5 if score .global cryptid.skytime matches 450..750 as @a if predicate cryptid:worldsky_check run tellraw @s {"translate":"cryptid.message.warning.y_level_high","color":"red"}
+execute if score @s cryptid.random matches 1..5 if score .global cryptid.skytime matches 450..750 as @a if predicate cryptid:worldsky_check run tellraw @s [{"translate":"cryptid.message.warning.prefix","color":"red"},{"translate":"cryptid.message.warning.y_level_high","color":"red"}]
 execute if score @s cryptid.random matches 1..5 if score .global cryptid.skytime matches 250..450 run tellraw @a {"translate":"cryptid.message.warning.get_inside_earth","color":"red"}
 
 execute if score @s cryptid.random matches 185..200 if score .global cryptid.skytime matches 450..550 as @a if predicate cryptid:worldsky_check run tellraw @s [{"translate":"cryptid.message.warning.prefix","color":"red"},{"translate":"cryptid.message.warning.y_level_high","color":"red","bold": true }]
@@ -30,6 +30,6 @@ execute if score .global cryptid.skytime matches 250..260 run playsound minecraf
 
 
 execute if score .global cryptid.skytime matches 200 run stopsound @a[distance=..60]
-execute if score .global cryptid.skytime matches 200 as @a[distance=..60] run attribute @s minecraft:generic.gravity modifier add 1301 0.25 add_value
-execute if score .global cryptid.skytime matches 200 run tp @a[distance=..60] ~ ~2798 ~
+execute if score .global cryptid.skytime matches 200 run tp @a[distance=..60] ~ ~2000 ~
+execute if score .global cryptid.skytime matches 200 positioned ~ ~2000 ~ as @a[distance=..60] at @s run function cryptid:events/cryptid/freedomvision
 execute if score .global cryptid.skytime matches 200 run item replace entity @s armor.head with air

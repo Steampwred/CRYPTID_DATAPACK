@@ -20,6 +20,4 @@ execute as @s[gamemode=survival] run gamemode adventure
 effect give @s minecraft:regeneration 1 0 true
 
 #nokb
-
-
 tag @s add cryptid.nokb

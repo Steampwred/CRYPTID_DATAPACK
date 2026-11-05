@@ -1,30 +1,32 @@
-execute store result score @s cryptid.player.random run random value 1..7
+execute store result score @s cryptid.player.random run random value 1..16
 
 
-execute if score @s cryptid.player.random matches 1 run summon armor_stand ~80 -50 ~80 {Invisible:1, NoGravity:1, ShowArms:1b,DisabledSlots:4144959,CustomName:'[{"translate":"cryptid.entity.void_wyrm","color":"dark_red"}]',Tags:["cryptid","cryptid.voidwyrm"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1406},count:1}],drop_chances:{head:0f}}
+execute if score @s cryptid.player.random matches 1 run summon item_display ~80 ~-168 ~10 {CustomName:'{"color":"dark_red","translate":"cryptid.entity.void_wyrm"}',Tags:["cryptid","cryptid.voidwyrm","cryptid.timer"],item:{id:air,components:{"minecraft:custom_model_data":1406},count:1},item_display:"head",view_range:2,width:200,height:200,teleport_duration:0}
+execute if score @s cryptid.player.random matches 2 run summon item_display ~180 ~-128 ~-23 {CustomName:'{"color":"dark_red","translate":"cryptid.entity.void_wyrm"}',Tags:["cryptid","cryptid.voidwyrm","cryptid.timer"],item:{id:air,components:{"minecraft:custom_model_data":1406},count:1},item_display:"head",view_range:2,width:200,height:200,teleport_duration:0}
+execute if score @s cryptid.player.random matches 3 run summon item_display ~280 ~-128 ~41 {CustomName:'{"color":"dark_red","translate":"cryptid.entity.void_wyrm"}',Tags:["cryptid","cryptid.voidwyrm","cryptid.timer"],item:{id:air,components:{"minecraft:custom_model_data":1406},count:1},item_display:"head",view_range:2,width:200,height:200,teleport_duration:0}
+execute if score @s cryptid.player.random matches 4 run summon item_display ~380 ~-128 ~-11 {CustomName:'{"color":"dark_red","translate":"cryptid.entity.void_wyrm"}',Tags:["cryptid","cryptid.voidwyrm","cryptid.timer"],item:{id:air,components:{"minecraft:custom_model_data":1406},count:1},item_display:"head",view_range:2,width:200,height:200,teleport_duration:0}
+execute if score @s cryptid.player.random matches 5 run summon item_display ~43 ~-168 ~80 {CustomName:'{"color":"dark_red","translate":"cryptid.entity.void_wyrm"}',Tags:["cryptid","cryptid.voidwyrm","cryptid.timer"],item:{id:air,components:{"minecraft:custom_model_data":1406},count:1},item_display:"head",view_range:2,width:200,height:200,teleport_duration:0}
+execute if score @s cryptid.player.random matches 6 run summon item_display ~-23 ~-128 ~180 {CustomName:'{"color":"dark_red","translate":"cryptid.entity.void_wyrm"}',Tags:["cryptid","cryptid.voidwyrm","cryptid.timer"],item:{id:air,components:{"minecraft:custom_model_data":1406},count:1},item_display:"head",view_range:2,width:200,height:200,teleport_duration:0}
+execute if score @s cryptid.player.random matches 7 run summon item_display ~10 -128 ~280 {CustomName:'{"color":"dark_red","translate":"cryptid.entity.void_wyrm"}',Tags:["cryptid","cryptid.voidwyrm","cryptid.timer"],item:{id:air,components:{"minecraft:custom_model_data":1406},count:1},item_display:"head",view_range:2,width:200,height:200,teleport_duration:0}
+execute if score @s cryptid.player.random matches 8 run summon item_display ~-34 -128 ~380 {CustomName:'{"color":"dark_red","translate":"cryptid.entity.void_wyrm"}',Tags:["cryptid","cryptid.voidwyrm","cryptid.timer"],item:{id:air,components:{"minecraft:custom_model_data":1406},count:1},item_display:"head",view_range:2,width:200,height:200,teleport_duration:0}
 
-execute if score @s cryptid.player.random matches 2 run summon armor_stand ~-90 -50 ~30 {Invisible:1, NoGravity:1, ShowArms:1b,DisabledSlots:4144959,CustomName:'[{"translate":"cryptid.entity.void_wyrm","color":"dark_red"}]',Tags:["cryptid","cryptid.voidwyrm"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1406},count:1}],drop_chances:{head:0f}}
-
-execute if score @s cryptid.player.random matches 3 run summon armor_stand ~20 -50 ~100 {Invisible:1, NoGravity:1, ShowArms:1b,DisabledSlots:4144959,CustomName:'[{"translate":"cryptid.entity.void_wyrm","color":"dark_red"}]',Tags:["cryptid","cryptid.voidwyrm"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1406},count:1}],drop_chances:{head:0f}}
-
-execute if score @s cryptid.player.random matches 4 run summon armor_stand ~40 -50 ~60 {Invisible:1, NoGravity:1, ShowArms:1b,DisabledSlots:4144959,CustomName:'[{"translate":"cryptid.entity.void_wyrm","color":"dark_red"}]',Tags:["cryptid","cryptid.voidwyrm"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1406},count:1}],drop_chances:{head:0f}}
-
-execute if score @s cryptid.player.random matches 5 run summon armor_stand ~70 -50 ~-80 {Invisible:1, NoGravity:1, ShowArms:1b,DisabledSlots:4144959,CustomName:'[{"translate":"cryptid.entity.void_wyrm","color":"dark_red"}]',Tags:["cryptid","cryptid.voidwyrm"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1406},count:1}],drop_chances:{head:0f}}
-
-execute if score @s cryptid.player.random matches 6 run summon armor_stand ~-60 -50 ~-30 {Invisible:1, NoGravity:1, ShowArms:1b,DisabledSlots:4144959,CustomName:'[{"translate":"cryptid.entity.void_wyrm","color":"dark_red"}]',Tags:["cryptid","cryptid.voidwyrm"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1406},count:1}],drop_chances:{head:0f}}
-
-execute if score @s cryptid.player.random matches 7 run summon armor_stand ~20 -50 ~-50 {Invisible:1, NoGravity:1, ShowArms:1b,DisabledSlots:4144959,CustomName:'[{"translate":"cryptid.entity.void_wyrm","color":"dark_red"}]',Tags:["cryptid","cryptid.voidwyrm"],ArmorItems:[{},{},{},{id:potion,components:{"minecraft:custom_model_data":1406},count:1}],drop_chances:{head:0f}}
-
-
-
-execute as @e[type=armor_stand, tag=cryptid.voidwyrm, tag=!cryptid.markerapplied] at @s run function cryptid:action/general/spawntickmarker {"name":"tickvoidwyrmalt"}
-
-
-
-execute as @e[tag=cryptid.voidwyrm, type=minecraft:armor_stand, sort=nearest, limit=1] at @s run tp @s ^ ^ ^40 facing entity @e[sort=random, limit=1]
-execute as @e[tag=cryptid.voidwyrm, type=minecraft:armor_stand] at @s run tp @s ~ ~ ~ ~ 0
+execute if score @s cryptid.player.random matches 9 run summon item_display ~-80 ~-168 ~31 {CustomName:'{"color":"dark_red","translate":"cryptid.entity.void_wyrm"}',Tags:["cryptid","cryptid.voidwyrm","cryptid.timer"],item:{id:air,components:{"minecraft:custom_model_data":1406},count:1},item_display:"head",view_range:2,width:200,height:200,teleport_duration:0}
+execute if score @s cryptid.player.random matches 10 run summon item_display ~-180 ~-128 ~-22 {CustomName:'{"color":"dark_red","translate":"cryptid.entity.void_wyrm"}',Tags:["cryptid","cryptid.voidwyrm","cryptid.timer"],item:{id:air,components:{"minecraft:custom_model_data":1406},count:1},item_display:"head",view_range:2,width:200,height:200,teleport_duration:0}
+execute if score @s cryptid.player.random matches 11 run summon item_display ~-280 ~-128 ~54 {CustomName:'{"color":"dark_red","translate":"cryptid.entity.void_wyrm"}',Tags:["cryptid","cryptid.voidwyrm","cryptid.timer"],item:{id:air,components:{"minecraft:custom_model_data":1406},count:1},item_display:"head",view_range:2,width:200,height:200,teleport_duration:0}
+execute if score @s cryptid.player.random matches 12 run summon item_display ~-380 ~-128 ~-25 {CustomName:'{"color":"dark_red","translate":"cryptid.entity.void_wyrm"}',Tags:["cryptid","cryptid.voidwyrm","cryptid.timer"],item:{id:air,components:{"minecraft:custom_model_data":1406},count:1},item_display:"head",view_range:2,width:200,height:200,teleport_duration:0}
+execute if score @s cryptid.player.random matches 13 run summon item_display ~31 ~-168 ~-80 {CustomName:'{"color":"dark_red","translate":"cryptid.entity.void_wyrm"}',Tags:["cryptid","cryptid.voidwyrm","cryptid.timer"],item:{id:air,components:{"minecraft:custom_model_data":1406},count:1},item_display:"head",view_range:2,width:200,height:200,teleport_duration:0}
+execute if score @s cryptid.player.random matches 14 run summon item_display ~-11 ~-128 ~-180 {CustomName:'{"color":"dark_red","translate":"cryptid.entity.void_wyrm"}',Tags:["cryptid","cryptid.voidwyrm","cryptid.timer"],item:{id:air,components:{"minecraft:custom_model_data":1406},count:1},item_display:"head",view_range:2,width:200,height:200,teleport_duration:0}
+execute if score @s cryptid.player.random matches 15 run summon item_display ~13 -128 ~-280 {CustomName:'{"color":"dark_red","translate":"cryptid.entity.void_wyrm"}',Tags:["cryptid","cryptid.voidwyrm","cryptid.timer"],item:{id:air,components:{"minecraft:custom_model_data":1406},count:1},item_display:"head",view_range:2,width:200,height:200,teleport_duration:0}
+execute if score @s cryptid.player.random matches 16 run summon item_display ~-22 -128 ~-380 {CustomName:'{"color":"dark_red","translate":"cryptid.entity.void_wyrm"}',Tags:["cryptid","cryptid.voidwyrm","cryptid.timer"],item:{id:air,components:{"minecraft:custom_model_data":1406},count:1},item_display:"head",view_range:2,width:200,height:200,teleport_duration:0}
 
 
-execute as @e[type=minecraft:armor_stand,tag=cryptid.voidwyrm] at @s run attribute @s minecraft:generic.scale base set 16
+
+execute as @e[tag=cryptid.voidwyrm, type=minecraft:item_display, sort=nearest, limit=1,tag=!cryptid.markerapplied] at @s run tp @s ^ ^ ^40 facing entity @e[sort=random, limit=1]
+execute as @e[tag=cryptid.voidwyrm, type=minecraft:item_display,tag=!cryptid.markerapplied] at @s run tp @s ~ ~ ~ ~ 0
+
+
+execute as @e[type=item_display, tag=cryptid.voidwyrm, tag=!cryptid.markerapplied] at @s run function cryptid:action/general/spawntickmarker {"name":"tickvoidwyrmalt"}
+
+
 
 playsound minecraft:cryptid.bone.knock ambient @p[distance=0..100] ~ ~-100 ~ 100 0.1

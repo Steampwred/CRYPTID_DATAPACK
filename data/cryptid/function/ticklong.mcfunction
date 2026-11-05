@@ -5,4 +5,4 @@ schedule function cryptid:ticklong 600t
 
 ##void fix all entities
 tellraw @a[tag=cryptid.debug] {"translate":"cryptid.debug.cull_void","color":"green","bold":true}
-execute as @e if predicate cryptid:voidfix unless dimension cryptid:below run function cryptid:action/voidfix
+execute as @e[type=!player,tag=!cryptid.voidwyrm] if predicate cryptid:voidfix unless dimension cryptid:below run function cryptid:action/voidfix

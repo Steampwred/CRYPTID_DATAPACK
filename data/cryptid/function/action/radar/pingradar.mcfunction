@@ -18,7 +18,7 @@ execute positioned ~ ~0.6 ~ facing entity @e[tag=cryptid, tag=!cryptid.heart, ta
 execute positioned ~ ~0.6 ~ facing entity @e[tag=cryptid, tag=!cryptid.heart, tag=!cryptid.ignore.radar, sort=nearest, scores={cryptid.mob.class=6..1000}, limit=10, distance=0..150] feet positioned ^ ^ ^1.35 run particle dust_color_transition{from_color:[0.000,0.000,0.000],scale:0.92,to_color:[0.510,0.000,0.510],scale:1.3} ~ ~1 ~ 0 0 0 0 5
 
 #hearts
-execute positioned ~ ~0.6 ~ facing entity @e[tag=cryptid, tag=cryptid.heart, sort=nearest, limit=10, distance=0..150] feet positioned ^ ^ ^1.3 run particle sculk_charge_pop ~ ~0.8 ~ 0 0 0 0 1
+execute positioned ~ ~0.6 ~ facing entity @e[tag=cryptid, tag=cryptid.heart, sort=nearest, limit=10, distance=0..150] feet positioned ^ ^ ^1.3 run particle sculk_charge_pop ~ ~1 ~ 0 0 0 0 1
 
 #sky
 #execute positioned ~ ~0.6 ~ facing entity @e[tag=cryptid, tag=!cryptid.vorheart, tag=!cryptid.ignore.radar, sort=nearest, limit=10, distance=0..150, y=100, dy=1000] feet positioned ^ ^ ^1.3 run particle crit ~ ~0.8 ~ 0 0 0 0 1
