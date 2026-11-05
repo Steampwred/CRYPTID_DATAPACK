@@ -19,8 +19,10 @@ execute positioned as @s[scores={cryptid.random=4}] anchored eyes facing entity 
 
 execute if score @s cryptid.timer matches ..-600 run function cryptid:boss/action/skull/explode
 execute if entity @p[distance=0..2] run function cryptid:boss/action/skull/explode
-execute unless block ~ ~ ~ air run function cryptid:boss/action/skull/explode
 
+# destroy skull if hurt or in block
+execute unless block ~ ~ ~ #cryptid:nonsolid run function cryptid:boss/action/skull/explode
+execute if entity @s[nbt={HurtTime:1s}] run function cryptid:boss/action/skull/explode
 
 
 ##sound
@@ -33,4 +35,3 @@ execute if score @s cryptid.player.random matches 1 run playsound minecraft:cryp
 
 particle dust_color_transition{from_color:[0.57,0.05,0.26],to_color:[0.27,0.15,0.02],scale:1} ^ ^ ^-0.4 0.2 0.2 0.2 2.3 10
 
-#execute if entity @s[nbt={HurtTime:1s}] run function cryptid:boss/action/skull/explode

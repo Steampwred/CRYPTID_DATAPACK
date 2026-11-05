@@ -6,6 +6,7 @@ execute if score @s cryptid.player.random matches 1 run summon zombie ~ ~120 ~ {
 scoreboard players reset @s cryptid.player.random
 
 execute as @e[tag=boss.skull, type=zombie] at @s run attribute @s minecraft:generic.scale base set 0.8
-execute as @e[tag=boss.skull, type=zombie] at @s run attribute @s minecraft:generic.max_health base set 3
+execute as @e[tag=boss.skull, type=zombie] at @s run attribute @s minecraft:generic.max_health base set 60
 
 execute as @e[tag=boss.skull, type=zombie] at @s run effect give @s invisibility infinite 1 true
+execute as @e[tag=boss.skull, type=zombie] at @s run effect give @s instant_damage infinite 1 true

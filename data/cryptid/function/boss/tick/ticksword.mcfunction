@@ -1,5 +1,5 @@
 ##init1
-execute as @s[tag=!init] at @s run tp @s ~ ~-120 ~
+execute as @s[tag=!init] at @s run tp @s ~ ~-121 ~
 execute as @s[tag=!init] at @s run tag @s add init
 
 
@@ -29,7 +29,8 @@ execute as @s[tag=fixed,tag=!stuck] positioned as @s run particle minecraft:smok
 
 
 ##init sounds
-execute if score @s[tag=!stuck] cryptid.timer matches -20 run particle minecraft:end_rod ^ ^0.2 ^0.3 0.4 0.4 0.4 0.04 50
+#execute if score @s[tag=!stuck] cryptid.timer matches -20 run particle minecraft:end_rod ^ ^0.2 ^0.3 0.4 0.4 0.4 0.04 50
+execute if score @s[tag=!stuck] cryptid.timer matches -20 run particle minecraft:flash ^ ^0.25 ^0.3 0.1 0.1 0.1 1 3
 execute if score @s[tag=!stuck] cryptid.timer matches -21 run playsound minecraft:cryptid.sword.throw ambient @a ~ ~ ~ 0.5 0.7
 
 

@@ -52,7 +52,6 @@ playsound minecraft:cryptid.screen.corrupted ambient @s ~ ~ ~ 10000 1
 
 
 
-
 ##check for cool names
 
 function cryptid:action/general/namecheck

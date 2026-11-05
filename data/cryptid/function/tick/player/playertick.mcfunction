@@ -48,6 +48,9 @@ execute as @s[tag=cryptid.nokb] at @s run function cryptid:action/player/nokb
 
 ##leave game simulator
 execute as @s[scores={cryptid.leave=1..}] if dimension overworld at @s run function cryptid:action/onjoin
+## fix boss on relog or crash
+execute as @s[scores={cryptid.leave=1..}] if dimension cryptid:below at @s run schedule function cryptid:boss/action/boss/relog 10t
+
 execute as @s[scores={cryptid.leave=1..}] run scoreboard players set @s cryptid.leave 0
 
 ##Give Players a Unique ID if not present
